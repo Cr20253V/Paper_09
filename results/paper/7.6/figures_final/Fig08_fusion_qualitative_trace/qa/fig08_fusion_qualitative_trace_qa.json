@@ -1,0 +1,231 @@
+{
+  "figure_id": "Fig08_fusion_qualitative_trace",
+  "generated_utc": "2026-07-23T12:19:09.360998+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "nature_skill_used": false,
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/04_summaries/innovation_development_pair_details.csv",
+      "bytes": 19443,
+      "sha256": "1b837ccaeb33188713a1cf01069fe52216219b6190aff59ff64aa699d68559e0"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/04_summaries/innovation_development_summary.json",
+      "bytes": 1033,
+      "sha256": "e4da86af6d048e9b9ec0ff21a8720e7d00c620342327ba993abb668f02d7f482"
+    },
+    {
+      "role": "input_3",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1723660,
+      "sha256": "5040edc5003ac26c78b5065597552f82776635058d4f445c2befe406781fee5d"
+    },
+    {
+      "role": "input_4",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_closed_loop_sharp_turn_transition_theta10_v1/node42_runtime_debug.csv",
+      "bytes": 1278389,
+      "sha256": "9a45c13b79fe893c417b03d6249d81649704bfa5b7c7967bc2173dc70dcb1ac2"
+    },
+    {
+      "role": "input_5",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_closed_loop_sharp_turn_transition_theta10_v1/case_manifest.json",
+      "bytes": 1605,
+      "sha256": "ad6950371ffcf27abecd8a7c088b53d706748781ec0e8cc1c8cf0c80b090c139"
+    },
+    {
+      "role": "input_6",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2743,
+      "sha256": "530f9360ed5ccda42d12f149dacc908b5e421e58417b9f51fde805435100ffe9"
+    },
+    {
+      "role": "input_7",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1700789,
+      "sha256": "b5b9d681f01a605d387739b08a6922eead92ac02cfdc31232ffc8d657fb763f2"
+    },
+    {
+      "role": "input_8",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_closed_loop_sharp_turn_transition_theta10_v1/node42_runtime_debug.csv",
+      "bytes": 1227661,
+      "sha256": "0352fa2b1af2836426515440ed34625665ce2e9face44e8769910b4234be8487"
+    },
+    {
+      "role": "input_9",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_closed_loop_sharp_turn_transition_theta10_v1/case_manifest.json",
+      "bytes": 1587,
+      "sha256": "37fe5ff60bbf13e1517e0b0f29fe01da713a7bce5794a42be916d1520d90e424"
+    },
+    {
+      "role": "input_10",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2682,
+      "sha256": "0e72b8c21ccec107b5b82b6becf07613474f4013da8cd4e1f6d028ba0807c098"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig08_fusion_qualitative_trace/source_data/fig08_fusion_qualitative_trace_source_data.csv",
+    "rows": 5201,
+    "columns": [
+      "record_type",
+      "route_id",
+      "route_condition",
+      "model_seed",
+      "sample_index",
+      "debug_step",
+      "t_s",
+      "theta_true_deg",
+      "theta_sched_fusion_lpv_mpc_deg",
+      "theta_sched_mtcn_lpv_mpc_deg",
+      "theta_mtcn_deg",
+      "theta_imu_deg",
+      "theta_fused_deg",
+      "variance_imu_rad2",
+      "imu_valid",
+      "K_imu_eff",
+      "fallback_exact",
+      "imu_uncertainty_halfwidth_deg",
+      "local_fusion_effect_deg"
+    ],
+    "sha256": "d84b89b9113e85e4725822c2dd4ad0724af68e9813a5896abc9cfb677a64c8e3"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_qualitative_trace/output/fig08_fusion_qualitative_trace.pdf",
+      "bytes": 164224,
+      "sha256": "2382b6120bf4b185a8e3cee56a42a3a6b03d0608e46f0b1b1edce6d2f692517d"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_qualitative_trace/output/fig08_fusion_qualitative_trace.svg",
+      "bytes": 432925,
+      "sha256": "321eced460f793c63cb8b4bb4790dda5cc4c3a10fe554baddc89aa73c32b7bae"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_qualitative_trace/output/fig08_fusion_qualitative_trace.png",
+      "bytes": 218079,
+      "sha256": "6f371c5693bf25c1ff0cffe066101a97c074e5422c9ac3f854fa1efcf90df925"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_qualitative_trace/output/fig08_fusion_qualitative_trace.tiff",
+      "bytes": 924072,
+      "sha256": "863d6f2adc1c7c888eb4f01fef3c8906dc001d2d7308b36d2ea9b98045d95b44"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "fixed_case": "P2 sharp-turn transition, model seed 7",
+      "trace_rows_including_t0": 5201,
+      "complete_update_samples": 5200,
+      "debug_updates": 5200,
+      "time_start_s": 0.0,
+      "time_end_s": 52.0,
+      "paired_time_axis_exact": true,
+      "actual_scheduled_grade_plotted": true,
+      "reader_facing_G0_occurrences": 0,
+      "metric_inset_removed": true,
+      "grade_error_ratio_fusion_over_mtcn": 0.8306188183914721,
+      "composite_control_index_ratio_fusion_over_mtcn": 0.9480355294018376,
+      "fusion_active_count": 3375,
+      "fusion_active_definition": "absolute Fusion-minus-ModernTCN-delta correction > 0.05 deg",
+      "active_improve_count": 2613,
+      "active_degrade_count": 14,
+      "active_neutral_count": 748,
+      "selection_rule": "among pairs with grade-error ratio < 1, control-index ratio < 1, and active fraction at least the 90-pair aggregate active fraction, minimize Euclidean distance to the aggregate grade-error and control-index ratios",
+      "selection_rank": 1,
+      "selection_distance": 0.008055599821151501,
+      "aggregate_targets": {
+        "grade_error_ratio": 0.8359705701893262,
+        "control_index_ratio": 0.9540564463729228,
+        "active_fraction": 0.33080200566366164
+      },
+      "invalid_update_count": 99,
+      "max_invalid_fused_minus_mtcn_deg": 0.0,
+      "fallback_segment_field_all_true": true,
+      "fallback_segment_exact_within_deg": true,
+      "control_index_components": {
+        "ey_rmse": 1.0483214118066588,
+        "xy_rmse": 0.9074081871273353,
+        "epsi_rmse": 0.85545728371374,
+        "j_du": 0.970379648408084,
+        "omega_cmd_rms": 0.9586111159533691
+      },
+      "control_index_mean": 0.9480355294018376,
+      "local_effect_direction": "negative means adaptive fusion has lower absolute grade error than ModernTCN-delta",
+      "panel_labels_placed_inside_axes": true,
+      "panel_label_ylabel_overlap_count": 0,
+      "panel_d_label_direction_note_overlap": false,
+      "full_route_retained": true,
+      "render_decimation": "none",
+      "caption_contract": "Representative adaptive-fusion mechanism on P2 at seed 7; objectively selected by proximity to the 90-pair aggregate rather than maximum improvement; complete trace retained; aggregate performance is not inferred from this qualitative case."
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 4,
+      "expected_primary_panels": 4,
+      "minimum_visible_font_pt": 6.5,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        183.0,
+        108.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            1275
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            107.95
+          ],
+          "nonwhite_fraction": 0.09973
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2551
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            107.992
+          ],
+          "nonwhite_fraction": 0.09763
+        }
+      },
+      "svg_editable_text_elements": 35,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final/Fig08_fusion_qualitative_trace/qa/fig08_fusion_qualitative_trace_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "The complete P2 seed-7 trace retains all 5200 updates; grade estimates, actual MTCN/Fusion schedules, effective inertial gain, threshold-consistent activation spans, and signed local effects are readable without overlap in color and grayscale. Panel letters are inside the axes and pass explicit bounding-box collision checks against every y-axis label; the local-effect direction note occupies separate unused panel space. No reader-facing G0 label or summary inset remains."
+  }
+}

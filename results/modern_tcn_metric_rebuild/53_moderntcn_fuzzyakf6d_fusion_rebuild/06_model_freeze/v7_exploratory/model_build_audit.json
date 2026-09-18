@@ -1,0 +1,24 @@
+{
+  "status": "PASS_NODE53_V7_EXPLORATORY_MODEL_BUILD",
+  "protocol_id": "node53_v7_exploratory_six_path_seed42_v1",
+  "source_model": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\51_moderntcn_rkf_highrisk_suppression_rebuild\\05_model_freeze\\LPVMPC_AGV_ModernTCN_RKFFusion_Node51.slx",
+  "source_sha256": "58655e4dda194404962db0e2d9568811f8a5f40e53dc26136e279f46f9bea4e5",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\06_model_freeze\\v7_exploratory\\LPVMPC_AGV_MTCN_FAKF6D_V7_Exp.slx",
+  "model_sha256": "e731de68dd07dffa32202b22d8d56506e5abf4406fed2800da2cd895806540d8",
+  "plant_function": "agv_model_sfunc_node53_fuzzyakf6d",
+  "selector_function": "ModernTCN_FuzzyAKF6DFusion_Node53_v7_sim",
+  "sensor_port_dimension": 6,
+  "vehicle_dynamics_changed": false,
+  "mpc_changed": false,
+  "runtime_truth_read": false,
+  "model_seed": 42,
+  "sensor_seed": 4631,
+  "guard_deadband_deg": 1.3,
+  "guard_clip_deg": [
+    -10,
+    10
+  ],
+  "qualification_bypassed": true,
+  "classification": "RETROSPECTIVE_EXPLORATORY_R2_06_FUSION_BENCHMARK",
+  "formal_claim_allowed": false
+}

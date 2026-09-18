@@ -1,0 +1,16 @@
+{
+  "task_id": "A3",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "case_id": "Oracle_LPV_MPC__p03_long_updown__oracle",
+  "phase": "smoke",
+  "controller_id": "Oracle_LPV_MPC",
+  "theta_mode": 3,
+  "path_id": "p03_long_updown",
+  "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\path_closed_loop_long_updown_theta10_v1.mat",
+  "path_sha256": "ab82393620a90964d3973f42bec9bcdb8ac0733db5db08670d152fded5ca2e08",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\00_protocol_lock\\a3.slx",
+  "plant_revision": "agv_physics_v2_plantfix",
+  "sensor_noise_seed": [],
+  "process_disturbance_seed": [],
+  "noise_enabled": false
+}

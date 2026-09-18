@@ -1,0 +1,184 @@
+{
+  "figure_id": "Fig07_fusion_case_distribution",
+  "generated_utc": "2026-07-22T15:51:54.395388+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "nature_skill_used": false,
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/04_summaries/innovation_development_pair_details.csv",
+      "bytes": 19443,
+      "sha256": "1b837ccaeb33188713a1cf01069fe52216219b6190aff59ff64aa699d68559e0"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/04_summaries/innovation_development_summary.json",
+      "bytes": 1033,
+      "sha256": "e4da86af6d048e9b9ec0ff21a8720e7d00c620342327ba993abb668f02d7f482"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig07_fusion_case_distribution/source_data/fig07_fusion_case_distribution_source_data.csv",
+    "rows": 90,
+    "columns": [
+      "route_id",
+      "path",
+      "seed",
+      "theta_candidate",
+      "theta_baseline",
+      "theta_ratio",
+      "theta_ratio_adjudicable",
+      "J",
+      "ey_ratio",
+      "xy_ratio",
+      "epsi_ratio",
+      "j_du_ratio",
+      "omega_cmd_rms_ratio",
+      "sample_count",
+      "active_count",
+      "improve_count",
+      "neutral_count",
+      "degrade_count",
+      "fallback",
+      "safe"
+    ],
+    "sha256": "12e5d06be9d985043442a8a93182fe2163045cb7d3bdf1987958040a53f76c9e"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig07_fusion_case_distribution/output/fig07_fusion_case_distribution.pdf",
+      "bytes": 48966,
+      "sha256": "58dd6d259313b9860a065717f45c7201377b6d59a59b94c1151d761aa2172c9b"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final/Fig07_fusion_case_distribution/output/fig07_fusion_case_distribution.svg",
+      "bytes": 48716,
+      "sha256": "d4f1d25201b03c295165a0f820c84ccf58ce03775e895626125b83ad08923d09"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final/Fig07_fusion_case_distribution/output/fig07_fusion_case_distribution.png",
+      "bytes": 148788,
+      "sha256": "6b89ea131b8f882c9fad6cfd9c929d996c6f4fdc626039c6490299ce446e10e8"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig07_fusion_case_distribution/output/fig07_fusion_case_distribution.tiff",
+      "bytes": 1936336,
+      "sha256": "3db3e082ae83c7970d31d3e0884973c9f650d26d4ffb44be268bb35748fb1023"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "fixed_grid": "9 routes x 10 model seeds",
+      "pair_count": 90,
+      "undefined_theta_ratios_from_zero_denominator": 7,
+      "undefined_theta_ratio_rendering": "gray x; cases retained, not converted to 1 or removed",
+      "symbol_legend": {
+        "x": "Undefined grade ratio (zero denominator)",
+        "triangle": "Control-index ratio > 1.02"
+      },
+      "control_index_definition": "mean of ey_rmse, xy_rmse, epsi_rmse, j_du, and omega_cmd_rms candidate/baseline ratios",
+      "overall_theta_ratio": {
+        "estimate": 0.8359705701893261,
+        "ci95_low": 0.8207490615252552,
+        "ci95_high": 0.8560334472672112
+      },
+      "overall_control_index_ratio": {
+        "estimate": 0.9540564463729228,
+        "ci95_low": 0.9289760427811576,
+        "ci95_high": 0.9786407491308596
+      },
+      "bootstrap_iterations": 5000,
+      "active_sample_count": 254658,
+      "active_counts": {
+        "improve": 179573,
+        "neutral": 74039,
+        "degrade": 1046
+      },
+      "active_fractions": {
+        "improve": 0.7051535785249237,
+        "neutral": 0.2907389518491467,
+        "degrade": 0.004107469625929679
+      },
+      "neutral_definition": "absolute grade-error change within +/-0.1 deg among active samples",
+      "J_gt_1p02_count": 14,
+      "J_gt_1p05_count": 11,
+      "fallback_exact": true,
+      "frozen_status": "FAIL_NODE42_INNOVATION_DEVELOPMENT"
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 5,
+      "expected_primary_panels": 3,
+      "minimum_visible_font_pt": 6.5,
+      "minor_text_overflow_count": 1,
+      "minor_text_overflow": [
+        {
+          "text": "1.05",
+          "left_px": 0.0,
+          "bottom_px": 0.0,
+          "right_px": 8.942678239083762,
+          "top_px": 0.0
+        }
+      ],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        183.0,
+        104.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            103.971
+          ],
+          "nonwhite_fraction": 0.50283
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            103.971
+          ],
+          "nonwhite_fraction": 0.50125
+        }
+      },
+      "svg_editable_text_elements": 69,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final/Fig07_fusion_case_distribution/qa/fig07_fusion_case_distribution_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "All 90 route-seed pairs are retained; the x and triangle legend explains undefined ratios and J > 1.02 cases; overall intervals and 70.52/29.07/0.41% classes are visible."
+  }
+}

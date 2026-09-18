@@ -1,0 +1,21 @@
+{
+  "identifier": "SL_SERVICES:utils:STD_EXCEPTION",
+  "message": "STD 异常 'class mwboost::exception_detail::clone_impl<class fl::filesystem::SystemError>': 捕获到 'fl:filesystem:SystemError'。",
+  "stack": [
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\src\\Compare\\run_closed_loop_model_once.m",
+      "name": "run_closed_loop_model_once",
+      "line": 153
+    },
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\tools\\run_node53_v7_exploratory_six_path.m",
+      "name": "local_run_case",
+      "line": 47
+    },
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\tools\\run_node53_v7_exploratory_six_path.m",
+      "name": "run_node53_v7_exploratory_six_path",
+      "line": 28
+    }
+  ]
+}

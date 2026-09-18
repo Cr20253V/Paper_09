@@ -1,0 +1,15 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "timestamp": "20260716T210142",
+  "seeds": [
+    1,
+    7,
+    11,
+    42,
+    202,
+    340,
+    520
+  ],
+  "complete": true,
+  "summary_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\02_models\\tcn_training_summary.csv"
+}

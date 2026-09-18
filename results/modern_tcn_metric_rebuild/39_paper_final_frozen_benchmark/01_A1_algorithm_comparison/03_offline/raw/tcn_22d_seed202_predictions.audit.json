@@ -1,0 +1,13 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "method_id": "tcn_22d",
+  "seed": 202,
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\02_models\\models\\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed202.mat",
+  "dataset_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\tcn\\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat",
+  "test_windows": 3602,
+  "seq_len": 128,
+  "raw_input_dim": 22,
+  "elapsed_seconds": 4.8250555,
+  "output_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\03_offline\\raw\\tcn_22d_seed202_predictions.csv",
+  "status": "COMPLETE"
+}

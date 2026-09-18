@@ -1,0 +1,154 @@
+{
+  "figure_id": "Fig06_imu_observer_trace",
+  "generated_utc": "2026-07-22T15:51:52.959968+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "nature_skill_used": false,
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/IMU_ONLY/s42/path_closed_loop_long_updown_theta10_v1/trace.csv",
+      "bytes": 1451120,
+      "sha256": "56bea74918f8f08f29a00d805370f6c87e90ed37fc4710a117c12ef55e501dd3"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/IMU_ONLY/s42/path_closed_loop_long_updown_theta10_v1/node40_runtime_debug.csv",
+      "bytes": 1039688,
+      "sha256": "5142dddd905f35c27934743894e4bb8f1359ef0d2c5a1270757ede9edaf446d7"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/source_data/fig06_imu_observer_trace_source_data.csv",
+    "rows": 4401,
+    "columns": [
+      "sample_index",
+      "debug_step",
+      "t_s",
+      "theta_true_deg",
+      "theta_mtcn_deg",
+      "theta_imu_deg",
+      "variance_imu_rad2",
+      "imu_valid",
+      "K_imu_eff",
+      "quality_code",
+      "observer_update_available",
+      "imu_uncertainty_halfwidth_deg",
+      "delta_abs_error_deg",
+      "imu_locally_better"
+    ],
+    "sha256": "ae7b1f1a09aa3891ab0b4169fe98540a08431f7736085d6bf8a1e1519563103f"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/output/fig06_imu_observer_trace.pdf",
+      "bytes": 271522,
+      "sha256": "69f5e144e20a9da0c010e765774bae81961e673f2ad45d6fa7ce5870c7c978dd"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/output/fig06_imu_observer_trace.svg",
+      "bytes": 1040143,
+      "sha256": "c9ffb7c1063325acdf3738ac58f229273a48e107a3309b2cf4ae29e8a00efc07"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/output/fig06_imu_observer_trace.png",
+      "bytes": 163096,
+      "sha256": "12eee9d4162aa2c7627c2ab08f2884c7e131daf048a46d0c607e295421769204"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/output/fig06_imu_observer_trace.tiff",
+      "bytes": 651784,
+      "sha256": "331fa5a0bf6dd3ed63d0106a0feb9b89502a2af7cb82b066f352440443ef8bfb"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "fixed_case": "P3 long up/down, seed 42, Node40 IMU_ONLY",
+      "trace_samples": 4401,
+      "debug_updates": 4400,
+      "alignment_rule": "debug.step equals trace sample index; initial trace sample retained; no interpolation",
+      "time_start_s": 0.0,
+      "time_end_s": 44.0,
+      "variance_nonnegative": true,
+      "invalid_or_unavailable_samples": 100,
+      "valid_beneficial_samples": 3634,
+      "valid_nonbeneficial_samples": 667,
+      "error_difference_direction": "negative means the qualified causal inertial observer has lower absolute grade error than ModernTCN-delta",
+      "uncertainty_definition": "estimate +/- 1.96 sqrt(observer variance); not a calibrated coverage claim"
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 3,
+      "expected_primary_panels": 3,
+      "minimum_visible_font_pt": 6.2,
+      "minor_text_overflow_count": 1,
+      "minor_text_overflow": [
+        {
+          "text": "45",
+          "left_px": 0.0,
+          "bottom_px": 0.0,
+          "right_px": 4.192555476020061,
+          "top_px": 0.0
+        }
+      ],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        89.0,
+        104.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            1051,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.16019
+        },
+        "tiff": {
+          "pixels": [
+            2102,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.15659
+        }
+      },
+      "svg_editable_text_elements": 35,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/qa/fig06_imu_observer_trace_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "Full P3 seed-42 trace, uncertainty, validity/fallback interval, gain, and local error difference are readable at 89 mm."
+  }
+}

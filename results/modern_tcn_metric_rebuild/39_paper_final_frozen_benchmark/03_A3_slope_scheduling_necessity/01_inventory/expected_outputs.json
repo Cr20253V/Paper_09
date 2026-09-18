@@ -1,0 +1,33 @@
+{
+  "case_count": 18,
+  "per_controller_samples": 62588,
+  "per_controller_simulation_s": 625.82,
+  "total_samples": 187764,
+  "total_simulation_s": 1877.46,
+  "per_case": [
+    "case_manifest.json",
+    "attempt_001/case_out.mat",
+    "attempt_001/trace.csv",
+    "attempt_001/case_metrics.json",
+    "attempt_001/run.log",
+    "attempt_001/attempt_receipt.json"
+  ],
+  "summary": [
+    "a3_case_table.csv",
+    "a3_case_table.jsonl",
+    "controller_summary.csv",
+    "paired_effects.csv",
+    "bootstrap_ci.json",
+    "safety_gates.csv",
+    "worst_cases.csv"
+  ],
+  "top_level": [
+    "source_manifest.json",
+    "run_manifest.json",
+    "artifact_manifest.json",
+    "decision.json",
+    "receipt.json",
+    "task_status.json",
+    "README.md"
+  ]
+}

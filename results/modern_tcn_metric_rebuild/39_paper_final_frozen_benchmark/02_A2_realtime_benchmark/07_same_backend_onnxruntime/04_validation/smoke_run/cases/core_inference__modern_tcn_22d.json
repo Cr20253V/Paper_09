@@ -1,0 +1,57 @@
+{
+  "case_id": "core_inference__modern_tcn_22d",
+  "method_id": "modern_tcn_22d",
+  "comparison_group": "architecture_only",
+  "case_status": "COMPLETE",
+  "formal": false,
+  "batch": 1,
+  "warmup_count": 5,
+  "formal_count": 20,
+  "input_shape": [
+    1,
+    128,
+    22
+  ],
+  "input_dtype": "float32",
+  "input_contiguous": "C",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\32_four_algorithm_10seed_closed_loop\\01_modern_fixed_onnx\\seed42\\modern_fixed_seed42.onnx",
+  "model_sha256": "bad282e477990865a2f9598926d1015b39b79312991415a459db1cba362fe4fd",
+  "model_file_bytes": 472135,
+  "parameter_count": 118538,
+  "runtime": "onnxruntime",
+  "runtime_version": "1.23.2",
+  "provider": "CPUExecutionProvider",
+  "intra_op_num_threads": 1,
+  "inter_op_num_threads": 1,
+  "execution_mode": "ORT_SEQUENTIAL",
+  "graph_optimization_level": "ORT_ENABLE_ALL",
+  "timer": "time.perf_counter_ns",
+  "p50_ms": 0.35295,
+  "p95_ms": 0.38215,
+  "p99_ms": 0.38291,
+  "max_ms": 0.3831,
+  "over_10ms_count": 0,
+  "over_10ms_rate": 0.0,
+  "memory_before_session": {
+    "working_set_bytes": 97595392,
+    "peak_working_set_bytes": 138088448,
+    "private_bytes": 852172800,
+    "peak_pagefile_bytes": 892854272
+  },
+  "memory_before_timing": {
+    "working_set_bytes": 104488960,
+    "peak_working_set_bytes": 138088448,
+    "private_bytes": 856723456,
+    "peak_pagefile_bytes": 892854272
+  },
+  "memory_after_timing": {
+    "working_set_bytes": 105218048,
+    "peak_working_set_bytes": 138088448,
+    "private_bytes": 856723456,
+    "peak_pagefile_bytes": 892854272
+  },
+  "peak_working_set_delta_from_before_session_bytes": 0,
+  "raw_timing_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\04_validation\\smoke_run\\raw_timing\\core_inference__modern_tcn_22d.csv",
+  "python": "3.10.9",
+  "python_executable": "E:\\Matlab\\Simulink\\S-Function_16\\.venv\\Scripts\\python.exe"
+}

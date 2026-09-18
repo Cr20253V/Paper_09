@@ -1,0 +1,15 @@
+﻿source_task,family,method,expected_count,executed_evaluable_count,hard_fail_count,observed_hard_fail_rate,protocol_nonpass_count,protocol_nonpass_rate,status
+A1,closed_loop_v2::gru_22d,gru_22d,60,60,60,1.0,60,1.0,FAIL
+A1,closed_loop_v2::modern_tcn_22d,modern_tcn_22d,60,60,0,0.0,60,1.0,UNEVALUABLE
+A1,closed_loop_v2::modern_tcn_delta_bank_124,modern_tcn_delta_bank_124,60,60,24,0.4,60,1.0,FAIL
+A1,closed_loop_v2::tcn_22d,tcn_22d,60,60,60,1.0,60,1.0,FAIL
+A1,model_qualification_full_v2::gru_22d,gru_22d,60,60,55,0.9166666666666666,60,1.0,FAIL
+A1,model_qualification_full_v2::modern_tcn_22d,modern_tcn_22d,60,60,0,0.0,60,1.0,UNEVALUABLE
+A1,model_qualification_full_v2::modern_tcn_delta_bank_124,modern_tcn_delta_bank_124,60,60,12,0.2,60,1.0,FAIL
+A1,model_qualification_full_v2::tcn_22d,tcn_22d,60,60,60,1.0,60,1.0,FAIL
+A3,A3_IMU_VS_ZS,A3_IMU_VS_ZS,6,6,0,0.0,6,1.0,UNEVALUABLE
+A3,A3_ORACLE_VS_ZS,A3_ORACLE_VS_ZS,6,6,0,0.0,6,1.0,UNEVALUABLE
+A4,A4_FUSION_VS_MTCN,A4_FUSION_VS_MTCN,60,60,0,0.0,60,1.0,UNEVALUABLE
+A4,A4_IMU_VS_ZS,A4_IMU_VS_ZS,6,6,0,0.0,6,1.0,UNEVALUABLE
+A4,A4_MTCN_VS_ZS,A4_MTCN_VS_ZS,60,60,1,0.016666666666666666,60,1.0,FAIL
+A4,A4_ORACLE_VS_ZS,A4_ORACLE_VS_ZS,6,6,0,0.0,6,1.0,UNEVALUABLE

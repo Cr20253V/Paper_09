@@ -1,0 +1,46 @@
+{
+  "minimum_font_pt": 6.5,
+  "text_overflow_count": 0,
+  "text_overflow": [],
+  "cross_axes_text_overlap_count": 0,
+  "cross_axes_text_overlaps": [],
+  "svg_text_elements": 51,
+  "svg_text_editable": true,
+  "status": "PASS",
+  "final_size_mm": [
+    183.0,
+    104.0
+  ],
+  "png_pixels_300dpi": [
+    2161,
+    1228
+  ],
+  "tiff_pixels_600dpi": [
+    4322,
+    2456
+  ],
+  "pdf_type3_font_count": 0,
+  "pdf_embedded_truetype_font_count": 2,
+  "pdf_tounicode_map_count": 2,
+  "tiff_compression": "tiff_lzw",
+  "colorblind_minimum_pair_distance": {
+    "protanopia": 0.25016004664019587,
+    "deuteranopia": 0.198844658737274
+  },
+  "redundant_encodings": "Favorable, unchanged, and adverse route means use distinct color, marker shape, and fill; aggregate status uses fill and label.",
+  "grayscale_preview": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/qa/fig09_node44r1_formal_summary_grayscale.png",
+  "deuteranopia_preview": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/qa/fig09_node44r1_formal_summary_deuteranopia.png",
+  "numeric_reconstruction": {
+    "matched_pairs": 60,
+    "model_seeds": 10,
+    "routes": 6,
+    "route_mean_max_abs_reconstruction_error": 1.1102230246251565e-16,
+    "favorable_route_metric_means": 14,
+    "unchanged_route_metric_means": 3,
+    "adverse_route_metric_means": 1,
+    "sole_adverse_mean": "P6 J_delta_u",
+    "fusion_safety_failure_count": 0,
+    "overall_joint_rule_status": "INCONCLUSIVE",
+    "safety_summary_rows": 2
+  }
+}

@@ -1,0 +1,20 @@
+﻿{
+    "task_id":  "A2",
+    "protocol_id":  "A0_paper_final_unified_protocol_v1",
+    "status":  "PARTIAL_CORE_COMPLETE_WAITING_FOR_FINAL_FUSION",
+    "environment_sha256":  "549abbfb4e54f7486f9a012976785ad3f5bc1db546d801033815ba570f9bd84f",
+    "phase1_cases_complete":  11,
+    "phase1_a5_cases_complete":  9,
+    "phase2_cases_complete":  0,
+    "protected_artifacts_unchanged":  true,
+    "raw_timing_samples":  110000,
+    "raw_timing_validation":  "PASS",
+    "fusion_status":  "NOT_ELIGIBLE_FINAL_FUSION_NOT_FROZEN",
+    "summary_files":  [
+                          "06_summary/runtime_summary.csv",
+                          "06_summary/supplemental_runtime_summary.csv",
+                          "06_summary/parameter_model_memory_summary.csv",
+                          "06_summary/raw_timing_validation.csv",
+                          "06_summary/decision.json"
+                      ]
+}

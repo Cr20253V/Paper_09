@@ -1,0 +1,292 @@
+{
+  "figure_id": "fig05_offline_estimator_distribution",
+  "generated_utc": "2026-07-22T04:55:55.641612+00:00",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "archetype": "quantitative grid",
+    "core_conclusion": "ModernTCN-delta has the lowest mean grade MAE and P95 absolute error on the frozen test set; paired effect panels show the magnitude and seed-level consistency of each comparison.",
+    "final_size_mm_requested": [
+      183.0,
+      94.0
+    ],
+    "panel_grid": [
+      2,
+      2
+    ],
+    "visual_design": "raw-seed distributions above paired estimation plots",
+    "test_split_note": "run-disjoint, not fully path-template-disjoint"
+  },
+  "validation": {
+    "status": "PASS",
+    "row_count": 40,
+    "method_count": 4,
+    "seeds_per_method": {
+      "modern_tcn_delta_bank_124": 10,
+      "modern_tcn_22d": 10,
+      "gru_22d": 10,
+      "tcn_22d": 10
+    },
+    "seed_order": [
+      1,
+      7,
+      11,
+      21,
+      42,
+      73,
+      101,
+      202,
+      340,
+      520
+    ],
+    "duplicate_method_seed_rows": 0,
+    "all_metrics_finite": true,
+    "absolute_axis_limits": {
+      "grade_mae_deg": [
+        0.4,
+        1.2
+      ],
+      "p95_abs_error_deg": [
+        1.0,
+        4.0
+      ]
+    },
+    "absolute_axis_policy": "point estimates use explicit nonzero limits with ample margins",
+    "cross_method_pairing_lines_removed": true,
+    "paired_effect_definition": "competitor minus ModernTCN-delta; positive favors delta",
+    "paired_effect_competitors": [
+      "modern_tcn_22d",
+      "gru_22d",
+      "tcn_22d"
+    ],
+    "ci_definition": "two-sided 95% Student-t interval for absolute method means and within-seed paired differences",
+    "ci_degrees_of_freedom": 9,
+    "output_canvas_geometry": {
+      "requested_size_mm": [
+        183.0,
+        94.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            1110
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            93.98
+          ]
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2220
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            93.98
+          ]
+        }
+      },
+      "svg_editable_text": true,
+      "status": "PASS"
+    }
+  },
+  "frozen_input": {
+    "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/03_offline/offline_case_metrics.csv",
+    "bytes": 89660,
+    "sha256": "12ac98b5920dc0228ea064e781b47b4acbc62942f2f0bdf6ffeafc6d893cd1e2"
+  },
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/source_data/fig05_offline_estimator_distribution_source_data.csv",
+    "rows": 40,
+    "sha256": "37ac3849a8f24d10094f165c8a73c6c198f2820591c9bc6627f0c3e0e567397d"
+  },
+  "metric_summary": [
+    {
+      "method_id": "modern_tcn_delta_bank_124",
+      "method_label": "ModernTCN-delta",
+      "metric": "grade_mae_deg",
+      "n_seeds": 10,
+      "mean": 0.5988841710129981,
+      "ci95_lower": 0.5552407815762941,
+      "ci95_upper": 0.642527560449702,
+      "minimum": 0.518888639453515,
+      "maximum": 0.7087790896924933
+    },
+    {
+      "method_id": "modern_tcn_delta_bank_124",
+      "method_label": "ModernTCN-delta",
+      "metric": "p95_abs_error_deg",
+      "n_seeds": 10,
+      "mean": 1.6777749854958954,
+      "ci95_lower": 1.5886164927904853,
+      "ci95_upper": 1.7669334782013055,
+      "minimum": 1.4107342717659963,
+      "maximum": 1.8226574310807648
+    },
+    {
+      "method_id": "modern_tcn_22d",
+      "method_label": "ModernTCN-22D",
+      "metric": "grade_mae_deg",
+      "n_seeds": 10,
+      "mean": 0.6530028565225281,
+      "ci95_lower": 0.6068430023175315,
+      "ci95_upper": 0.6991627107275247,
+      "minimum": 0.5687614422182402,
+      "maximum": 0.767275450947987
+    },
+    {
+      "method_id": "modern_tcn_22d",
+      "method_label": "ModernTCN-22D",
+      "metric": "p95_abs_error_deg",
+      "n_seeds": 10,
+      "mean": 1.806264682254022,
+      "ci95_lower": 1.67548619516262,
+      "ci95_upper": 1.937043169345424,
+      "minimum": 1.5277837571810338,
+      "maximum": 2.123269104213541
+    },
+    {
+      "method_id": "gru_22d",
+      "method_label": "GRU-22D",
+      "metric": "grade_mae_deg",
+      "n_seeds": 10,
+      "mean": 0.885828851812979,
+      "ci95_lower": 0.7881042644633821,
+      "ci95_upper": 0.9835534391625759,
+      "minimum": 0.6370455844165206,
+      "maximum": 1.1104374966607364
+    },
+    {
+      "method_id": "gru_22d",
+      "method_label": "GRU-22D",
+      "metric": "p95_abs_error_deg",
+      "n_seeds": 10,
+      "mean": 2.259499955283051,
+      "ci95_lower": 2.037135603171022,
+      "ci95_upper": 2.4818643073950795,
+      "minimum": 1.8130641102263745,
+      "maximum": 2.90706604835575
+    },
+    {
+      "method_id": "tcn_22d",
+      "method_label": "TCN-22D",
+      "metric": "grade_mae_deg",
+      "n_seeds": 10,
+      "mean": 0.9153691292422238,
+      "ci95_lower": 0.8553000082436837,
+      "ci95_upper": 0.9754382502407639,
+      "minimum": 0.7714682205531258,
+      "maximum": 1.0538205993934318
+    },
+    {
+      "method_id": "tcn_22d",
+      "method_label": "TCN-22D",
+      "metric": "p95_abs_error_deg",
+      "n_seeds": 10,
+      "mean": 2.6357961635340903,
+      "ci95_lower": 2.309679153319399,
+      "ci95_upper": 2.9619131737487816,
+      "minimum": 2.1428855275717367,
+      "maximum": 3.658115890646154
+    }
+  ],
+  "paired_effect_summary": [
+    {
+      "metric": "grade_mae_deg",
+      "competitor_id": "modern_tcn_22d",
+      "competitor_label": "ModernTCN-22D",
+      "difference_definition": "competitor minus ModernTCN-delta",
+      "delta_lower_error_seed_count": 8,
+      "equal_seed_count": 0,
+      "delta_higher_error_seed_count": 2,
+      "mean_paired_difference": 0.054118685509530015,
+      "ci95_lower": -0.004015870144120512,
+      "ci95_upper": 0.11225324116318054
+    },
+    {
+      "metric": "grade_mae_deg",
+      "competitor_id": "gru_22d",
+      "competitor_label": "GRU-22D",
+      "difference_definition": "competitor minus ModernTCN-delta",
+      "delta_lower_error_seed_count": 9,
+      "equal_seed_count": 0,
+      "delta_higher_error_seed_count": 1,
+      "mean_paired_difference": 0.286944680799981,
+      "ci95_lower": 0.1737691841917114,
+      "ci95_upper": 0.40012017740825057
+    },
+    {
+      "metric": "grade_mae_deg",
+      "competitor_id": "tcn_22d",
+      "competitor_label": "TCN-22D",
+      "difference_definition": "competitor minus ModernTCN-delta",
+      "delta_lower_error_seed_count": 10,
+      "equal_seed_count": 0,
+      "delta_higher_error_seed_count": 0,
+      "mean_paired_difference": 0.31648495822922573,
+      "ci95_lower": 0.23423327704734337,
+      "ci95_upper": 0.3987366394111081
+    },
+    {
+      "metric": "p95_abs_error_deg",
+      "competitor_id": "modern_tcn_22d",
+      "competitor_label": "ModernTCN-22D",
+      "difference_definition": "competitor minus ModernTCN-delta",
+      "delta_lower_error_seed_count": 7,
+      "equal_seed_count": 0,
+      "delta_higher_error_seed_count": 3,
+      "mean_paired_difference": 0.12848969675812635,
+      "ci95_lower": 0.0067260148049630986,
+      "ci95_upper": 0.2502533787112896
+    },
+    {
+      "metric": "p95_abs_error_deg",
+      "competitor_id": "gru_22d",
+      "competitor_label": "GRU-22D",
+      "difference_definition": "competitor minus ModernTCN-delta",
+      "delta_lower_error_seed_count": 10,
+      "equal_seed_count": 0,
+      "delta_higher_error_seed_count": 0,
+      "mean_paired_difference": 0.5817249697871552,
+      "ci95_lower": 0.3289324383740246,
+      "ci95_upper": 0.8345175012002857
+    },
+    {
+      "metric": "p95_abs_error_deg",
+      "competitor_id": "tcn_22d",
+      "competitor_label": "TCN-22D",
+      "difference_definition": "competitor minus ModernTCN-delta",
+      "delta_lower_error_seed_count": 10,
+      "equal_seed_count": 0,
+      "delta_higher_error_seed_count": 0,
+      "mean_paired_difference": 0.9580211780381948,
+      "ci95_lower": 0.6121817624287992,
+      "ci95_upper": 1.3038605936475904
+    }
+  ],
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/qa/staging/fig05_offline_estimator_distribution.svg",
+      "bytes": 69431,
+      "sha256": "be1ff391743267fd789499325471dec8fd4bc3b1988396318a3714ef6e4d314b"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/qa/staging/fig05_offline_estimator_distribution.pdf",
+      "bytes": 56848,
+      "sha256": "867218f7354942b7b696e0640cfe645205f11c1191471173a4e98c318c1446ed"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/qa/staging/fig05_offline_estimator_distribution.tiff",
+      "bytes": 904424,
+      "sha256": "206ead53b638068ee7573f136d21a8377ec434b4588c2d90cd6b4238ba1a3b91"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/qa/staging/fig05_offline_estimator_distribution.png",
+      "bytes": 141459,
+      "sha256": "4a54a7c93f549dd5e97ad723fa854a96f2a15861c560fe46fd0dbac63d8bc7fc"
+    }
+  ]
+}

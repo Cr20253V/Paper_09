@@ -1,0 +1,21 @@
+{
+  "identifier": "Simulink:Logging:FileCreationError",
+  "message": "无法创建在 '配置参数' > '数据导入/导出' > '将数据集数据记录到文件' 中指定的文件 'ModernTCN_out.mat'。可能的原因包括: 指定的目录不存在，目录或文件不可写，磁盘配额用尽，文件被另一个仿真使用，或指定的文件是指向不存在的目录的软链接。",
+  "stack": [
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\src\\Compare\\run_closed_loop_model_once.m",
+      "name": "run_closed_loop_model_once",
+      "line": 153
+    },
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\tools\\run_node53_v7_exploratory_six_path.m",
+      "name": "local_run_case",
+      "line": 47
+    },
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\tools\\run_node53_v7_exploratory_six_path.m",
+      "name": "run_node53_v7_exploratory_six_path",
+      "line": 28
+    }
+  ]
+}

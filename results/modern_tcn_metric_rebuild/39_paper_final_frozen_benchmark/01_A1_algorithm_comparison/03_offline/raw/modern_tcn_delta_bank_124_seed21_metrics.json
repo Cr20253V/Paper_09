@@ -1,0 +1,237 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "method_id": "modern_tcn_delta_bank_124",
+  "seed": 21,
+  "raw_prediction_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\03_offline\\raw\\modern_tcn_delta_bank_124_seed21_predictions.csv",
+  "metrics": {
+    "loss_total": NaN,
+    "acc_main": 0.961965574680733,
+    "acc_turn": 0.6141032759578012,
+    "acc_turn_pure": 0.6349368816103719,
+    "acc_turn_transition": 0.5230998509687034,
+    "false_turn_straight": 0.3585100879461976,
+    "flat_recall": 0.9523809523809523,
+    "stall_recall": 0.6458333333333334,
+    "slope_recall": 0.9756363636363636,
+    "flat_as_stall_ratio": 0.0013227513227513227,
+    "stall_as_flat_ratio": 0.09375,
+    "recall_main": [
+      0.9523809523809523,
+      0.6458333333333334,
+      0.9756363636363636
+    ],
+    "turn_right_recall": 0.6057571964956195,
+    "turn_straight_recall": 0.6414899120538023,
+    "turn_left_recall": 0.5609195402298851,
+    "recall_turn": [
+      0.6057571964956195,
+      0.6414899120538023,
+      0.5609195402298851
+    ],
+    "cm_turn": [
+      [
+        484,
+        211,
+        104
+      ],
+      [
+        314,
+        1240,
+        379
+      ],
+      [
+        123,
+        259,
+        488
+      ]
+    ],
+    "n_turn_transition": 671,
+    "n_turn_pure": 2931,
+    "cm_main": [
+      [
+        720,
+        1,
+        35
+      ],
+      [
+        9,
+        62,
+        25
+      ],
+      [
+        61,
+        6,
+        2683
+      ]
+    ],
+    "main_confidence_mean": 0.9916398109872918,
+    "main_confidence_error_mean": 0.8959778161356399,
+    "main_low_conf_0p60_ratio": 0.003331482509716824,
+    "main_low_conf_0p70_ratio": 0.006385341476957246,
+    "main_confidence_bins": [
+      {
+        "bin": "[0.00,0.60)",
+        "n": 12,
+        "error_rate": 0.6666666666666666,
+        "mean_confidence": 0.5508687926221029
+      },
+      {
+        "bin": "[0.60,0.70)",
+        "n": 11,
+        "error_rate": 0.45454545454545453,
+        "mean_confidence": 0.6477308046715975
+      },
+      {
+        "bin": "[0.70,0.80)",
+        "n": 33,
+        "error_rate": 0.6060606060606061,
+        "mean_confidence": 0.7422680850832557
+      },
+      {
+        "bin": "[0.80,0.90)",
+        "n": 42,
+        "error_rate": 0.35714285714285715,
+        "mean_confidence": 0.8539461810676624
+      },
+      {
+        "bin": "[0.90,1.00)",
+        "n": 3504,
+        "error_rate": 0.025399543378995432,
+        "mean_confidence": 0.9982278962331003
+      }
+    ],
+    "turn_confidence_mean": 0.8648054944733969,
+    "turn_confidence_error_mean": 0.8102672155421021,
+    "turn_low_conf_0p60_ratio": 0.10882842865074958,
+    "turn_low_conf_0p70_ratio": 0.20932815102720712,
+    "turn_confidence_bins": [
+      {
+        "bin": "[0.00,0.60)",
+        "n": 392,
+        "error_rate": 0.6377551020408163,
+        "mean_confidence": 0.5405130185028127
+      },
+      {
+        "bin": "[0.60,0.70)",
+        "n": 362,
+        "error_rate": 0.5524861878453039,
+        "mean_confidence": 0.6490003885280683
+      },
+      {
+        "bin": "[0.70,0.80)",
+        "n": 322,
+        "error_rate": 0.43788819875776397,
+        "mean_confidence": 0.7498403328524244
+      },
+      {
+        "bin": "[0.80,0.90)",
+        "n": 415,
+        "error_rate": 0.4457831325301205,
+        "mean_confidence": 0.8509979266435402
+      },
+      {
+        "bin": "[0.90,1.00)",
+        "n": 2111,
+        "error_rate": 0.2908574135480815,
+        "mean_confidence": 0.9822820561143355
+      }
+    ],
+    "theta_mae_rad": 0.009056315209657587,
+    "theta_mae_deg": 0.518888639453515,
+    "uphill_recall": 0.7557339449541285,
+    "downhill_recall": 0.7945516458569807,
+    "slope_sign_acc": 0.9660581859669138,
+    "theta_flat_mae_deg": 0.503695843069136,
+    "theta_flat_abs_p95_deg": 2.3893758355981767,
+    "theta_flat_abs_max_deg": 5.40125980790637,
+    "theta_flat_bias_deg": 0.23330019092469145,
+    "theta_flat_n": 756.0,
+    "theta_near_flat_mae_deg": 0.5258299362327864,
+    "theta_near_flat_abs_p95_deg": 1.349854832014286,
+    "theta_near_flat_abs_max_deg": 2.8063260141420745,
+    "theta_near_flat_bias_deg": 0.26126822074111433,
+    "theta_near_flat_n": 278.0,
+    "theta_true_zero_mae_deg": NaN,
+    "theta_true_zero_abs_p95_deg": NaN,
+    "theta_true_zero_abs_max_deg": NaN,
+    "theta_true_zero_bias_deg": NaN,
+    "theta_true_zero_n": 0.0,
+    "theta_flat_turn_mae_deg": 0.4854552986474944,
+    "theta_flat_turn_abs_p95_deg": 1.3122959846221858,
+    "theta_flat_turn_abs_max_deg": 2.6241285835978685,
+    "theta_flat_turn_bias_deg": 0.26613715463969856,
+    "theta_flat_turn_n": 141.0,
+    "theta_slope_control_mae_deg": 0.518888639453515,
+    "theta_slope_control_abs_p95_deg": 9.393259704412113,
+    "theta_slope_control_abs_max_deg": 12.020735934476935,
+    "theta_slope_control_bias_deg": 0.0353955072648894,
+    "theta_slope_control_n": 3506.0,
+    "theta_all_mae_deg": 0.518888639453515,
+    "theta_all_rmse_deg": 0.7359325442162362,
+    "theta_all_p95_abs_err_deg": 1.4107342717659963,
+    "theta_all_max_abs_err_deg": 7.5207358092530265,
+    "theta_all_bias_deg": 0.0353955072648894,
+    "theta_all_n": 3506.0,
+    "theta_active_abs_ge_2_mae_deg": 0.5230652772959116,
+    "theta_active_abs_ge_2_rmse_deg": 0.7465600222636758,
+    "theta_active_abs_ge_2_p95_abs_err_deg": 1.3824996998080206,
+    "theta_active_abs_ge_2_max_abs_err_deg": 7.5207358092530265,
+    "theta_active_abs_ge_2_bias_deg": -0.019010289406678,
+    "theta_active_abs_ge_2_n": 2750.0,
+    "theta_abs_le_8_mae_deg": 0.5118539015223377,
+    "theta_abs_le_8_rmse_deg": 0.7216683247660395,
+    "theta_abs_le_8_p95_abs_err_deg": 1.3596409723106067,
+    "theta_abs_le_8_max_abs_err_deg": 7.5207358092530265,
+    "theta_abs_le_8_bias_deg": 0.07596640307803776,
+    "theta_abs_le_8_n": 2815.0,
+    "theta_abs_le_10_mae_deg": 0.518888639453515,
+    "theta_abs_le_10_rmse_deg": 0.7359325442162362,
+    "theta_abs_le_10_p95_abs_err_deg": 1.4107342717659963,
+    "theta_abs_le_10_max_abs_err_deg": 7.5207358092530265,
+    "theta_abs_le_10_bias_deg": 0.0353955072648894,
+    "theta_abs_le_10_n": 3506.0,
+    "theta_pos_8_10_mae_deg": 0.651065009260639,
+    "theta_pos_8_10_rmse_deg": 0.9102061185285737,
+    "theta_pos_8_10_p95_abs_err_deg": 1.8869574082244758,
+    "theta_pos_8_10_max_abs_err_deg": 3.86284336717833,
+    "theta_pos_8_10_bias_deg": -0.3426321734484269,
+    "theta_pos_8_10_n": 328.0,
+    "theta_neg_10_8_mae_deg": 0.4540096807194313,
+    "theta_neg_10_8_rmse_deg": 0.6660430607852162,
+    "theta_neg_10_8_p95_abs_err_deg": 1.1486618556476518,
+    "theta_neg_10_8_max_abs_err_deg": 5.2139119878411515,
+    "theta_neg_10_8_bias_deg": 0.06235420577716239,
+    "theta_neg_10_8_n": 363.0,
+    "theta_pos_6_8_mae_deg": 0.45661750386465194,
+    "theta_pos_6_8_rmse_deg": 0.6522750463953164,
+    "theta_pos_6_8_p95_abs_err_deg": 1.1837933605304354,
+    "theta_pos_6_8_max_abs_err_deg": 4.155297980173113,
+    "theta_pos_6_8_bias_deg": -0.1064684749369087,
+    "theta_pos_6_8_n": 378.0,
+    "theta_neg_8_6_mae_deg": 0.4668720069069212,
+    "theta_neg_8_6_rmse_deg": 0.6277414593311503,
+    "theta_neg_8_6_p95_abs_err_deg": 1.1431868186976522,
+    "theta_neg_8_6_max_abs_err_deg": 3.5349031466809806,
+    "theta_neg_8_6_bias_deg": 0.13427481594293042,
+    "theta_neg_8_6_n": 378.0,
+    "theta_neg_4_2_mae_deg": 0.5089530135886542,
+    "theta_neg_4_2_rmse_deg": 0.7395157951311566,
+    "theta_neg_4_2_p95_abs_err_deg": 1.2937895870660363,
+    "theta_neg_4_2_max_abs_err_deg": 4.159900887343467,
+    "theta_neg_4_2_bias_deg": -0.1382355058909978,
+    "theta_neg_4_2_n": 330.0,
+    "theta_neg_2_0p5_mae_deg": 0.528702203420553,
+    "theta_neg_2_0p5_rmse_deg": 0.6871458787724193,
+    "theta_neg_2_0p5_p95_abs_err_deg": 1.473364459756709,
+    "theta_neg_2_0p5_max_abs_err_deg": 2.41463750368688,
+    "theta_neg_2_0p5_bias_deg": 0.3085500550822038,
+    "theta_neg_2_0p5_n": 207.0,
+    "theta_pos_0p5_2_mae_deg": 0.46188922132655974,
+    "theta_pos_0p5_2_rmse_deg": 0.6733607514565719,
+    "theta_pos_0p5_2_p95_abs_err_deg": 1.2914037166115864,
+    "theta_pos_0p5_2_max_abs_err_deg": 3.8012598203005563,
+    "theta_pos_0p5_2_bias_deg": 0.14713106114767813,
+    "theta_pos_0p5_2_n": 271.0,
+    "theta_edge_p95_abs_err": 1.8869574082244758
+  }
+}

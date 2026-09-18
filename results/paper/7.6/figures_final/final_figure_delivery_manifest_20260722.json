@@ -1,0 +1,128 @@
+{
+  "delivery_id": "final_paper_figures_20260722",
+  "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+  "scope": "Figure scripts, frozen-data extraction, exports, and QA only; no TeX modification.",
+  "nature_skill_used": false,
+  "figures": [
+    {
+      "figure_id": "Fig02_dataset_construction_pipeline",
+      "automatic_qa": "PASS",
+      "visual_qa": "PASS",
+      "candidate_decision": "New drawing: no acceptable final candidate existed.",
+      "manifest": "results/paper/7.6/figures_final/Fig02_dataset_construction_pipeline/manifest.json",
+      "manifest_sha256": "4c2d20582aaea5fa103b24a6b3155466d6040f7926c00175c169d556efbbafd9",
+      "source_data_sha256": "1b9ba37aca1ae6791967a2201cca3516589ea964984f966ec49eb00884dfad0f",
+      "output_sha256": {
+        "pdf": "c86ca6e200f1f9240659b825f7dd86c57c0c209b390ff9720cabae9c4736ba78",
+        "svg": "fdcd12ab7bca460598ca03bfb81428388da350a7779445e867f0271dc48c3859",
+        "png": "38059f09b2041b60dff8e32e1e55b824bd0af619e3306eb20ed94c18bbed789a",
+        "tiff": "63292a778a7570f5fce65d3ab9eb4e1d661d09b7618e095fc4f247d39b72f626"
+      }
+    },
+    {
+      "figure_id": "Fig03_closed_loop_route_set",
+      "automatic_qa": "PASS",
+      "visual_qa": "PASS",
+      "candidate_decision": "Redrawn from the useful non-Nature route-set concept and revalidated against frozen traces.",
+      "manifest": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/manifest.json",
+      "manifest_sha256": "5eb3909a052b4c146be75a1f2d3320a94f97cf78086bdb1ffd9c63346d139b0c",
+      "source_data_sha256": "10cfdf98d3a6d6907a1c423a99e0ac248f41c75bd1627cb8f5d39f589007c64e",
+      "output_sha256": {
+        "pdf": "4e049b932067662a1ba4b8323045b881eaeb9682d8cc96963ff64984453b0bb8",
+        "svg": "f5d6d3ba90613ad5392c943858a346c905c117b3a234c3f3db28ddeaa64156e4",
+        "png": "76aa74cab8c2ad7af0b9b70d8c7c644386d3d19131ac310a09a2c577d0b436c1",
+        "tiff": "a355118b59aeff39f19eef41b97f311b1fdea78751c70c5ea7fa8c40012b4bde"
+      }
+    },
+    {
+      "figure_id": "Fig04_slope_necessity_effects",
+      "automatic_qa": "PASS",
+      "visual_qa": "PASS",
+      "candidate_decision": "Redrawn: the candidate used the prohibited Oracle label and needed route-level evidence plus intervals.",
+      "manifest": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/manifest.json",
+      "manifest_sha256": "061584e42ef76d642e8bbc19cad59c83a66e91fefd233d230859f5d851e0160f",
+      "source_data_sha256": "fba2ff08aafb55e16ab5e20a743327b8e7d35316c9a9843e713ef7b467b2f5f7",
+      "output_sha256": {
+        "pdf": "689c43bccdb59abdf6de7d63937af26c726bc882d486875f72c2f0daaff90335",
+        "svg": "f09de2d26dfa64531f41d133b1b10fe63e70b0c717de33dcdc9513924693bd33",
+        "png": "3f8eec752bda4372e6b984279688bd72839d6cce0e4979630e6b0892104d05ff",
+        "tiff": "879a54e38ddabba690bf63970c11ad56ab4d20f4c4ea0c2872db72521ef51e3e"
+      }
+    },
+    {
+      "figure_id": "Fig05_offline_estimator_distribution",
+      "automatic_qa": "PASS",
+      "visual_qa": "PASS",
+      "candidate_decision": "Candidate concept retained but fully regenerated from the frozen 4-method x 10-seed table.",
+      "manifest": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/manifest.json",
+      "manifest_sha256": "669abaae0c7fbdce52ae6beb6433ebf7f107619db4b4833c1df420a449052bef",
+      "source_data_sha256": "b1608b4bdb49562dbf9295dfa1498181e5c8d6d56eac650e45fcdd0cddbfb749",
+      "output_sha256": {
+        "pdf": "60f49e1a5cbc87eb4260ceaaea31a504ac3fff8b3ead2fac49aafb81a4dde900",
+        "svg": "fc516dc13f9f1580177de01b91ea44933d96124e544e6f6517fc1667c93e6e6e",
+        "png": "739866e21a83a07089c694ef0c71ffd1b30ac6bb97cd6f7c4bd0c99eaf5ff0cb",
+        "tiff": "248ce556431b86dbf73ab8c4f00114b2f019f57331fcbb789dedec702cee06ee"
+      }
+    },
+    {
+      "figure_id": "Fig06_imu_observer_trace",
+      "automatic_qa": "PASS",
+      "visual_qa": "PASS",
+      "candidate_decision": "Redrawn: the candidate was double-column while the final contract requires a single-column figure.",
+      "manifest": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/manifest.json",
+      "manifest_sha256": "0ed2c2bd508eefeac15e46ac501f53ba01f5f7c3dba2c4b5ef318a15ae4a872c",
+      "source_data_sha256": "ae7b1f1a09aa3891ab0b4169fe98540a08431f7736085d6bf8a1e1519563103f",
+      "output_sha256": {
+        "pdf": "69f5e144e20a9da0c010e765774bae81961e673f2ad45d6fa7ce5870c7c978dd",
+        "svg": "c9ffb7c1063325acdf3738ac58f229273a48e107a3309b2cf4ae29e8a00efc07",
+        "png": "12eee9d4162aa2c7627c2ab08f2884c7e131daf048a46d0c607e295421769204",
+        "tiff": "331fa5a0bf6dd3ed63d0106a0feb9b89502a2af7cb82b066f352440443ef8bfb"
+      }
+    },
+    {
+      "figure_id": "Fig07_fusion_case_distribution",
+      "automatic_qa": "PASS",
+      "visual_qa": "PASS",
+      "candidate_decision": "Redrawn: the candidate omitted grade-error ratios, active-sample classes, and complete failure retention.",
+      "manifest": "results/paper/7.6/figures_final/Fig07_fusion_case_distribution/manifest.json",
+      "manifest_sha256": "926097d653632584eb9a518c8ec2d0cddfdc1a1f41032da6022ae3a04689d577",
+      "source_data_sha256": "12e5d06be9d985043442a8a93182fe2163045cb7d3bdf1987958040a53f76c9e",
+      "output_sha256": {
+        "pdf": "58dd6d259313b9860a065717f45c7201377b6d59a59b94c1151d761aa2172c9b",
+        "svg": "d4f1d25201b03c295165a0f820c84ccf58ce03775e895626125b83ad08923d09",
+        "png": "6b89ea131b8f882c9fad6cfd9c929d996c6f4fdc626039c6490299ce446e10e8",
+        "tiff": "3db3e082ae83c7970d31d3e0884973c9f650d26d4ffb44be268bb35748fb1023"
+      }
+    },
+    {
+      "figure_id": "Fig08_fusion_qualitative_trace",
+      "automatic_qa": "PASS",
+      "visual_qa": "PASS",
+      "candidate_decision": "Redrawn as a mechanism figure using the objectively selected P2 seed-7 representative case.",
+      "manifest": "results/paper/7.6/figures_final/Fig08_fusion_qualitative_trace/manifest.json",
+      "manifest_sha256": "78b04a6b1d6c770bff0aaac7189b9aa4e73cc76ffba34919483e3f916a8420e7",
+      "source_data_sha256": "d84b89b9113e85e4725822c2dd4ad0724af68e9813a5896abc9cfb677a64c8e3",
+      "output_sha256": {
+        "pdf": "2382b6120bf4b185a8e3cee56a42a3a6b03d0608e46f0b1b1edce6d2f692517d",
+        "svg": "321eced460f793c63cb8b4bb4790dda5cc4c3a10fe554baddc89aa73c32b7bae",
+        "png": "6f371c5693bf25c1ff0cffe066101a97c074e5422c9ac3f854fa1efcf90df925",
+        "tiff": "863d6f2adc1c7c888eb4f01fef3c8906dc001d2d7308b36d2ea9b98045d95b44"
+      }
+    },
+    {
+      "figure_id": "Fig09_five_controller_qualitative",
+      "automatic_qa": "PASS",
+      "visual_qa": "PASS",
+      "candidate_decision": "Redrawn from the formal six-route Node42 comparison as ten-seed summaries on P1, P2, and P5.",
+      "manifest": "results/paper/7.6/figures_final/Fig09_five_controller_qualitative/manifest.json",
+      "manifest_sha256": "a539328f17cb5e6b7880c847fe2ab09c05ba64a8ff118056071179919640c6a1",
+      "source_data_sha256": "5962d3b7c92722b4c0e834e690b7cb186b7a64c0997bcefecc7cef1f0e572ce4",
+      "output_sha256": {
+        "pdf": "e9594e53d7dd228b963eb3ee9d02ed444930802c5e74860112b49e3564c44a4f",
+        "svg": "d2b9e4a3c8cae6a162ea005aebb26a067f831d2a4e4711f37a8d08e0f2547ad8",
+        "png": "de5f0f11f2f80c82ddcb49f7f434fced063a3680577efb287dfae9fe40e9bad1",
+        "tiff": "c85cdac58b2b3ab863fe499f3e2c1836ff80cdb9866d8b8c864eead57c828000"
+      }
+    }
+  ]
+}

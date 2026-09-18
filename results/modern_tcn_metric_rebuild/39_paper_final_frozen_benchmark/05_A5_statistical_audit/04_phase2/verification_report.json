@@ -1,0 +1,65 @@
+{
+  "task_id": "A5",
+  "phase": 2,
+  "verified_at": "2026-07-20T02:31:45+08:00",
+  "status": "PASS",
+  "checks": [
+    {
+      "check": "required_outputs",
+      "passed": true,
+      "detail": "20/20"
+    },
+    {
+      "check": "analysis_plan_immutable",
+      "passed": true,
+      "detail": "f6f5d85197268cd202748ae50805ad9b6cefe75c451ba5652e82c47f80baf4a9"
+    },
+    {
+      "check": "all_expected_grids_complete",
+      "passed": true,
+      "detail": {
+        "A1_OFFLINE": "40/40",
+        "A1_CLOSED_LOOP": "240/240",
+        "A3_CLOSED_LOOP": "18/18",
+        "A4_CLOSED_LOOP": "138/138"
+      }
+    },
+    {
+      "check": "all_input_hash_audits_pass",
+      "passed": true,
+      "detail": "83/83"
+    },
+    {
+      "check": "source_ci_reproduction",
+      "passed": true,
+      "detail": {
+        "source_rows_checked": 38,
+        "unique_a5_pairs": 34,
+        "max_abs_delta": 2.7755575615628914e-17,
+        "tolerance": 1e-12
+      }
+    },
+    {
+      "check": "partial_status_has_explicit_blockers",
+      "passed": true,
+      "detail": {
+        "status": "PARTIAL",
+        "blocker_count": 7
+      }
+    },
+    {
+      "check": "normalized_long_table_counts",
+      "passed": true,
+      "detail": {
+        "offline": 520,
+        "closed_loop": 5544
+      }
+    },
+    {
+      "check": "unit_tests",
+      "passed": true,
+      "detail": "test_all_three_primary_metrics_required (test_a5_statistical_audit.A5StatisticsTests) ... ok\ntest_deterministic_reference_has_one_unit_per_path (test_a5_statistical_audit.A5StatisticsTests) ... ok\ntest_grid_audit_retains_missing_duplicate_unexpected_nonfinite (test_a5_statistical_audit.A5StatisticsTests) ... ok\ntest_hierarchical_bootstrap_is_deterministic_and_complete (test_a5_statistical_audit.A5StatisticsTests) ... ok\ntest_hierarchical_bootstrap_rejects_incomplete_paths (test_a5_statistical_audit.A5StatisticsTests) ... ok\ntest_lower_is_better_direction_and_zero_denominator (test_a5_statistical_audit.A5StatisticsTests) ... ok\ntest_seed_bootstrap_is_deterministic (test_a5_statistical_audit.A5StatisticsTests) ... ok\ntest_write_boundary (test_a5_statistical_audit.A5StatisticsTests) ... ok\n\n----------------------------------------------------------------------\nRan 8 tests in 0.122s\n\nOK"
+    }
+  ],
+  "artifact_manifest_self_excluded": true
+}

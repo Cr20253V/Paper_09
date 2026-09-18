@@ -1,0 +1,28 @@
+Figure 2 v4 verification record
+Generated: 2026-08-03 18:18:33
+
+Visual changes:
+  selective frames: sensing, conditioning, reference, and plant are icon-led
+  retained frames: feature bank, ModernTCN, observer, fusion, and LPV-MPC
+  typography enlarged across module titles, subtitles, artifacts, and signals
+  AGV steering pair corrected to LF and RR for a right-facing top view
+
+Rendering:
+  renderer exit: 0
+  script SHA-256: 7567EA45FBA2B5FC623C9B58707510900F0F7FD826C275FBC8BB6AFD9F6485AB
+  PDF SHA-256: 4BA3CA07479C05A19BEA136522CA3BCF7E3EE5246520EEEECD0C80BF975F2B42
+  PNG SHA-256: E427B51581D450394092324E4DA3FFAF551E1EC1E3939549B6C4D7643A03742D
+  PNG raster: 4326 x 2520 RGBA
+
+Manuscript compile:
+  pdflatex pass 1: exit 0
+  pdflatex pass 2: exit 0
+  candidate PDF: verification/paper_v4_final_candidate_fig02_redesign.pdf (20 pages)
+
+Rollback:
+  rollback_to_v4.ps1 executed
+  restored PDF hash matched archive_v4
+
+Preservation:
+  active manuscript SHA-256: ECD04C7AE7602C38EB95C568E967AB354A54E3C5D185293A98026A2B2A8E45B3
+  active manuscript modified: no

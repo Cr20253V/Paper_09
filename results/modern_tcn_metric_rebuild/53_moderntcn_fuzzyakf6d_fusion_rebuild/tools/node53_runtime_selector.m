@@ -1,0 +1,14 @@
+function [state,out]=node53_runtime_selector(action,varargin)
+%NODE53_RUNTIME_SELECTOR ModernTCN-delta plus frozen R2_06 FuzzyAKF6D.
+switch lower(char(action))
+ case 'init'
+  params=varargin{1};cfg=varargin{2};state=struct();state.tcn=ModernTCN_state_classifier('init',params,cfg.tcn);[state.fuzzy,f]=node53_fuzzyakf6_estimator('init',cfg.estimator,[]);[state.fusion,~]=node53_uncertainty_fusion('init',cfg.fusion,[]);state.step=0;state.theta_tcn_prev=0;state.cfg=cfg;node53_debug_buffer('reset');out=local_default();out.theta_fuzzyakf=f.theta_imu;
+ case 'update'
+  state=varargin{1};legacy=double(varargin{2}(:));packet=double(varargin{3}(:));if numel(legacy)~=34||numel(packet)~=6||any(~isfinite([legacy;packet]));error('node53:RuntimeInput','Expected finite 34D legacy frame and 6D IMU packet.');end
+  [state.tcn,tcn]=ModernTCN_state_classifier('update',state.tcn,legacy,zeros(2,1));[state.fuzzy,f]=node53_fuzzyakf6_estimator('update',state.fuzzy,packet);theta_tcn=double(tcn.theta_hat_for_mpc);rate=(theta_tcn-state.theta_tcn_prev)/state.cfg.fusion.Ts;ready=false;if isfield(tcn,'debug')&&isfield(tcn.debug,'ready');ready=logical(tcn.debug.ready);end
+  quality=node53_quality_score(state.cfg.quality_model,f,state.cfg.sensor.g);fin=struct('theta_tcn',theta_tcn,'theta_tcn_rate',rate,'conf_main',double(tcn.conf_main),'tcn_ready',ready,'theta_imu',double(f.theta_imu),'observer_valid',logical(f.observer_valid),'quality_score',quality);[state.fusion,fused]=node53_uncertainty_fusion('update',state.fusion,fin);state.step=state.step+1;state.theta_tcn_prev=theta_tcn;out=fused;out.theta_hat_for_mpc=fused.theta_fused;out.theta_tcn=theta_tcn;out.theta_fuzzyakf=f.theta_imu;out.label_main=double(tcn.label_main);out.label_turn=double(tcn.label_turn);out.conf_main=double(tcn.conf_main);
+  row=[state.step;packet;theta_tcn;f.theta_imu;f.accel_weight;f.accel_norm;f.innovation;f.nis;f.min_covariance_eigenvalue;f.gyro_energy;f.gyro_vibration_feature;fused.P_tcn_base;fused.P_tcn;fused.P_fuzzyakf_total;fused.cross_error_total;fused.S;fused.NIS;fused.innovation;fused.K_raw;fused.K_eff;fused.Kmax;fused.NIS_weight;fused.quality_weight;fused.correction_prev;fused.correction;fused.target_correction;fused.theta_fused;double(fused.fallback);fused.fallback_reason_code;double(fused.innovation_gate_flag);double(fused.nis_downweight_flag);double(fused.nis_reject_flag);double(fused.Kmax_cap_flag);double(fused.rate_limit_flag);double(f.observer_valid);double(ready);fused.regime_index;quality;fused.quality_bin;out.label_main;out.label_turn;out.conf_main];node53_debug_buffer('append',row);
+ otherwise;error('node53:RuntimeAction','Unknown action.');
+end
+end
+function out=local_default(),out=struct('theta_hat_for_mpc',0,'theta_fused',0,'theta_tcn',0,'theta_fuzzyakf',0,'label_main',1,'label_turn',0,'conf_main',1);end

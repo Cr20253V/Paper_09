@@ -1,0 +1,56 @@
+{
+  "figure_id": "Fig09_node44r1_formal_summary",
+  "generated_utc": "2026-07-26T04:05:01.618776+00:00",
+  "backend": "Python/matplotlib",
+  "nature_figure_contract": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/figure_contract.md",
+  "frozen_inputs": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/12_statistics/bootstrap_ci_results.csv",
+      "sha256": "02e98f9525f3315c0954d93765d0479ebf7b38dbda5558eaa0ab94218ce80885"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/12_statistics/per_path_summary.csv",
+      "sha256": "8b448cbf07bc4c594219a2a16e42acda2ee492f03b0dac7437a240485651f1d1"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/12_statistics/paired_case_details.csv",
+      "sha256": "e325f15bbc855509c7c18859ac785a77ac8d42eb0e7d1f40504499a83eb3a309"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/12_statistics/decision.json",
+      "sha256": "b3df58e086796b979f5f247767afec21133e22fb946880c0b58ecea9b38b9ba7"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/12_statistics/safety_summary.csv",
+      "sha256": "a659d9a52f973afd6a4e0563553970cb6d540c11c7e7932ba93b0d517e86ad08"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/source_data/fig09_node44r1_formal_summary_source_data.csv",
+    "sha256": "128affb3d9a57bb88bdda1f50e1803d17532a52d2c80dd6ad56e79d5199ea5ff",
+    "rows": 21
+  },
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/output/fig09_node44r1_formal_summary.svg",
+      "sha256": "8948d435c0e476bed5b80e76720ec1c89f33b84fa61a5fb9cfd24f55c4b488bf"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/output/fig09_node44r1_formal_summary.pdf",
+      "sha256": "4f232f73004731f9e3ea8114cd134c57a4cd7645bb2b4e0c31f8560f41523674"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/output/fig09_node44r1_formal_summary.tiff",
+      "sha256": "ef80dfc0a15e096820e89a3b5ed1d2626c7a8d732592027d62feec3fc50080ab"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/output/fig09_node44r1_formal_summary.png",
+      "sha256": "853df46c9c00d5a2000f13eeb3f6c4d81d1dda5b118203b8fc5c93f44b78a9a3"
+    }
+  ],
+  "qa": {
+    "file": "results/paper/7.6/figures_final/Fig09_node44r1_formal_summary/qa/fig09_node44r1_formal_summary_qa.json",
+    "sha256": "15c03a1e5edc31449fbac43ccab8b7ca084481b3a63b444ed914d6d9fadf6f4e",
+    "status": "PASS"
+  }
+}

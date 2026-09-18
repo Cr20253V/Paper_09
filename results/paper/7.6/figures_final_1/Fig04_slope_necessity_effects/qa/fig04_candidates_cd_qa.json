@@ -1,0 +1,211 @@
+{
+  "figure_id": "Fig04_slope_necessity_effects_candidates_cd",
+  "generated_utc": "2026-07-28T11:03:29.148990+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib"
+  ],
+  "inputs": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/source_data/fig04_slope_necessity_effects_source_data.csv",
+      "bytes": 8576,
+      "sha256": "fba2ff08aafb55e16ab5e20a743327b8e7d35316c9a9843e713ef7b467b2f5f7"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "bytes": 1359533,
+      "sha256": "22a314cc1b9fc904402800d8edb5c0eaf3903bb4e3da1e0936dbbc7cbcc837ff"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/case_metrics.json",
+      "bytes": 1882,
+      "sha256": "c4d79f76010ed07d249b01a8f6f3d00ee862a46bd047775fec06d7ab2b1191a0"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "bytes": 1463828,
+      "sha256": "b07c0df2dc93fb5a3cb523f6dbd71c8eddd1cf482b372d9c6282bcbb575376e3"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/case_metrics.json",
+      "bytes": 1950,
+      "sha256": "173a7f9c2b514c268727904c7ac71009c61ea226f2632b5e9949775c70f5ef63"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "bytes": 1443491,
+      "sha256": "39398d7438295b46218201d6579373a12ba02dd58d98a803c9b1789b1d54969e"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/case_metrics.json",
+      "bytes": 1990,
+      "sha256": "0e7ac4244413d0358cf11efd160ea67208bead4664ea332f069abc25e1d92c39"
+    }
+  ],
+  "source_data": {
+    "summary_file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/source_data/fig04_slope_necessity_effects_source_data.csv",
+    "p3_trace_file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/source_data/fig04_candidate_d_p3_trace_source_data.csv",
+    "p3_trace_rows": 13203,
+    "p3_trace_sha256": "3f181d175db64b8e6cae79c04f0e2f2c9ac38db2d21ffa11b9ea07d9e115d9eb"
+  },
+  "contracts": {
+    "route_effect_rows": 36,
+    "bootstrap_summary_rows": 6,
+    "candidate_c_ratio_definition": "target / zero-grade comparator; lower is better",
+    "candidate_c_ratio_range": [
+      1.5243829949284644e-05,
+      2.048920373694869
+    ],
+    "candidate_d_route": "P3 Long up/down slope",
+    "candidate_d_methods": [
+      "ZS_LPV_MPC",
+      "Oracle_LPV_MPC",
+      "IMU_LPV_MPC"
+    ],
+    "candidate_d_time_axis_exact": true,
+    "candidate_d_truth_axis_exact": true,
+    "candidate_d_cumulative_jdu_endpoint_errors": {
+      "ZS_LPV_MPC": 2.5011104298755527e-12,
+      "Oracle_LPV_MPC": 5.329070518200751e-15,
+      "IMU_LPV_MPC": 3.410605131648481e-13
+    },
+    "candidate_d_summary_population": "all six formal routes",
+    "adverse_and_zero_effects_retained": true
+  },
+  "outputs": [
+    {
+      "candidate": "fig04_candidate_c_normalized_ratio",
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_c_normalized_ratio.pdf",
+      "bytes": 52852,
+      "sha256": "3b8deec39e57845893a58dded1b817ed5ffab45ba6a92801a2afc35929eb9659"
+    },
+    {
+      "candidate": "fig04_candidate_c_normalized_ratio",
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_c_normalized_ratio.svg",
+      "bytes": 46706,
+      "sha256": "f7571260190ee1a30353cfa5a049bbf5b128cddeb8bbd4645a05aaa7e41cd37c"
+    },
+    {
+      "candidate": "fig04_candidate_c_normalized_ratio",
+      "format": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_c_normalized_ratio.png",
+      "bytes": 90201,
+      "sha256": "ba65458a2e57a0c2cfa2bbd44332aa52e614e60e1f0d995312db8cdcd191384e"
+    },
+    {
+      "candidate": "fig04_candidate_c_normalized_ratio",
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_c_normalized_ratio.tiff",
+      "bytes": 877406,
+      "sha256": "3dcdc135828b2294fb90a2543927ff3185a7d8e41c6ff2f20e2871dff7d8ad9a"
+    },
+    {
+      "candidate": "fig04_candidate_d_mechanism_summary",
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_d_mechanism_summary.pdf",
+      "bytes": 107043,
+      "sha256": "5330a6ca4a4cdafb24f21643f58a38f33ae641f5052bbd370dba2c3811396a70"
+    },
+    {
+      "candidate": "fig04_candidate_d_mechanism_summary",
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_d_mechanism_summary.svg",
+      "bytes": 234621,
+      "sha256": "66277382c296096e9fab00d42198ea0774a6871198c557246fae274a98aba726"
+    },
+    {
+      "candidate": "fig04_candidate_d_mechanism_summary",
+      "format": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_d_mechanism_summary.png",
+      "bytes": 276829,
+      "sha256": "264a6a5c07fe74ceb92f82d89f7df052dd6eb389d983be94b0cebfb6f1e4cae7"
+    },
+    {
+      "candidate": "fig04_candidate_d_mechanism_summary",
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_d_mechanism_summary.tiff",
+      "bytes": 1286184,
+      "sha256": "c9752fb898b24e8c46257a14dda621bbcd4dab6ab5d877304003ae112b54e480"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "checks": {
+      "fig04_candidate_c_normalized_ratio": {
+        "artist_checks": {
+          "visible_text_count": 33,
+          "minimum_visible_font_pt": 6.2,
+          "material_text_overflow_count": 0
+        },
+        "png": {
+          "pixels": [
+            2161,
+            1039
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            87.969
+          ],
+          "nonwhite_fraction": 0.44836
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2078
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            87.969
+          ],
+          "nonwhite_fraction": 0.44566
+        },
+        "grayscale_preview": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/qa/fig04_candidate_c_normalized_ratio_grayscale.png"
+      },
+      "fig04_candidate_d_mechanism_summary": {
+        "artist_checks": {
+          "visible_text_count": 103,
+          "minimum_visible_font_pt": 5.65,
+          "material_text_overflow_count": 0
+        },
+        "png": {
+          "pixels": [
+            2161,
+            1440
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            121.92
+          ],
+          "nonwhite_fraction": 0.11493
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2881
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            121.962
+          ],
+          "nonwhite_fraction": 0.1106
+        },
+        "grayscale_preview": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/qa/fig04_candidate_d_mechanism_summary_grayscale.png"
+      }
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "checks": [
+      "color PNGs inspected at full export resolution",
+      "grayscale previews retain method separability",
+      "no material label clipping or overlap observed"
+    ]
+  }
+}

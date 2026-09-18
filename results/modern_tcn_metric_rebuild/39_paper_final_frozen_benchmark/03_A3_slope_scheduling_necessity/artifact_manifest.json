@@ -1,0 +1,1274 @@
+{
+  "task_id": "A3",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "status": "COMPLETE",
+  "artifact_count": 253,
+  "generated_at": "2026-07-16T17:40:16.586463+00:00",
+  "artifacts": [
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/a3.slx",
+      "sha256": "343833f4fdf3a514d7c35a0e92123615c0c103883bfcbcaa0990b83fe0b56ceb",
+      "bytes": 462200
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/A3_LPVMPC_slope_source_isolated.slx",
+      "sha256": "189b2761707172d96317ac9d3782acc5126ac515c03c0c5cf935356909f98021",
+      "bytes": 462200
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/effective_config.json",
+      "sha256": "db640c68583899c5a057756323a76f8efe48cb923817c36cfa26431179ad8f09",
+      "bytes": 7702
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/gate_applicability.json",
+      "sha256": "83d918a3ba7684b5e3bec48651412b0b64b3d58a48eaecbc807733d56db9802f",
+      "bytes": 769
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/imu_determinism_check.json",
+      "sha256": "efcc427459999cc5c959fd523290d3a2a8209a3032c4c6cb4f2fb59ea545e27a",
+      "bytes": 643
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/isolated_model_structure_audit.json",
+      "sha256": "c37f4b6dc8a3890053cb30da1bd058008d247677ccce31bd2bd763188bdf8a0a",
+      "bytes": 822
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/protocol_snapshot.json",
+      "sha256": "87335593e3cd8814581fd5b0b00a67f7f0fadd11c9e4cb8c347abd705c6f044e",
+      "bytes": 20730
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/smoke_run_summary.json",
+      "sha256": "0e068d35647dff7a718b48d461e457a6605ec965a1485bd3d8fb6be8b6a1734d",
+      "bytes": 1523
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/01_inventory/expected_outputs.json",
+      "sha256": "28577723e342bf4f8c3d827d6540e86b8e79ac38f18485b427b82b3dd99ba073",
+      "bytes": 788
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/01_inventory/input_artifact_registry.csv",
+      "sha256": "9ca027bdf202a66184a334fe25a3f4a3c402f75d9ef7a787e03878fad386d533",
+      "bytes": 8664
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/01_inventory/missing_cases.csv",
+      "sha256": "29e0ed45909c0e32a5f7c009735d0777af5edf1d3838d4b4ce164240ce21f2f3",
+      "bytes": 1834
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/01_inventory/planned_run_matrix.csv",
+      "sha256": "3a3154db00fe030518416bd17dd97dab46cf56ccbc5011db1d7f24377ae44d1d",
+      "bytes": 4993
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/01_inventory/reusable_results.json",
+      "sha256": "41dfd266241a6464f262f14c7deac415e0f8ffe31f52e605118e3472e7ccb56b",
+      "bytes": 14411
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/A3_Causal_IMU_Theta_sim.m",
+      "sha256": "b2d847cd6a885af2db5a81845c4809bd5f187c176196592f66bff80eb93f8c9c",
+      "bytes": 1020
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/create_a3_isolated_model.m",
+      "sha256": "4f31ededa5cf4206ab76e346e28984223e2147257d66d2b702adfa754b94ee53",
+      "bytes": 7658
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/evaluate_a3_case.m",
+      "sha256": "2a7a3b2c301f56716ca08ad90ebe367b8ac8e2ccb20fa82c5ee43724d4bc2673",
+      "bytes": 7657
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/inspect_a3_chart_data.m",
+      "sha256": "5351da58910026e015f679b6300ab39d1843adc11d260c4e1c3a1da2c6dc5d0b",
+      "bytes": 1049
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/ModernTCN_out.mat",
+      "sha256": "7b9ecb9b74dac6c9f4557bd4742fc452e4b37d75566273d2d145ae8d1d1b8360",
+      "bytes": 4024256
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/prepare_a3_protocol.py",
+      "sha256": "a48aadea1ade6ee3c3019cfcdced9b4e3bb7c0a4f6a6e8817fbb3944274d43a4",
+      "bytes": 11918
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/run_a3_experiment.m",
+      "sha256": "866dfa85d19213d559e83b324472eb5bb4e958cb2026fbfa2f7ce6562af38884",
+      "bytes": 8580
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/run_a3_full_entry.m",
+      "sha256": "c61c04a95fcb32f23f2ce1a7c12e3dd41c78ce3d95dfc33d70fd1ddf6078209d",
+      "bytes": 308
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/run_a3_smoke_entry.m",
+      "sha256": "f52bfbd372ab0a46930ebacb8f46f806081fdeec457a89218c611ea274942efb",
+      "bytes": 341
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/summarize_a3.py",
+      "sha256": "22f1a509c7e8ec0268d6b2c15c34f4b0eeaa23379cd8b1398cd4ffbd1da41600",
+      "bytes": 26470
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/02_tools/verify_a3_smoke.py",
+      "sha256": "a1539ebbc396f38405350141a48c3be1a1a51d24af9196f6c4dee7a13571dfdc",
+      "bytes": 1638
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_001/attempt_receipt.json",
+      "sha256": "cdcd01a0e1279d44eea6703cdfd795ef9b1678b7f0d9a620b184140bfba628a7",
+      "bytes": 1130
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_001/run.log",
+      "sha256": "8c7e7aa2f20d24ddf995e70565c73b01da94de15dd1ae773b7e51131d9ecc6ad",
+      "bytes": 7471
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_002/attempt_receipt.json",
+      "sha256": "997a45d74b2dbfedb146ca6c9de7a88967a3f43233d1385addf3b1958cf0dac7",
+      "bytes": 1130
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_002/run.log",
+      "sha256": "e4323848e9ea2fd6ee7fd7286be3bc8c11d5153fe937250b6ead5ad48f5ca039",
+      "bytes": 7471
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_003/attempt_receipt.json",
+      "sha256": "8243676c88b6890d18b4a9ecbacd6a8b791d1b3bd24d118c5144e1ce7c781536",
+      "bytes": 1516
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_003/run.log",
+      "sha256": "7c9580142c3395675a661e8fbdac4b8be6cafc95ad533986718c948590a149d2",
+      "bytes": 5915
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_004/attempt_receipt.json",
+      "sha256": "15d9d7c36f6870379bc59f5af261cadec659100a30d2d297f2ea1bd80744fa48",
+      "bytes": 910
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_004/case_metrics.json",
+      "sha256": "245d90d4de554ad0f56c12679cefa3605f2a29c5f27ced7e224b22e269276ebd",
+      "bytes": 1813
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_004/case_out.mat",
+      "sha256": "1f9ebe32c5de82d1347a4436b4f1a06eb4b226248e315d5738d11cf8f23fce13",
+      "bytes": 943160
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_004/normalized_trace.mat",
+      "sha256": "5d61ba7b5813eee169f56c76564db3ce718b6a1e3e7378bd7184a4cae63bc85f",
+      "bytes": 74696
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_004/run.log",
+      "sha256": "0a5bb51f6fd3e9b991216f379ce8f692afa8acb47d7834f330b2cb204fcd7d19",
+      "bytes": 5260
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/attempt_004/trace.csv",
+      "sha256": "1b09394830b2d0a90d6a09afdc713943d8d58c983e7a955ca72a6b443f243a3e",
+      "bytes": 40800
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_a/case_manifest.json",
+      "sha256": "058ed3293da0ac4b9cf67bbdb96fd00eef8995ff5268318f53b7b379dab05725",
+      "bytes": 749
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_001/attempt_receipt.json",
+      "sha256": "2f23c6e888b20c3e9480501e53192047ddcf8a37b9c1a3a2cb83e117cde9bf63",
+      "bytes": 1130
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_001/run.log",
+      "sha256": "2f2e9d5ef1b7d640349989ac197605a48e3e9b8ced6af538d18b82e85a2a09bb",
+      "bytes": 7471
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_002/attempt_receipt.json",
+      "sha256": "0f50d2af21a3928d1af9108814999880ba4fd40da84b33d502e0b143c4a838a7",
+      "bytes": 1130
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_002/run.log",
+      "sha256": "521027e63977d5a474bed9d6c0b50edf2ca7c8964e9b2c4356a22968cf5e337f",
+      "bytes": 7471
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_003/attempt_receipt.json",
+      "sha256": "2c2716b07cb121f057a08e8a1007f35c71967df2bd842048890f10d63d83281c",
+      "bytes": 1516
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_003/run.log",
+      "sha256": "1b6f8bc9f4498edcb8887b90a4e3dafc76711804a420a6d7034ddfa2f314c49a",
+      "bytes": 5915
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_004/attempt_receipt.json",
+      "sha256": "ee45bc465bbfcefdd2a0f11abdf58348c4b9c4090493b7da5b7d0595e1c04579",
+      "bytes": 910
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_004/case_metrics.json",
+      "sha256": "46419afc2af1113f95b62515b6eb4a7877805e424caf8bdc66fe4596067a8321",
+      "bytes": 1802
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_004/case_out.mat",
+      "sha256": "6c9182d1cd415f036ecfbf5a8b486985e3aebdcb4f991772063d203ff24fa936",
+      "bytes": 943160
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_004/normalized_trace.mat",
+      "sha256": "eb3421cc41b28092a665248da317a3ef4598797012bb8cdf1f6e48973d3918b6",
+      "bytes": 74696
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_004/run.log",
+      "sha256": "66c938b40a32a41f846106aff24d724b7d4458fc0fe6bed72cfded4e431017b9",
+      "bytes": 5260
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/attempt_004/trace.csv",
+      "sha256": "bc5a85dc7b8662d8663efb04a7bad79ef0685f2e8530f6d3ad991b421158e0b1",
+      "bytes": 40792
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/IMU_LPV_MPC__p03_long_updown__imu_b/case_manifest.json",
+      "sha256": "b7f0ad8ec580bce636b24982f0c1db992ea67280a528a8203a6d17b85c30f3ca",
+      "bytes": 749
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_001/attempt_receipt.json",
+      "sha256": "85512ccb9d7c8b331295cda7e69f2b890b93d14066dff301d8d59f46cbfc9316",
+      "bytes": 1134
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_001/run.log",
+      "sha256": "50ec9ce3712cf85a36061a3c8e6a6ad5239b007ff47fdf2bbac30e17ef16aaea",
+      "bytes": 7479
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_002/attempt_receipt.json",
+      "sha256": "c9c7f39049d2ff5a0ec7e86b214d0cc008b59e58784dbaf612d06202d568aa4a",
+      "bytes": 1134
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_002/run.log",
+      "sha256": "4f3900b7b853331dcdc442bba9766d06c446ee750f8c7a5b4748bf2b02eb44aa",
+      "bytes": 7479
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_003/attempt_receipt.json",
+      "sha256": "0b5acdcd3ad12e82967649bd357fc20d711e1a28397e7a2c689600e8bfac6c8f",
+      "bytes": 1520
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_003/run.log",
+      "sha256": "31bb7f280cf2e1a789e931b6d6368fb0abf7fb0641cfbc3c707839b40c360f69",
+      "bytes": 5923
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_004/attempt_receipt.json",
+      "sha256": "6159490d540a3f3045616e8fa8cc07921ad646ef17b5843e815e77af22d52025",
+      "bytes": 926
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_004/case_metrics.json",
+      "sha256": "b1d82b718a40be9092e2d7be801632209b47df17e05af9cf90f95c2986338d13",
+      "bytes": 1714
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_004/case_out.mat",
+      "sha256": "bb101673a55a1ea1feacc158900c0e6937513346f4dec8e1cffe4b5398460a22",
+      "bytes": 943160
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_004/normalized_trace.mat",
+      "sha256": "a829492a8fa7e3efd010a689bd8eba818b72084d98f43dd74bd6ae37561b017f",
+      "bytes": 74696
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_004/run.log",
+      "sha256": "e4766d17c25ced963e07f58ae46b4d602e092dae183ef389fa3708e69d42166a",
+      "bytes": 5272
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/attempt_004/trace.csv",
+      "sha256": "afeb9b13d18f47df5ac3fad4e8075b54ff42183ed31d3423948f155ce3289ce2",
+      "bytes": 36889
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/Oracle_LPV_MPC__p03_long_updown__oracle/case_manifest.json",
+      "sha256": "951cc79b9c6b4b551b3df5864566fd07e721cbc83e0e68c42843434767813065",
+      "bytes": 756
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_001/run.log",
+      "sha256": "e9240526444cbe5f1eb1244c589d04f56f21d2935c5bfcc63ce7db1851be6c6d",
+      "bytes": 4461
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_002/attempt_receipt.json",
+      "sha256": "9579f60fadcef660915dfe7406a1bb0a9fb8cbfec650834fc0449485bc86e416",
+      "bytes": 1127
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_002/run.log",
+      "sha256": "e75f1b16a323bb3e7f2f8fa9aae06f64306faa5134292642f0e308edbee3846c",
+      "bytes": 7463
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_003/attempt_receipt.json",
+      "sha256": "4060b36a9fc429a041fa9702cd76448d6a35c1a74e1be080a291a0358d57a08d",
+      "bytes": 1127
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_003/run.log",
+      "sha256": "ca3daf77f50cc6b38a799df64e3afdde2ee486298e217299ade81f52268efc0d",
+      "bytes": 7463
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_004/attempt_receipt.json",
+      "sha256": "f73f96830400d9aa57d592ade645e8b9e33cfd5f83ce7f9690f71d4f041bbcb1",
+      "bytes": 1513
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_004/run.log",
+      "sha256": "4bb3010aba424e5543d9abd22d40b4a4c72a6f57b7f5b0010a6650ba31c0dc48",
+      "bytes": 5907
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_005/attempt_receipt.json",
+      "sha256": "4d8f586dba49270b15c9c23f968a5c08effa41d3c38e83b4e195cb386de151f9",
+      "bytes": 895
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_005/case_metrics.json",
+      "sha256": "00298911d26e27321de8d4001f86b70df960b27cdb5697ff421033c2019b8493",
+      "bytes": 1696
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_005/case_out.mat",
+      "sha256": "8631851b98bfc23da4919e2a8e9e5aa61e625d816a585446028fedf586ce0fee",
+      "bytes": 943160
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_005/normalized_trace.mat",
+      "sha256": "fa3f87b42c4a5151776acb5197c62b7fa0bf98d128ae9b3e8eaac972c4fc9737",
+      "bytes": 74696
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_005/run.log",
+      "sha256": "c1d1e719ac5a75abb308c6ab18f8bce20a8ecb88847bb585c665f6a305a284c4",
+      "bytes": 5249
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/attempt_005/trace.csv",
+      "sha256": "dbfc93aaa836b5d4e526fc12f4001759619287e34c536551e987d80ef4105d4b",
+      "bytes": 36884
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/_smoke/ZS_LPV_MPC__p03_long_updown__zs/case_manifest.json",
+      "sha256": "fa538c2aff8f180368e2afa772e5791f9d916047000cea991aa82b2ea1e0e963",
+      "bytes": 744
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/attempt_receipt.json",
+      "sha256": "b98efc5af496dbe3993d57162382a9cf37fe330fbac7e02e9fac973c230aa75d",
+      "bytes": 920
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_metrics.json",
+      "sha256": "f4b177c78e30bb8ca7684e74e6f49f425d8436e5d00b8b8caca553756fc23c0a",
+      "bytes": 2071
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_out.mat",
+      "sha256": "a5cfbadeb8b1e7244fbd61b0c1fabcb111f2841400a6457837e911e45d50bed2",
+      "bytes": 13817472
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_result_a5.json",
+      "sha256": "a1786b98d2b97310b765e0bf67588440af9bc8a16f942c05cb1d1af97b9b2c32",
+      "bytes": 3717
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/normalized_trace.mat",
+      "sha256": "5cce5425ce3012153c1e5104c315e854fae4a77ef7d929edee134e74d50fd560",
+      "bytes": 2185628
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/run.log",
+      "sha256": "c47607778309ac3d43bf51ce1886c61f39ce8022dbc151564278e8a3c6b1e3f6",
+      "bytes": 5285
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/trace.csv",
+      "sha256": "2d9d91b336b4e5512c297df7ceb6b823804b2917dde419e3dac26f069d75c7dd",
+      "bytes": 7204823
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/case_manifest.json",
+      "sha256": "00a2045e96dd845376205138b4dfee558b7175ea7a7116d3425eedcc881a4663",
+      "bytes": 775
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/attempt_receipt.json",
+      "sha256": "938f5fb97a239f502c3219251f38ccb05500706c9c56b981391af87603df7559",
+      "bytes": 899
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_metrics.json",
+      "sha256": "f48fa5292baba481e0adaf8ae53781af0d5ec7f9a2f569c6f5c58610fce53552",
+      "bytes": 2075
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_out.mat",
+      "sha256": "b6a19cdb72964b88fbdcdd480959507ea2449053a4cdf7269368df4115f8f42e",
+      "bytes": 3583816
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_result_a5.json",
+      "sha256": "2ec81fe4125ccd075962235647ca5f2784ed8168269ed533d7d2fa35f52f20b4",
+      "bytes": 3708
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/normalized_trace.mat",
+      "sha256": "f48d58392f0a472394e4255c80c2af12dc5568ffbd5c972de6d8e45f82f58ee4",
+      "bytes": 639409
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/run.log",
+      "sha256": "519f820ecfa39bea93907daaa7a29ae5eb7899f79c818b1dd0ca2b97d38dadb7",
+      "bytes": 5271
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/trace.csv",
+      "sha256": "9bac860144f5ab22a8509ac79e5398341edd8dd560ca477b2025800512f3c5bf",
+      "bytes": 1721424
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/case_manifest.json",
+      "sha256": "2caf39f6431e89bfafe6f8621b0ec4130725bd72d5e5b42a59c53599fc8b1b84",
+      "bytes": 771
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/attempt_receipt.json",
+      "sha256": "a9b23fbf6fc5fbf3ec61e65dfcec20eb3ef1984e98430c9fdedf8e744809538c",
+      "bytes": 858
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/case_metrics.json",
+      "sha256": "0e7ac4244413d0358cf11efd160ea67208bead4664ea332f069abc25e1d92c39",
+      "bytes": 1990
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/case_out.mat",
+      "sha256": "73ba5b300e901c65c1527c08ce9573c2eba09c6c387374258fb9406229ea7cb5",
+      "bytes": 3161416
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/case_result_a5.json",
+      "sha256": "6bdcd770a09fceaf9d99455fdb9467b42a53445119db2cf1bd4af5a18280bf01",
+      "bytes": 3586
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/normalized_trace.mat",
+      "sha256": "dccc22abfcf91f2b51f28e323817d77409885bfb2c2aebfd3feb9cf01dd2ead6",
+      "bytes": 566829
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/run.log",
+      "sha256": "b974044b8f9e141d9d027b6771ed776c5e9cbb8c5a3cbbe0d64e1cd4b1f92d86",
+      "bytes": 5231
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "sha256": "39398d7438295b46218201d6579373a12ba02dd58d98a803c9b1789b1d54969e",
+      "bytes": 1443491
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/case_manifest.json",
+      "sha256": "0ecd617451d1ce72313e00e33a67d9124a9cbb5bed63817aef558dc6f843af75",
+      "bytes": 741
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/attempt_receipt.json",
+      "sha256": "e38d56daa514c65881651d3b2a27e8968dedeb7064db6f10cdc5199959c28a90",
+      "bytes": 915
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_metrics.json",
+      "sha256": "d2b445aefdf4cb0ab79a758d88be523cb2db581c9d202f24a88e3aae7b58331f",
+      "bytes": 1992
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_out.mat",
+      "sha256": "0c8eb29e783b0f76282305f63039b926bbb6bec08c4b766a8cb7df3570822f76",
+      "bytes": 3795016
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_result_a5.json",
+      "sha256": "9743da14cc787ad4701885b6867e3e2c62d78c92915563f4a0bb494a3c83c0ad",
+      "bytes": 3685
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/normalized_trace.mat",
+      "sha256": "a2fe6bb1ae81602ee41fba9f0b1cf446e52893c021b5073ef24d92d74a7aa1cb",
+      "bytes": 627401
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/run.log",
+      "sha256": "41ebb2763db04ea56122340b5531708d865d172b2accef6d8d54248fda9cfdae",
+      "bytes": 5328
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/trace.csv",
+      "sha256": "c7c51964af9cb8d2a6880058cd38c81ec4e6a41bc31479df31a2c8a1e5857d09",
+      "bytes": 1691990
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/case_manifest.json",
+      "sha256": "a2d15dc55bfcdd076942dae566ec550aac5cb5509edd7d2b56af698b192e012e",
+      "bytes": 826
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/attempt_receipt.json",
+      "sha256": "bea3893061fe1e073bfca8268ef4975e9fb81b33e79e07d6c44a297ce04ad09c",
+      "bytes": 904
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_metrics.json",
+      "sha256": "a1ff555dc4397b099888b1f8602a1b27cf7e22e34b6627fa0ec2431832f774a5",
+      "bytes": 1963
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_out.mat",
+      "sha256": "f3b0ac7bf1ff4f2ba6e47d52e4877872f27e666630ff53c4b5b1966dd5297d29",
+      "bytes": 10870216
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_result_a5.json",
+      "sha256": "1ba8ce277b87bfadef4bf51bb5eccfc4760300d2b5df65f6463a39f3ff4ba0ab",
+      "bytes": 3657
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/normalized_trace.mat",
+      "sha256": "8b2a6eb4f55e198fe244184645f970f1689bbbf74d251b811882799d638390b6",
+      "bytes": 2002527
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/run.log",
+      "sha256": "b4f11067c000155a4f5d5eaf0f6e8aefbdc0edd58800f61932430e7e75c89654",
+      "bytes": 5327
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/trace.csv",
+      "sha256": "6263c96346754680519b526ea326d3b3a499fe08aafa362670d274b423dcdb5c",
+      "bytes": 6300193
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/case_manifest.json",
+      "sha256": "821f5e98c596b7a4e5eb0f8db469c3f1d17930d9c496400683a79eecf8039a64",
+      "bytes": 826
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/attempt_receipt.json",
+      "sha256": "0caaf5d4194219926da59b75c93d8e2ee9072486b9a18ddcae31fb8967230255",
+      "bytes": 891
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/case_metrics.json",
+      "sha256": "84ee270e47760a857ae86032f1b5ea02a57b94bacca6aa995a391f8df442eece",
+      "bytes": 1965
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/case_out.mat",
+      "sha256": "3fdca2d39a71e063e46a53a140468cdfc7ebc6736c744dabb5287da246b908d0",
+      "bytes": 2844616
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/case_result_a5.json",
+      "sha256": "d1e18b04f4fb2fa276bf0f3a372cec15337414effe98e4ea4cec13edc29bd545",
+      "bytes": 3621
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/normalized_trace.mat",
+      "sha256": "89bf4ea5e8405cca9711dd0061336f25533acd7c14d9999d6a4c8b429f81d50d",
+      "bytes": 539648
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/run.log",
+      "sha256": "0343906a26eca6e6045c51cef3374092a6ae6509189c34e18ce941ee5a140c09",
+      "bytes": 5289
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/trace.csv",
+      "sha256": "aa9b3c9dea7f77e53f937969d66f798a2ae957b0bf81671aef1b297dd356391a",
+      "bytes": 1392078
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/case_manifest.json",
+      "sha256": "dabe2c8e07bb5390557adf256dbbb1d811a0a06e1cc4de74f4eaaecef7d8d0b7",
+      "bytes": 792
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/attempt_receipt.json",
+      "sha256": "75831f240b102f4f571520ac808d0518d3e316c05be999e43ab740a253f7638c",
+      "bytes": 931
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_metrics.json",
+      "sha256": "4bd75cfb3ccfa0ab421fd8ad8d9c342447f533862013821318dc65ad3135a262",
+      "bytes": 2008
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_out.mat",
+      "sha256": "5f5543d85cdfb5ec17959cc7b53e48578896bd082028597f49e8b1bad813481f",
+      "bytes": 13817472
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_result_a5.json",
+      "sha256": "0104f8f60d35e69d2a6db70323ef08a502ec46f0f964d98b48ccd6ff5a6d2d1b",
+      "bytes": 3665
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/normalized_trace.mat",
+      "sha256": "b857f695ba47dd7452c8b75c065bd0ce55f5667745599b5492c1c842bfbf7a42",
+      "bytes": 2491765
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/run.log",
+      "sha256": "f822b7e35d1070a3384b302bfd6917f3eac5d9d54aa232624b4dd2e784437d3f",
+      "bytes": 5294
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/trace.csv",
+      "sha256": "661d6b1e1d13bb9353a02bff2b3fa1380eef22707429035bfe3f3b4cd8f2b520",
+      "bytes": 7727198
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/case_manifest.json",
+      "sha256": "f29d53e93b9058086c25e38edc69964e617b4e2716148ea297330e75b0a21156",
+      "bytes": 781
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/attempt_receipt.json",
+      "sha256": "c385ef7800d70490ece82e0683364ac6c4240372366c9671a7a634f87dbcb400",
+      "bytes": 911
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_metrics.json",
+      "sha256": "53533e90bb1cddf400ad86fa1a0be171bd0ec16aa01788f2bf0f23d9527b90dd",
+      "bytes": 1979
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_out.mat",
+      "sha256": "f33562cc44f3e9d16277dcdaf963692b31df7a12adcfc2f4f3f94b1ce3d88643",
+      "bytes": 3583816
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_result_a5.json",
+      "sha256": "46e0e667bac8cae4ec51a670c780ec45f91f0f17e331b144ec0d523dd135300a",
+      "bytes": 3627
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/normalized_trace.mat",
+      "sha256": "840720aed62313f1b5522f47e9ed74362bce88e5ac7208f846508920d34d8394",
+      "bytes": 613579
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/run.log",
+      "sha256": "098bd2d0288c9a72fdc9afdb90b32fbe98aa8bba5f776a8b1e80570d83af3640",
+      "bytes": 5280
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/trace.csv",
+      "sha256": "6bf60703b7788039bf8ae0b8dfdd6af6064c24e5e7af2c5fae59bbba4a2c0b15",
+      "bytes": 1738156
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/case_manifest.json",
+      "sha256": "f5b00f1c0ba20b70727a6e74c2ca8282db0ea05eb1eb4f1b0f38ba01ac380816",
+      "bytes": 777
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/attempt_receipt.json",
+      "sha256": "b32ed2ae7d08a678b95b918c8e928436115b9e63b54b688662e473f111fe859e",
+      "bytes": 871
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/case_metrics.json",
+      "sha256": "173a7f9c2b514c268727904c7ac71009c61ea226f2632b5e9949775c70f5ef63",
+      "bytes": 1950
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/case_out.mat",
+      "sha256": "bed2e0e819747aafbb206da72240d220824010fe432d41d75f6a4ee3b520b4ff",
+      "bytes": 3161416
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/case_result_a5.json",
+      "sha256": "2ad78548b5c2953dc6fe9fe17f1e5cf6e97627c1f46bd504b2c7d0a807e3d928",
+      "bytes": 3559
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/normalized_trace.mat",
+      "sha256": "57790b87575ab28cc628cf514a812855c6eded84eab645f31b7738502a3424d8",
+      "bytes": 552855
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/run.log",
+      "sha256": "3062743448378b3add1869fa3a98a6ab0a6866c175035aa744acae40fe2070e2",
+      "bytes": 5240
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "sha256": "b07c0df2dc93fb5a3cb523f6dbd71c8eddd1cf482b372d9c6282bcbb575376e3",
+      "bytes": 1463828
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/case_manifest.json",
+      "sha256": "55d95910bf5d81264f435b67ca0b59f2a3574972ced1426de304326f87f6b550",
+      "bytes": 747
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/attempt_receipt.json",
+      "sha256": "9a17732af4223ceda48efaf02d4f6940215990ce1050bd8513a01e4743c4ab4d",
+      "bytes": 927
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_metrics.json",
+      "sha256": "7d5a62df65e7962ea3b03964857fc70e1e697d21daf22400194cf13a4de19a06",
+      "bytes": 1979
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_out.mat",
+      "sha256": "a71ff93b243a98cd9c9497e0ba1348e01f4a5c313616e4c1c9fff189d47798b4",
+      "bytes": 3795016
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_result_a5.json",
+      "sha256": "aef2aa6127b7f43b84bb19e571701b3d2b6e574c6476fd5bcccf7b7e897d3a4c",
+      "bytes": 3686
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/normalized_trace.mat",
+      "sha256": "e7219a78ad84d8f95cc33cdb785032055cda69c7d2ca4f4fb4d8b3e4738a3966",
+      "bytes": 626637
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/run.log",
+      "sha256": "b7d889031b0754e75a0b7eedce26c041583e63d68791d6c23ac2658eeec776df",
+      "bytes": 5337
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/trace.csv",
+      "sha256": "cdfbecc344741bd9bfe689182890c7ed9e1c8be35a3624284c1ec9c43a767823",
+      "bytes": 1696365
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/case_manifest.json",
+      "sha256": "5da4381395d48cc14001a42694be6eb9e0a1b03d5d3335fffe4a856c9362550f",
+      "bytes": 832
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/attempt_receipt.json",
+      "sha256": "0a7f2e5cfe5f3d986ef9c1a31ab93cb378e9c145527d575560675f2b6d0eec89",
+      "bytes": 916
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_metrics.json",
+      "sha256": "31b29ead2992f25fdf2af507c5fb7419c1e848e62c0dab19042a1c127b27aad9",
+      "bytes": 1860
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_out.mat",
+      "sha256": "185026f55ab6f201883cf548dca071b2c451e1104bb3a7cb934b3434715fc621",
+      "bytes": 10870216
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_result_a5.json",
+      "sha256": "4204015d13a5b4347e22c2c630bf5be0c61ed4f81f03e8b5a180ba68d6b86b34",
+      "bytes": 3564
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/normalized_trace.mat",
+      "sha256": "e9177a638574455d2480c047d600e15cdb4050ee28e09b4da3f7e52a7f5cf9ae",
+      "bytes": 1851619
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/run.log",
+      "sha256": "6cfa34d4276041f45b58d13bef5216d149d134293e15c9d188d543be9a8f65d8",
+      "bytes": 5336
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/trace.csv",
+      "sha256": "1daf45381403cc1a64702f82d832d79e10842d60c46a504c075c9490caa409ab",
+      "bytes": 5934967
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/case_manifest.json",
+      "sha256": "28d99d1d85c14479747b9b6342c2fd83012becb31ae1777856dba6684eeab975",
+      "bytes": 832
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/attempt_receipt.json",
+      "sha256": "16cf6839f5cda8326043a00b3396e2030865f9c9ae1366122df0d9d36c0656a8",
+      "bytes": 903
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/case_metrics.json",
+      "sha256": "95295b893eefefd9a555c8a021c6a28e98b327de1b6b357018e31d0dbab661e5",
+      "bytes": 1969
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/case_out.mat",
+      "sha256": "9c37240546107004269dafbe6a070892f51255e774f0715c2f3ed0a93907baf2",
+      "bytes": 2844616
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/case_result_a5.json",
+      "sha256": "ad581a33a160ba4fcfd26605274cd3f414dccb0f521f509638e5411e28780bef",
+      "bytes": 3636
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/normalized_trace.mat",
+      "sha256": "643df41c621065be78a8ae39b4854725480ce4d6aa2ca2bfbef2268338d47f71",
+      "bytes": 519211
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/run.log",
+      "sha256": "31c581138bf1bb90f7896ce402ca20fe3ec6ce0825294af09b2cdfc1c8e19142",
+      "bytes": 5298
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/trace.csv",
+      "sha256": "59ac2510fa3120763987b01abe86cff7873e5eca4001a31e7d615c223dc0f8ad",
+      "bytes": 1411142
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/case_manifest.json",
+      "sha256": "e20d50d203a13b6814352be23060c0b80c897ae176bd92905f1ad21186f8120e",
+      "bytes": 798
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/attempt_receipt.json",
+      "sha256": "08ffd198eab66ba94edfcadd039b54f4d6f5ba7978f91bcf267ce859b77996c6",
+      "bytes": 916
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_metrics.json",
+      "sha256": "d2713bee960cc113208126744c68f5bcf7c221b7f81428aa37dfb136d8fbeb3d",
+      "bytes": 1960
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_out.mat",
+      "sha256": "badbab6e58bd7f7ae9cf4157b06c3faa49c4171d473127120ef31b0a022f3bcd",
+      "bytes": 13817472
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_result_a5.json",
+      "sha256": "7e0aa106a01c32737d0e95e90974be34df39cd1cced771d32a7338669b8b1a77",
+      "bytes": 3605
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/normalized_trace.mat",
+      "sha256": "8e75f911c3c1daa84e6039b008df78c539f25a3b90dc5f617ca46f0e29f606c1",
+      "bytes": 2172463
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/run.log",
+      "sha256": "c90d6a15b47a7b837961c952eaecbb08fa41fdf68f2b0800e73de3ba32754260",
+      "bytes": 5282
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/trace.csv",
+      "sha256": "2d535efd16d0208f236e692f2d701cec130b0292e984d39d2d64b5d2cf7db717",
+      "bytes": 6334539
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/case_manifest.json",
+      "sha256": "b8511f39de66711a4abd636524cc0d83cb9f218a886c172cdad7badcefa35d40",
+      "bytes": 773
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/attempt_receipt.json",
+      "sha256": "dc14d017d5d5a139a7d24014fd48482a416afe92d7f892c33f7b235d8a4fdb68",
+      "bytes": 895
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_metrics.json",
+      "sha256": "60b42d4cf8d7828e6bede97274ba205ce0b3110e8a211c3037707ba68846ea51",
+      "bytes": 1948
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_out.mat",
+      "sha256": "16babc1105a5c549c1520a72da635695fd96c2ce0b87d853e5f69717325d4457",
+      "bytes": 3583816
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_result_a5.json",
+      "sha256": "b132c8d854bde02649b3cec3d53cc94696c5b8f21daa9e413ae5e4c39c8ad3b0",
+      "bytes": 3588
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/normalized_trace.mat",
+      "sha256": "2314d3534c8936468c3797c5c0a66127133db0c952e017a06f685e82667fdaf6",
+      "bytes": 607667
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/run.log",
+      "sha256": "053a1b3f5e4f496d759a3c7e87d3d92a9d564d00fa0a6fd6e79cf6bdc53face4",
+      "bytes": 5268
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/trace.csv",
+      "sha256": "a0edbba92c0e77642f30aac5d1c3a6a691951d0bbed56423d4ac5f8b4261c2bc",
+      "bytes": 1613657
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/case_manifest.json",
+      "sha256": "16a259ad135123c158af10cd55a0fac54e5a7c4d1d36586ce42d54fbe3fbc09c",
+      "bytes": 769
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/attempt_receipt.json",
+      "sha256": "6290e6bbd1b0c2d43d1d114f52892e7c1e646b3a5292174647f079dc44a630a8",
+      "bytes": 855
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/case_metrics.json",
+      "sha256": "c4d79f76010ed07d249b01a8f6f3d00ee862a46bd047775fec06d7ab2b1191a0",
+      "bytes": 1882
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/case_out.mat",
+      "sha256": "7baf6944d8833dbfdf60a939caadcb565ec0d6f87928d52c3d3ee92fad7c4236",
+      "bytes": 3161416
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/case_result_a5.json",
+      "sha256": "e5f417191c7c1630f6d80fcb401a6e98eea141adea5e9a19c761c41657cf1aaf",
+      "bytes": 3476
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/normalized_trace.mat",
+      "sha256": "468c53901c042d2a614b659102715de966dd44c85858a442ac1260d67c91bee0",
+      "bytes": 535100
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/run.log",
+      "sha256": "9af10f8390e55be50c920286cd16ad5b238a3e4b04e3fd1d6d9472abbd8cd436",
+      "bytes": 5228
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "sha256": "22a314cc1b9fc904402800d8edb5c0eaf3903bb4e3da1e0936dbbc7cbcc837ff",
+      "bytes": 1359533
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/case_manifest.json",
+      "sha256": "533ee7f2c9528fc0cdc3a9338784af9a46b33b16fdcc9345837a6d2593d3f822",
+      "bytes": 739
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/attempt_receipt.json",
+      "sha256": "9aafc43c78fa065397550e2188a718ef629cf57e932a53e0ee6e8fe6e8590dbf",
+      "bytes": 911
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_metrics.json",
+      "sha256": "2fc7d3572df63971a1d03b47756ed588f9c41474db8069284db6f5a33caa85ca",
+      "bytes": 1870
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_out.mat",
+      "sha256": "acf885009a46df782467dc800da192e4e176777d8dfc800deda59f604221dc2e",
+      "bytes": 3795016
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_result_a5.json",
+      "sha256": "744ce85f71fb3fff37083b05fc387aae6faa5735323139e33be49dd0c164e57a",
+      "bytes": 3568
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/normalized_trace.mat",
+      "sha256": "5f4b99a88ad1acb9ea85b7deb44d2af3f781469d5578ed6e0760732feba2c451",
+      "bytes": 583628
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/run.log",
+      "sha256": "5dfce4c1c873872f3cb080ddad26a0e00465100b255de06dbc2e0faff655b47b",
+      "bytes": 5325
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/trace.csv",
+      "sha256": "17d965621db4edd444105064ebefdd5b67de016f7cf216ffdda6f8b09060bb78",
+      "bytes": 1584953
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/case_manifest.json",
+      "sha256": "5b1dd22d8fb8dc04d6ce253ab1bd7a08f226c2e2e3c9477a51b23164b84f8bdd",
+      "bytes": 824
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/attempt_receipt.json",
+      "sha256": "b8792d7016c08d446e394f2582e17d46b99dfb1e7d5010a70f97ac40928ba16b",
+      "bytes": 900
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_metrics.json",
+      "sha256": "8a25c7ec824aada47259b6472ddf322079cb59ff2cfb7b2ade2aee8f149c0fb6",
+      "bytes": 1851
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_out.mat",
+      "sha256": "1953e9809dca9e1c1108cd449aa3d44749270b6ec7d1539895dcbd627f86e84e",
+      "bytes": 10870216
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_result_a5.json",
+      "sha256": "4c957ad60a0ed1b7b4a512d49acf7a9dc97e5a736e193723f729e0ca03df3a2c",
+      "bytes": 3543
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/normalized_trace.mat",
+      "sha256": "6938b6103f37f4c2cbe1b09683a8e264df99f079608d851b1f4291a71b72b204",
+      "bytes": 1858837
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/run.log",
+      "sha256": "7719fabc4c66851f0bbb808a730b16b1edeb281926e4c7dfa335bbcd4997861f",
+      "bytes": 5324
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/trace.csv",
+      "sha256": "8a48858d5d7ce12ede9e0065112ab8828ed2583e2bec4a317cd0f903f3ad5bf1",
+      "bytes": 5934988
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/case_manifest.json",
+      "sha256": "0e2f7c44f4f18f08313210790a9eaf700d8e48f6b2129ee4f1b12ccab3faf9d3",
+      "bytes": 824
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/attempt_receipt.json",
+      "sha256": "cdc7fc33a9462ea5f3b0c7e0ad2f864759a0598454e7efa73d52446d1b187d18",
+      "bytes": 887
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/case_metrics.json",
+      "sha256": "64b8bc8d3be203d1fe558e4611c2422b8cb573755798db15ab00c3317feae930",
+      "bytes": 1851
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/case_out.mat",
+      "sha256": "28e748fff6a76214cb6f69cfd2f6e87b6def741011a364c555528b534b7ae569",
+      "bytes": 2844616
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/case_result_a5.json",
+      "sha256": "059131a419d48cac488ea8301988a0a6c502617a13aa9e64b54dbdd34c23b597",
+      "bytes": 3509
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/normalized_trace.mat",
+      "sha256": "ca21d80a0352d934cc18c10e39aec67bba0c0280c5722b85c65a687c07f9e8a7",
+      "bytes": 513685
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/run.log",
+      "sha256": "7ca48b4f702d7aaf4d3032ffa64e5787bafd79a01a6b78d75c3754454f0075ec",
+      "bytes": 5286
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/trace.csv",
+      "sha256": "a68fddd797469656bacdd41fbd77e5eccb2e3827b8db9abd303cf184336ff47f",
+      "bytes": 1319796
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/case_manifest.json",
+      "sha256": "752ec989d42d3593c0d2c3ac3e5ac2978ac7995594995fe36f14fc59fd84034e",
+      "bytes": 790
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a3_case_table.csv",
+      "sha256": "6a8cf7c9d53399653e1d9eb77145e5aafd0637a6e349c9c8bee2b5b0d8189190",
+      "bytes": 36534
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a3_case_table.jsonl",
+      "sha256": "5fe9f2416757d8c4dcf1603df228c54ceea7a583107f66c6d57af30500dbb504",
+      "bytes": 61220
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a4_artifact_receipt.json",
+      "sha256": "f1684870e546fc425e54ad3c7cde96247ef663e9ede669a17ee6573651eb78cf",
+      "bytes": 17293
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a5_readiness_check.json",
+      "sha256": "1962a248296457b7b903fbff8ea83e575d938a5ee3d893e1eb0211de6bbd25b3",
+      "bytes": 527
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/bootstrap_ci.json",
+      "sha256": "410c1acb57c9858f671c932696c0d787a0cc528ed93e2dea41aed54f75753702",
+      "bytes": 3911
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/bootstrap_ci_results.csv",
+      "sha256": "b33725731c4e9876b2cf86d8de0a42b2aacec1e703a26616eb33e446a9abf9de",
+      "bytes": 1514
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/case_integrity_audit.csv",
+      "sha256": "ae3bcc480618b395715e471648ac6d1df2823d00396de124b9e3d8fe3d7210e3",
+      "bytes": 1780
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/controller_summary.csv",
+      "sha256": "333f22d33611ac6d0d2594a8fc9ef8d71cfb8c6cf2d01fccd653e965cc2f4c5a",
+      "bytes": 5422
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/full_run_execution_summary.json",
+      "sha256": "fedc3fdfc13f19532d850c3ae7c662c44ed7bdf58fd82df52f3b1fa62bfbf49e",
+      "bytes": 6371
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/paired_effects.csv",
+      "sha256": "d775f5bbf254451d805f543dd714b25cc86cdd916ab30035954749a1b0357513",
+      "bytes": 10285
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/safety_gates.csv",
+      "sha256": "c15845a3e9180cabd817d8917f0a42894340ac6e22270a94727f402aab29900e",
+      "bytes": 10782
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/schema_validation.json",
+      "sha256": "d711edc269b162a8c2964af1574527712d3e5a036f7c1436845d1de6f9debf8d",
+      "bytes": 429
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/worst_cases.csv",
+      "sha256": "cc0fc159c79004af0e931eea0227a67c248010aea1fceb5ad838482e04bada08",
+      "bytes": 2656
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/full_attempt_001_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/full_attempt_001_stdout.log",
+      "sha256": "e24007d523dae8281d58cc5013f1f41e6c71ed8603752dd32fea5f6528260ab6",
+      "bytes": 87082
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_002_stderr.log",
+      "sha256": "0dcabec20d1f52a89419f693298ea92274ac14bb58daad870e152261f090a457",
+      "bytes": 552
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_002_stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_003_stderr.log",
+      "sha256": "4394da532f1244764cf8d311d8581bf9f94211cae489473f107cf6759725160a",
+      "bytes": 9364
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_003_stdout.log",
+      "sha256": "9f14728c8b2a440531e9b49c8fbe77282894f8575ab5129c4a5f467a9e65acd9",
+      "bytes": 18667
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_004_stderr.log",
+      "sha256": "7339b137e5595acc987e60d63b04a9dbcd1085d524fbadcb789aeaddb46e7d04",
+      "bytes": 9364
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_004_stdout.log",
+      "sha256": "b3ed6539a3a1518018ae93b97fd8344a6e1e5959195d585b438f0e6437152225",
+      "bytes": 23127
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_005_stderr.log",
+      "sha256": "0175e3960064f893b4ca40f9104802ba87381709c6da1937eeebbc09e401e1bc",
+      "bytes": 3388
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_005_stdout.log",
+      "sha256": "2b4b4ea1385ee68157dd9d41fd0f87b1587ecf2eb2d03474fc1326ddb814eb94",
+      "bytes": 23127
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_006_stderr.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_attempt_006_stdout.log",
+      "sha256": "ae684921a9a6e612109191f1965c1fa435590e5b54690d6c00e50d8bc0231b63",
+      "bytes": 24041
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_stderr.log",
+      "sha256": "ca90b11b2716c0b99bf0d79c2491016f0ae13792edc6c030ed3ffa5560f0e840",
+      "bytes": 552
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/05_logs/smoke_stdout.log",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/A3_experiment_report.md",
+      "sha256": "0bcc72286b0e8f4c0c8895e0e8b4db7719580c320de8fa47c8a8cd39da6e52d7",
+      "bytes": 2626
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/decision.json",
+      "sha256": "3cd192b47aa8f9b5d4b17f10456e0ebb7d4745a82d3b226fab502e064ffb0bd7",
+      "bytes": 2076
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/README.md",
+      "sha256": "91b9a2892d85316f92ca4fd683a0945ab49fa6340427658d25ecd73563114eb7",
+      "bytes": 1863
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/run_manifest.json",
+      "sha256": "1aad039f4a21a35f8d39b3e0c36a2a8c3ba2eebd1fab1562a2483c77ca3cdee5",
+      "bytes": 13017
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/source_manifest.json",
+      "sha256": "b301c80d3fa2ebdb7dcf9d33b3394ec25e657f9bc5a5d5b3845c9c2dd686a18c",
+      "bytes": 2569
+    }
+  ]
+}

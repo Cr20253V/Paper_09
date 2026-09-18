@@ -1,0 +1,13 @@
+{
+  "attempt": "20260717_162640",
+  "status": "HARNESS_FALSE_FAILURE_ATTEMPT_RETAINED",
+  "eligible_for_summary": false,
+  "child_method": "modern_tcn_22d",
+  "child_case_status": "COMPLETE",
+  "warmup_count": 500,
+  "formal_count": 10000,
+  "raw_timing_rows": 10000,
+  "stderr_bytes": 0,
+  "cause": "System.Diagnostics.Process.ExitCode remained unavailable after WaitForExit and Refresh",
+  "resolution": "Runner v2 uses an atomic child receipt plus artifact validation; this partial attempt remains excluded and is never merged."
+}

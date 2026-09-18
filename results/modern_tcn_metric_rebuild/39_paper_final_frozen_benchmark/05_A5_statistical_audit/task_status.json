@@ -1,0 +1,14 @@
+{
+  "task_id": "A5",
+  "status": "PARTIAL",
+  "phase1": "COMPLETE",
+  "phase2": "PARTIAL",
+  "updated_at": "2026-07-20T02:29:50+08:00",
+  "grid_counts": {
+    "A1_OFFLINE": "40/40",
+    "A1_CLOSED_LOOP": "240/240",
+    "A3_CLOSED_LOOP": "18/18",
+    "A4_CLOSED_LOOP": "138/138"
+  },
+  "next_action": "Resolve only preregistered gate-input blockers; do not rerun or retune cases."
+}

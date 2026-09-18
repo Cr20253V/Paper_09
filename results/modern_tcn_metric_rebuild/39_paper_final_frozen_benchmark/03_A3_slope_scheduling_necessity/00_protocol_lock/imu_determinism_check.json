@@ -1,0 +1,10 @@
+{
+  "task_id": "A3",
+  "status": "PASS_DETERMINISTIC",
+  "trace_a": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\IMU_LPV_MPC__p03_long_updown__imu_a\\attempt_004\\trace.csv",
+  "trace_b": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\IMU_LPV_MPC__p03_long_updown__imu_b\\attempt_004\\trace.csv",
+  "samples_a": 201,
+  "samples_b": 201,
+  "max_abs_theta_imu_difference_rad": 0.0,
+  "tolerance_rad": 1e-12
+}

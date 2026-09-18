@@ -1,0 +1,251 @@
+﻿"ProcessId","ParentProcessId","Name","CommandLine"
+"0","0","System Idle Process",
+"4","0","System",
+"332","4","Secure System",
+"376","4","Registry",
+"1188","4","smss.exe",
+"1620","1344","csrss.exe",
+"1728","1344","wininit.exe",
+"1736","1720","csrss.exe",
+"1804","1728","services.exe",
+"1824","1728","LsaIso.exe",
+"1832","1728","lsass.exe",
+"1968","1804","svchost.exe",
+"1988","1728","fontdrvhost.exe",
+"1236","1804","svchost.exe",
+"1312","1804","WUDFCompanionHost.exe",
+"1348","1804","svchost.exe",
+"8","1720","winlogon.exe",
+"2108","8","fontdrvhost.exe",
+"2180","8","dwm.exe",
+"2248","1804","svchost.exe",
+"2268","1804","svchost.exe",
+"2360","1804","svchost.exe",
+"2384","1804","svchost.exe",
+"2420","1804","svchost.exe",
+"2492","1804","svchost.exe",
+"2580","1804","svchost.exe",
+"2600","1804","svchost.exe",
+"2608","1804","svchost.exe",
+"2660","1804","svchost.exe",
+"2744","1804","IntelCpHDCPSvc.exe",
+"2760","1804","svchost.exe",
+"2768","1804","svchost.exe",
+"2852","1804","svchost.exe",
+"2860","1804","svchost.exe",
+"3092","1804","svchost.exe",
+"3316","1804","WUDFHost.exe",
+"3360","1804","svchost.exe",
+"3368","1804","svchost.exe",
+"3384","1804","NVDisplay.Container.exe",
+"3532","1804","svchost.exe",
+"3592","1804","svchost.exe",
+"3600","1804","svchost.exe",
+"3608","1804","svchost.exe",
+"3736","4","Memory Compression",
+"3804","1804","svchost.exe",
+"3916","1804","svchost.exe",
+"3924","1804","svchost.exe",
+"3948","1804","WUDFHost.exe",
+"4040","1804","svchost.exe",
+"4088","1804","svchost.exe",
+"3492","1804","svchost.exe",
+"3876","1804","svchost.exe",
+"4504","1804","svchost.exe",
+"4536","1804","svchost.exe",
+"4592","1804","WUDFHost.exe",
+"4644","1804","svchost.exe",
+"4704","1804","svchost.exe",
+"4796","3384","NVDisplay.Container.exe",
+"4804","1804","svchost.exe",
+"4912","1804","spoolsv.exe",
+"5068","1804","svchost.exe",
+"5092","1804","WUDFHost.exe",
+"5192","1804","svchost.exe",
+"5216","1968","WmiPrvSE.exe",
+"5232","1804","svchost.exe",
+"5492","1804","mDNSResponder.exe",
+"5524","1804","AppleMobileDeviceService.exe",
+"5540","1804","svchost.exe",
+"5548","1804","DAX3API.exe",
+"5556","1804","ElevocControlService.exe",
+"5564","1804","OfficeClickToRun.exe",
+"5572","1804","FNPLicensingService64.exe",
+"5580","1804","AdskLicensingService.exe",
+"5588","1804","FlClashHelperService.exe",
+"5600","1804","cer_service.exe",
+"5608","1804","Lenovo.Modern.ImController.exe",
+"5616","1804","HPSIsvc.exe",
+"5648","1804","ipfsvc.exe",
+"5656","1804","LNVDispatcherService.exe",
+"5664","1804","IntelAudioService.exe",
+"5672","1804","NTFSWatcher.exe",
+"5680","1804","LenovoUtilityService.exe",
+"5688","1804","jhi_service.exe",
+"5696","1804","LenovoVantageService.exe",
+"5708","1804","NutstoreDriverSvc.exe",
+"5724","1804","svchost.exe",
+"5740","1804","ipf_uf.exe",
+"5748","1804","NvBroadcast.Container.exe",
+"5796","1804","svchost.exe",
+"5808","1804","AdskAccessServiceHost.exe",
+"5816","1804","svchost.exe",
+"5828","1804","MpDefenderCoreService.exe",
+"5840","1804","MSOfficePLUSService.exe",
+"5996","1804","GoodixSessionService.exe",
+"6004","1804","SangforPWEx.exe",
+"6016","1804","sqlwriter.exe",
+"6024","1804","RtkAudUService64.exe",
+"6156","1804","ThunderboltService.exe",
+"6216","1804","TbtP2pShortcutService.exe",
+"6424","1804","svchost.exe",
+"6452","1804","vmnat.exe",
+"6464","1804","svchost.exe",
+"6476","1804","UDClientService.exe",
+"6484","1804","vmware-authd.exe",
+"6492","1804","vmware-usbarbitrator64.exe",
+"6500","1804","WChannelFrequencyService.exe",
+"6516","1804","vmnetdhcp.exe",
+"6524","1804","WMIRegistrationService.exe",
+"6548","1804","MsMpEng.exe",
+"6564","1804","svchost.exe",
+"6920","1804","WUDFHost.exe",
+"7140","6464","NgcIso.exe",
+"7240","1804","lkads.exe",
+"7288","1804","svchost.exe",
+"7820","1804","svchost.exe",
+"7900","1804","lktsrv.exe",
+"7908","1804","nidmsrv.exe",
+"8028","1804","WUDFHost.exe",
+"8156","1804","svchost.exe",
+"8388","1804","svchost.exe",
+"8612","5748","NvBroadcast.Container.exe",
+"8804","1804","WUDFHost.exe",
+"9068","1804","svchost.exe",
+"9376","1968","unsecapp.exe",
+"10056","1804","WUDFCompanionHost.exe",
+"10140","5656","LNV_DES.exe",
+"9948","5740","ipf_helper.exe","""C:\WINDOWS\System32\DriverStore\FileRepository\ipf_cpu.inf_amd64_fe2967a6eb0d3a7d\ipf_helper.exe"""
+"10312","6004","SangforUDProtectEx.exe",
+"10548","5548","DAX3API.exe",
+"10612","1804","svchost.exe",
+"10620","1804","svchost.exe",
+"10648","1804","IntelGraphicsSoftware.Service.exe",
+"10656","1804","cowork-svc.exe",
+"10704","2760","sihost.exe","sihost.exe"
+"10712","1804","svchost.exe","C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup -s CDPUserSvc"
+"10760","5540","AggregatorHost.exe",
+"10792","1804","svchost.exe",
+"11148","1804","svchost.exe","C:\WINDOWS\system32\svchost.exe -k LocalSystemNetworkRestricted -p -s webthreatdefusersvc"
+"11072","1804","svchost.exe","C:\WINDOWS\system32\svchost.exe -k UnistackSvcGroup -s WpnUserService"
+"11452","1804","svchost.exe",
+"11536","2384","taskhostw.exe","taskhostw.exe {222A245B-E637-4AE9-A93F-A59CA119A75E}"
+"12092","1804","svchost.exe",
+"12156","1968","unsecapp.exe",
+"12704","12564","explorer.exe","C:\WINDOWS\Explorer.EXE"
+"12720","1804","svchost.exe",
+"12880","1804","WUDFHost.exe",
+"13232","1804","wslservice.exe",
+"13248","1804","svchost.exe",
+"12304","1804","svchost.exe","C:\WINDOWS\system32\svchost.exe -k BthAppGroup -p -s BluetoothUserService"
+"11812","1804","svchost.exe",
+"12364","1804","svchost.exe",
+"11652","10648","PresentMonService.exe",
+"11692","11652","conhost.exe",
+"13088","1804","vmcompute.exe",
+"12124","10704","CrossDeviceResume.exe","""C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\CrossDeviceResume.exe"" /tileid MicrosoftWindows.Client.CBS_cw5n1h2txyewy!CrossDeviceResumeApp"
+"11584","1804","WUDFHost.exe",
+"13700","1804","svchost.exe",
+"13928","6024","RtkAudUService64.exe",
+"14128","1804","svchost.exe",
+"14236","1804","svchost.exe","C:\WINDOWS\system32\svchost.exe -k ClipboardSvcGroup -p -s cbdhsvc"
+"14292","1968","CrossDeviceService.exe","""C:\Program Files\WindowsApps\MicrosoftWindows.CrossDevice_1.26052.99.0_x64__cw5n1h2txyewy\CrossDeviceService.exe"" -RegisterProcessAsComServer -Embedding"
+"13940","1968","SearchHost.exe","""C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\SearchHost.exe"" -ServerName:CortanaUI.AppXstmwaab17q5s3y22tp6apqz7a45vwv65.mca"
+"14160","1968","StartMenuExperienceHost.exe","""C:\WINDOWS\SystemApps\Microsoft.Windows.StartMenuExperienceHost_cw5n1h2txyewy\StartMenuExperienceHost.exe"" -ServerName:FullTrustApp.AppXykjsye98af63ez2annt9djke8trg8stn.mca"
+"14592","1804","svchost.exe",
+"14772","1968","Widgets.exe","""C:\Program Files\WindowsApps\MicrosoftWindows.Client.WebExperience_526.17301.40.0_x64__cw5n1h2txyewy\Dashboard\Widgets.exe"" -ServerName:Microsoft.Windows.DashboardServer"
+"14832","1968","RuntimeBroker.exe","C:\Windows\System32\RuntimeBroker.exe -Embedding"
+"14844","1804","svchost.exe","C:\WINDOWS\system32\svchost.exe -k UdkSvcGroup -s UdkUserSvc"
+"15132","1968","WidgetService.exe","""C:\Program Files\WindowsApps\Microsoft.WidgetsPlatformRuntime_1.6.19.0_x64__8wekyb3d8bbwe\WidgetService\WidgetService.exe"" -RegisterProcessAsComServer -Embedding"
+"7508","1968","unsecapp.exe","C:\WINDOWS\system32\wbem\unsecapp.exe -Embedding"
+"14748","1968","RuntimeBroker.exe","C:\Windows\System32\RuntimeBroker.exe -Embedding"
+"15496","1804","svchost.exe",
+"16028","13940","msedgewebview2.exe","""C:\Program Files (x86)\Microsoft\EdgeWebView\Application\150.0.4078.65\msedgewebview2.exe"" --embedded-browser-webview=1 --webview-exe-name=SearchHost.exe --webview-exe-version=2605.27010.300.0 --user-data-dir=""C:\Users\15754\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView"" --noerrdialogs --disable-features=msSmartScreenProtection --edge-webview-enable-mojo-ipcz --enable-features=msEdgeFluentOverlayScrollbar --user-agent=""Mozilla/5.0 (Windows NT 10.0; Win64; x64; Cortana 1.18.9.23723; 10.0.0.0.26200.8875) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.26200 IsWebView2/True (WebView2Version 150.0.4078.65)"" --lang=zh-Hans-CN --mojo-named-platform-channel-pipe=13940.2980.16515483068644992048 /pfhostedapp:2c5ff28ed291036bf3c56b59908d4afb492f032f"
+"16588","16028","msedgewebview2.exe","""C:\Program Files (x86)\Microsoft\EdgeWebView\Application\150.0.4078.65\msedgewebview2.exe"" --type=crashpad-handler --user-data-dir=C:\Users\15754\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView /prefetch:4 /pfhostedapp:2c5ff28ed291036bf3c56b59908d4afb492f032f --monitor-self-annotation=ptype=crashpad-handler --database=C:\Users\15754\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView\Crashpad --metrics-dir=C:\Users\15754\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView --annotation=IsOfficialBuild=1 --annotation=channel= --annotation=chromium-version=150.0.7871.115 ""--annotation=exe=C:\Program Files (x86)\Microsoft\EdgeWebView\Application\150.0.4078.65\msedgewebview2.exe"" --annotation=plat=Win64 ""--annotation=prod=Edge WebView2"" --annotation=ver=150.0.4078.65 --initial-client-data=0x170,0x174,0x178,0x14c,0x180,0x7ffeb673dcf0,0x7ffeb673dcfc,0x7ffeb673dd08"
+"16776","3492","ctfmon.exe",
+"3992","2384","PowerToys.exe","""C:\Users\15754\AppData\Local\PowerToys\PowerToys.exe"""
+"17132","16028","msedgewebview2.exe","""C:\Program Files (x86)\Microsoft\EdgeWebView\Application\150.0.4078.65\msedgewebview2.exe"" --type=utility --utility-sub-type=network.mojom.NetworkService --lang=zh-CN --service-sandbox-type=none --noerrdialogs --user-agent=""Mozilla/5.0 (Windows NT 10.0; Win64; x64; Cortana 1.18.9.23723; 10.0.0.0.26200.8875) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.26200 IsWebView2/True (WebView2Version 150.0.4078.65)"" --user-data-dir=""C:\Users\15754\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView"" --webview-exe-name=SearchHost.exe --webview-exe-version=2605.27010.300.0 --embedded-browser-webview=1 --always-read-main-dll --metrics-shmem-handle=2316,i,7200024687614828601,4084692374322975566,524288 --field-trial-handle=2100,i,18114847809949938135,8633124231051243754,262144 --enable-features=msEdgeFluentOverlayScrollbar --disable-features=msSmartScreenProtection --variations-seed-version --pseudonymization-salt-handle=2104,i,11195049710598332462,6108461937652899809,4 --trace-process-track-uuid=3190708989122997041 --mojo-platform-channel-handle=2332 /prefetch:11 /pfhostedapp:2c5ff28ed291036bf3c56b59908d4afb492f032f"
+"17268","16028","msedgewebview2.exe","""C:\Program Files (x86)\Microsoft\EdgeWebView\Application\150.0.4078.65\msedgewebview2.exe"" --type=gpu-process --noerrdialogs --user-agent=""Mozilla/5.0 (Windows NT 10.0; Win64; x64; Cortana 1.18.9.23723; 10.0.0.0.26200.8875) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.26200 IsWebView2/True (WebView2Version 150.0.4078.65)"" --user-data-dir=""C:\Users\15754\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView"" --webview-exe-name=SearchHost.exe --webview-exe-version=2605.27010.300.0 --embedded-browser-webview=1 --gpu-preferences=UAAAAAAAAADgAAAEAAAAAAAAAAAAAGAAOAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAABgAAAAAAAAAGAAAAAAAAAAIAAAAAAAAAAgAAAAAAAAACAAAAAAAAAA= --always-read-main-dll --metrics-shmem-handle=1976,i,16516644265862369799,3698310347891538518,262144 --field-trial-handle=2100,i,18114847809949938135,8633124231051243754,262144 --enable-features=msEdgeFluentOverlayScrollbar --disable-features=msSmartScreenProtection --variations-seed-version --pseudonymization-salt-handle=2104,i,11195049710598332462,6108461937652899809,4 --trace-process-track-uuid=3190708988185955192 --mojo-platform-channel-handle=2096 /prefetch:2 /pfhostedapp:2c5ff28ed291036bf3c56b59908d4afb492f032f"
+"17424","16028","msedgewebview2.exe","""C:\Program Files (x86)\Microsoft\EdgeWebView\Application\150.0.4078.65\msedgewebview2.exe"" --type=utility --utility-sub-type=storage.mojom.StorageService --lang=zh-CN --service-sandbox-type=service --noerrdialogs --user-agent=""Mozilla/5.0 (Windows NT 10.0; Win64; x64; Cortana 1.18.9.23723; 10.0.0.0.26200.8875) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.26200 IsWebView2/True (WebView2Version 150.0.4078.65)"" --user-data-dir=""C:\Users\15754\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView"" --webview-exe-name=SearchHost.exe --webview-exe-version=2605.27010.300.0 --embedded-browser-webview=1 --always-read-main-dll --metrics-shmem-handle=2656,i,17759965576160047093,6725448185917098708,524288 --field-trial-handle=2100,i,18114847809949938135,8633124231051243754,262144 --enable-features=msEdgeFluentOverlayScrollbar --disable-features=msSmartScreenProtection --variations-seed-version --pseudonymization-salt-handle=2104,i,11195049710598332462,6108461937652899809,4 --trace-process-track-uuid=3190708990060038890 --mojo-platform-channel-handle=2408 /prefetch:13 /pfhostedapp:2c5ff28ed291036bf3c56b59908d4afb492f032f"
+"17876","16028","msedgewebview2.exe","""C:\Program Files (x86)\Microsoft\EdgeWebView\Application\150.0.4078.65\msedgewebview2.exe"" --type=renderer --noerrdialogs --user-agent=""Mozilla/5.0 (Windows NT 10.0; Win64; x64; Cortana 1.18.9.23723; 10.0.0.0.26200.8875) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/70.0.3538.102 Safari/537.36 Edge/18.26200 IsWebView2/True (WebView2Version 150.0.4078.65)"" --user-data-dir=""C:\Users\15754\AppData\Local\Packages\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\LocalState\EBWebView"" --webview-exe-name=SearchHost.exe --webview-exe-version=2605.27010.300.0 --embedded-browser-webview=1 --video-capture-use-gpu-memory-buffer --lang=zh-CN --js-flags=--expose-gc --device-scale-factor=2 --num-raster-threads=4 --enable-main-frame-before-activation --renderer-client-id=5 --time-ticks-at-unix-epoch=-1784260920809588 --launch-time-ticks=26828624 --always-read-main-dll --metrics-shmem-handle=4072,i,5063378462351227324,11040004462863977103,2097152 --field-trial-handle=2100,i,18114847809949938135,8633124231051243754,262144 --enable-features=msEdgeFluentOverlayScrollbar --disable-features=msSmartScreenProtection --variations-seed-version --pseudonymization-salt-handle=2104,i,11195049710598332462,6108461937652899809,4 --trace-process-track-uuid=3190708990997080739 --mojo-platform-channel-handle=4092 /pfhostedapp:2c5ff28ed291036bf3c56b59908d4afb492f032f /prefetch:1"
+"18408","1968","ChsIME.exe",
+"17852","1804","SearchIndexer.exe",
+"10400","1804","svchost.exe","C:\WINDOWS\system32\svchost.exe -k LocalService -p -s NPSMSvc"
+"18488","1804","svchost.exe",
+"18644","1804","svchost.exe",
+"18740","1804","svchost.exe",
+"19164","5680","FnHotkeyCapsLKNumLK.exe",
+"19216","5680","FnHotkeyUtility.exe","""C:\Windows\System32\DriverStore\FileRepository\lenovofnandfunctionkeys.inf_amd64_5e21bf389d23855a\FnHotkeyUtility.exe"""
+"18972","5696","LenovoVantage-(VantageCoreAddin).exe",
+"19412","1804","NisSrv.exe",
+"18116","1968","PhoneExperienceHost.exe","""C:\Program Files\WindowsApps\Microsoft.YourPhone_1.26061.125.0_x64__8wekyb3d8bbwe\PhoneExperienceHost.exe"" -ComServer:Background -Embedding"
+"15192","1968","TextInputHost.exe","""C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\TextInputHost.exe"" -ServerName:InputApp.AppXk0k6mrh4r2q0ct33a9wgbez0x7v9cz5y.mca"
+"19680","3992","PowerToys.AlwaysOnTop.exe","""C:\Users\15754\AppData\Local\PowerToys\PowerToys.AlwaysOnTop.exe"" 3992"
+"19708","3992","PowerToys.Awake.exe","PowerToys.Awake.exe --use-pt-config --pid 3992"
+"19780","3992","PowerToys.ColorPickerUI.exe","""C:\Users\15754\AppData\Local\PowerToys\PowerToys.ColorPickerUI.exe"" 3992"
+"19844","3992","PowerToys.CropAndLock.exe","""C:\Users\15754\AppData\Local\PowerToys\PowerToys.CropAndLock.exe"" 3992"
+"19868","3992","PowerToys.FancyZones.exe","""C:\Users\15754\AppData\Local\PowerToys\PowerToys.FancyZones.exe"" 3992"
+"19936","19812","Microsoft.CmdPal.UI.exe","""C:\Program Files\WindowsApps\Microsoft.CommandPalette_0.5.2601.0_x64__8wekyb3d8bbwe\Microsoft.CmdPal.UI.exe"" x-cmdpal://background/"
+"20076","3992","PowerToys.PowerLauncher.exe","""C:\Users\15754\AppData\Local\PowerToys\PowerToys.PowerLauncher.exe""  -powerToysPid 3992 --started-from-runner"
+"20308","1968","WindowsPackageManagerServer.exe","""C:\Program Files\WindowsApps\Microsoft.DesktopAppInstaller_1.29.280.0_x64__8wekyb3d8bbwe\WindowsPackageManagerServer.exe"" -Embedding"
+"20628","4644","wlanext.exe",
+"21088","1804","svchost.exe",
+"21264","1804","svchost.exe","C:\WINDOWS\system32\svchost.exe -k DevicesFlow -s DevicesFlowUserSvc"
+"21448","1804","svchost.exe",
+"22948","12704","SecurityHealthSystray.exe","""C:\Windows\System32\SecurityHealthSystray.exe"" "
+"22968","1804","SecurityHealthService.exe",
+"23152","1804","svchost.exe",
+"8124","12704","FlClash.exe","""D:\LenovoSoftstore\install\FlClash\FlClash.exe"" "
+"23460","5588","FlClashCore.exe",
+"13276","23460","conhost.exe",
+"22264","22624","CCXProcess.exe","""C:\Program Files\Adobe\Adobe Creative Cloud Experience\CCXProcess.exe"""
+"22272","22264","node.exe","""C:\Program Files\Adobe\Adobe Creative Cloud Experience\libs\node.exe"" ""C:\Program Files\Adobe\Adobe Creative Cloud Experience\js\main.js"""
+"22448","22272","conhost.exe","\??\C:\WINDOWS\system32\conhost.exe 0x4"
+"1764","12704","catime_1.5.0.exe","""E:\IDM下载\catime_1.5.0.exe"" --startup"
+"16564","6476","MessagingPlugin.exe","""C:\ProgramData\Lenovo\Udc\Hosts\x64\MessagingPlugin.exe"" C:\ProgramData\Lenovo\Udc\Broker\SharedUser\E3F77E14-E7FC-4766-B3B4-3496B773960C 6476 MessagingPlugin"
+"16360","16564","conhost.exe","\??\C:\WINDOWS\system32\conhost.exe 0x4"
+"16136","6476","AppProvisioningPlugin.exe",
+"16104","16136","conhost.exe",
+"5112","1804","svchost.exe",
+"4336","22272","AdobeIPCBroker.exe","""C:\Program Files (x86)\Common Files\Adobe\Adobe Desktop Common\IPCBox\AdobeIPCBroker.exe"" ""-launchedbyvulcan-22272 C:\Program Files\Adobe\Adobe Creative Cloud Experience\libs\node.exe"""
+"7096","12704","Snipaste.exe","""D:\LenovoSoftstore\install\Snipaste 2.8.8\Snipaste.exe"" "
+"20344","12704","ONENOTEM.EXE","""C:\Program Files\Microsoft Office\root\Office16\ONENOTEM.EXE"" /tsr"
+"20312","1804","svchost.exe",
+"14036","1804","svchost.exe",
+"5944","1804","svchost.exe",
+"15680","1804","svchost.exe",
+"22016","1804","svchost.exe",
+"20444","1804","svchost.exe",
+"10096","5696","LenovoVantage-(GenericMessagingAddin).exe","""C:\Program Files (x86)\Lenovo\VantageService\4.2601.31.0\LenovoVantage-(GenericMessagingAddin).exe"" GenericMessagingAddin C:\ProgramData\Lenovo\Vantage\Addins\\GenericMessagingAddin\1.1.0.146\GenericMessagingAddin.dll GenericMessagingAddin.1a9ca7269c5c451182e400bf38c3cc3c b7bd4032-0951-48d8-9251-d6a77645118c 8"
+"15604","1804","Locator.exe",
+"13680","1804","WmiApSrv.exe",
+"6368","1968","ShellExperienceHost.exe","""C:\WINDOWS\SystemApps\ShellExperienceHost_cw5n1h2txyewy\ShellExperienceHost.exe"" -ServerName:App.AppXtk181tbxbce2qsex02s8tw7hfxa9xb3t.mca"
+"19172","1968","RuntimeBroker.exe","C:\Windows\System32\RuntimeBroker.exe -Embedding"
+"21636","1968","ApplicationFrameHost.exe","C:\WINDOWS\system32\ApplicationFrameHost.exe -Embedding"
+"17456","1968","SystemSettings.exe","""C:\Windows\ImmersiveControlPanel\SystemSettings.exe"" -ServerName:microsoft.windows.immersivecontrolpanel"
+"7172","1968","UserOOBEBroker.exe","C:\Windows\System32\oobe\UserOOBEBroker.exe -Embedding"
+"7580","1968","AppActions.exe","""C:\WINDOWS\SystemApps\MicrosoftWindows.Client.CBS_cw5n1h2txyewy\AppActions.exe"" -Embedding"
+"18348","1968","backgroundTaskHost.exe","""C:\WINDOWS\system32\backgroundTaskHost.exe"" -ServerName:App.AppXapskvk16gk8da8kch5g4qxh42vxccved.mca"
+"16636","3868","WindowsTerminal.exe","""C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.24.11911.0_x64__8wekyb3d8bbwe\WindowsTerminal.exe"" -d ""C:\Users\15754\Desktop"""
+"21624","16636","OpenConsole.exe","""C:\Program Files\WindowsApps\Microsoft.WindowsTerminal_1.24.11911.0_x64__8wekyb3d8bbwe\OpenConsole.exe"" --headless --textMeasurement graphemes --width 120 --height 30 --signal 0x908 --server 0x8fc"
+"21668","16636","powershell.exe","C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe"
+"18936","10704","ShellHost.exe","""C:\Windows\System32\ShellHost.exe"""
+"10632","1804","VSSVC.exe",
+"8540","1804","svchost.exe",
+"4288","1968","WmiPrvSE.exe",
+"7356","1968","backgroundTaskHost.exe","""C:\WINDOWS\system32\backgroundTaskHost.exe"" -ServerName:App.AppXnme9zjyebb2xnyygh6q9ev6p5d234br2.mca"
+"22132","1968","RuntimeBroker.exe","C:\Windows\System32\RuntimeBroker.exe -Embedding"
+"16328","1804","svchost.exe",
+"15520","1804","svchost.exe",
+"16212","1968","backgroundTaskHost.exe","""C:\WINDOWS\system32\backgroundTaskHost.exe"" -ServerName:App.AppXpybpk6fj2fe0gb0jan49e6dncngk3pa1.mca"
+"22624","1968","RuntimeBroker.exe","C:\Windows\System32\RuntimeBroker.exe -Embedding"

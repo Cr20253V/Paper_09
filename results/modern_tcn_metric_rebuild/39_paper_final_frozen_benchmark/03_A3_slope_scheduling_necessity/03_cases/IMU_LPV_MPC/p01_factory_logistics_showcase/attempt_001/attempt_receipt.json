@@ -1,0 +1,11 @@
+{
+  "task_id": "A3",
+  "case_id": "IMU_LPV_MPC__p01_factory_logistics_showcase",
+  "attempt": 1,
+  "status": "COMPLETE",
+  "elapsed_wall_s": 223.8963716,
+  "output_mat": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p01_factory_logistics_showcase\\attempt_001\\case_out.mat",
+  "trace_csv": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p01_factory_logistics_showcase\\attempt_001\\trace.csv",
+  "case_metrics": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p01_factory_logistics_showcase\\attempt_001\\case_metrics.json",
+  "completed_at": "2026-07-15T15:14:57Z"
+}

@@ -1,0 +1,94 @@
+{
+  "dataset_version": "diag2steer_Ts0p01_seq128_input22_h0_current_confidence",
+  "created_at": "2026-06-15 22:35:47",
+  "source_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\tcn\\ModernTCN_train_data_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat",
+  "output_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\tcn\\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat",
+  "vehicle_type": "diagonal_dual_steer_drive_agv",
+  "active_drive_steer_wheels": [
+    "LF",
+    "RR"
+  ],
+  "passive_support_wheels": [
+    "RF",
+    "LR"
+  ],
+  "Ts": 0.01,
+  "seq_len": 128,
+  "input_dim": 22,
+  "feature_names": [
+    "gyro_z",
+    "I_lf",
+    "I_rr",
+    "omega_wheel_lf",
+    "omega_wheel_rr",
+    "delta_lf",
+    "delta_rr",
+    "v_hat",
+    "dv_hat_dt",
+    "ws_imbalance",
+    "I_sum",
+    "I_diff_signed",
+    "I_diff_abs",
+    "kappa_proxy",
+    "accel_per_current",
+    "dv_hat_dt_lp",
+    "accel_x_wheel",
+    "I_drive_signed",
+    "current_per_accel",
+    "drive_load_proxy",
+    "a_hp",
+    "yaw_consistency_error"
+  ],
+  "feature_contract": "passive17_plus_all5",
+  "feature_policy": "imu_free_passive17_plus_all5",
+  "plant_revision": {
+    "id": "agv_physics_v2_plantfix",
+    "created_at": "2026-06-15 21:14:17",
+    "description": "current repaired plant: higher AGV cornering stiffness, configurable yaw damping, and no normal-speed artificial beta damping",
+    "params_version": "V4.1",
+    "Ts": 0.01,
+    "mass": 200,
+    "front_cornering_stiffness": 3000,
+    "rear_cornering_stiffness": 3000,
+    "yaw_damping": 250,
+    "sideslip_damping": 0,
+    "sideslip_low_speed_damping": 1,
+    "rules": [
+      "do not restore the old hard-coded high yaw damping constant",
+      "do not restore the old normal-speed artificial beta feedback term",
+      "MPC retuning must be done through controller weights/horizon/constraints"
+    ],
+    "source_files": [
+      "src/core/parameters.m",
+      "src/core/state_eq.m",
+      "src/core/state_eq_ref.m",
+      "src/core/state_eq_ref_train_data.m"
+    ]
+  },
+  "no_new_inputs": true,
+  "feature_extractor": "passive",
+  "base_feature_contract": "passive17_plus_all5",
+  "plan_branch": "Plan A passive-only",
+  "label_time_policy": "current_window_end",
+  "horizon_steps": 0,
+  "horizon_seconds": 0,
+  "label_map_main": {
+    "flat": 1,
+    "stall": 2,
+    "slope": 3
+  },
+  "label_map_turn": {
+    "right": -1,
+    "straight": 0,
+    "left": 1
+  },
+  "split_policy": "run_level_no_window_leakage",
+  "split_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\tcn\\ModernTCN_shared_run_split_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat",
+  "scaler_policy": "fit_train_only_apply_val_test_online",
+  "filter_policy": "causal_online_replayable_filters_only",
+  "confidence_policy": "derive_classification_confidence_from_softmax_and_export",
+  "output_contract": "logits_main3_logits_turn3_theta1_with_softmax_confidence",
+  "train_windows": 16529,
+  "val_windows": 3695,
+  "test_windows": 3602
+}

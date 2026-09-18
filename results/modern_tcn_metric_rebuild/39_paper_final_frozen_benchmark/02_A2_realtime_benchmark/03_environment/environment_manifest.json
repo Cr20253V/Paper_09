@@ -1,0 +1,61 @@
+{
+    "environment_sha256":  "549abbfb4e54f7486f9a012976785ad3f5bc1db546d801033815ba570f9bd84f",
+    "captured_at":  "2026-07-17T12:56:26.4350129+08:00",
+    "stable":  {
+                   "cpu":  [
+                               {
+                                   "Name":  "Intel(R) Core(TM) i7-14650HX",
+                                   "Manufacturer":  "GenuineIntel",
+                                   "NumberOfCores":  16,
+                                   "NumberOfLogicalProcessors":  24,
+                                   "MaxClockSpeed":  2200
+                               }
+                           ],
+                   "computer":  {
+                                    "Manufacturer":  "LENOVO",
+                                    "Model":  "21N5",
+                                    "TotalPhysicalMemory":  34053414912
+                                },
+                   "os":  {
+                              "Caption":  "Microsoft Windows 11 家庭版 中文版",
+                              "Version":  "10.0.26200",
+                              "BuildNumber":  "26200",
+                              "OSArchitecture":  "64 位"
+                          },
+                   "gpu":  [
+                               {
+                                   "Name":  "OrayIddDriver Device",
+                                   "DriverVersion":  "17.50.19.949",
+                                   "AdapterRAM":  null
+                               },
+                               {
+                                   "Name":  "Intel(R) UHD Graphics",
+                                   "DriverVersion":  "32.0.101.6881",
+                                   "AdapterRAM":  2147479552
+                               },
+                               {
+                                   "Name":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+                                   "DriverVersion":  "32.0.15.6626",
+                                   "AdapterRAM":  4293918720
+                               }
+                           ],
+                   "matlab":  "R2024b",
+                   "matlab_executable":  "D:\\LenovoSoftstore\\install\\Matlab R2024b\\bin\\matlab.exe",
+                   "backend":  "CPU",
+                   "threads":  1,
+                   "batch_size":  1,
+                   "gpu_used":  false,
+                   "power_policy":  "电源方案 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (平衡)",
+                   "input_shapes":  [
+                                        "[1,128,88]",
+                                        "[1,128,22]"
+                                    ],
+                   "data_movement":  "preloaded host single arrays; disk IO excluded"
+               },
+    "volatile":  {
+                     "logical_processor_load":  {
+                                                    "LoadPercentage":  1
+                                                },
+                     "free_physical_memory_kb":  23893060
+                 }
+}

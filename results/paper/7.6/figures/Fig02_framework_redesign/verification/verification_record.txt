@@ -1,0 +1,59 @@
+FIGURE 2 REDESIGN VERIFICATION
+Date: 2026-08-03
+
+1) Current-source preservation
+Original current SHA256=ECD04C7AE7602C38EB95C568E967AB354A54E3C5D185293A98026A2B2A8E45B3
+Current snapshot SHA256=ECD04C7AE7602C38EB95C568E967AB354A54E3C5D185293A98026A2B2A8E45B3
+Original equals current snapshot => True
+EXIT_STATUS=0
+
+2) Figure generation
+Command: D:\LenovoSoftstore\install\Python 3.10\python.exe scripts\build_fig02_framework_redesign.py
+Literal output: saved fig02_framework_redesign.svg, .pdf, and .png
+EXIT_STATUS=0
+
+3) Baseline compile
+Command: latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=paper_v4_final_candidate_fig02_baseline -outdir=verification paper_v4_final_candidate.tex
+Literal output: Output written on .../verification/paper_v4_final_candidate_fig02_baseline.pdf (21 pages, 1080673 bytes).
+EXIT_STATUS=0
+FLS input: INPUT ../7.6/figures_final/Fig01_overall_framework/output/fig01_overall_framework.pdf
+
+4) Modified compile
+Command: latexmk -pdf -interaction=nonstopmode -halt-on-error -jobname=paper_v4_final_candidate_fig02_redesign -outdir=verification paper_v4_final_candidate_fig02_redesign.tex
+Literal output: Output written on .../verification/paper_v4_final_candidate_fig02_redesign.pdf (21 pages, 1126535 bytes).
+EXIT_STATUS=0
+FLS input: INPUT ../7.6/figures/Fig02_framework_redesign/output/fig02_framework_redesign.pdf
+
+5) Artifact checks
+E:\Matlab\Simulink\S-Function_16\results\paper\7.6\figures\Fig02_framework_redesign\output\fig02_framework_redesign.svg => SHA256=1E2359F8C48739F23A5CA9B564EF5A575F0D67224DCA0EE5870EC5FDFF14559C LENGTH=128348
+E:\Matlab\Simulink\S-Function_16\results\paper\7.6\figures\Fig02_framework_redesign\output\fig02_framework_redesign.pdf => SHA256=B66430741750CCFBBEABD445545068344A9E612BC352F26CA68DAF129131A353 LENGTH=85785
+E:\Matlab\Simulink\S-Function_16\results\paper\7.6\figures\Fig02_framework_redesign\output\fig02_framework_redesign.png => SHA256=91173117C423064BB67C112FBCB26D7CDE6A2B20EBAA8CDAAD846F861811B489 LENGTH=716901
+E:\Matlab\Simulink\S-Function_16\results\paper\Latex\paper_v4_final_candidate_fig02_redesign.tex => SHA256=EE7C6068DE38585C8CAA3F4A5A312F3E7FEE87889C1C0FA5A3071EE138E66D1C LENGTH=106153
+E:\Matlab\Simulink\S-Function_16\results\paper\7.6\figures\Fig02_framework_redesign\verification\paper_v4_final_candidate_fig02_baseline.pdf => SHA256=520971FD0DF3FE1FC223BDDC477EE5C6A47A8859F82B0A5B9E99006E4FCEA411 LENGTH=1080673
+E:\Matlab\Simulink\S-Function_16\results\paper\7.6\figures\Fig02_framework_redesign\verification\paper_v4_final_candidate_fig02_redesign.pdf => SHA256=2F9D2BC1E563582ACC722ED41F0A67F8DC4E7A3FE1E145F8DBF7710DF7810876 LENGTH=1126535
+E:\Matlab\Simulink\S-Function_16\results\paper\7.6\figures\Fig02_framework_redesign\verification\baseline_vs_redesign_page6.png => SHA256=912AAB32BB9971E4D0D156E73096A15248780949FC1CFFC191B8646F5BBFA612 LENGTH=197981
+EXIT_STATUS=0
+
+6) Terminology checks
+SVG contains [Qualified observer] => True
+SVG contains [ModernTCN] => True
+SVG contains [4125 local models] => True
+SVG contains [force-balance observer] => False
+Expected: Qualified observer=True; ModernTCN=True; 4125 local models=True; force-balance observer=False
+EXIT_STATUS=0
+
+7) Verified behavior change
+Baseline behavior: the paper embeds the previous text-box framework and its force-balance-observer wording.
+Modified behavior: the paper embeds the icon-led two-layer framework and the Qualified-observer asymmetric-fusion wording.
+Visual comparison: verification/baseline_vs_redesign_page6.png
+
+8) Rollback
+Runnable script: verification/rollback_paper_v4_final_candidate_fig02_redesign.ps1
+Original paper_v4_final_candidate.tex was not overwritten by this figure task.
+
+9) Rollback execution test
+Command: verification\rollback_paper_v4_final_candidate_fig02_redesign.ps1
+Literal output: RESTORED=...paper_v4_final_candidate_fig02_redesign.tex; restored SHA256 matched current snapshot.
+ROLLBACK_MATCH=True
+EXIT_STATUS=0
+The redesign was then reapplied and latexmk reported the modified target up-to-date with EXIT_STATUS=0.

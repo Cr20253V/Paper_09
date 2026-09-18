@@ -1,0 +1,52 @@
+[A3] FAILED case=ZS_LPV_MPC__p03_long_updown__zs: 错误使用 run_closed_loop_model_once (第 153 行)
+编译失败，因为编译文件名超过 260 个字符的 Windows 限制。从路径较短的工作目录编译，以允许用较短的文件名创建编译文
+件。"E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\03_A3_slope_scheduling_necessity\_simulink_cache\slprj\_sfprj\A3_LPVMPC_slope_source_isolated\_self\sfun\src\c1_A3_LPVMPC_slope_source_isolated.c"
+
+出错 run_a3_experiment (第 55 行)
+        run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_a3_smoke_entry (第 8 行)
+run_a3_experiment('smoke');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[A3] FAILED case=IMU_LPV_MPC__p03_long_updown__imu_a: 错误使用 run_closed_loop_model_once (第 153 行)
+编译失败，因为编译文件名超过 260 个字符的 Windows 限制。从路径较短的工作目录编译，以允许用较短的文件名创建编译文
+件。"E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\03_A3_slope_scheduling_necessity\_simulink_cache\slprj\_sfprj\A3_LPVMPC_slope_source_isolated\_self\sfun\src\c1_A3_LPVMPC_slope_source_isolated.c"
+
+出错 run_a3_experiment (第 55 行)
+        run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_a3_smoke_entry (第 8 行)
+run_a3_experiment('smoke');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[A3] FAILED case=Oracle_LPV_MPC__p03_long_updown__oracle: 错误使用 run_closed_loop_model_once (第 153 行)
+编译失败，因为编译文件名超过 260 个字符的 Windows 限制。从路径较短的工作目录编译，以允许用较短的文件名创建编译文
+件。"E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\03_A3_slope_scheduling_necessity\_simulink_cache\slprj\_sfprj\A3_LPVMPC_slope_source_isolated\_self\sfun\src\c1_A3_LPVMPC_slope_source_isolated.c"
+
+出错 run_a3_experiment (第 55 行)
+        run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_a3_smoke_entry (第 8 行)
+run_a3_experiment('smoke');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[A3] FAILED case=IMU_LPV_MPC__p03_long_updown__imu_b: 错误使用 run_closed_loop_model_once (第 153 行)
+编译失败，因为编译文件名超过 260 个字符的 Windows 限制。从路径较短的工作目录编译，以允许用较短的文件名创建编译文
+件。"E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\03_A3_slope_scheduling_necessity\_simulink_cache\slprj\_sfprj\A3_LPVMPC_slope_source_isolated\_self\sfun\src\c1_A3_LPVMPC_slope_source_isolated.c"
+
+出错 run_a3_experiment (第 55 行)
+        run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_a3_smoke_entry (第 8 行)
+run_a3_experiment('smoke');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

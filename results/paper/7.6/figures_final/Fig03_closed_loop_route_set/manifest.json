@@ -1,0 +1,294 @@
+{
+  "figure_id": "Fig03_closed_loop_route_set",
+  "generated_utc": "2026-07-23T06:48:37.248429+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "nature_skill_used": false,
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "data/paths/path_factory_logistics_showcase_theta10_v10.mat",
+      "bytes": 1284661,
+      "sha256": "4291e3ad60a5e3dbb79ae60f115c53bc6db71447309c758b97bf539f56e58670"
+    },
+    {
+      "role": "input_2",
+      "file": "data/paths/path_closed_loop_sharp_turn_transition_theta10_v1.mat",
+      "bytes": 334913,
+      "sha256": "c5c5f33077067f1c98bd319d199cc4f4096aa6fa309f8d692c5662882e5d1f68"
+    },
+    {
+      "role": "input_3",
+      "file": "data/paths/path_closed_loop_long_updown_theta10_v1.mat",
+      "bytes": 297731,
+      "sha256": "ab82393620a90964d3973f42bec9bcdb8ac0733db5db08670d152fded5ca2e08"
+    },
+    {
+      "role": "input_4",
+      "file": "data/paths/modern_tcn_showcase/candidates/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1.mat",
+      "bytes": 341426,
+      "sha256": "0ceee80c3e6883f803df538a0e3519d2ac14966ab70af5c17e9514dd50fa895d"
+    },
+    {
+      "role": "input_5",
+      "file": "data/paths/modern_tcn_showcase/candidates/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1.mat",
+      "bytes": 966497,
+      "sha256": "8817d10f891dfc8956d676081c946c68714043e541c31ba54c4656fd09d8687e"
+    },
+    {
+      "role": "input_6",
+      "file": "data/paths/factory_targeted_eval/path_factory_target_downhill_straight_after_turn_v1.mat",
+      "bytes": 318564,
+      "sha256": "c929727187cf8ae08030636e47d2b0a465d2cddaa68f0b8b8b0b8a5ad630ece8"
+    },
+    {
+      "role": "input_7",
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/figure2_revision_requirements_cn.md",
+      "bytes": 5806,
+      "sha256": "90b1fb5f29072cc5d08dae06ee2c72aad521a851308b10fec647589f438f60b5"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/source_data/fig03_closed_loop_route_set_source_data.csv",
+    "rows": 62588,
+    "columns": [
+      "route_id",
+      "route_order",
+      "route_name",
+      "route_identity",
+      "sample_index",
+      "t_s",
+      "x_ref_m",
+      "y_ref_m",
+      "grade_deg",
+      "grade_source",
+      "grade_segment",
+      "grade_file_theta_ref_deg",
+      "v_ref_mps",
+      "rendered_in_figure"
+    ],
+    "sha256": "10cfdf98d3a6d6907a1c423a99e0ac248f41c75bd1627cb8f5d39f589007c64e"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/output/fig03_closed_loop_route_set.pdf",
+      "bytes": 56243,
+      "sha256": "4e049b932067662a1ba4b8323045b881eaeb9682d8cc96963ff64984453b0bb8"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/output/fig03_closed_loop_route_set.svg",
+      "bytes": 120968,
+      "sha256": "f5d6d3ba90613ad5392c943858a346c905c117b3a234c3f3db28ddeaa64156e4"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/output/fig03_closed_loop_route_set.png",
+      "bytes": 203887,
+      "sha256": "76aa74cab8c2ad7af0b9b70d8c7c644386d3d19131ac310a09a2c577d0b436c1"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/output/fig03_closed_loop_route_set.tiff",
+      "bytes": 1094658,
+      "sha256": "a355118b59aeff39f19eef41b97f311b1fdea78751c70c5ea7fa8c40012b4bde"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "route_count": 6,
+      "route_order": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "P5",
+        "P6"
+      ],
+      "panel_grid": "2 x 3 route profiles; each profile contains path, grade, and speed axes",
+      "all_values_finite": true,
+      "time_strictly_increasing_per_route": true,
+      "render_decimation": {
+        "rule": "uniform index selection, max 2200 points, first and last retained",
+        "rendered_samples": {
+          "P1": 2200,
+          "P2": 2200,
+          "P3": 2200,
+          "P4": 2200,
+          "P5": 2200,
+          "P6": 2200
+        }
+      },
+      "flat_route_p5_max_abs_grade_deg": 0.0,
+      "route_identity": "closed-loop benchmark routes",
+      "route_titles": [
+        "P1  Factory logistics",
+        "P2  Sharp-turn transition",
+        "P3  Long up/down slope",
+        "P4  Mild slope-turn coupling",
+        "P5  Flat factory logistics",
+        "P6  Downhill recovery"
+      ],
+      "title_star_count": 0,
+      "bottom_explanatory_note_present": false,
+      "shared_grade_ylim_deg": [
+        -8.0,
+        8.0
+      ],
+      "shared_speed_ylim_mps": [
+        0.79,
+        0.96
+      ],
+      "path_profile_text_overlap_samples": {
+        "P1": 0,
+        "P2": 0,
+        "P3": 0,
+        "P4": 0,
+        "P5": 0,
+        "P6": 0
+      },
+      "all_path_profile_text_overlaps_clear": true,
+      "path_profile_text_min_clearance_px": {
+        "P1": 16.83,
+        "P2": 16.14,
+        "P3": 16.14,
+        "P4": 16.14,
+        "P5": 14.24,
+        "P6": 6.59
+      },
+      "minimum_path_profile_text_clearance_requirement_px": 6.0,
+      "p4_grade_source": "metadata_reconstructed",
+      "p4_metadata_segment_bounds_match_file": true,
+      "p4_metadata_segments": [
+        {
+          "name": "startup_flat",
+          "t0_s": 0.0,
+          "t1_s": 4.0,
+          "grade0_deg": 0.0,
+          "grade1_deg": 0.0
+        },
+        {
+          "name": "uphill_entry",
+          "t0_s": 4.0,
+          "t1_s": 15.0,
+          "grade0_deg": 0.0,
+          "grade1_deg": 4.0
+        },
+        {
+          "name": "uphill_left_turn",
+          "t0_s": 15.0,
+          "t1_s": 21.0,
+          "grade0_deg": 4.0,
+          "grade1_deg": 4.0
+        },
+        {
+          "name": "slope_release_only",
+          "t0_s": 21.0,
+          "t1_s": 34.0,
+          "grade0_deg": 4.0,
+          "grade1_deg": 0.0
+        },
+        {
+          "name": "downhill_entry",
+          "t0_s": 34.0,
+          "t1_s": 43.0,
+          "grade0_deg": 0.0,
+          "grade1_deg": -3.5
+        },
+        {
+          "name": "downhill_right_turn",
+          "t0_s": 43.0,
+          "t1_s": 49.0,
+          "grade0_deg": -3.5,
+          "grade1_deg": -3.5
+        },
+        {
+          "name": "flat_recovery",
+          "t0_s": 49.0,
+          "t1_s": 56.0,
+          "grade0_deg": -3.5,
+          "grade1_deg": 0.0
+        }
+      ],
+      "p4_startup_flat_max_abs_grade_deg": 0.0,
+      "p4_grade_min_max_deg": [
+        -3.5,
+        4.0
+      ],
+      "p4_segment_monotonic_or_constant": {
+        "startup_flat": true,
+        "uphill_entry": true,
+        "uphill_left_turn": true,
+        "slope_release_only": true,
+        "downhill_entry": true,
+        "downhill_right_turn": true,
+        "flat_recovery": true
+      },
+      "p4_simulation_consistency": "not asserted; caption must state that the P4 grade profile follows frozen segment metadata",
+      "source_curve_traceability": "grade_deg is the plotted full-resolution source; rendered_in_figure identifies exported line samples"
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 18,
+      "expected_primary_panels": 6,
+      "minimum_visible_font_pt": 6.5,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        183.0,
+        116.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            1370
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            115.993
+          ],
+          "nonwhite_fraction": 0.06601
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2740
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            115.993
+          ],
+          "nonwhite_fraction": 0.06336
+        }
+      },
+      "svg_editable_text_elements": 159,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/qa/fig03_closed_loop_route_set_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "All six closed-loop benchmark routes use the required names without stars or a bottom footnote; P4 shows the seven-segment metadata-reconstructed grade profile, and the unified inner spacing keeps every path clear of grade/speed labels and ticks with at least 6 px measured clearance."
+  }
+}

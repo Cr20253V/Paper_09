@@ -1,0 +1,23 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "updated_at": "2026-07-17T00:27:04+08:00",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "stage": "COMPLETE",
+  "commands": [
+    "build_a1_inventory.py",
+    "run_A1_train_missing_tcn",
+    "run_A1_offline_modern.py",
+    "run_A1_offline_matlab",
+    "finalize_A1_offline.py",
+    "run_A1_closed_loop_parallel() [validated GRU+TCN process split]",
+    "run_A1_closed_loop_manual('gru'|'tcn') [serial fallback]",
+    "finalize_A1.py"
+  ],
+  "counts": {
+    "models": 40,
+    "offline_cases": 40,
+    "missing_offline_cases": 0,
+    "closed_loop_cases": 240,
+    "missing_closed_loop_cases": 0
+  }
+}

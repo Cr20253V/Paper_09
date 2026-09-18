@@ -1,0 +1,289 @@
+{
+  "directly_reusable": [
+    {
+      "role": "A0 frozen protocol",
+      "path": "results/paper/7.6/A0_论文最终统一实验配置_20260715.json",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\A0_论文最终统一实验配置_20260715.json",
+      "exists": true,
+      "expected_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+      "actual_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+      "sha256_match": true,
+      "reusable": true,
+      "note": "authoritative protocol"
+    },
+    {
+      "role": "A0 Chinese protocol explanation",
+      "path": "results/paper/7.6/A0_论文最终统一实验配置说明_20260715.md",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\A0_论文最终统一实验配置说明_20260715.md",
+      "exists": true,
+      "expected_sha256": "44155532ef770dbb5c4817006caa80213cb2ede7390ee8dbcc75085425058173",
+      "actual_sha256": "44155532ef770dbb5c4817006caa80213cb2ede7390ee8dbcc75085425058173",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "experiment audit and writing outline",
+      "path": "results/paper/7.6/后续三章实验审计与写作大纲_20260715.md",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\后续三章实验审计与写作大纲_20260715.md",
+      "exists": true,
+      "expected_sha256": "a8a0c7a736afcb54812cd419a3a31f716eac2820a1c5fed68c85b9636191b8bc",
+      "actual_sha256": "a8a0c7a736afcb54812cd419a3a31f716eac2820a1c5fed68c85b9636191b8bc",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "plant revision definition",
+      "path": "src/core/agv_plant_revision.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\src\\core\\agv_plant_revision.m",
+      "exists": true,
+      "expected_sha256": "8181017e136db7f6037218c5a38590d70d1b191d6b9f1407781f9275d62b35fc",
+      "actual_sha256": "8181017e136db7f6037218c5a38590d70d1b191d6b9f1407781f9275d62b35fc",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "plant source chain",
+      "path": "src/core/agv_model_sfunc.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\src\\core\\agv_model_sfunc.m",
+      "exists": true,
+      "expected_sha256": "848e2988038b2f75cebaf8fed8cf174ec1a811109c62fad54100b72be1b72788",
+      "actual_sha256": "848e2988038b2f75cebaf8fed8cf174ec1a811109c62fad54100b72be1b72788",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "plant source chain",
+      "path": "src/core/output_eq_ref.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\src\\core\\output_eq_ref.m",
+      "exists": true,
+      "expected_sha256": "3af89d6df395042136c5b828aab8b78db53985b84c55384281b9897ce89017df",
+      "actual_sha256": "3af89d6df395042136c5b828aab8b78db53985b84c55384281b9897ce89017df",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "plant source chain",
+      "path": "src/core/state_eq_ref.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\src\\core\\state_eq_ref.m",
+      "exists": true,
+      "expected_sha256": "f4ddd25e2a2c005c33a84b3fb49b362196a3aa0be65b3c1d0b8d034826d5304f",
+      "actual_sha256": "f4ddd25e2a2c005c33a84b3fb49b362196a3aa0be65b3c1d0b8d034826d5304f",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "plant source chain",
+      "path": "src/core/state_eq.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\src\\core\\state_eq.m",
+      "exists": true,
+      "expected_sha256": "370753a9c54cb660b67e7ee4486f7f6571f54fca1e3a16bfc87ec47f4e1dc368",
+      "actual_sha256": "370753a9c54cb660b67e7ee4486f7f6571f54fca1e3a16bfc87ec47f4e1dc368",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "plant source chain",
+      "path": "src/core/parameters.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\src\\core\\parameters.m",
+      "exists": true,
+      "expected_sha256": "f67f2dc8f75ab3c2d1096d53b71b6b318af533093c4bfe84fd783a2555fd5999",
+      "actual_sha256": "f67f2dc8f75ab3c2d1096d53b71b6b318af533093c4bfe84fd783a2555fd5999",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "LPV database",
+      "path": "results/paper/agv_model_parameter_correction_workflow/04_lpv_database/lin_agv_db_agv_physics_v2_plantfix.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\agv_model_parameter_correction_workflow\\04_lpv_database\\lin_agv_db_agv_physics_v2_plantfix.mat",
+      "exists": true,
+      "expected_sha256": "20e79eceb634115346fb062ebe3d7a64aaa777ad149b9a49d473caf65ef46176",
+      "actual_sha256": "20e79eceb634115346fb062ebe3d7a64aaa777ad149b9a49d473caf65ef46176",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "MPC maps",
+      "path": "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/maps_best_agv_physics_v2_plantfix_stage1.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\agv_model_parameter_correction_workflow\\06_mpc_retuning\\maps_best_agv_physics_v2_plantfix_stage1.mat",
+      "exists": true,
+      "expected_sha256": "f7b158ae305d35bd86305d1a98a7154872e00235948f0fc346cf20ffa825d947",
+      "actual_sha256": "f7b158ae305d35bd86305d1a98a7154872e00235948f0fc346cf20ffa825d947",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "controller cache",
+      "path": "data/models/ctrl.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\data\\models\\ctrl.mat",
+      "exists": true,
+      "expected_sha256": "29db93a5eca884d1113873203a602bb57e31e1b1351e7cbe2690d98028a723ef",
+      "actual_sha256": "29db93a5eca884d1113873203a602bb57e31e1b1351e7cbe2690d98028a723ef",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "preload entrypoint",
+      "path": "src/core/preloadfcn_v2.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\src\\core\\preloadfcn_v2.m",
+      "exists": true,
+      "expected_sha256": "3b1b6e697887bb80158f02d44db9296df60e0f6afed93d2102fb684432c614d9",
+      "actual_sha256": "3b1b6e697887bb80158f02d44db9296df60e0f6afed93d2102fb684432c614d9",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "Node26 synchronous rho_f model shell",
+      "path": "simulink/LPVMPC_AGV_simulink_Modern_TCN_44_rhofmd.slx",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\simulink\\LPVMPC_AGV_simulink_Modern_TCN_44_rhofmd.slx",
+      "exists": true,
+      "expected_sha256": "cc5e6416683b4993d4a01d2cdf9fb0ce662aa5504633c79c2868084661d39bba",
+      "actual_sha256": "cc5e6416683b4993d4a01d2cdf9fb0ce662aa5504633c79c2868084661d39bba",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "Node36 causal IMU estimator",
+      "path": "results/modern_tcn_metric_rebuild/36_moderntcn_imu_fusion/tools/node36_causal_imu_slope_estimator.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\36_moderntcn_imu_fusion\\tools\\node36_causal_imu_slope_estimator.m",
+      "exists": true,
+      "expected_sha256": "420b562774bd414d3f01452dbcb122a0017b3bf36d9582aa09d0b3b47bdf0c05",
+      "actual_sha256": "420b562774bd414d3f01452dbcb122a0017b3bf36d9582aa09d0b3b47bdf0c05",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "Node36 frozen estimator config",
+      "path": "results/modern_tcn_metric_rebuild/36_moderntcn_imu_fusion/tools/node36_fusion_cfg.m",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\36_moderntcn_imu_fusion\\tools\\node36_fusion_cfg.m",
+      "exists": true,
+      "expected_sha256": "d9ff0939039dea63f8da9a8b52ee7373851884ccb37d7828bc5dbb7d52799026",
+      "actual_sha256": "d9ff0939039dea63f8da9a8b52ee7373851884ccb37d7828bc5dbb7d52799026",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "Node36 legality decision",
+      "path": "results/modern_tcn_metric_rebuild/36_moderntcn_imu_fusion/01_imu_signal_legality_audit/imu_signal_legality_decision.json",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\36_moderntcn_imu_fusion\\01_imu_signal_legality_audit\\imu_signal_legality_decision.json",
+      "exists": true,
+      "expected_sha256": "13140745b21247cdf5307761a27ee5e758e1d4579664aa100983574b014d10b5",
+      "actual_sha256": "13140745b21247cdf5307761a27ee5e758e1d4579664aa100983574b014d10b5",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "Node10 closed-loop thresholds",
+      "path": "results/modern_tcn_metric_rebuild/10_threshold_recalibration/hard_constraint_thresholds_v2_closed_loop_proposed.json",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\10_threshold_recalibration\\hard_constraint_thresholds_v2_closed_loop_proposed.json",
+      "exists": true,
+      "expected_sha256": "3f5eb295c5bd45ccdfc1330012d185e063a179ebdf01bc578a773c853e0b2caa",
+      "actual_sha256": "3f5eb295c5bd45ccdfc1330012d185e063a179ebdf01bc578a773c853e0b2caa",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "A5 A3 case schema",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/05_A5_statistical_audit/00_protocol_lock/input_schemas/a3_closed_loop_case.schema.json",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\05_A5_statistical_audit\\00_protocol_lock\\input_schemas\\a3_closed_loop_case.schema.json",
+      "exists": true,
+      "expected_sha256": "f9f073bf245726be01d6c0409bb4fc2e95b433559d68e4f7f9ec16caa996f422",
+      "actual_sha256": "f9f073bf245726be01d6c0409bb4fc2e95b433559d68e4f7f9ec16caa996f422",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "A0 closed-loop path",
+      "path": "data/paths/path_factory_logistics_showcase_theta10_v10.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\path_factory_logistics_showcase_theta10_v10.mat",
+      "exists": true,
+      "expected_sha256": "4291e3ad60a5e3dbb79ae60f115c53bc6db71447309c758b97bf539f56e58670",
+      "actual_sha256": "4291e3ad60a5e3dbb79ae60f115c53bc6db71447309c758b97bf539f56e58670",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "A0 closed-loop path",
+      "path": "data/paths/path_closed_loop_sharp_turn_transition_theta10_v1.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\path_closed_loop_sharp_turn_transition_theta10_v1.mat",
+      "exists": true,
+      "expected_sha256": "c5c5f33077067f1c98bd319d199cc4f4096aa6fa309f8d692c5662882e5d1f68",
+      "actual_sha256": "c5c5f33077067f1c98bd319d199cc4f4096aa6fa309f8d692c5662882e5d1f68",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "A0 closed-loop path",
+      "path": "data/paths/path_closed_loop_long_updown_theta10_v1.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\path_closed_loop_long_updown_theta10_v1.mat",
+      "exists": true,
+      "expected_sha256": "ab82393620a90964d3973f42bec9bcdb8ac0733db5db08670d152fded5ca2e08",
+      "actual_sha256": "ab82393620a90964d3973f42bec9bcdb8ac0733db5db08670d152fded5ca2e08",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "A0 closed-loop path",
+      "path": "data/paths/modern_tcn_showcase/candidates/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\modern_tcn_showcase\\candidates\\path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1.mat",
+      "exists": true,
+      "expected_sha256": "0ceee80c3e6883f803df538a0e3519d2ac14966ab70af5c17e9514dd50fa895d",
+      "actual_sha256": "0ceee80c3e6883f803df538a0e3519d2ac14966ab70af5c17e9514dd50fa895d",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "A0 closed-loop path",
+      "path": "data/paths/modern_tcn_showcase/candidates/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\modern_tcn_showcase\\candidates\\path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1.mat",
+      "exists": true,
+      "expected_sha256": "8817d10f891dfc8956d676081c946c68714043e541c31ba54c4656fd09d8687e",
+      "actual_sha256": "8817d10f891dfc8956d676081c946c68714043e541c31ba54c4656fd09d8687e",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    },
+    {
+      "role": "A0 closed-loop path",
+      "path": "data/paths/factory_targeted_eval/path_factory_target_downhill_straight_after_turn_v1.mat",
+      "absolute_path": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\factory_targeted_eval\\path_factory_target_downhill_straight_after_turn_v1.mat",
+      "exists": true,
+      "expected_sha256": "c929727187cf8ae08030636e47d2b0a465d2cddaa68f0b8b8b0b8a5ad630ece8",
+      "actual_sha256": "c929727187cf8ae08030636e47d2b0a465d2cddaa68f0b8b8b0b8a5ad630ece8",
+      "sha256_match": true,
+      "reusable": true,
+      "note": ""
+    }
+  ],
+  "non_reusable_performance_results": [
+    {
+      "artifact": "2026-05 three-mode comparison",
+      "reason": "plant revision is not agv_physics_v2_plantfix"
+    },
+    {
+      "artifact": "plantfix Stage1 results",
+      "reason": "1 s/51-sample smoke only; modes are identical and not formal A3 evidence"
+    }
+  ]
+}

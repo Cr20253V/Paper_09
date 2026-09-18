@@ -1,0 +1,19 @@
+{
+  "task_id": "A3",
+  "status": "COMPLETE",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "formal_case_count": 18,
+  "formal_complete_count": 18,
+  "formal_failed_count": 0,
+  "source_manifest": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/source_manifest.json",
+  "source_manifest_sha256": "b301c80d3fa2ebdb7dcf9d33b3394ec25e657f9bc5a5d5b3845c9c2dd686a18c",
+  "artifact_manifest": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/artifact_manifest.json",
+  "artifact_manifest_sha256": "867e4ecd3dbc5572998976cfcf8b4ece46bb98c1ecb87c152a54ba64f1d4acf9",
+  "decision": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/decision.json",
+  "decision_sha256": "3cd192b47aa8f9b5d4b17f10456e0ebb7d4745a82d3b226fab502e064ffb0bd7",
+  "report": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/A3_experiment_report.md",
+  "report_sha256": "0bcc72286b0e8f4c0c8895e0e8b4db7719580c320de8fa47c8a8cd39da6e52d7",
+  "a4_artifact_receipt": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a4_artifact_receipt.json",
+  "a4_artifact_receipt_sha256": "f1684870e546fc425e54ad3c7cde96247ef663e9ede669a17ee6573651eb78cf",
+  "issued_at": "2026-07-16T17:40:16.611076+00:00"
+}

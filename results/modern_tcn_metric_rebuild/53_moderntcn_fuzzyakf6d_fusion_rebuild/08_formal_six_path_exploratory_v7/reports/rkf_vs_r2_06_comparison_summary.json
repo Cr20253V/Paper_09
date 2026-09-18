@@ -1,0 +1,83 @@
+{
+  "node51_path": "E:\\\\Matlab\\\\Simulink\\\\S-Function_16\\\\results\\\\modern_tcn_metric_rebuild\\\\51_moderntcn_rkf_highrisk_suppression_rebuild",
+  "node51_paired_case_count": 60,
+  "node53_paired_case_count": 60,
+  "baseline_alignment_max_abs": {
+    "ey_base": 0.0,
+    "epsi_base": 0.0,
+    "jdu_base": 0.0
+  },
+  "overall": [
+    {
+      "fusion": "RKF",
+      "metric": "ey_rmse",
+      "baseline_mean": 0.026348949056145942,
+      "fusion_mean": 0.022340102141686212,
+      "effect": 0.00400884691445973,
+      "relative_reduction_pct": 15.214447095849764,
+      "case_wins": 30,
+      "ties": 16,
+      "losses": 14
+    },
+    {
+      "fusion": "RKF",
+      "metric": "epsi_rmse",
+      "baseline_mean": 0.022161334247498454,
+      "fusion_mean": 0.019397194937673435,
+      "effect": 0.0027641393098250186,
+      "relative_reduction_pct": 12.472801858205049,
+      "case_wins": 31,
+      "ties": 16,
+      "losses": 13
+    },
+    {
+      "fusion": "RKF",
+      "metric": "j_du",
+      "baseline_mean": 0.9305307636811345,
+      "fusion_mean": 0.7269763841488961,
+      "effect": 0.20355437953223843,
+      "relative_reduction_pct": 21.875083283328234,
+      "case_wins": 30,
+      "ties": 16,
+      "losses": 14
+    },
+    {
+      "fusion": "R2_06_V7",
+      "metric": "ey_rmse",
+      "baseline_mean": 0.026348949056145942,
+      "fusion_mean": 0.018910990447876808,
+      "effect": 0.0074379586082691344,
+      "relative_reduction_pct": 28.228672773323442,
+      "case_wins": 36,
+      "ties": 16,
+      "losses": 8
+    },
+    {
+      "fusion": "R2_06_V7",
+      "metric": "epsi_rmse",
+      "baseline_mean": 0.022161334247498454,
+      "fusion_mean": 0.019327606197141595,
+      "effect": 0.002833728050356858,
+      "relative_reduction_pct": 12.786811564275407,
+      "case_wins": 29,
+      "ties": 16,
+      "losses": 15
+    },
+    {
+      "fusion": "R2_06_V7",
+      "metric": "j_du",
+      "baseline_mean": 0.9305307636811345,
+      "fusion_mean": 0.6736145630773563,
+      "effect": 0.2569162006037782,
+      "relative_reduction_pct": 27.609640715953354,
+      "case_wins": 24,
+      "ties": 16,
+      "losses": 20
+    }
+  ],
+  "files": [
+    "E:\\\\Matlab\\\\Simulink\\\\S-Function_16\\\\results\\\\modern_tcn_metric_rebuild\\\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\\\08_formal_six_path_exploratory_v7\\\\reports\\rkf_vs_r2_06_overall_comparison.csv",
+    "E:\\\\Matlab\\\\Simulink\\\\S-Function_16\\\\results\\\\modern_tcn_metric_rebuild\\\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\\\08_formal_six_path_exploratory_v7\\\\reports\\rkf_vs_r2_06_path_comparison.csv",
+    "E:\\\\Matlab\\\\Simulink\\\\S-Function_16\\\\results\\\\modern_tcn_metric_rebuild\\\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\\\08_formal_six_path_exploratory_v7\\\\reports\\rkf_vs_r2_06_case_comparison.csv"
+  ]
+}

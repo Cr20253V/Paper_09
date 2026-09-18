@@ -1,0 +1,5 @@
+PDF render QA generated from the candidate PDF at 300 dpi using the TeX Live Poppler renderer.
+Poppler rounds the 89 x 104 mm PDF page upward to 1052 x 1229 px; the direct Matplotlib
+PNG rounds to 1051 x 1228 px. The one-pixel right/bottom difference is a renderer page-boundary
+rounding convention, so pixel comparison uses the shared 1051 x 1228 px canvas.
+This record belongs only to the Node53 V6 P2 candidate and is not referenced by the paper TeX.

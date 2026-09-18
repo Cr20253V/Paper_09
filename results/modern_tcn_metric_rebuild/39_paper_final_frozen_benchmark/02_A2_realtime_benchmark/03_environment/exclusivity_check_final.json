@@ -1,0 +1,16 @@
+{
+  "checked_at": "2026-07-17T11:20:09.2781167+08:00",
+  "project_root": "E:\\Matlab\\Simulink\\S-Function_16",
+  "allowed_matlab_pid": 0,
+  "exclusive": false,
+  "blocker_count": 1,
+  "blockers": [
+    {
+      "pid": 27504,
+      "parent_pid": 5568,
+      "name": "python.exe",
+      "reason": "PROJECT_PYTHON_OR_EXPERIMENT",
+      "command_line": "e:\\Matlab\\Simulink\\S-Function_16\\.venv\\Scripts\\python.exe c:\\Users\\15754\\.vscode\\extensions\\ms-python.python-2026.4.0-win32-x64\\python_files\\run-jedi-language-server.py"
+    }
+  ]
+}

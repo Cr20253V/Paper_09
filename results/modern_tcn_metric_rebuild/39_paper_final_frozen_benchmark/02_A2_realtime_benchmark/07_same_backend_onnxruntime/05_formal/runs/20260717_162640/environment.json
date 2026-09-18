@@ -1,0 +1,70 @@
+﻿{
+    "captured_at":  "2026-07-17T16:26:43.0157496+08:00",
+    "run_id":  "20260717_162640",
+    "computer_model":  "21N5",
+    "cpu":  "Intel(R) Core(TM) i7-14650HX",
+    "physical_cores":  16,
+    "logical_processors":  24,
+    "memory_bytes":  34053414912,
+    "os":  "Microsoft Windows 11 家庭版 中文版",
+    "os_version":  "10.0.26200",
+    "power_scheme":  "电源方案 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (平衡)",
+    "gpu":  [
+                {
+                    "name":  "OrayIddDriver Device",
+                    "adapter_ram_bytes":  null,
+                    "driver_version":  "17.50.19.949"
+                },
+                {
+                    "name":  "Intel(R) UHD Graphics",
+                    "adapter_ram_bytes":  2147479552,
+                    "driver_version":  "32.0.101.6881"
+                },
+                {
+                    "name":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+                    "adapter_ram_bytes":  4293918720,
+                    "driver_version":  "32.0.15.6626"
+                }
+            ],
+    "backend":  "onnxruntime CPUExecutionProvider",
+    "precision":  "FP32",
+    "intra_op_num_threads":  1,
+    "inter_op_num_threads":  1,
+    "execution_mode":  "ORT_SEQUENTIAL",
+    "graph_optimization":  "ORT_ENABLE_ALL",
+    "environment_sha256":  "90d4448c8b88b3b80157b95a5c05d4f9fa55040b108b6d2dd5b5cc6633dc9cfb",
+    "stable_environment":  {
+                               "computer_model":  "21N5",
+                               "cpu":  "Intel(R) Core(TM) i7-14650HX",
+                               "physical_cores":  16,
+                               "logical_processors":  24,
+                               "memory_bytes":  34053414912,
+                               "gpu":  [
+                                           {
+                                               "name":  "OrayIddDriver Device",
+                                               "adapter_ram_bytes":  null,
+                                               "driver_version":  "17.50.19.949"
+                                           },
+                                           {
+                                               "name":  "Intel(R) UHD Graphics",
+                                               "adapter_ram_bytes":  2147479552,
+                                               "driver_version":  "32.0.101.6881"
+                                           },
+                                           {
+                                               "name":  "NVIDIA GeForce RTX 4060 Laptop GPU",
+                                               "adapter_ram_bytes":  4293918720,
+                                               "driver_version":  "32.0.15.6626"
+                                           }
+                                       ],
+                               "os":  "Microsoft Windows 11 家庭版 中文版",
+                               "os_version":  "10.0.26200",
+                               "power_scheme":  "电源方案 GUID: 381b4222-f694-41f0-9685-ff5bb260df2e  (平衡)",
+                               "backend":  "onnxruntime CPUExecutionProvider",
+                               "precision":  "FP32",
+                               "intra_op_num_threads":  1,
+                               "inter_op_num_threads":  1,
+                               "execution_mode":  "ORT_SEQUENTIAL",
+                               "graph_optimization":  "ORT_ENABLE_ALL",
+                               "input_protocol":  "preloaded C-contiguous FP32; session.run; output allocation included"
+                           }
+}

@@ -1,0 +1,28 @@
+{
+  "phase1": {
+    "formal_case_json_count": 11,
+    "raw_timing_csv_count": 11,
+    "raw_timing_rows_per_case": 10000,
+    "raw_memory_csv_count": 11,
+    "a5_runtime_cells": 9,
+    "supplemental_cells": 2
+  },
+  "phase2_after_final_fusion": {
+    "formal_case_json_count": 3,
+    "a5_runtime_cells": 3
+  },
+  "summary": [
+    "06_summary/runtime_summary.csv",
+    "06_summary/supplemental_runtime_summary.csv",
+    "06_summary/parameter_model_memory_summary.csv",
+    "06_summary/decision.json"
+  ],
+  "top_level": [
+    "README.md",
+    "A2_experiment_report.md",
+    "run_manifest.json",
+    "artifact_manifest.csv",
+    "receipt.json",
+    "task_status.json"
+  ]
+}

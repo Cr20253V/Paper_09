@@ -1,0 +1,11 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "timestamp": "20260717T001540",
+  "mode": "formal",
+  "pool_type": "Processes",
+  "workers": 2,
+  "worker_partition": "GRU method / TCN method",
+  "row_count": 120,
+  "failed_future_count": 0,
+  "failed_case_count": 0
+}

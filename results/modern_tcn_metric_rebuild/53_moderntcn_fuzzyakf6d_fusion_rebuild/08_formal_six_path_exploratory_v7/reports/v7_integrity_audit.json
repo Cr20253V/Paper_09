@@ -1,0 +1,22 @@
+{
+  "checked_case_count": 60,
+  "artifact_hashes_checked": 360,
+  "artifact_mismatch_count": 0,
+  "artifact_mismatch_examples": [],
+  "input_hashes_checked": 300,
+  "input_mismatch_count": 0,
+  "input_mismatch_examples": [],
+  "baseline_registry_hash_pass_counts": {
+    "source_hash_match": 60,
+    "trace_hash_match": 60,
+    "path_hash_match": 60,
+    "onnx_hash_match": 60,
+    "checkpoint_hash_match": 60,
+    "case_manifest_contract_match": 60,
+    "source_metrics_match_table": 60
+  },
+  "expected_pair_count": 60,
+  "paired_case_count": 60,
+  "unmatched_fusion_case_count": 0,
+  "unmatched_baseline_case_count": 0
+}

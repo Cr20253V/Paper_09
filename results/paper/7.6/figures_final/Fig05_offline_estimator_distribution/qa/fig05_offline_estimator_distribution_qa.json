@@ -1,0 +1,239 @@
+{
+  "figure_id": "Fig05_offline_estimator_distribution",
+  "generated_utc": "2026-07-22T15:51:51.915061+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "nature_skill_used": false,
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/03_offline/offline_case_metrics.csv",
+      "bytes": 89660,
+      "sha256": "12ac98b5920dc0228ea064e781b47b4acbc62942f2f0bdf6ffeafc6d893cd1e2"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/source_data/fig05_offline_estimator_distribution_source_data.csv",
+    "rows": 40,
+    "columns": [
+      "method_id",
+      "method_label",
+      "method_order",
+      "seed",
+      "grade_mae_deg",
+      "p95_abs_error_deg"
+    ],
+    "sha256": "b1608b4bdb49562dbf9295dfa1498181e5c8d6d56eac650e45fcdd0cddbfb749"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.pdf",
+      "bytes": 46213,
+      "sha256": "60f49e1a5cbc87eb4260ceaaea31a504ac3fff8b3ead2fac49aafb81a4dde900"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.svg",
+      "bytes": 45110,
+      "sha256": "fc516dc13f9f1580177de01b91ea44933d96124e544e6f6517fc1667c93e6e6e"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.png",
+      "bytes": 110524,
+      "sha256": "739866e21a83a07089c694ef0c71ffd1b30ac6bb97cd6f7c4bd0c99eaf5ff0cb"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.tiff",
+      "bytes": 588154,
+      "sha256": "248ce556431b86dbf73ab8c4f00114b2f019f57331fcbb789dedec702cee06ee"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "row_count": 40,
+      "method_count": 4,
+      "seeds_per_method": 10,
+      "seed_order": [
+        1,
+        7,
+        11,
+        21,
+        42,
+        73,
+        101,
+        202,
+        340,
+        520
+      ],
+      "all_points_visible": true,
+      "same_seed_pairing": true,
+      "ci_definition": "two-sided 95% Student-t interval over 10 model seeds",
+      "paired_effects": {
+        "grade_mae_deg": {
+          "modern_tcn_22d": {
+            "direction": "competitor minus ModernTCN-delta; positive favors delta",
+            "estimate": 0.054118685509530015,
+            "ci95_low": -0.004015870144120512,
+            "ci95_high": 0.11225324116318054
+          },
+          "gru_22d": {
+            "direction": "competitor minus ModernTCN-delta; positive favors delta",
+            "estimate": 0.286944680799981,
+            "ci95_low": 0.1737691841917114,
+            "ci95_high": 0.40012017740825057
+          },
+          "tcn_22d": {
+            "direction": "competitor minus ModernTCN-delta; positive favors delta",
+            "estimate": 0.31648495822922573,
+            "ci95_low": 0.23423327704734337,
+            "ci95_high": 0.3987366394111081
+          }
+        },
+        "p95_abs_error_deg": {
+          "modern_tcn_22d": {
+            "direction": "competitor minus ModernTCN-delta; positive favors delta",
+            "estimate": 0.12848969675812635,
+            "ci95_low": 0.0067260148049630986,
+            "ci95_high": 0.2502533787112896
+          },
+          "gru_22d": {
+            "direction": "competitor minus ModernTCN-delta; positive favors delta",
+            "estimate": 0.5817249697871552,
+            "ci95_low": 0.3289324383740246,
+            "ci95_high": 0.8345175012002857
+          },
+          "tcn_22d": {
+            "direction": "competitor minus ModernTCN-delta; positive favors delta",
+            "estimate": 0.9580211780381948,
+            "ci95_low": 0.6121817624287992,
+            "ci95_high": 1.3038605936475904
+          }
+        }
+      },
+      "absolute_metric_summaries": [
+        {
+          "metric": "grade_mae_deg",
+          "method_id": "modern_tcn_delta_bank_124",
+          "mean": 0.5988841710129981,
+          "ci95_low": 0.5552407815762941,
+          "ci95_high": 0.642527560449702
+        },
+        {
+          "metric": "grade_mae_deg",
+          "method_id": "modern_tcn_22d",
+          "mean": 0.6530028565225281,
+          "ci95_low": 0.6068430023175315,
+          "ci95_high": 0.6991627107275247
+        },
+        {
+          "metric": "grade_mae_deg",
+          "method_id": "gru_22d",
+          "mean": 0.885828851812979,
+          "ci95_low": 0.7881042644633821,
+          "ci95_high": 0.9835534391625759
+        },
+        {
+          "metric": "grade_mae_deg",
+          "method_id": "tcn_22d",
+          "mean": 0.9153691292422238,
+          "ci95_low": 0.8553000082436837,
+          "ci95_high": 0.9754382502407639
+        },
+        {
+          "metric": "p95_abs_error_deg",
+          "method_id": "modern_tcn_delta_bank_124",
+          "mean": 1.6777749854958954,
+          "ci95_low": 1.5886164927904853,
+          "ci95_high": 1.7669334782013055
+        },
+        {
+          "metric": "p95_abs_error_deg",
+          "method_id": "modern_tcn_22d",
+          "mean": 1.806264682254022,
+          "ci95_low": 1.67548619516262,
+          "ci95_high": 1.937043169345424
+        },
+        {
+          "metric": "p95_abs_error_deg",
+          "method_id": "gru_22d",
+          "mean": 2.259499955283051,
+          "ci95_low": 2.037135603171022,
+          "ci95_high": 2.4818643073950795
+        },
+        {
+          "metric": "p95_abs_error_deg",
+          "method_id": "tcn_22d",
+          "mean": 2.6357961635340903,
+          "ci95_low": 2.309679153319399,
+          "ci95_high": 2.9619131737487816
+        }
+      ],
+      "input_sha256_matches_handoff": true
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 2,
+      "expected_primary_panels": 2,
+      "minimum_visible_font_pt": 6.2,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        183.0,
+        70.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            826
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            69.935
+          ],
+          "nonwhite_fraction": 0.05411
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            1653
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            69.977
+          ],
+          "nonwhite_fraction": 0.05123
+        }
+      },
+      "svg_editable_text_elements": 27,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/qa/fig05_offline_estimator_distribution_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "All seed points, same-seed ModernTCN pairings, means, and 95% t intervals remain legible."
+  }
+}

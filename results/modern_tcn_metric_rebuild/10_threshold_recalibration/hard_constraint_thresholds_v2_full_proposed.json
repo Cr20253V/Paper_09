@@ -1,0 +1,12 @@
+{
+  "closed_loop_unstable_must_be_false": true,
+  "constraint_penalty_max_ratio": 1.0,
+  "viol_rate_max_abs_increase": 0.001,
+  "acc_main_min_drop": 0.03,
+  "stall_recall_min_drop": 0.1,
+  "slope_recall_min_drop": 0.03,
+  "theta_edge_p95_max_ratio": 1.05,
+  "flat_peak_theta_error_max_ratio": 1.15,
+  "omega_cmd_rms_max_ratio": 5.0,
+  "delta_u_proxy_max_ratio": 45.0
+}

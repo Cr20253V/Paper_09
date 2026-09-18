@@ -1,0 +1,220 @@
+[A3] FAILED case=ZS_LPV_MPC__p03_long_updown__zs: 错误使用 run_closed_loop_model_once (第 153 行)
+多种原因导致错误。
+
+出错 run_a3_experiment (第 55 行)
+        run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_a3_smoke_entry (第 8 行)
+run_a3_experiment('smoke');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+原因:
+    错误使用 Simulink.Simulation.internal.DesktopSimHelper
+    由于模块体中的错误或基础分析的限制，Simulink 无法确定模块 <a
+    href="matlab:sfprivate('sfOpenObjectBySId','A3_LPVMPC_slope_source_isolated:171')">'A3_LPVMPC_slope_source_isolated/ThetaScheduleGuard'</a> 的输出大小和/或类型。错误可能不准
+    确。请修复指示的错误，或显式指定所有模块输出的大小和/或类型。
+    
+    
+    
+    出错 Simulink.Simulation.internal.DesktopSimHelper.sim
+    
+    出错 Simulink.SimulationInput/sim
+    
+    出错 run_closed_loop_model_once (第 153 行)
+    simOut = sim(simIn);
+    ^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_experiment (第 55 行)
+            run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_smoke_entry (第 8 行)
+    run_a3_experiment('smoke');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run (第 112 行)
+    evalin('caller', strcat(scriptStem, ';'));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    错误使用 Simulink.Simulation.internal.DesktopSimHelper
+    端口宽度或维度出错。'A3_LPVMPC_slope_source_isolated/ThetaScheduleGuard/theta_hat' 的'输出端口 1' 是有 1 个元素的一维向量。
+    
+    出错 Simulink.Simulation.internal.DesktopSimHelper.sim
+    
+    出错 Simulink.SimulationInput/sim
+    
+    出错 run_closed_loop_model_once (第 153 行)
+    simOut = sim(simIn);
+    ^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_experiment (第 55 行)
+            run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_smoke_entry (第 8 行)
+    run_a3_experiment('smoke');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run (第 112 行)
+    evalin('caller', strcat(scriptStem, ';'));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[A3] FAILED case=IMU_LPV_MPC__p03_long_updown__imu_a: 错误使用 run_closed_loop_model_once (第 153 行)
+多种原因导致错误。
+
+出错 run_a3_experiment (第 55 行)
+        run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_a3_smoke_entry (第 8 行)
+run_a3_experiment('smoke');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+原因:
+    错误使用 Simulink.Simulation.internal.DesktopSimHelper
+    由于模块体中的错误或基础分析的限制，Simulink 无法确定模块 <a
+    href="matlab:sfprivate('sfOpenObjectBySId','A3_LPVMPC_slope_source_isolated:171')">'A3_LPVMPC_slope_source_isolated/ThetaScheduleGuard'</a> 的输出大小和/或类型。错误可能不准
+    确。请修复指示的错误，或显式指定所有模块输出的大小和/或类型。
+    
+    
+    
+    出错 Simulink.Simulation.internal.DesktopSimHelper.sim
+    
+    出错 Simulink.SimulationInput/sim
+    
+    出错 run_closed_loop_model_once (第 153 行)
+    simOut = sim(simIn);
+    ^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_experiment (第 55 行)
+            run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_smoke_entry (第 8 行)
+    run_a3_experiment('smoke');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run (第 112 行)
+    evalin('caller', strcat(scriptStem, ';'));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    错误使用 Simulink.Simulation.internal.DesktopSimHelper
+    端口宽度或维度出错。'A3_LPVMPC_slope_source_isolated/ThetaScheduleGuard/theta_hat' 的'输出端口 1' 是有 1 个元素的一维向量。
+    
+    出错 Simulink.Simulation.internal.DesktopSimHelper.sim
+    
+    出错 Simulink.SimulationInput/sim
+    
+    出错 run_closed_loop_model_once (第 153 行)
+    simOut = sim(simIn);
+    ^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_experiment (第 55 行)
+            run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_smoke_entry (第 8 行)
+    run_a3_experiment('smoke');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run (第 112 行)
+    evalin('caller', strcat(scriptStem, ';'));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[A3] FAILED case=Oracle_LPV_MPC__p03_long_updown__oracle: 错误使用 run_closed_loop_model_once (第 153 行)
+多种原因导致错误。
+
+出错 run_a3_experiment (第 55 行)
+        run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_a3_smoke_entry (第 8 行)
+run_a3_experiment('smoke');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+原因:
+    错误使用 Simulink.Simulation.internal.DesktopSimHelper
+    由于模块体中的错误或基础分析的限制，Simulink 无法确定模块 <a
+    href="matlab:sfprivate('sfOpenObjectBySId','A3_LPVMPC_slope_source_isolated:171')">'A3_LPVMPC_slope_source_isolated/ThetaScheduleGuard'</a> 的输出大小和/或类型。错误可能不准
+    确。请修复指示的错误，或显式指定所有模块输出的大小和/或类型。
+    
+    
+    
+    出错 Simulink.Simulation.internal.DesktopSimHelper.sim
+    
+    出错 Simulink.SimulationInput/sim
+    
+    出错 run_closed_loop_model_once (第 153 行)
+    simOut = sim(simIn);
+    ^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_experiment (第 55 行)
+            run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_smoke_entry (第 8 行)
+    run_a3_experiment('smoke');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run (第 112 行)
+    evalin('caller', strcat(scriptStem, ';'));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    错误使用 Simulink.Simulation.internal.DesktopSimHelper
+    端口宽度或维度出错。'A3_LPVMPC_slope_source_isolated/ThetaScheduleGuard/theta_hat' 的'输出端口 1' 是有 1 个元素的一维向量。
+    
+    出错 Simulink.Simulation.internal.DesktopSimHelper.sim
+    
+    出错 Simulink.SimulationInput/sim
+    
+    出错 run_closed_loop_model_once (第 153 行)
+    simOut = sim(simIn);
+    ^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_experiment (第 55 行)
+            run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_smoke_entry (第 8 行)
+    run_a3_experiment('smoke');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run (第 112 行)
+    evalin('caller', strcat(scriptStem, ';'));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[A3] FAILED case=IMU_LPV_MPC__p03_long_updown__imu_b: 错误使用 run_closed_loop_model_once (第 153 行)
+多种原因导致错误。
+
+出错 run_a3_experiment (第 55 行)
+        run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_a3_smoke_entry (第 8 行)
+run_a3_experiment('smoke');
+^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+原因:
+    错误使用 Simulink.Simulation.internal.DesktopSimHelper
+    由于模块体中的错误或基础分析的限制，Simulink 无法确定模块 <a
+    href="matlab:sfprivate('sfOpenObjectBySId','A3_LPVMPC_slope_source_isolated:171')">'A3_LPVMPC_slope_source_isolated/ThetaScheduleGuard'</a> 的输出大小和/或类型。错误可能不准
+    确。请修复指示的错误，或显式指定所有模块输出的大小和/或类型。
+    
+    
+    
+    出错 Simulink.Simulation.internal.DesktopSimHelper.sim
+    
+    出错 Simulink.SimulationInput/sim
+    
+    出错 run_closed_loop_model_once (第 153 行)
+    simOut = sim(simIn);
+    ^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_experiment (第 55 行)
+            run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_smoke_entry (第 8 行)
+    run_a3_experiment('smoke');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run (第 112 行)
+    evalin('caller', strcat(scriptStem, ';'));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    错误使用 Simulink.Simulation.internal.DesktopSimHelper
+    端口宽度或维度出错。'A3_LPVMPC_slope_source_isolated/ThetaScheduleGuard/theta_hat' 的'输出端口 1' 是有 1 个元素的一维向量。
+    
+    出错 Simulink.Simulation.internal.DesktopSimHelper.sim
+    
+    出错 Simulink.SimulationInput/sim
+    
+    出错 run_closed_loop_model_once (第 153 行)
+    simOut = sim(simIn);
+    ^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_experiment (第 55 行)
+            run_closed_loop_model_once(model_name,p.file,out_file,cfg);
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run_a3_smoke_entry (第 8 行)
+    run_a3_experiment('smoke');
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    出错 run (第 112 行)
+    evalin('caller', strcat(scriptStem, ';'));
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

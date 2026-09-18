@@ -1,0 +1,19 @@
+{
+  "status": "CHILD_COMPLETE",
+  "case_id": "core_inference__modern_tcn_22d",
+  "method_id": "modern_tcn_22d",
+  "child_pid": 23320,
+  "completed_at": "2026-07-17T16:43:15.384003+08:00",
+  "formal": true,
+  "warmup_count": 500,
+  "formal_count": 10000,
+  "raw_rows": 10000,
+  "raw_timing_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\05_formal\\runs\\20260717_164306\\raw_timing\\core_inference__modern_tcn_22d.csv",
+  "raw_timing_sha256": "e0ced88c0ad6f9cdcf85cc1d3f5c7134923524a2534053c13e938bde84cc0826",
+  "case_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\05_formal\\runs\\20260717_164306\\cases\\core_inference__modern_tcn_22d.json",
+  "case_sha256_before_monitor_augmentation": "99e8dabcacc5d5846291f6309dd9fb0a1b83a0e51343b76fb0a66a1f0851f4f2",
+  "model_sha256": "bad282e477990865a2f9598926d1015b39b79312991415a459db1cba362fe4fd",
+  "authority_model_sha256": "4cd19cdbaf399c6abb03e0de5c1a020d4b540d27914488f521e58eb22d6f2704",
+  "environment_sha256": "90d4448c8b88b3b80157b95a5c05d4f9fa55040b108b6d2dd5b5cc6633dc9cfb",
+  "completion_protocol": "atomic_child_receipt_v1"
+}

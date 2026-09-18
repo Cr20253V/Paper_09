@@ -1,0 +1,53 @@
+{
+  "figure_id": "Fig07_node44r1_gain_calibration",
+  "variant": "figures_final_1 redesign",
+  "generated_utc": "2026-07-30T09:37:17.622295+00:00",
+  "backend": "Python/matplotlib",
+  "figure_contract": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/figure_contract.md",
+  "frozen_inputs": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/06_uncertainty_calibration_v3/selected_fusion_config.json",
+      "sha256": "bd708172f993b439625d02f517e0e5a96021cd5dc22bbdb8d3ecaee720f3b7f8"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/06_uncertainty_calibration_v3/empirical_quality_uncertainty_tables.json",
+      "sha256": "2e83f130462286380ec4ac1d9997dee8f500d374cf746c4dcacedc441f9ecddb"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/06_uncertainty_calibration_v3/candidate_table.csv",
+      "sha256": "86cf9bb60c5838d38730a09d9317dd97ed2b16212e905f651dcaa6cd850b96a9"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/06_uncertainty_calibration_v3/quality_gain_audit.csv",
+      "sha256": "4bbd7e7c058f784cd1cddb65de244c5502a11f00bf122cfbb7681a0b1faf2cff"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/source_data/fig07_node44r1_gain_calibration_source_data.csv",
+    "sha256": "9626c2f8a0a0f92a2c4936b121584f1afbe9a1d1996db88a9e62f680c3045d1a",
+    "rows": 22
+  },
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/output/fig07_node44r1_gain_calibration.svg",
+      "sha256": "d74115cdb9c8248543bf90e844c58193ae318a3b1b433060e75424760550f0f5"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/output/fig07_node44r1_gain_calibration.pdf",
+      "sha256": "679bf41d877090330470efa418303bf43aac9bae8680c5a70096dbc06f5ab21a"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/output/fig07_node44r1_gain_calibration.tiff",
+      "sha256": "8eedcf1aa572f80c6a546d8019780e84046170fd0927d5038999ccdffc56141c"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/output/fig07_node44r1_gain_calibration.png",
+      "sha256": "0d9c441552eeb24545d6ea623fac2a14b28b475e6466b474ad888856e0b2a944"
+    }
+  ],
+  "qa": {
+    "file": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/qa/fig07_node44r1_gain_calibration_qa.json",
+    "sha256": "3740a139e849a76ffcd7458cb2554d7b7e42511f5d589b9afca44954cef10a3c",
+    "status": "PASS"
+  }
+}

@@ -1,0 +1,6 @@
+-->Assuming output disturbance added to measured output #1 is integrated white noise.
+-->Assuming output disturbance added to measured output #2 is integrated white noise.
+-->Assuming output disturbance added to measured output #3 is integrated white noise.
+-->Assuming output disturbance added to measured output #4 is integrated white noise.
+-->"Model.Noise" is empty. Assuming white noise on each measured output.
+A2 case mpc_solve__effective_controller (formal): p95=23.121100 ms, max=35.907400 ms

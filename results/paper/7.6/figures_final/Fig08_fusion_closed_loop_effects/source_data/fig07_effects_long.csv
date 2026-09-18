@@ -1,0 +1,181 @@
+metric,panel,metric_label,unit,path_id,path_label,model_seed,moderntcn,fusion,effect_moderntcn_minus_fusion
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,1,0.0166114101172739,0.0208894765768424,-0.0042780664595685
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,1,0.038746305571835,0.030411539935312,0.0083347656365229
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,1,0.0288789468420902,0.0358408593721589,-0.0069619125300686
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,1,0.0053332350584678,0.0053332350584678,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,1,0.0048485241064656,0.0048485241064656,0.0
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,1,0.021619661092588,0.0173981947730624,0.0042214663195255
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,7,0.0657647633011835,0.0153383060609742,0.0504264572402093
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,7,0.0401261731538849,0.0320121692043853,0.0081140039494995
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,7,0.0180705739576422,0.0335382190904939,-0.0154676451328517
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,7,0.0030208292667012,0.0030208292667012,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,7,0.0095627061761523,0.0091687564566566,0.0003939497194956
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,7,0.0179751670709907,0.0127783950709153,0.0051967720000754
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,11,0.0384803521930076,0.0196578715971738,0.0188224805958337
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,11,0.0326450249764708,0.018888320542009,0.0137567044344617
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,11,0.0682458498809995,0.0530010136277233,0.0152448362532761
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,11,0.003421097028164,0.003421097028164,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,11,0.004395999447469,0.004395999447469,0.0
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,11,0.0194650347899577,0.0145346848829555,0.0049303499070021
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,21,0.0149067577943762,0.0175216630610338,-0.0026149052666576
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,21,0.048715441901458,0.0253592011617074,0.0233562407397505
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,21,0.027424649305608,0.0231503159505066,0.0042743333551013
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,21,0.0044615225629186,0.0044615225629186,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,21,0.0118182658242174,0.0118182658242174,0.0
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,21,0.0111975924817782,0.0091020756379716,0.0020955168438065
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,42,0.0172252214814819,0.016599843339488,0.0006253781419938
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,42,0.0393296266654156,0.0227859914500101,0.0165436352154055
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,42,0.0276627776996503,0.0263309701860697,0.0013318075135805
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,42,0.0030208292667012,0.0030208292667012,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,42,0.0041112148037255,0.0041112148037255,0.0
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,42,0.017904336764002,0.0131799069854984,0.0047244297785036
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,73,0.009424987848123,0.0169641934115463,-0.0075392055634232
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,73,0.0590107494805814,0.0269766748676657,0.0320340746129157
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,73,0.0221271260376173,0.0351686082475691,-0.0130414822099518
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,73,0.0035336763535587,0.0035336763535587,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,73,0.0077806113849321,0.007101423994529,0.0006791873904031
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,73,0.0179631535392234,0.0092263987949322,0.0087367547442912
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,101,0.0288879209421323,0.0214061805704277,0.0074817403717045
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,101,0.036251245280495,0.0443556786565027,-0.0081044333760077
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,101,0.0380581326617184,0.0200056387485742,0.0180524939131441
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,101,0.0040439325349505,0.0039254907640113,0.0001184417709392
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,101,0.0982159207997392,0.0858240496562285,0.0123918711435107
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,101,0.0233870177252722,0.0183492447126569,0.0050377730126153
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,202,0.0201291232664244,0.0144345265691104,0.005694596697314
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,202,0.0560160111685413,0.0351770099855334,0.0208390011830079
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,202,0.034337401019229,0.031850593715434,0.002486807303795
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,202,0.0030752066268836,0.0030752066268836,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,202,0.0092086374539585,0.0092086374539585,0.0
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,202,0.0310849535100961,0.0233129109744531,0.0077720425356429
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,340,0.0125446117822005,0.0126390728941671,-9.446111196666912e-05
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,340,0.024475651375676,0.0233450702173206,0.0011305811583554
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,340,0.0361964315021797,0.0337121199364524,0.0024843115657272
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,340,0.0034034371921799,0.0034034371921799,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,340,0.0092212345604136,0.0092212345604136,0.0
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,340,0.0166136436984761,0.0119935292890359,0.0046201144094401
+ey_rmse,a,Lateral-error RMS,m,p01_factory_logistics_showcase,P1 Factory logistics,520,0.1420790475846063,0.03161679576257,0.1104622518220363
+ey_rmse,a,Lateral-error RMS,m,p02_sharp_turn_transition,P2 Sharp-turn transition,520,0.0488401048116015,0.0314077517850777,0.0174323530265237
+ey_rmse,a,Lateral-error RMS,m,p03_long_updown,P3 Long up/down,520,0.0776995862676567,0.0210459240900139,0.0566536621776428
+ey_rmse,a,Lateral-error RMS,m,p04_soft_updown_straight_turn,P4 Mild grade and turn,520,0.0062363646989302,0.0062363646989302,0.0
+ey_rmse,a,Lateral-error RMS,m,p05_factory_flat_logistics,P5 Flat logistics,520,0.0161525586711059,0.0161525586711059,0.0
+ey_rmse,a,Lateral-error RMS,m,p06_downhill_after_turn,P6 Downhill after turn,520,0.0199485730075771,0.0120701313439875,0.0078784416635896
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,1,0.0249423270470265,0.0228297044722834,0.002112622574743
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,1,0.0250527040681366,0.0272593256707235,-0.0022066216025868
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,1,0.0185087809119547,0.0215619152541496,-0.0030531343421948
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,1,0.0085643807303006,0.0085643807303006,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,1,0.0079235629262523,0.0079235629262523,0.0
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,1,0.0205892014584446,0.014842160706944,0.0057470407515005
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,7,0.0455795259115249,0.0225688527199563,0.0230106731915685
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,7,0.0346436740034852,0.0345567641305535,8.690987293168834e-05
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,7,0.0227591594318948,0.0286101796188434,-0.0058510201869486
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,7,0.0079170566550675,0.0079170566550675,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,7,0.0086603493166289,0.0084122294213088,0.0002481198953201
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,7,0.0175297943591485,0.0104271359362857,0.0071026584228627
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,11,0.0466789702190491,0.0241557592415655,0.0225232109774835
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,11,0.0296120646523687,0.0293268513678773,0.0002852132844914
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,11,0.0271267901784339,0.0259294512981349,0.0011973388802989
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,11,0.0078427207989677,0.0078427207989677,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,11,0.0079221402787523,0.0079221402787523,0.0
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,11,0.0171090267135025,0.0117064353098093,0.0054025914036931
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,21,0.0151207163346209,0.0113914433724058,0.0037292729622151
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,21,0.0284601688841189,0.0269875786399801,0.0014725902441387
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,21,0.025065270514562,0.028395760160284,-0.003330489645722
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,21,0.0075571225154113,0.0075571225154113,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,21,0.008844808660793,0.008844808660793,0.0
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,21,0.0036224870547021,0.0028737998780822,0.0007486871766199
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,42,0.0088549679558574,0.0122752013570725,-0.0034202334012151
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,42,0.0335373117578331,0.0329631735228757,0.0005741382349574
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,42,0.0310770047010231,0.0283013274176746,0.0027756772833485
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,42,0.0079170566550675,0.0079170566550675,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,42,0.0078536163413555,0.0078536163413555,0.0
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,42,0.012589613068444,0.0075121243827936,0.0050774886856504
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,73,0.0114027566712209,0.0119436462560624,-0.0005408895848414
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,73,0.0279583198342008,0.0278018421398664,0.0001564776943344
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,73,0.0216526959782797,0.0275234326278024,-0.0058707366495227
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,73,0.0085278932611408,0.0085278932611408,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,73,0.0054267641481733,0.0058831526911831,-0.0004563885430098
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,73,0.0211234802367356,0.009824987276501,0.0112984929602346
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,101,0.0441159847822268,0.0385761842199267,0.0055398005623
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,101,0.0304787094790315,0.0322978140394708,-0.0018191045604393
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,101,0.0276572172856442,0.0223453653833309,0.0053118519023133
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,101,0.0078150937953662,0.0077981958288315,1.6897966534744693e-05
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,101,0.0683246651496315,0.0626231986694996,0.0057014664801319
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,101,0.0222340091951565,0.016249466474873,0.0059845427202835
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,202,0.0299076960760679,0.0161107994177336,0.0137968966583343
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,202,0.0361529688728661,0.0357258007411155,0.0004271681317506
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,202,0.0256710915419293,0.0264286678817964,-0.0007575763398671
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,202,0.0077327364041794,0.0077327364041794,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,202,0.0080080938982773,0.0080080938982773,0.0
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,202,0.0374798386967801,0.0314342925686144,0.0060455461281657
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,340,0.0136646907850418,0.0137781451841881,-0.0001134543991462
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,340,0.0256821246325019,0.028302128258361,-0.0026200036258591
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,340,0.0231831250842026,0.026276417134437,-0.0030932920502344
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,340,0.0078914701745813,0.0078914701745813,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,340,0.0077548058611904,0.0077548058611904,0.0
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,340,0.0123314856937369,0.0063263272125505,0.0060051584811864
+epsi_rmse,b,Heading-error RMS,rad,p01_factory_logistics_showcase,P1 Factory logistics,520,0.1062819264986675,0.0501823821801069,0.0560995443185605
+epsi_rmse,b,Heading-error RMS,rad,p02_sharp_turn_transition,P2 Sharp-turn transition,520,0.0423453755812474,0.0427852381782328,-0.0004398625969853
+epsi_rmse,b,Heading-error RMS,rad,p03_long_updown,P3 Long up/down,520,0.0340539653785151,0.0377569904238756,-0.0037030250453605
+epsi_rmse,b,Heading-error RMS,rad,p04_soft_updown_straight_turn,P4 Mild grade and turn,520,0.0093658216133885,0.0093658216133885,0.0
+epsi_rmse,b,Heading-error RMS,rad,p05_factory_flat_logistics,P5 Flat logistics,520,0.0103787840849951,0.0103787840849951,0.0
+epsi_rmse,b,Heading-error RMS,rad,p06_downhill_after_turn,P6 Downhill after turn,520,0.0256140900502029,0.016792652300812,0.0088214377493909
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,1,0.2140556146441555,0.2003611761146478,0.0136944385295076
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,1,1.4172568570378634,0.7461041399318977,0.6711527171059657
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,1,1.7647655233542832,1.86227087520438,-0.0975053518500965
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,1,0.3002783069731933,0.3002783069731933,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,1,0.0202511348319928,0.0202511348319928,0.0
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,1,0.4980563057331376,0.5101392032650621,-0.0120828975319244
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,7,0.5594498707336585,0.1843076217923858,0.3751422489412726
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,7,0.6583107250188149,0.6874479530707479,-0.0291372280519329
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,7,1.638324259481383,1.818536833145546,-0.1802125736641631
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,7,0.2992851721205009,0.2992851721205009,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,7,0.1535898711233129,0.1463454744832744,0.0072443966400384
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,7,0.5274936860176479,0.5541981070840447,-0.0267044210663968
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,11,0.3157346522686055,0.0882213396462634,0.2275133126223421
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,11,0.657514747689079,0.6020664702353737,0.0554482774537052
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,11,1.5735410398148495,1.655013603543419,-0.0814725637285693
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,11,0.2996742662823607,0.2996742662823607,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,11,0.0187996930617775,0.0187996930617775,0.0
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,11,0.4953903076069647,0.529093581891739,-0.0337032742847743
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,21,0.1326736617433019,0.0870595344132399,0.045614127330062
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,21,1.872816493040568,0.7702423261665763,1.1025741668739917
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,21,1.838009432778998,1.807422744731336,0.0305866880476619
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,21,0.3006556506312875,0.3006556506312875,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,21,0.0197476316784334,0.0197476316784334,0.0
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,21,0.5297716908094144,0.5491233080667928,-0.0193516172573783
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,42,0.1315117300100576,0.1134638795654762,0.0180478504445814
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,42,0.7819041232882494,0.7207109721470804,0.061193151141169
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,42,1.811315340376164,1.6408836760546193,0.1704316643215446
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,42,0.2992851721205009,0.2992851721205009,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,42,0.0188157485680191,0.0188157485680191,0.0
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,42,0.5383493556390094,0.5624390161340947,-0.0240896604950853
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,73,0.1283763272577963,0.118883545110143,0.0094927821476533
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,73,0.7450598224798886,0.6376986897602737,0.1073611327196149
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,73,1.6671117103610826,1.7456677338311506,-0.0785560234700679
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,73,0.3026016115914401,0.3026016115914401,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,73,0.0342779771585902,0.0486640492227826,-0.0143860720641923
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,73,0.5089260682618394,0.508687250853838,0.0002388174080013
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,101,0.2773288476830869,0.3008953301936027,-0.0235664825105157
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,101,0.802342190832085,0.7434982324608176,0.0588439583712674
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,101,1.970397462957555,1.9175360913360864,0.0528613716214687
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,101,0.3622333521108727,0.3597668554208092,0.0024664966900635
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,101,4.046771533658049,4.763857507759233,-0.7170859741011837
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,101,0.4854511935968426,0.5447007159865116,-0.059249522389669
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,202,0.1712954193982614,0.087691795254113,0.0836036241441483
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,202,1.0966212873611847,0.6687878489413437,0.427833438419841
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,202,1.9025890382981567,1.9044925168594984,-0.0019034785613416
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,202,0.2997621714080531,0.2997621714080531,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,202,0.0192011409384252,0.0192011409384252,0.0
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,202,0.461678213603611,0.4657667223774325,-0.0040885087738214
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,340,0.1435590100596307,0.1105864053445917,0.032972604715039
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,340,0.7458219452327767,0.7554776742519089,-0.0096557290191322
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,340,1.8752076040097576,1.891614369829525,-0.016406765819767
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,340,0.302313883167873,0.302313883167873,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,340,0.0208530787901583,0.0208530787901583,0.0
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,340,0.5420518441190993,0.5890170283309417,-0.0469651842118423
+j_du,c,Input-increment index,,p01_factory_logistics_showcase,P1 Factory logistics,520,13.290857861916573,0.5664951137725854,12.724362748143989
+j_du,c,Input-increment index,,p02_sharp_turn_transition,P2 Sharp-turn transition,520,1.066656050910126,0.7520926272858294,0.3145634236242965
+j_du,c,Input-increment index,,p03_long_updown,P3 Long up/down,520,2.048923228984987,1.7355384410233212,0.3133847879616656
+j_du,c,Input-increment index,,p04_soft_updown_straight_turn,P4 Mild grade and turn,520,0.3008988123740938,0.3008988123740938,0.0
+j_du,c,Input-increment index,,p05_factory_flat_logistics,P5 Flat logistics,520,0.0234723849026217,0.0234723849026217,0.0
+j_du,c,Input-increment index,,p06_downhill_after_turn,P6 Downhill after turn,520,0.5025766829659726,0.518109543306319,-0.0155328603403464

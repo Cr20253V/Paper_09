@@ -1,0 +1,19 @@
+﻿{
+    "task_id":  "A2",
+    "protocol_id":  "A0_paper_final_unified_protocol_v1",
+    "phase":  1,
+    "batch_size":  1,
+    "warmup_count":  500,
+    "formal_count":  10000,
+    "backend":  "MATLAB_R2024b_CPU",
+    "thread_policy":  "single",
+    "gpu_used":  false,
+    "core_inputs":  {
+                        "modern_tcn_delta_bank_124":  "single[1,128,88]",
+                        "others":  "single[1,128,22]"
+                    },
+    "input_order":  "A0 test windows in stored order; A1 seed42 six-path y_raw in A0 path order",
+    "over_10ms_definition":  "latency_ms \u003e 10.0",
+    "percentile_method":  "MATLAB prctile on all 10000 untrimmed samples",
+    "a0_effective_config_sha256":  "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911"
+}

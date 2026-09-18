@@ -1,0 +1,11 @@
+{
+  "task_id": "A3",
+  "case_id": "IMU_LPV_MPC__p03_long_updown__imu_a",
+  "attempt": 4,
+  "status": "COMPLETE",
+  "elapsed_wall_s": 6.4296288,
+  "output_mat": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\IMU_LPV_MPC__p03_long_updown__imu_a\\attempt_004\\case_out.mat",
+  "trace_csv": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\IMU_LPV_MPC__p03_long_updown__imu_a\\attempt_004\\trace.csv",
+  "case_metrics": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\IMU_LPV_MPC__p03_long_updown__imu_a\\attempt_004\\case_metrics.json",
+  "completed_at": "2026-07-15T14:58:22Z"
+}

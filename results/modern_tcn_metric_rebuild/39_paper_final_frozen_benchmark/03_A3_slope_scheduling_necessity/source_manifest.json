@@ -1,0 +1,49 @@
+{
+  "task_id": "A3",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "a0_file": "results/paper/7.6/A0_论文最终统一实验配置_20260715.json",
+  "a0_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+  "status": "COMPLETE_18_OF_18",
+  "tables": [
+    {
+      "role": "A5-compatible A3 case JSONL",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a3_case_table.jsonl",
+      "sha256": "5fe9f2416757d8c4dcf1603df228c54ceea7a583107f66c6d57af30500dbb504"
+    },
+    {
+      "role": "A3 case CSV",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a3_case_table.csv",
+      "sha256": "6a8cf7c9d53399653e1d9eb77145e5aafd0637a6e349c9c8bee2b5b0d8189190"
+    },
+    {
+      "role": "controller summary",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/controller_summary.csv",
+      "sha256": "333f22d33611ac6d0d2594a8fc9ef8d71cfb8c6cf2d01fccd653e965cc2f4c5a"
+    },
+    {
+      "role": "paired path effects",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/paired_effects.csv",
+      "sha256": "d775f5bbf254451d805f543dd714b25cc86cdd916ab30035954749a1b0357513"
+    },
+    {
+      "role": "paired bootstrap CI",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/bootstrap_ci_results.csv",
+      "sha256": "b33725731c4e9876b2cf86d8de0a42b2aacec1e703a26616eb33e446a9abf9de"
+    },
+    {
+      "role": "safety gates",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/safety_gates.csv",
+      "sha256": "c15845a3e9180cabd817d8917f0a42894340ac6e22270a94727f402aab29900e"
+    },
+    {
+      "role": "worst cases",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/worst_cases.csv",
+      "sha256": "cc0fc159c79004af0e931eea0227a67c248010aea1fceb5ad838482e04bada08"
+    },
+    {
+      "role": "A4 artifact receipt",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a4_artifact_receipt.json",
+      "sha256": "f1684870e546fc425e54ad3c7cde96247ef663e9ede669a17ee6573651eb78cf"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+﻿case_id,reason,required
+ZS_LPV_MPC__p01_factory_logistics_showcase,No formal A3 result exists under the unique write root,True
+ZS_LPV_MPC__p02_sharp_turn_transition,No formal A3 result exists under the unique write root,True
+ZS_LPV_MPC__p03_long_updown,No formal A3 result exists under the unique write root,True
+ZS_LPV_MPC__p04_soft_updown_straight_turn,No formal A3 result exists under the unique write root,True
+ZS_LPV_MPC__p05_factory_flat_logistics,No formal A3 result exists under the unique write root,True
+ZS_LPV_MPC__p06_downhill_after_turn,No formal A3 result exists under the unique write root,True
+IMU_LPV_MPC__p01_factory_logistics_showcase,No formal A3 result exists under the unique write root,True
+IMU_LPV_MPC__p02_sharp_turn_transition,No formal A3 result exists under the unique write root,True
+IMU_LPV_MPC__p03_long_updown,No formal A3 result exists under the unique write root,True
+IMU_LPV_MPC__p04_soft_updown_straight_turn,No formal A3 result exists under the unique write root,True
+IMU_LPV_MPC__p05_factory_flat_logistics,No formal A3 result exists under the unique write root,True
+IMU_LPV_MPC__p06_downhill_after_turn,No formal A3 result exists under the unique write root,True
+Oracle_LPV_MPC__p01_factory_logistics_showcase,No formal A3 result exists under the unique write root,True
+Oracle_LPV_MPC__p02_sharp_turn_transition,No formal A3 result exists under the unique write root,True
+Oracle_LPV_MPC__p03_long_updown,No formal A3 result exists under the unique write root,True
+Oracle_LPV_MPC__p04_soft_updown_straight_turn,No formal A3 result exists under the unique write root,True
+Oracle_LPV_MPC__p05_factory_flat_logistics,No formal A3 result exists under the unique write root,True
+Oracle_LPV_MPC__p06_downhill_after_turn,No formal A3 result exists under the unique write root,True

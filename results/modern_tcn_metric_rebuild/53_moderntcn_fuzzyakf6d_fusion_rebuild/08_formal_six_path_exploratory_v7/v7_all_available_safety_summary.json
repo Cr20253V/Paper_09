@@ -1,0 +1,19 @@
+{
+  "status": "PASS_NODE53_V7_ALL_AVAILABLE_SAFETY",
+  "available_case_count": 60,
+  "expected_single_seed_case_count": 6,
+  "expected_multi_seed_case_count": 60,
+  "safety_pass_count": 60,
+  "model_seeds_present": [
+    1,
+    7,
+    11,
+    21,
+    42,
+    73,
+    101,
+    202,
+    340,
+    520
+  ]
+}

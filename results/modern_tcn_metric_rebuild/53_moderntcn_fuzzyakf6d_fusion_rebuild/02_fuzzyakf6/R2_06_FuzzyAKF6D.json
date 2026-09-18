@@ -1,0 +1,29 @@
+{
+  "candidate_id": "R2_06_FuzzyAKF6D",
+  "method_id": "Fuzzy-AKF-6D",
+  "Ts": 0.01,
+  "g": 9.81,
+  "runtime_channels": [
+    "fx",
+    "fy",
+    "fz",
+    "gx",
+    "gy",
+    "gz"
+  ],
+  "initial_pitch_std_deg": 2.0,
+  "initial_bias_std_rad_s": 0.01,
+  "gyro_noise_std_rad_s": 0.002,
+  "bias_rw_std_rad_s": 5e-05,
+  "accel_pitch_std_deg": 1.25,
+  "vibration_alpha": 0.95,
+  "norm_full_scale_g": 0.2,
+  "gyro_full_scale_rad_s": 0.35,
+  "innovation_full_scale_deg": 4.0,
+  "norm_weight": 0.5,
+  "vibration_weight": 0.15,
+  "innovation_weight": 0.35,
+  "max_r_multiplier": 60,
+  "parent_candidate_id": "C03_FUZZYAKF6_BASE",
+  "design_source": "fixed_partial_factor_round2"
+}

@@ -1,0 +1,62 @@
+{
+  "protocol_id": "A2_SUPPLEMENT_UNIFIED_ORT_SEED42_V1",
+  "status": "FROZEN_BEFORE_FORMAL_TIMING",
+  "purpose": "same-backend complete-predictor core inference comparison",
+  "authority": "A1 model_registry.csv seed42 rows",
+  "backend": {
+    "runtime": "onnxruntime",
+    "provider": "CPUExecutionProvider",
+    "precision": "FP32",
+    "intra_op_num_threads": 1,
+    "inter_op_num_threads": 1,
+    "execution_mode": "ORT_SEQUENTIAL",
+    "graph_optimization_level": "ORT_ENABLE_ALL",
+    "io_binding": false
+  },
+  "timing": {
+    "batch": 1,
+    "warmup_count": 500,
+    "formal_count": 10000,
+    "timer": "time.perf_counter_ns",
+    "threshold_ms": 10.0,
+    "raw_sample_policy": "save_every_formal_call",
+    "outlier_policy": "retain_all",
+    "timed_region": "InferenceSession.run including Python-to-ORT input handoff and returned output allocation",
+    "excluded": [
+      "disk IO",
+      "dataset loading",
+      "session creation",
+      "model loading",
+      "delta-bank construction",
+      "MPC"
+    ]
+  },
+  "input": {
+    "sequence_length": 128,
+    "architecture_comparison_shape": [1, 128, 22],
+    "final_method_shape": [1, 128, 88],
+    "dtype": "float32",
+    "storage": "C-contiguous preloaded numpy arrays",
+    "order": "A0 X_test order, cyclic, formal phase restarts at index 1"
+  },
+  "cases": [
+    "core_inference__modern_tcn_22d",
+    "core_inference__gru_22d",
+    "core_inference__tcn_22d",
+    "core_inference__modern_tcn_delta_bank_124"
+  ],
+  "interpretation": {
+    "architecture_only": ["modern_tcn_22d", "gru_22d", "tcn_22d"],
+    "representation_plus_architecture": ["modern_tcn_delta_bank_124"],
+    "deployment_evidence_remains": "A2 MATLAB phase1 end-to-end/full-cycle results",
+    "authority_semantics_note": "Frozen MATLAB TCN/GRU predictors label [22,128,1] as CBT, so the derivative preserves time=1,batch=128 semantics and pools the B axis exactly as the authority code does. This audit fact must be disclosed and must not be silently corrected for timing."
+  },
+  "validation_gate": {
+    "tcn_gru_native_reference_windows": 3602,
+    "class_label_agreement_required": 1.0,
+    "max_probability_abs_error": 0.0001,
+    "max_theta_abs_error_rad": 0.0001,
+    "finite_outputs_required": true,
+    "modern_existing_onnx_consistency_sidecar_must_pass": true
+  }
+}

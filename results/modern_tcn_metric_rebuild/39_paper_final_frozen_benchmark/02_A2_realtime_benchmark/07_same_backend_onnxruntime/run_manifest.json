@@ -1,0 +1,50 @@
+{
+  "protocol_id": "A2_SUPPLEMENT_UNIFIED_ORT_SEED42_V1",
+  "status": "FORMAL_RUN_COMPLETE",
+  "formal_timing_started": true,
+  "formal_run_count": 1,
+  "latest_completed_run": "20260717_164306",
+  "latest_completed_run_path": "05_formal/runs/20260717_164306",
+  "formal_case_count": 4,
+  "formal_raw_timing_rows": 40000,
+  "failed_attempt_count": 2,
+  "failed_attempts_excluded": [
+    "20260717_161250",
+    "20260717_162640"
+  ],
+  "success_authority": "atomic_child_receipt_plus_artifact_validation",
+  "authority_seed": 42,
+  "case_ids": [
+    "core_inference__modern_tcn_22d",
+    "core_inference__gru_22d",
+    "core_inference__tcn_22d",
+    "core_inference__modern_tcn_delta_bank_124"
+  ],
+  "warmup_per_case": 500,
+  "formal_repeats_per_case": 10000,
+  "backend": "onnxruntime CPUExecutionProvider",
+  "threads": 1,
+  "environment_sha256": "90d4448c8b88b3b80157b95a5c05d4f9fa55040b108b6d2dd5b5cc6633dc9cfb",
+  "validation": {
+    "input_sha256": "PASS",
+    "tcn_gru_all_3602_native_equivalence": "PASS",
+    "modern_onnx_consistency": "PASS",
+    "raw_timing_recomputation": "PASS",
+    "formal_artifact_manifest": "PASS_61_FILES",
+    "protected_snapshot": "PASS_5313_FILES"
+  },
+  "memory_audit": {
+    "historical_external_monitor": "INVALID_LAUNCHER_PID",
+    "authoritative_source": "actual_python_process_internal_windows_api",
+    "latency_rerun_required": false,
+    "future_runner_process_tree_monitor": "FIXED_AND_SMOKE_PASS"
+  },
+  "summary_files": [
+    "06_summary/runtime_summary.csv",
+    "06_summary/memory_audit.csv",
+    "06_summary/memory_audit.json",
+    "06_summary/decision.json",
+    "06_summary/FORMAL_RESULTS_REPORT.md",
+    "06_summary/PAPER_WRITING_NOTES_CN.md"
+  ]
+}

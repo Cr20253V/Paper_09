@@ -1,0 +1,7 @@
+﻿"category","item","use"
+"MODEL","A1 seed42 four models","direct authority paths from model_registry.csv"
+"DEPLOYMENT","two existing ModernTCN ONNX files","runtime derivative with authority checkpoint parent SHA"
+"DATA","A0 dataset and scaler","core windows and normalization"
+"TRACE","A1 seed42 six-path closed-loop outputs","common y_raw/controller input stream"
+"CONTROL","A0 LPV database, maps and ctrl.mat","frozen MPC solve harness"
+"LOGIC_ONLY","src/Compare legacy benchmark","timing pattern only; all old results excluded"

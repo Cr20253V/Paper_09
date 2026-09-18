@@ -1,0 +1,154 @@
+{
+  "backend": "Python/matplotlib",
+  "design_basis": "scientific-visualization and matplotlib skills; no Nature skill",
+  "figure_count": 7,
+  "outputs": {
+    "R1_six_route_atlas": [
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR1_six_route_atlas.pdf",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR1_six_route_atlas.svg",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR1_six_route_atlas.png",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR1_six_route_atlas.tiff"
+    ],
+    "R2_scheduling_necessity": [
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR2_scheduling_necessity_forest.pdf",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR2_scheduling_necessity_forest.svg",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR2_scheduling_necessity_forest.png",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR2_scheduling_necessity_forest.tiff"
+    ],
+    "R3_offline_estimators": [
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR3_offline_estimator_distribution.pdf",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR3_offline_estimator_distribution.svg",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR3_offline_estimator_distribution.png",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR3_offline_estimator_distribution.tiff"
+    ],
+    "R4_imu_complementarity": [
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR4_imu_source_complementarity.pdf",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR4_imu_source_complementarity.svg",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR4_imu_source_complementarity.png",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR4_imu_source_complementarity.tiff"
+    ],
+    "R5_fusion_cases": [
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR5_fusion_case_matrix.pdf",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR5_fusion_case_matrix.svg",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR5_fusion_case_matrix.png",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR5_fusion_case_matrix.tiff"
+    ],
+    "R6_fusion_trace": [
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR6_fusion_full_route_trace.pdf",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR6_fusion_full_route_trace.svg",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR6_fusion_full_route_trace.png",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR6_fusion_full_route_trace.tiff"
+    ],
+    "R7_five_controllers": [
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR7_five_controller_small_multiples.pdf",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR7_five_controller_small_multiples.svg",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR7_five_controller_small_multiples.png",
+      "results/paper/7.6/figures_redesigned_non_nature/output/figR7_five_controller_small_multiples.tiff"
+    ]
+  },
+  "qa": {
+    "status": "PASS",
+    "source_checks": {
+      "figR1_six_route_atlas.csv": {
+        "expected": 6,
+        "observed": 6
+      },
+      "figR2_scheduling_necessity.csv": {
+        "expected": 36,
+        "observed": 36
+      },
+      "figR3_offline_estimators.csv": {
+        "expected": 40,
+        "observed": 40
+      },
+      "figR4_imu_complementarity.csv": {
+        "expected": 4401,
+        "observed": 4401
+      },
+      "figR5_fusion_case_matrix.csv": {
+        "expected": 90,
+        "observed": 90
+      },
+      "figR6_fusion_trace.csv": {
+        "expected": 24583,
+        "observed": 24583
+      },
+      "figR7_five_controller_traces.csv": {
+        "route_method_cases": 15,
+        "rows": 27000
+      }
+    },
+    "output_checks": {
+      "R1_six_route_atlas": {
+        "png": {
+          "pixels": [
+            2161,
+            1417
+          ],
+          "nonwhite_fraction": 0.07157
+        },
+        "svg_text_elements": 167
+      },
+      "R2_scheduling_necessity": {
+        "png": {
+          "pixels": [
+            2161,
+            685
+          ],
+          "nonwhite_fraction": 0.05341
+        },
+        "svg_text_elements": 63
+      },
+      "R3_offline_estimators": {
+        "png": {
+          "pixels": [
+            2161,
+            744
+          ],
+          "nonwhite_fraction": 0.061
+        },
+        "svg_text_elements": 35
+      },
+      "R4_imu_complementarity": {
+        "png": {
+          "pixels": [
+            2161,
+            1039
+          ],
+          "nonwhite_fraction": 0.15024
+        },
+        "svg_text_elements": 29
+      },
+      "R5_fusion_cases": {
+        "png": {
+          "pixels": [
+            2161,
+            897
+          ],
+          "nonwhite_fraction": 0.41085
+        },
+        "svg_text_elements": 37
+      },
+      "R6_fusion_trace": {
+        "png": {
+          "pixels": [
+            2161,
+            1216
+          ],
+          "nonwhite_fraction": 0.08266
+        },
+        "svg_text_elements": 36
+      },
+      "R7_five_controllers": {
+        "png": {
+          "pixels": [
+            2161,
+            1641
+          ],
+          "nonwhite_fraction": 0.10067
+        },
+        "svg_text_elements": 56
+      }
+    }
+  }
+}

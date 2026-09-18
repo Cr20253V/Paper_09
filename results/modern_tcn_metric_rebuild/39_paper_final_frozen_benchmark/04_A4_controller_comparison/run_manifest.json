@@ -1,0 +1,23 @@
+{
+  "task_id": "A4",
+  "protocol_id": "A4_five_controller_primary_v1",
+  "generated_at": "2026-07-20T01:59:12+08:00",
+  "execution_stages": [
+    "audit",
+    "assemble",
+    "analyze",
+    "figures",
+    "finalize",
+    "verify"
+  ],
+  "simulation_executed": false,
+  "training_executed": false,
+  "manual_handoff_status": "NOT_REQUIRED",
+  "primary_case_count": 138,
+  "supplementary_case_count": 60,
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 20260715,
+  "python": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "source_policy": "A3 18 deterministic cases plus Node42 G0/ADAPTIVE six-path subset"
+}

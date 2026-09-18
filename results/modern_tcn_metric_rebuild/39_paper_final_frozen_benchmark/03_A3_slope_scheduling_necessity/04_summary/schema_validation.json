@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "validated_case_count": 18,
+  "case_schema": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/05_A5_statistical_audit/00_protocol_lock/input_schemas/a3_closed_loop_case.schema.json",
+  "source_manifest_schema": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/05_A5_statistical_audit/00_protocol_lock/input_schemas/source_manifest.schema.json",
+  "errors": []
+}

@@ -1,0 +1,181 @@
+{
+  "figure_id": "Fig06_imu_observer_trace",
+  "status": "CANDIDATE_NOT_YET_INSERTED_IN_TEX",
+  "generated_utc": "2026-07-29T11:57:55.918558+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib"
+  ],
+  "output_root_contract": "formal Fig. 6 candidate in figures_final_1; earlier P2 candidates, paper TeX, and simulation results unchanged",
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/trace.csv",
+      "bytes": 1721564,
+      "sha256": "fb5318e46ac39f4e715641a0ab496b44c1a6d154fa859fdbacc5f4878c135335"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/rkf_runtime_debug.csv",
+      "bytes": 958608,
+      "sha256": "80f517b2ce836863d558a3b3fb91e394212399488b0722b0287267cac6dc1bab"
+    },
+    {
+      "role": "input_3",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/case_manifest.json",
+      "bytes": 2503,
+      "sha256": "63880f0d285f74284a50707dfae8648af96a0389b0f462d827cdbd69c13f7041"
+    },
+    {
+      "role": "input_4",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1699880,
+      "sha256": "959554be105a547f46781f8ec29a07f4dca13e938bb9900dbdeedc306e953eb1"
+    },
+    {
+      "role": "input_5",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/node40_runtime_debug.csv",
+      "bytes": 1223863,
+      "sha256": "2d49e125063391272f4727a696318a7db110b5d5a0f49557c82d8ad4cc42a8b5"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_staging/source_data/fig06_imu_observer_trace_source_data.csv",
+    "rows": 5201,
+    "columns": [
+      "sample_index",
+      "debug_step",
+      "t_s",
+      "theta_true_deg",
+      "theta_mtcn_deg",
+      "theta_rkf_deg",
+      "abs_error_mtcn_deg",
+      "abs_error_rkf_deg",
+      "delta_abs_error_deg",
+      "evaluation_sample",
+      "rkf_better_beyond_tolerance",
+      "mtcn_better_beyond_tolerance",
+      "near_tie"
+    ],
+    "sha256": "5b5ee87fd9919283df2eb7172054ab6b244e77e801ffbdcce65bd821e0b95f53"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_staging/output/fig06_imu_observer_trace.pdf",
+      "bytes": 122121,
+      "sha256": "a5575ca3bd5c880cb8213b22fd02990614d59a840e7187e638bc49d4d0182428"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_staging/output/fig06_imu_observer_trace.svg",
+      "bytes": 309430,
+      "sha256": "3edeb068025f395c456a5435e7b1336c8bbd05dc8b56213c9cdb96159e97b3be"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_staging/output/fig06_imu_observer_trace.png",
+      "bytes": 115907,
+      "sha256": "1f6dc8977a47fc17c02935b61406eb0cc73e1293099a3154bd1fd3c201bde7ec"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_staging/output/fig06_imu_observer_trace.tiff",
+      "bytes": 430274,
+      "sha256": "fdb8c1dd9be14cb36e98d336638ef0cad086124645772a3f8f432b96bb2f47a4"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "caption_contract": "Complete P2 sharp-turn transition comparing raw observer outputs from ModernTCN-delta (model seed 42) and the simple causal-IMU baseline (sensor seed 4631). Panel (a) shows grade estimates; panel (b) shows the local absolute-error difference, where negative values favor the causal-IMU baseline.",
+      "fixed_case": "P2 sharp-turn transition",
+      "three_legend_entries": [
+        "Truth",
+        "ModernTCN-delta",
+        "Simple causal-IMU"
+      ],
+      "removed_visual_claims": [
+        "RKF uncertainty band",
+        "Initial invalid/unavailable indicator"
+      ],
+      "comparison_scope": "Separate closed-loop runs with exactly equal time and truth arrays; the causal-IMU and ModernTCN sensor realizations are not a same-run paired sensor comparison",
+      "trace_samples": 5201,
+      "observer_updates_per_method": 5200,
+      "alignment_rule": "Both debug.step arrays equal trace sample indices 1..5200; time and truth arrays are exactly equal; no interpolation, cropping, or downsampling",
+      "time_start_s": 0.0,
+      "time_end_s": 52.0,
+      "metric_initialization_exclusion_s": 0.5,
+      "decisive_tolerance_deg": 0.1,
+      "rkf_raw_observer_mae_deg": 0.9660938819803176,
+      "mtcn_raw_observer_mae_deg": 0.67926869750706,
+      "rkf_decisive_win_fraction": 0.35837701417200546,
+      "mtcn_decisive_win_fraction": 0.5428072218986605,
+      "near_tie_fraction": 0.09881576392933411,
+      "ideal_samplewise_minimum_gain_over_best_fraction": 0.41679280430751775,
+      "error_difference_direction": "negative means the causal-IMU baseline has lower absolute raw observer error than ModernTCN-delta",
+      "rkf_sensor_seed": 4631,
+      "mtcn_model_seed": 42,
+      "panel_count": 2,
+      "paper_tex_modified": false,
+      "simulation_results_modified": false
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 2,
+      "expected_primary_panels": 2,
+      "minimum_visible_font_pt": 6.2,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        89.0,
+        104.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            1051,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.06989
+        },
+        "tiff": {
+          "pixels": [
+            2102,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.06763
+        }
+      },
+      "svg_editable_text_elements": 27,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_staging/qa/fig06_imu_observer_trace_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "three_entry_legend_layout": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS"
+    },
+    "reviewer_notes": "Reviewed at 89 mm in color and grayscale. The single-row three-entry legend, two-panel layout, and line-style distinctions remain readable."
+  }
+}

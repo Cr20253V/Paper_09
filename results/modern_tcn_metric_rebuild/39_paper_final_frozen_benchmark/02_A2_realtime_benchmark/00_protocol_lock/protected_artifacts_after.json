@@ -1,0 +1,38 @@
+﻿[
+    {
+        "path":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\A0_论文最终统一实验配置_20260715.json",
+        "before_sha256":  "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+        "after_sha256":  "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+        "unchanged":  true
+    },
+    {
+        "path":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\A0_论文最终统一实验配置说明_20260715.md",
+        "before_sha256":  "44155532ef770dbb5c4817006caa80213cb2ede7390ee8dbcc75085425058173",
+        "after_sha256":  "44155532ef770dbb5c4817006caa80213cb2ede7390ee8dbcc75085425058173",
+        "unchanged":  true
+    },
+    {
+        "path":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\后续三章实验审计与写作大纲_20260715.md",
+        "before_sha256":  "a8a0c7a736afcb54812cd419a3a31f716eac2820a1c5fed68c85b9636191b8bc",
+        "after_sha256":  "a8a0c7a736afcb54812cd419a3a31f716eac2820a1c5fed68c85b9636191b8bc",
+        "unchanged":  true
+    },
+    {
+        "path":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\receipt.json",
+        "before_sha256":  "93db10b3b7c0e0e213fa2df69256ced6139af9c4184335196f2fe836449a7459",
+        "after_sha256":  "93db10b3b7c0e0e213fa2df69256ced6139af9c4184335196f2fe836449a7459",
+        "unchanged":  true
+    },
+    {
+        "path":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\model_registry.csv",
+        "before_sha256":  "3709c37e28c86ae0e8b1b7024b8c0d22d9c2d38ab0c5d268ef0a5193de87b117",
+        "after_sha256":  "3709c37e28c86ae0e8b1b7024b8c0d22d9c2d38ab0c5d268ef0a5193de87b117",
+        "unchanged":  true
+    },
+    {
+        "path":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\receipt.json",
+        "before_sha256":  "05e66101417e8e61640e6865c5c705045df2f70ceadbf1b7dc51b1f16bc768a1",
+        "after_sha256":  "05e66101417e8e61640e6865c5c705045df2f70ceadbf1b7dc51b1f16bc768a1",
+        "unchanged":  true
+    }
+]

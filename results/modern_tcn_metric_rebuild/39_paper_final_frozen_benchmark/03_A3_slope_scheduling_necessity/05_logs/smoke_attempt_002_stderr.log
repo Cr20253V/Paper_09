@@ -1,0 +1,17 @@
+{在当前文件夹或 MATLAB 路径中未找到 init_project，但它存在于:
+ e:\Matlab\Simulink\S-Function_16
+    E:\Matlab\Simulink\S-Function_15
+    E:\Matlab\Simulink\S-Function_14
+    e:\Matlab\Simulink\S-Function_15
+    C:\Users\15754\Desktop\待办\S-Function_15_v1
+
+更改 MATLAB 当前文件夹 或 将其文件夹添加到 MATLAB 路径
+
+出错 run_a3_smoke_entry (第 3 行)
+init_project();
+^^^^^^^^^^^^^^^
+出错 run (第 112 行)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

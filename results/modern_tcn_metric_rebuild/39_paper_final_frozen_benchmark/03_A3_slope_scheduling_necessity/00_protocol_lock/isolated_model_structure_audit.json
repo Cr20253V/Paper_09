@@ -1,0 +1,20 @@
+{
+  "task_id": "A3",
+  "status": "PASS",
+  "source_model": "E:\\Matlab\\Simulink\\S-Function_16\\simulink\\LPVMPC_AGV_simulink_Modern_TCN_44_rhofmd.slx",
+  "isolated_model": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\00_protocol_lock\\a3.slx",
+  "preloadfcn": "preloadfcn_v2",
+  "classifier_chart": "a3/ModernTCN_State_Classifier",
+  "theta_guard_chart": "a3/ThetaScheduleGuard",
+  "rho_filter_chart": "a3/RhoFilter",
+  "update_plant_chart": "a3/UpdatePlantModel",
+  "guard_parameter_present": true,
+  "plant_sfunc_is_agv_model_sfunc": true,
+  "only_mode_dependent_quantity": "ThetaScheduleGuard input before common RhoFilter",
+  "fixed_gru_vec": [
+    1,
+    0,
+    1
+  ],
+  "theta_sched_log_contract": "diag.rho_f(:,3)"
+}

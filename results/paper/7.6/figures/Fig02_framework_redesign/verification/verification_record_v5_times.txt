@@ -1,0 +1,25 @@
+Figure 2 v5 Times New Roman verification
+Generated: 2026-08-03 18:46:13
+
+Font configuration:
+  regular text: Times New Roman
+  bold text: Times New Roman Bold
+  italic/math Latin: Times New Roman Italic
+  unsupported math symbols: STIX fallback only
+
+Embedded PDF fonts:
+  /CZRBLR+STIXGeneral-Regular; /FEUMDM+TimesNewRomanPS-ItalicMT; /FHXFSG+TimesNewRomanPS-BoldMT; /FHXFSG+TimesNewRomanPSMT
+
+Rendering:
+  renderer exit: 0
+  standard SVG/PDF/PNG aliases synchronized
+
+Manuscript compile:
+  paper_v4_final_candidate_fig02_times.tex
+  pdflatex pass 1: exit 0
+  pdflatex pass 2: exit 0
+  output: verification/compile_v5_times/paper_v4_final_candidate_fig02_times.pdf (20 pages)
+
+Preservation:
+  active manuscript SHA-256: ECD04C7AE7602C38EB95C568E967AB354A54E3C5D185293A98026A2B2A8E45B3
+  active manuscript modified: no

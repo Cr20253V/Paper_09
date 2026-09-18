@@ -1,0 +1,9 @@
+错误使用 run_closed_loop_model_once (第 153 行)
+编译失败，因为编译文件名超过 260 个字符的 Windows 限制。从路径较短的工作目录编译，以允许用较短的文件名创建编译文件。"E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\logs\simulink_cache\parallel_tcn_w2\slprj\_sfprj\LPVMPC_AGV_simulink_TCN\_self\sfun\src\c1_LPVMPC_AGV_simulink_TCN.c"
+
+出错 run_A1_closed_loop_manual>local_run_method (第 84 行)
+                run_closed_loop_model_once(['LPVMPC_AGV_simulink_' upper(method)],path_file,candidate_out,sim_cfg);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_A1_closed_loop_manual (第 36 行)
+    rows = local_run_method(root, task_root, a0, one, seeds, paths, smoke, dry_run);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

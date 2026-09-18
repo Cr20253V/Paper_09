@@ -1,0 +1,131 @@
+﻿{
+    "task_id":  "A2",
+    "status":  "PARTIAL_CORE_COMPLETE_WAITING_FOR_FINAL_FUSION",
+    "ten_ms_threshold_ms":  10,
+    "phase1_cases_complete":  11,
+    "phase2_cases_complete":  0,
+    "fusion_status":  "NOT_ELIGIBLE_FINAL_FUSION_NOT_FROZEN",
+    "cases":  [
+                  {
+                      "case_id":  "core_inference__modern_tcn_delta_bank_124",
+                      "p50_ms":  10.1598,
+                      "p95_ms":  12.138200000000001,
+                      "p99_ms":  13.098700000000001,
+                      "max_ms":  18.2865,
+                      "over_10ms_rate":  0.603,
+                      "meets_p95_10ms":  false,
+                      "meets_p99_10ms":  false,
+                      "zero_overrun":  false
+                  },
+                  {
+                      "case_id":  "core_inference__modern_tcn_22d",
+                      "p50_ms":  10.040600000000001,
+                      "p95_ms":  12.0206,
+                      "p99_ms":  12.951699999999999,
+                      "max_ms":  20.3437,
+                      "over_10ms_rate":  0.5201,
+                      "meets_p95_10ms":  false,
+                      "meets_p99_10ms":  false,
+                      "zero_overrun":  false
+                  },
+                  {
+                      "case_id":  "core_inference__gru_22d",
+                      "p50_ms":  1.8763,
+                      "p95_ms":  2.2259,
+                      "p99_ms":  2.4989,
+                      "max_ms":  4.2333,
+                      "over_10ms_rate":  0,
+                      "meets_p95_10ms":  true,
+                      "meets_p99_10ms":  true,
+                      "zero_overrun":  true
+                  },
+                  {
+                      "case_id":  "core_inference__tcn_22d",
+                      "p50_ms":  1.3547500000000001,
+                      "p95_ms":  1.5778999999999999,
+                      "p99_ms":  1.7646000000000002,
+                      "max_ms":  3.9511,
+                      "over_10ms_rate":  0,
+                      "meets_p95_10ms":  true,
+                      "meets_p99_10ms":  true,
+                      "zero_overrun":  true
+                  },
+                  {
+                      "case_id":  "end_to_end_update__modern_tcn_delta_bank_124",
+                      "p50_ms":  10.47095,
+                      "p95_ms":  13.30685,
+                      "p99_ms":  14.7777,
+                      "max_ms":  20.4086,
+                      "over_10ms_rate":  0.9711,
+                      "meets_p95_10ms":  false,
+                      "meets_p99_10ms":  false,
+                      "zero_overrun":  false
+                  },
+                  {
+                      "case_id":  "end_to_end_update__modern_tcn_22d",
+                      "p50_ms":  10.19535,
+                      "p95_ms":  13.116050000000001,
+                      "p99_ms":  14.23405,
+                      "max_ms":  18.0285,
+                      "over_10ms_rate":  0.6396,
+                      "meets_p95_10ms":  false,
+                      "meets_p99_10ms":  false,
+                      "zero_overrun":  false
+                  },
+                  {
+                      "case_id":  "end_to_end_update__gru_22d",
+                      "p50_ms":  1.863,
+                      "p95_ms":  2.27405,
+                      "p99_ms":  2.50525,
+                      "max_ms":  4.7267,
+                      "over_10ms_rate":  0,
+                      "meets_p95_10ms":  true,
+                      "meets_p99_10ms":  true,
+                      "zero_overrun":  true
+                  },
+                  {
+                      "case_id":  "end_to_end_update__tcn_22d",
+                      "p50_ms":  1.4109,
+                      "p95_ms":  1.6411,
+                      "p99_ms":  1.82315,
+                      "max_ms":  3.5778,
+                      "over_10ms_rate":  0,
+                      "meets_p95_10ms":  true,
+                      "meets_p99_10ms":  true,
+                      "zero_overrun":  true
+                  },
+                  {
+                      "case_id":  "mpc_solve__effective_controller",
+                      "p50_ms":  21.349,
+                      "p95_ms":  23.1211,
+                      "p99_ms":  27.419249999999998,
+                      "max_ms":  35.907399999999996,
+                      "over_10ms_rate":  1,
+                      "meets_p95_10ms":  false,
+                      "meets_p99_10ms":  false,
+                      "zero_overrun":  false
+                  },
+                  {
+                      "case_id":  "preprocess__normalization_delta_bank_124",
+                      "p50_ms":  0.0427,
+                      "p95_ms":  0.0599,
+                      "p99_ms":  0.064650000000000013,
+                      "max_ms":  0.2824,
+                      "over_10ms_rate":  0,
+                      "meets_p95_10ms":  true,
+                      "meets_p99_10ms":  true,
+                      "zero_overrun":  true
+                  },
+                  {
+                      "case_id":  "full_cycle__slope_estimation_mpc",
+                      "p50_ms":  47.762899999999995,
+                      "p95_ms":  52.20685,
+                      "p99_ms":  60.27355,
+                      "max_ms":  68.1917,
+                      "over_10ms_rate":  1,
+                      "meets_p95_10ms":  false,
+                      "meets_p99_10ms":  false,
+                      "zero_overrun":  false
+                  }
+              ]
+}

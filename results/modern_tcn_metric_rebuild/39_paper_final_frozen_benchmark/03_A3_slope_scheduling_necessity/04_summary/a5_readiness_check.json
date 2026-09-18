@@ -1,0 +1,25 @@
+{
+  "status": "WAITING_FOR_A1_A4",
+  "sources": {
+    "A1": [],
+    "A2": [],
+    "A3": [
+      "results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\source_manifest.json"
+    ],
+    "A4": []
+  },
+  "blockers": [
+    {
+      "task_id": "A1",
+      "reason": "SOURCE_MANIFEST_MISSING"
+    },
+    {
+      "task_id": "A2",
+      "reason": "SOURCE_MANIFEST_MISSING"
+    },
+    {
+      "task_id": "A4",
+      "reason": "SOURCE_MANIFEST_MISSING"
+    }
+  ]
+}

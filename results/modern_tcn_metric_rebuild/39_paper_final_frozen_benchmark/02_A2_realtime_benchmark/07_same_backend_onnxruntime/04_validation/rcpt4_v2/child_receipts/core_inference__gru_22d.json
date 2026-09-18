@@ -1,0 +1,19 @@
+{
+  "status": "CHILD_COMPLETE",
+  "case_id": "core_inference__gru_22d",
+  "method_id": "gru_22d",
+  "child_pid": 10380,
+  "completed_at": "2026-07-17T16:35:15.114984+08:00",
+  "formal": false,
+  "warmup_count": 5,
+  "formal_count": 20,
+  "raw_rows": 20,
+  "raw_timing_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\04_validation\\rcpt4_v2\\raw_timing\\core_inference__gru_22d.csv",
+  "raw_timing_sha256": "6790388f00905aeddf89e106dbe25a4cbab360b42ae6e5c7b814b8a7620de95f",
+  "case_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\04_validation\\rcpt4_v2\\cases\\core_inference__gru_22d.json",
+  "case_sha256_before_monitor_augmentation": "461f2f3c4dea8e94a3bc74eb42a3214d0a1cb8a8bdc00c5c3e59e181e9dba4b6",
+  "model_sha256": "449346956e5a0aeaa906dabe1df5d3472b3a690a0de2a1526e3125e347c3b8a4",
+  "authority_model_sha256": "e1da71edde44e33d37c904a2d2f49e07ba02a7ef570ec61f7c90e91cc35268e3",
+  "environment_sha256": "",
+  "completion_protocol": "atomic_child_receipt_v1"
+}

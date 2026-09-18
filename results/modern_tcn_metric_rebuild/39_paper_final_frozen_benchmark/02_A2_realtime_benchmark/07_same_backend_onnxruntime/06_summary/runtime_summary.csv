@@ -1,0 +1,5 @@
+case_id,comparison_group,parameter_count,model_file_bytes,p50_ms,p95_ms,p99_ms,max_ms,over_10ms_rate,over_10ms_count,meets_p95_10ms,meets_p99_10ms,zero_overrun,source_run
+core_inference__gru_22d,architecture_only,99276,400682,0.3071,0.3377,0.4124,0.9854,0.0,0,True,True,True,20260717_164306
+core_inference__modern_tcn_22d,architecture_only,118538,472135,0.3582,0.3881,0.49420800000000015,1.1671,0.0,0,True,True,True,20260717_164306
+core_inference__modern_tcn_delta_bank_124,representation_plus_architecture,145202,578793,0.3744,0.4038,0.4818040000000001,1.0823,0.0,0,True,True,True,20260717_164306
+core_inference__tcn_22d,architecture_only,156396,627487,1.0452,1.1341050000000001,1.3597150000000002,13.1071,0.0001,1,True,True,False,20260717_164306

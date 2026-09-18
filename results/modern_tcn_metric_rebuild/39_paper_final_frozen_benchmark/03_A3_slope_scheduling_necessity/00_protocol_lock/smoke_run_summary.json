@@ -1,0 +1,33 @@
+{
+  "task_id": "A3",
+  "phase": "smoke",
+  "rows": [
+    {
+      "case_id": "ZS_LPV_MPC__p03_long_updown__zs",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\ZS_LPV_MPC__p03_long_updown__zs\\attempt_005",
+      "message": ""
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p03_long_updown__imu_a",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\IMU_LPV_MPC__p03_long_updown__imu_a\\attempt_004",
+      "message": ""
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p03_long_updown__oracle",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\Oracle_LPV_MPC__p03_long_updown__oracle\\attempt_004",
+      "message": ""
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p03_long_updown__imu_b",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\IMU_LPV_MPC__p03_long_updown__imu_b\\attempt_004",
+      "message": ""
+    }
+  ],
+  "complete": 4,
+  "failed": 0,
+  "finished_at": "2026-07-15T14:58:32Z"
+}

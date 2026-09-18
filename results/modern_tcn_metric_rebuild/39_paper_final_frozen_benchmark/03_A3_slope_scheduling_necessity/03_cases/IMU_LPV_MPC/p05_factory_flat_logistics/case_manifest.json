@@ -1,0 +1,16 @@
+{
+  "task_id": "A3",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "case_id": "IMU_LPV_MPC__p05_factory_flat_logistics",
+  "phase": "full",
+  "controller_id": "IMU_LPV_MPC",
+  "theta_mode": 2,
+  "path_id": "p05_factory_flat_logistics",
+  "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\modern_tcn_showcase\\candidates\\path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1.mat",
+  "path_sha256": "8817d10f891dfc8956d676081c946c68714043e541c31ba54c4656fd09d8687e",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\00_protocol_lock\\a3.slx",
+  "plant_revision": "agv_physics_v2_plantfix",
+  "sensor_noise_seed": [],
+  "process_disturbance_seed": [],
+  "noise_enabled": false
+}

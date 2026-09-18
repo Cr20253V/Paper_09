@@ -1,0 +1,40 @@
+{
+  "status": "PASS",
+  "formal": false,
+  "purpose": "Four-case Start-Process controller-path smoke; Process.ExitCode is not used as success authority",
+  "case_count": 4,
+  "checks": [
+    {
+      "method": "modern_tcn_22d",
+      "status": "CHILD_COMPLETE",
+      "rows": 20,
+      "raw_sha_match": true,
+      "case_sha_match": true,
+      "stderr_empty": true
+    },
+    {
+      "method": "gru_22d",
+      "status": "CHILD_COMPLETE",
+      "rows": 20,
+      "raw_sha_match": true,
+      "case_sha_match": true,
+      "stderr_empty": true
+    },
+    {
+      "method": "tcn_22d",
+      "status": "CHILD_COMPLETE",
+      "rows": 20,
+      "raw_sha_match": true,
+      "case_sha_match": true,
+      "stderr_empty": true
+    },
+    {
+      "method": "modern_tcn_delta_bank_124",
+      "status": "CHILD_COMPLETE",
+      "rows": 20,
+      "raw_sha_match": true,
+      "case_sha_match": true,
+      "stderr_empty": true
+    }
+  ]
+}

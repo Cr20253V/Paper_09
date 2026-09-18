@@ -1,0 +1,95 @@
+{
+  "figure_id": "Fig07_fusion_mechanism",
+  "generated_utc": "2026-08-03T03:07:23.152865+00:00",
+  "backend": "Python/matplotlib",
+  "scope": "Figure generation only; no TeX, context, or table files modified.",
+  "figure_contract": {
+    "core_conclusion": "Qualified observer information enters only as a selective and bounded correction; fallback returns exactly to ModernTCN-delta.",
+    "archetype": "schematic-led quantitative mechanism trace",
+    "final_size_mm": [
+      183.0,
+      116.0
+    ],
+    "panel_map": {
+      "a": "detailed grade trajectories and active correction intervals in the prescribed window",
+      "b": "effective gain, bounded correction, and local fusion state",
+      "c": "log-scale NIS with fixed thresholds and active/fallback state"
+    }
+  },
+  "inputs": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/53_moderntcn_fuzzyakf6d_fusion_rebuild/08_formal_six_path_exploratory_v7/cases/V7/seed42/p01_factory_logistics_showcase/attempts/20260801_205613_566/node53_v7_runtime_debug.csv",
+      "bytes": 14319219,
+      "sha256": "8cb465f99996dcf3ac7bccd48d8f523ce5660fdb2d9b43cd6f98c6cf764099b9"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/53_moderntcn_fuzzyakf6d_fusion_rebuild/08_formal_six_path_exploratory_v7/cases/V7/seed42/p01_factory_logistics_showcase/attempts/20260801_205613_566/trace.csv",
+      "bytes": 7467280,
+      "sha256": "8938a56eff9bcfae288e3660063802c0a49802c1b5488b5ae34d58ec208f85bf"
+    }
+  ],
+  "source_data": {
+    "window_file": "results/paper/7.6/figures/Fig07_fusion_mechanism/source_data/fig07_window_data.csv",
+    "window_sha256": "ec5af79b7f92c0bbb5dccae34e84da16efd60393ff8422b457fd6742b2f8bb29",
+    "summary_file": "results/paper/7.6/figures/Fig07_fusion_mechanism/source_data/fig07_case_summary.json",
+    "summary_sha256": "9dd3f6177fbe7427b94c929e01a8acbf99a1cd2b3b0a23d3173e54956ac2c9fa"
+  },
+  "outputs": [
+    {
+      "format": "pdf",
+      "file": "results/paper/7.6/figures/Fig07_fusion_mechanism/output/fig07_fusion_mechanism.pdf",
+      "bytes": 66535,
+      "sha256": "4e638400bdfdda1adf1f09c9ff7aa0ea1cfa78e758d7e4345093ba799ddf8816"
+    },
+    {
+      "format": "svg",
+      "file": "results/paper/7.6/figures/Fig07_fusion_mechanism/output/fig07_fusion_mechanism.svg",
+      "bytes": 102682,
+      "sha256": "75e490a282c966ee1093c7108389bca5e4141fd3653c3b5016431cdf6ceb2d90"
+    },
+    {
+      "format": "png",
+      "file": "results/paper/7.6/figures/Fig07_fusion_mechanism/output/fig07_fusion_mechanism.png",
+      "bytes": 500661,
+      "sha256": "4240d1ce816406841a229c4d81aa82f54942efeb42d69e7c90c76edaed0351b6"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "numeric_checks": {
+      "active_fraction": true,
+      "fallback_fraction": true,
+      "active_error_reduction": true,
+      "scheduled_mae": true,
+      "nis_p95": true,
+      "fallback_identity": true,
+      "window_active_fraction": true
+    },
+    "artist_checks": {
+      "primary_panel_count": 3,
+      "minimum_visible_font_pt": 5.7,
+      "material_text_overflow_count": 0,
+      "material_text_overflow": [],
+      "status": "PASS"
+    },
+    "export_checks": {
+      "requested_size_mm": [
+        183.0,
+        116.0
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        4322,
+        2740
+      ],
+      "expected_png_pixels": [
+        4323,
+        2740
+      ],
+      "png_size_matches": true,
+      "png_nonwhite_fraction": 0.30146,
+      "svg_editable_text_elements": 42,
+      "status": "PASS"
+    }
+  }
+}

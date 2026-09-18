@@ -1,0 +1,117 @@
+{
+  "task_id": "A3",
+  "phase": "full",
+  "rows": [
+    {
+      "case_id": "ZS_LPV_MPC__p01_factory_logistics_showcase",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\ZS_LPV_MPC\\p01_factory_logistics_showcase\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p02_sharp_turn_transition",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\ZS_LPV_MPC\\p02_sharp_turn_transition\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p03_long_updown",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\ZS_LPV_MPC\\p03_long_updown\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p04_soft_updown_straight_turn",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\ZS_LPV_MPC\\p04_soft_updown_straight_turn\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p05_factory_flat_logistics",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\ZS_LPV_MPC\\p05_factory_flat_logistics\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p06_downhill_after_turn",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\ZS_LPV_MPC\\p06_downhill_after_turn\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p01_factory_logistics_showcase",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p01_factory_logistics_showcase\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p02_sharp_turn_transition",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p02_sharp_turn_transition\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p03_long_updown",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p03_long_updown\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p04_soft_updown_straight_turn",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p04_soft_updown_straight_turn\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p05_factory_flat_logistics",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p05_factory_flat_logistics\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p06_downhill_after_turn",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\IMU_LPV_MPC\\p06_downhill_after_turn\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p01_factory_logistics_showcase",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\Oracle_LPV_MPC\\p01_factory_logistics_showcase\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p02_sharp_turn_transition",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\Oracle_LPV_MPC\\p02_sharp_turn_transition\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p03_long_updown",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\Oracle_LPV_MPC\\p03_long_updown\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p04_soft_updown_straight_turn",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\Oracle_LPV_MPC\\p04_soft_updown_straight_turn\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p05_factory_flat_logistics",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\Oracle_LPV_MPC\\p05_factory_flat_logistics\\attempt_001",
+      "message": ""
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p06_downhill_after_turn",
+      "status": "COMPLETE",
+      "attempt_dir": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\Oracle_LPV_MPC\\p06_downhill_after_turn\\attempt_001",
+      "message": ""
+    }
+  ],
+  "complete": 18,
+  "failed": 0,
+  "finished_at": "2026-07-15T15:30:04Z"
+}

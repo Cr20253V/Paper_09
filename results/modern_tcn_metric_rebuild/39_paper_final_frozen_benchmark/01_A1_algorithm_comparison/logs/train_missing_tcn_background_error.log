@@ -1,0 +1,11 @@
+{错误使用 char
+无法从 struct 转换为 char。
+
+出错 run_A1_train_missing_tcn>local_check_dataset_contract (第 152 行)
+    assert(strcmp(char(d.meta.plant_revision), 'agv_physics_v2_plantfix'), 'A1:PlantRevision', 'Plant revision mismatch.');
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_A1_train_missing_tcn (第 16 行)
+local_check_dataset_contract(dataset_file);
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

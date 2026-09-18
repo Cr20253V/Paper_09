@@ -1,0 +1,13 @@
+{
+  "archived_at": "2026-07-17T12:32:22.4539750+08:00",
+  "case_id": "core_inference__modern_tcn_delta_bank_124",
+  "reason": "INCOMPLETE_PRIOR_ATTEMPT_PATH_LENGTH_FIX",
+  "source_files": [
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\04_phase1\\logs\\core_inference__modern_tcn_delta_bank_124.stdout.log",
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\04_phase1\\logs\\core_inference__modern_tcn_delta_bank_124.stderr.log",
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\04_phase1\\raw_memory\\core_inference__modern_tcn_delta_bank_124.csv",
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\03_environment\\preflight_core_inference__modern_tcn_delta_bank_124.json",
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\03_environment\\watch_core_inference__modern_tcn_delta_bank_124.json",
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\03_environment\\exclusivity_watch_core_inference__modern_tcn_delta_bank_124.csv"
+  ]
+}

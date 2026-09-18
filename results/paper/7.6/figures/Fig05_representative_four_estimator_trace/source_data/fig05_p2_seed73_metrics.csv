@@ -1,0 +1,5 @@
+method_id,method_label,n_full_trace,duration_s,mae_benchmark_deg,mae_benchmark_start_s,mae_full_trace_deg,p95_abs_error_full_trace_deg,peak_abs_error_full_trace_deg
+modern_tcn_delta_bank_124,ModernTCN-delta,5201,52,0.503778851502,0.5,0.498935755448,1.1382079092,3.217490625
+modern_tcn_22d,ModernTCN-22D,5201,52,0.693626327628,0.5,0.686958126055,1.76822268519,3.528125
+gru_22d,GRU-22D,5201,52,0.806999103373,0.5,0.799240988555,1.94094407199,2.94115817563
+tcn_22d,TCN-22D,5201,52,0.553025983614,0.5,0.54770944849,1.38911744793,2.12934518635

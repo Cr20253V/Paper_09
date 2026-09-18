@@ -1,0 +1,9 @@
+*.mat binary
+*.slx binary
+*.onnx binary
+*.pt binary
+*.joblib binary
+*.pdf binary
+*.png binary
+*.bin binary
+*.pfb binary

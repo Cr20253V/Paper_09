@@ -1,0 +1,420 @@
+                                                                                                                                                                           Lag-Enhanced LSTM for
+                                                                                                                                                                        Power Grid Frequency Prediction
+                                                                                                                                                                   Casi Setianingsih                                                       Bálint Hartmann
+                                                                                                                                                     Department of Electric Power Engineering                                 Department of Electric Power Engineering
+                                                                                                                                                  Budapest University of Technology and Economics                          Budapest University of Technology and Economics
+                                                                                                                                                                  Budapest, Hungary                                                       Budapest, Hungary
+                                                                                                                                                            setianingsihcasi@edu.bme.hu                                              hartmann.balint@vik.bme.hu
+
+                                                                                                                                                Abstract— This paper investigates the impact of lagged             relationships [10], Random Forests offer robustness and
+                                                                                                                                            features on short-term frequency prediction using three                interpretability [11], and XGBoost has achieved excellent
+                                                                                                                                            univariate Long Short-Term Memory (LSTM) models: without               performance in short-term electric load forecasting [12].
+                                                                                                                                            lag, with lag steps 1 to 3, and with lag steps 1 to 10. The baseline   However, these models typically process observations
+                                                                                                                                            model yielded a MAPE of 8.08%, which was reduced by 89.4%              independently and lack the temporal memory needed to
+                                                                                                                                            to 0.86% when using lag steps 1 to 3. However, extending the           capture long-term dependencies. In contrast, Long Short-
+                                                                                                                                            window to 10 lag steps (equivalent to 200 ms) slightly worsened        Term Memory (LSTM) networks are specifically designed to
+                                                                                                                                            performance, raising the MAPE to 1.08%. Correlation and                learn from sequential patterns and dynamic behaviors, making
+                                                                                                                                            delay analyses revealed that frequency synchronization across
+                                                                                                                                                                                                                   them particularly suitable for modeling frequency fluctuations
+                                                                                                                                            the grid is highly time-sensitive and spatially structured, with
+                                                                                                                                            most predictive information concentrated in the immediate past.
+                                                                                                                                                                                                                   in real-time grid environments. Their effectiveness has been
+                                                                                                                                            These directional differences highlight that correlation               demonstrated in grid frequency prediction tasks [13], short-
+                                                                                                                                            degradation is not symmetric, and the direction of interaction         term load forecasting using hybrid Convolutional Neural
+                                                                                                                                            influences how frequency deviations propagate. Identifying             Network (CNN) – Long Short-Term Memory (LSTM) models
+2025 10th International Youth Conference on Energy (IYCE) | 979-8-3315-2600-9/25/$31.00 ©2025 IEEE | DOI: 10.1109/IYCE66046.2025.11155029
+
+
+
+
+                                                                                                                                            such asymmetric and time-sensitive relationships is essential for      [14], and spatiotemporal modeling of campus-level frequency
+                                                                                                                                            refining model input design, particularly for lag-aware LSTM           data [15].
+                                                                                                                                            architectures that rely on the physical structure and timing of
+                                                                                                                                                                                                                      Although LSTM has been used in previous studies, key
+                                                                                                                                            signal transmission. These findings suggest that compact lag
+                                                                                                                                                                                                                   methodological gaps remain. For example, Khaleefah et al.
+                                                                                                                                            windows offer the best balance between model accuracy and
+                                                                                                                                            efficiency, aligning with the physical dynamics of the grid.
+                                                                                                                                                                                                                   [16] applied LSTM to predict smart grid stability but used
+                                                                                                                                                                                                                   simulated data with limited system size and did not describe
+                                                                                                                                               Keywords—frequency prediction, temporal dependencies,               input features or exploit temporal lag structures. Sathe and
+                                                                                                                                            lagged features, power grid stability                                  Yang [15] used ConvLSTM for frequency prediction based on
+                                                                                                                                                                                                                   power consumption in a campus microgrid, but did not
+                                                                                                                                                                   I.    INTRODUCTION                              consider lagged frequency features or inter-location influence.
+                                                                                                                                                Maintaining frequency stability in power grids is essential            In this study, we introduce a lag-enhanced LSTM model
+                                                                                                                                            for ensuring reliable operation, especially as renewable energy        that explicitly incorporates frequency deviations from t−1 to
+                                                                                                                                            sources become increasingly integrated and grid complexity             t−10 across 14 high-voltage substations, equipped with phasor
+                                                                                                                                            grows. Frequency stability reflects the balance between                measurement devices, in the Hungarian power grid. By
+                                                                                                                                            electricity supply and demand, and significant deviations from         selecting features based on inter-station cross-correlation
+                                                                                                                                            the nominal 50 Hz can lead to equipment damage or even                 analysis, the model learns both how frequency disturbances
+                                                                                                                                            widespread blackouts [1], [2]. Accurate prediction of                  propagate over time and how they travel spatially across the
+                                                                                                                                            frequency fluctuations helps grid operators take proactive             grid. The dataset includes over 84 million real-time data points
+                                                                                                                                            measures to ensure reliability [3].                                    recorded within a 24-hour window, providing a uniquely high-
+                                                                                                                                                The nonlinear interactions between generators, loads, and          resolution view of short-term frequency dynamics.
+                                                                                                                                            renewable sources contribute to the complexity of frequency                This approach not only improves prediction accuracy but
+                                                                                                                                            behavior [4]. These dynamics are further influenced by spatial         also enhances interpretability by revealing grid
+                                                                                                                                            relationships across regions in the grid, which require                synchronization behavior and temporal delay patterns
+                                                                                                                                            analytical models capable of capturing such interdependencies          between stations. In doing so, our model bridges the gap
+                                                                                                                                            [5]. High-resolution time-series data has proven especially            between traditional forecasting methods and physics-
+                                                                                                                                            valuable for detecting emerging instabilities and informing            informed analyses of interconnected grid dynamics. The
+                                                                                                                                            prediction models [6].                                                 remainder of the paper is organized as follows: Section II
+                                                                                                                                                Various methods have been proposed to forecast grid                describes the dataset and preprocessing steps, Section III
+                                                                                                                                            frequency, ranging from physics-based simulation models to             presents the methodology and experimental setup, Section IV
+                                                                                                                                            data-driven learning approaches. While physics-based models            discusses the results, and Section V concludes the paper.
+                                                                                                                                            provide interpretability, they often struggle to scale to large                          II.   METHODS AND DATA
+                                                                                                                                            interconnected systems [7], [8]. In contrast, data-driven
+                                                                                                                                            models, especially those based on deep learning, have shown                This section explains how the frequency data from
+                                                                                                                                            strong performance in modeling nonlinear and nonstationary             multiple grid stations was prepared for short-term prediction.
+                                                                                                                                            grid behaviors [9].                                                    It covers data cleaning, filling in missing values, and aligning
+                                                                                                                                                                                                                   the time series across stations for lag analysis.
+                                                                                                                                                Traditional machine learning methods such as Support
+                                                                                                                                            Vector Regression, Random Forests, and Gradient Boosting               A. Dataset and Preprocessing
+                                                                                                                                            have also been widely applied for prediction tasks in power               This study uses a 24-hour dataset of high-frequency
+                                                                                                                                            systems. SVR is effective for modeling nonlinear                       measurements from 14 subtations in the Hungarian
+
+
+
+                                                                                                                                            979-8-3315-2600-9/25/$31.00 ©2025 IEEE
+transmission grid. The dataset contains approximately 85          B, supporting the hypothesis of a short-range dynamic
+million entries, with each value representing the deviation       propagation.
+from the nominal 50 Hz frequency at a specific time and
+location. These short-term fluctuations, recorded every 20            To quantify this alignment, Fig. 2 shows the absolute
+milliseconds, allow the model to learn how frequency behaves      difference between the two signals over the same period. Most
+across different parts of the grid.                               differences remain below 2.0, with a majority clustering
+                                                                  between 1.2 and 1.8. Spikes beyond 2.5 are infrequent and
+    For modeling purposes, only three fields were retained:       isolated, indicating that the lag−1 relationship between these
+station name, measurement timestamp, and frequency                stations remains consistent for most of the interval. These
+oscillation value. The data was collected through a national      results suggest that lagged frequency inputs from neighboring
+infrastructure operated by the Hungarian transmission system      stations may capture meaningful predictive signals [22],
+operator (TSO) MAVIR, with geographically distributed             especially when deviations propagate rapidly through the grid
+measurement points that allow high-resolution monitoring of       [23]. This behavior forms the basis for the correlation and
+frequency variations. Although this study uses a 24-hour          delay analysis presented in subsequent sections.
+sample, the data structure and acquisition process are
+consistent with the measurement setup described by Hartmann
+et al. [17].
+    In this research, preprocessing involved two main steps:
+handling missing values and aligning data across stations,
+implemented using Python with pandas[18] and NumPy[19].
+Frequency data from each station was cleaned individually.
+Missing values were filled with the station's own mean to
+preserve its characteristics [20]. Stations with only missing
+data or zero variance were excluded, and all values were
+converted to a consistent numeric format.
+    To analyze lagged relationships such as t – 1 or t – 2, we
+shifted each station’s time series by a fixed number of rows,
+where each row corresponds to a 20-millisecond interval. For
+example, a lag – 3 represents a 60 ms forward shift. This         Fig. 1. Frequency Comparison Between Station A (t−1) and Station B (t)
+approach allowed us to model short-term dependencies across
+stations at multiple temporal offsets. All stations contributed
+both as references and lagged targets, forming a fully
+connected structure that captures how frequency changes
+propagate across the grid.
+B. Lag-Based Correlation Setup
+    We computed pairwise cross-correlations across lag
+intervals from t – 1 to t – 10 for all station combinations.
+Several station pairs showed correlation values consistently
+above 0.997 across multiple lag intervals, indicating strong
+temporal relationships between frequency patterns at different
+grid locations. Each station contributed to the correlation
+process both as a reference point at time t and as a target at
+shifted time steps.
+    The Pearson correlation coefficient used to quantify the      Fig. 2. Absolute Difference Between Station A (t−1) and Station B (t)
+strength of the lagged relationships is defined as [21]:
+                                                                  C. Normalization
+                             ∑        ̅                               The Min-Max scaling was applied to normalize all
+                        =                                  (1)
+                            ∑     ̅       ∑                       frequency values between 0 and 1, enhancing model
+                                                                  performance and convergence during training.
+where
+           represent frequency values of two stations at                                          =                                       (2)
+aligned time steps, ̅         are their means,    is the
+correlation coefficient.
+                                                                  where [24] is the normalized value,                              are the
+                                                                  minimum and maximum frequency values.
+    Fig. 1 presents a detailed temporal comparison between
+two stations, where the frequency signal from Station A is        D. LSTM Model Design and Implementation
+shifted by one time step and overlaid with the original signal    The following outlines the LSTM model architecture,
+from Station B. The lower subplot shows the two frequency
+                                                                  designed to utilize sequential patterns and temporal
+traces, revealing a high degree of alignment in both trend and
+                                                                  dependencies for frequency prediction.
+amplitude across the observed interval. The similarity in slope
+and turning points suggests that frequency deviations at          1. Input Layer:
+Station A may precede and closely resemble those at Station            • Lagged Features Input: Processes Lag 1, Lag 2, …,
+                                                                          Lag 10 features from individual selected stations.
+2. LSTM Layers:                                                    to factors such as network topology or local operating
+    • First LSTM layer with 50 units, focusing on                  conditions, which are not further examined in this study. At
+        extracting temporal dependencies.                          lag t−10 (Fig. 4) or 200 milliseconds, some connections like
+    • Second LSTM layer with 50 units, refining the                C to D remain strong at 0.9995, but others begin to weaken.
+        temporal sequence information.                             For instance, L to H remains high at 0.9991, while the reverse
+                                                                   direction is only 0.9942, showing that influence between
+    • Dropout layer to prevent overfitting.
+                                                                   stations is not always equal. These differences highlight how
+3. Dense Layers:                                                   timing affects signal relationships and why lag-specific inputs,
+    • Fully connected (Dense) layer with ReLU activation           as described in Section II, are necessary for reliable
+        for nonlinearity.                                          predictions.
+    • Output layer with a single neuron for frequency
+        prediction.
+4. Training Configuration:
+    • 80% of the data was allocated for training, and 20%
+        for testing.
+    • The model employed the Adam optimizer, with a
+        learning rate of 0.001, and ran for 10 epochs with a
+        batch size of 32.
+
+LSTM Cell Formula [25]:
+
+                  ℎ =              +     "ℎ   # + $"        (3)
+
+where ℎ is the hidden state at time t, is the input vector,
+           " are the weight matrices for the input and hidden
+state, respectively, $" is the bias term, is the activation
+function.
+                  III.    RESULTS AND ANALYSIS
+    This section presents the main results, including
+                                                                   Fig. 4. Cross-Correlation Matrix for Lag-10
+correlation patterns, delay behavior, and prediction accuracy
+using different lag inputs.
+                                                                       Besides this general weakening over time, some station
+A. Correlation Structure at Multiple Lags                          pairs drop much more noticeably. Station N, for example, falls
+                                                                   to 0.9264 toward D and 0.9307 to E at lag t−10, making it one
+                                                                   of the least synchronized stations. Similarly, Station K to D
+                                                                   drops from 0.9441 at lag t−1 to 0.9406, and Station G to C
+                                                                   drops from 0.9861 to 0.9833. These results contrast with
+                                                                   stable pairs like C to D and show that some stations, such as
+                                                                   N or G, have lower and less stable correlations at lag t−10.
+                                                                   This suggests that their frequency patterns are less closely
+                                                                   aligned with other stations as time passes. This suggests that
+                                                                   their frequency patterns are less coupled with those of other
+                                                                   stations, indicating weaker dynamic interaction within the
+                                                                   system.
+                                                                       Note that the diagonal values in the cross-correlation
+                                                                   matrices (Fig. 3 and Fig. 4) are not exactly 1.0000. This is
+                                                                   because they represent correlations between a station’s own
+                                                                   frequency at time t−k and at time t, not at the same time step.
+                                                                   In other words, these are lagged self-correlations, which can
+                                                                   naturally fall below 1 due to short-term fluctuations in the
+                                                                   signal. Small differences are expected and reflect the dynamic
+                                                                   nature of frequency behavior in real grid conditions.
+
+Fig. 3. Cross-Correlation Matrix for Lag-1
+                                                                       Fig. 5 presents a symmetrical heatmap combining the
+                                                                   maximum lagged cross-correlation between all station pairs
+   At lag t−1 (Fig. 3) the cross-correlation matrix shows that     and the corresponding delay in milliseconds at which this peak
+most station pairs are highly synchronized, with values above      occurs. Most station pairs exhibit very high correlations above
+0.997 and several even exceeding 0.999. For example, Station       0.990, with many reaching 0.998 or higher. The delays are
+C to D reaches 0.9996, and H to I is 0.999, supporting the         predominantly concentrated at the first lag step (20
+hypothesis in Section I that frequency changes spread very         milliseconds), indicating that many nodes respond to each
+quickly across closely connected areas. In contrast, Station G     other almost immediately within a single measurement
+consistently shows lower correlations, such as 0.9854 to F and     interval. Such fast and strong coupling supports the
+0.9861 to C, suggesting it responds differently, potentially due   assumption in Section I that frequency disturbances propagate
+                                                                   rapidly and coherently across the network. From a physical
+perspective, these minimal delays suggest direct influence          higher delays to most stations, often around 40 milliseconds,
+through strong electrical paths and methodologically validate       while most other stations are connected with shorter delays of
+the use of short lags in the LSTM input structure as described      about 20 milliseconds. Station L is different in another way. It
+in Section II.                                                      has short delays to most stations, but to a few specific stations
+                                                                    like J, K, M, and N the delays are much longer, reaching up to
+                                                                    73 milliseconds. This unusual combination makes its delay
+                                                                    pattern different from the others. As a result, both D and L
+                                                                    appear in separate clusters. This shows that clustering depends
+                                                                    not just on the average delay but on how each station connects
+                                                                    to all others in terms of timing.
+
+
+
+
+                                                                    Fig. 6. Hierarchical Clustering Based on Delay Behavior
+
+                                                                       In real-world power systems, each cluster shows how
+                                                                    similar the stations are in terms of delay and response. Cluster
+Fig. 5. Maximum Correlation and Delay Across All Station Pairs      1 contains stations that respond quickly and behave in a
+                                                                    similar way. Cluster 2 and Cluster 3 include stations with
+     Several deviations are noteworthy. Station N reaches its       slower or different response patterns. This helps identify
+highest correlation with itself at 40 milliseconds instead of 20,   which stations follow the main system behavior and which
+suggesting unstable or delayed internal dynamics. Station K         ones may need to be handled separately.
+shows its best correlation with other nodes such as Station M
+                                                                        Fig. 7 shows the correlation trajectories across lag−1 to
+and Station L only at 60 milliseconds, and the values are
+                                                                    lag−10 for selected station pairs with peak correlation values
+relatively low, around 0.910 to 0.925. Station M also interacts
+                                                                    above 0.9982. Among them, two pairs stand out with a notably
+weakly with multiple others, such as 0.895 with Station N,
+                                                                    sharp decline: Station B to Station D and Station C to Station
+despite being part of the same grid. These observations imply
+                                                                    D. Both start above 0.9985 at lag−1 but drop below 0.9975 by
+reduced dynamic influence and slower response, possibly due
+                                                                    lag−10. For example, the correlation from Station C to D
+to topological distance, control delays from inverter-based
+                                                                    decreases from 0.9986 at lag−1 to 0.9973 at lag−10, marking
+generation, or localized disturbances. Not all high correlations
+                                                                    a decline of over 0.0013. This suggests that Station D only
+imply fast propagation, the pair Station J and Station L reaches
+                                                                    maintains strong coupling with B and C within a narrow delay
+0.996 at 40 milliseconds, showing that strong coupling can
+                                                                    window and rapidly loses temporal alignment as lag increases.
+still involve time lag. This confirms that both the magnitude
+                                                                    The steep decrease indicates that Station D responds quickly
+and timing of interaction matter and highlights why the model
+                                                                    to nearby nodes but becomes decoupled over time, potentially
+must treat lag not as a numerical artifact but as a meaningful
+                                                                    due to its location on the grid, limited feedback mechanisms,
+physical signal.
+                                                                    or local control behavior.
+B. Temporal and Spatial Patterns of Delay
+    To understand how stations organize based on delay
+behavior, hierarchical clustering was applied to the delay
+matrix. Fig. 6 presents a hierarchical clustering dendrogram
+based on the delay matrix, where the vertical axis shows the
+linkage distance between stations. The clustering is derived
+from average delays at which each station pair reached
+maximum correlation, reflecting how similarly each node
+responds to or influences others over time. Three clusters were
+formed at a linkage threshold of 50 ms.
+    Cluster 1 contains the majority of stations including A, I,
+M, K, F, and others, indicating these nodes share similar
+temporal behavior and respond to frequency changes within
+comparable timeframes. Their grouping suggests that they are
+part of a tightly connected region in the grid where
+disturbances propagate with minimal delay.
+    The clustering result in Fig. 6 shows that Station D and        Fig. 7. Correlation Decay from Lag−1 to Lag−10 for Selected Pairs
+Station L are separated from the main group because of how
+their delay values differ from other stations. Station D has            Other pairs reveal contrasting temporal patterns. The
+                                                                    correlation from Station E to Station D decreases modestly
+from 0.9985 at lag−1 to 0.9978 at lag−10, showing that the                 C. LSTM Prediction with and without Lagged Features
+influence from Station E remains relatively stable across time.                To evaluate the effect of temporal information on
+Interestingly, the reverse direction from D to E declines even             frequency prediction, three LSTM models were developed
+more gradually, from 0.9984 to 0.9981, suggesting that                     with different input strategies. Model training was conducted
+Station D has a longer-lasting impact on Station E than vice               in Python (TensorFlow 2.11, Keras), with preprocessing in
+versa. A similar asymmetry appears in Station D to Station C,              Pandas and NumPy, and evaluation using Scikit-learn. The
+which falls from 0.9985 to 0.9980, while C to D drops more                 first model uses only the current frequency value from a single
+steeply. These directional differences highlight that                      station (univariate input without lag), assuming that present
+correlation degradation is not symmetric, and the direction of             information alone is sufficient for forecasting. The second
+interaction influences how frequency deviations propagate.                 model incorporates lagged values from lag−1 to lag−3 to
+Identifying such asymmetric and time-sensitive relationships               capture recent memory effects, while the third model extends
+is essential for refining model input design, particularly for             this window to lag−1 through lag−10 in order to account for
+lag-aware LSTM architectures that rely on the physical                     longer term temporal dependencies. All models share the
+structure and timing of signal transmission. Overall, the                  same architecture: two LSTM layers followed by a dense
+varying rates of correlation decay across directions and station           output layer that produces a single step forecast. This design
+pairs reveal distinct temporal roles within the grid,                      was selected to isolate the effect of temporal depth while
+distinguishing fast-responding nodes from those that serve as              maintaining a consistent model structure for fair comparison.
+delayed propagators or dynamic endpoints.
+                                                                               Fig. 9 shows the error comparison between the three
+    Fig. 8 shows the spatial distribution of delay in frequency            models. In this case, error means the difference between the
+synchronization across the Hungarian grid, using Station A as              predicted and actual frequency values, measured by MAE,
+the reference point. The color contour represents the time each            MSE, RMSE, and MAPE. The model without lag gives the
+station takes to align with frequency changes originating from             highest MAPE at 8.08 percent, which shows that using only
+Station A, with warmer colors indicating shorter delays and                current values is not enough to capture how frequency changes
+cooler tones indicating longer ones. Stations L, G, and I,                 over time. Adding short-term memory with lag 1 to 3
+located in the central and northeastern region, show the                   improves the result significantly, lowering the MAPE to 0.86
+shortest delays at 20 to 40 milliseconds, indicating strong                percent, or an improvement of 89.4 percent. This shows that
+synchronization with the source. In contrast, Stations D, H,               recent data gives most of the useful information, helping the
+and J in the southwestern part of the grid exhibit longer delays           model predict short-term changes more accurately.
+up to 80 milliseconds, reflecting slower alignment with the
+reference signal.
+
+
+
+
+                                                                           Fig. 9. Comparison of Evaluation Metrics by LSTM Models
+
+                                                                               When the lag window is extended to lag−1 to lag−10,
+                                                                           MAPE rises slightly to 1.08%, a 25.6% deterioration
+                                                                           compared to the lag 1–3 model. Although still much better
+Fig. 8. Spatial-temporal Delay of Frequency Oscillation (from Station A)   than the baseline, this drop suggests that distant lags add little
+                                                                           useful information and may introduce noise or weaken the
+    The delay gradient clearly follows a spatial path from the             impact of key features. In LSTM training, longer sequences
+northeast to the southwest, suggesting that frequency                      raise the risk of vanishing gradients and can lead the model to
+disturbances originating from Station A propagate most                     learn less meaningful temporal patterns. This highlights the
+rapidly toward the central and eastern zones, while western                need to align lag design with the system’s dominant time
+and southern stations respond more slowly. If a frequency                  scale.
+event occurs near Station A, the central corridor including
+Stations L and I will be affected almost immediately, while                    Fig. 10 shows the prediction results for the first 20 time
+the southwestern region, including Stations D, H, and J, may               steps at Station A, comparing actual frequency values with
+experience delayed synchronization and temporary phase                     three LSTM models: one without lag, one using lag-1 to lag-
+mismatch. This spatial gradient illustrates how frequency                  3, and one using lag-1 to lag-10. The model without lag fails
+disturbances propagate through the network and reveals the                 to capture key signal features. It underestimates the peak at
+dynamic structure of the grid in real time. Rather than treating           steps 5 to 6, misses the drop at steps 9 to 13, and generally
+all nodes as equally connected, this map highlights the                    produces a flattened response, showing that it cannot learn
+directional nature of synchronization, shaped by electrical                system dynamics from current values alone.
+distance, generator response characteristics, and network                     The lag-1 to lag-3 model closely follows the actual signal,
+topology. Such spatial delay information offers practical                  capturing the rise to 4.0, the drop below 2.0, and the recovery,
+insight into how different areas of the grid contribute to or fall         with only minor deviations. The lag-1 to lag-10 model
+behind in maintaining coherent frequency behavior.                         captures the trend but lags in transitions and adds spurious
+oscillations after step 13. This likely results from longer input                                  REFERENCES
+interacting with LSTM's sequential structure, where more              [1]  J. Kruse, B. Schäfer, and D. Witthaut, "Predictability of Power Grid
+lagged values can lead to overfitting on less important                    Frequency," arXiv preprint, 2020.
+patterns. As predictions continue step by step, small errors          [2] L. R. Gorjão, B. Schäfer, D. Witthaut, and C. Beck, "Spatio-Temporal
+build up and affect alignment, especially in later steps.                  Complexity of Power-Grid Frequency Fluctuations," arXiv preprint,
+                                                                           2021.
+    These differences confirm that short lag windows give the         [3] J. Kruse, E. Cramer, B. Schäfer, and D. Witthaut, "Physics-Informed
+best balance between responsiveness and stability, as also                 Machine Learning for Power Grid Frequency Modeling," Physical
+                                                                           Review X Energy, vol. 2, no. 4, pp. 1–18, 2022.
+shown in the metrics. MAPE drops from 8.08 percent (no lag)           [4] H. Karbouj, Z. H. Rather, D. Flynn, and H. W. Qazi, "Non-synchronous
+to 0.86 percent (lag-3), then slightly increases to 1.08 percent           fast frequency reserves in renewable energy integrated power systems:
+(lag-10). This shows that local frequency patterns can be                  A critical review," International Journal of Electrical Power & Energy
+predicted well with minimal input history, while longer lag                Systems, vol. 106, pp. 488–501, 2019.
+                                                                      [5] S. Pfenninger, A. Hawkes, and J. Keirstead, "Energy systems modeling
+depth may introduce noise and reduce precision.                            for twenty-first century energy challenges," Renewable and
+                                                                           Sustainable Energy Reviews, vol. 33, pp. 74–86, 2014.
+                                                                      [6] T. Dereje, L. Zhan, B. Hu, and H. Nian, "Transient Synchronization
+                                                                           Stability Modeling and Analysis of Grid-Following Converter
+                                                                           Considering Current Dynamics," IEEE Access, 2024.
+                                                                      [7] D. Singhal, L. Ahuja, and A. Seth, "Forecasting Smart Grid Stability
+                                                                           Using a Hybrid CNN Bi-LSTM Approach," SN Computer Science, vol.
+                                                                           5, no. 5, p. 539, 2024.
+                                                                      [8] Y. Zhao et al., "Deep learning-based frequency stability assessment in
+                                                                           power grid with high renewables," in Proc. IEEE Power & Energy
+                                                                           Society General Meeting (PESGM), 2022, pp. 1–5.
+                                                                      [9] R. Nie and H. Li, "Application and Improvement of LSTM in Power
+                                                                           System Prediction," in Proc. IEEE 3rd Int. Conf. on Data Science and
+Fig. 10. Predicted vs Actual Frequency Deviation Over 20 Time Steps        Computer Application (ICDSCA), 2023, pp. 975–980.
+(Station A)                                                           [10] S. Wen, Y. Wang, Y. Tang, Y. Xu, and P. Li, "Proactive frequency
+                                                                           control based on ultra‐short‐term power fluctuation forecasting for
+                       IV.    CONCLUSION                                   high renewables penetrated power systems," IET Renewable Power
+                                                                           Generation, vol. 13, no. 12, pp. 2166–2173, 2019.
+    This study demonstrates the benefits of incorporating             [11] Power Grid Frequency Organization, "Power Grid Frequency
+short-term lagged features in improving the accuracy of                    Database," [Online]. Available: https://power-grid-frequency.org.
+frequency prediction in power systems. The baseline model                  Accessed: Dec. 2024.
+                                                                      [12] S. H. Khaleefah et al., "Optimizing Smart Power Grid Stability Based
+without lag yielded the highest prediction error, with MAE =               on the Prediction of a Deep Learning Model," JOIV: International
+0.5577 and MAPE = 8.08%, indicating poor responsiveness to                 Journal on Informatics Visualization, vol. 8, no. 3, pp. 1091–1098,
+dynamic changes. Introducing lagged inputs from lag−1 to                   2024.
+lag−3 drastically improved the results, reducing the MAE to           [13] H. R. Chamorro et al., "Data-driven trajectory prediction of grid power
+0.0626 and MAPE to 0.86%, which represents a reduction of                  frequency based on neural models," Electronics, vol. 10, no. 2, p. 151,
+                                                                           2021.
+88.8% and 89.4% respectively. Surprisingly, expanding the             [14] K. Ullah et al., "Short-Term Load Forecasting: A Comprehensive
+lag window to lag−1 to lag−10 slightly degraded performance,               Review and Simulation Study with CNN-LSTM Hybrids Approach,"
+with MAE increasing to 0.0751 and MAPE to 1.08%,                           IEEE Access, 2024.
+suggesting that the most predictive temporal information is           [15] A. Sathe and W. R. Yang, "Grid Frequency Forecasting in University
+                                                                           Campuses using Convolutional LSTM," arXiv preprint, 2023.
+concentrated within a narrow recent window. These findings            [16] A. Ravi et al., "A Comprehensive Review on the Current Trends in
+confirm that frequency behavior in the Hungarian power grid                Micro-Phasor Measurement Units," in IOP Conf. Ser.: Materials
+is driven by short-term temporal patterns and that predictive              Science and Engineering, vol. 1258, no. 1, p. 012045, 2022.
+models benefit most from capturing these immediate                    [17] B. Hartmann et al., "Dynamical Heterogeneity and Universality of
+dependencies, while future research may enhance model                      Power-Grids," Sustainable Energy, Grids and Networks, vol. 39, no.
+                                                                           101491, pp. 1–12, 2024.
+robustness and generalizability by integrating physical grid          [18] The pandas development team, pandas: powerful Python data analysis
+features such as electrical distance or impedance and                      toolkit, Version 1.0.5, Zenodo, 2020. [Online]. Available:
+extending evaluation to multi-station and variable operating               https://doi.org/10.5281/zenodo.3509134.
+conditions. This study focuses on point prediction using              [19] C. R. Harris, K. J. Millman, S. J. van der Walt, et al., “Array
+LSTM. Incorporating uncertainty estimation, such as                        programming with NumPy,” Nature, vol. 585, no. 7825, pp. 357–362,
+confidence intervals or probabilistic forecasting, would                   Sep. 2020. [Online]. Available: https://doi.org/10.1038/s41586-020-
+                                                                           2649-2
+enhance the reliability and applicability of the results and is
+                                                                      [20] R. J. Little and D. B. Rubin, Statistical Analysis with Missing Data,
+suggested for future work.                                                 2nd ed., John Wiley & Sons, 2019.
+                                                                      [21] A. G. Asuero, A. Sayago, and A. G. González, "The correlation
+                      ACKNOWLEDGMENT                                       coefficient: An overview," Critical Reviews in Analytical Chemistry,
+The authors acknowledge the financial support of the Stipendium            vol. 36, no. 1, pp. 41–59, 2006.
+Hungaricum Scholarship. Bálint Hartmann acknowledges the              [22] B. Podobnik et al., "Time-lag cross-correlations in collective
+support of the Bolyai János Research Scholarship of the Hungarian          phenomena," Europhysics Letters, vol. 90, no. 6, p. 68001, 2010.
+Academy of Sciences (BO/131/23), and the National Research            [23] K. Johny, M. L. Pai, and S. Adarsh, "A multivariate EMD-LSTM
+Excellence Programme of the National Research, Development and             model aided with Time Dependent Intrinsic Cross-Correlation for
+                                                                           monthly rainfall prediction," Applied Soft Computing, vol. 123, p.
+Innovation Office (ADVANCED 150405).                                       108941, 2022.
+                                                                      [24] M. Prasad and T. Srikanth, "Clustering Accuracy Improvement Using
+                                                                           Modified Min-Max Normalization," 2024.
+                                                                      [25] I. Amalou, N. Mouhni, and A. Abdali, "Multivariate time series
+                                                                           prediction by RNN architectures for energy consumption forecasting,"
+                                                                           Energy Reports, vol. 8, pp. 1084–1091, 2022.
+

@@ -1,0 +1,400 @@
+\section{Experimental Setup and Evaluation Protocol}
+\label{sec:experiment_design}
+
+\subsection{Research Questions and Validation Hierarchy}
+
+The evaluation was organized around five sequential research questions. RQ1 asked whether road-grade scheduling materially affects the frozen LPV-MPC closed loop. RQ2 asked whether ModernTCN-delta improves offline grade estimation relative to ModernTCN-22D, GRU-22D, and TCN-22D under a common data protocol. RQ3 asked whether the offline advantage transfers to closed-loop tracking and input regularity. RQ4 asked whether a qualified causal inertial observer provides complementary information and whether uncertainty-adaptive correction can exploit that information without replacing the learned estimate. RQ5 asked how the resulting Fusion-LPV-MPC compares with four fixed grade-source controls and what computational scope is supported by the measured timing evidence. This ordering separates the value of the scheduling variable from estimator selection, fusion behavior, and implementation timing.
+
+No experiment was added for this manuscript rewrite. All values were read from frozen artifacts generated before the present reporting stage. The hierarchy distinguishes descriptive means, paired performance effects, qualification gates, and deployment claims. A favorable confidence interval for a performance metric was not treated as a pass for a separate safety or consistency gate.
+
+\subsection{Simulation Platform and Frozen Controller Configuration}
+
+All closed-loop cases used the same diagonal dual-drive-and-steer AGV plant revision, \texttt{agv\_physics\_v2\_plantfix}, and the same effective LPV-MPC entry point. The controller sample period was 0.01~s, the prediction horizon was 150 steps (1.5~s), and the control horizon was 30 steps (0.3~s). The effective state and input weights, input bounds, increment bounds, output bounds, soft-constraint weights, LPV database, and controller cache were frozen before the comparisons. Table~\ref{tab:frozen_experimental_configuration} reports the configuration that was actually executed rather than historical defaults.
+
+\begin{table*}[!t]
+\centering
+\caption{Frozen experimental and controller configuration used by all reported comparisons.}
+\label{tab:frozen_experimental_configuration}
+\scriptsize
+\setlength{\tabcolsep}{3.4pt}
+\begin{tabular}{@{}p{0.20\textwidth}p{0.23\textwidth}p{0.49\textwidth}@{}}
+\toprule
+Item & Frozen value & Execution meaning \\
+\midrule
+Plant and sampling & \texttt{agv\_physics\_v2\_plantfix}; $T_s=0.01$~s & Identical nonlinear plant and sampling interface for every controller case \\
+Dataset & 588102 raw samples; 102 continuous runs & 51 route templates with two random realizations per template \\
+History and input & 128 steps (1.28~s); 22D or 88D & The 88D input is $[x_t,\Delta_1x_t,\Delta_2x_t,\Delta_4x_t]$ after train-set normalization; deltas are clipped at 5 \\
+Run split & 71/15/16 train/validation/test runs & Run-disjoint, not template-disjoint; scalers fitted on training runs only \\
+MPC horizons & $N_p=150$, $N_c=30$ & 1.5-s prediction and 0.3-s control horizons \\
+Weights & $Q=\mathrm{diag}(100,100,15,3)$; $R=\mathrm{diag}(3,3)\!\times\!10^{-5}$; $\Delta R=10^{-3}I$ & Same objective for all slope sources \\
+Input bounds & $[-600,-1.2]$ to $[600,1.2]$ & Drive-force and yaw-rate-command limits \\
+Increment bounds & $[-400,-0.9]$ to $[400,0.9]$ & Per-step command-increment limits \\
+Output bounds & $[-1,-0.5,-0.5,-0.3]$ to $[1,0.5,0.5,0.3]$ & Frozen soft output constraints; position and yaw soft weights were both 3000 \\
+Primary estimator & ModernTCN-delta, seeds 1, 7, 11, 21, 42, 73, 101, 202, 340, 520 & Seed 42 was pre-specified for qualitative traces; all ten seeds entered quantitative summaries \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Simulation Data Generation and Dataset Construction}
+
+The dataset was generated as 102 continuous simulation runs from 51 route templates, with two random realizations for each template. Windowing was applied only after the run-level split, yielding 16529 training, 3695 validation, and 3602 test windows. The target corresponded to the current window end. Only causal, online-replayable filtering was allowed, and the normalization statistics were fitted to the training runs before application to validation, test, and online inputs. Because route templates can occur in more than one split, the protocol is an internal same-domain comparison rather than a template-disjoint generalization test.
+
+The base input contains 22 proprioceptive and dynamics-derived channels. ModernTCN-delta augments each normalized vector with first differences at lags 1, 2, and 4, producing 88 channels while retaining the same 128-step history. Figure~\ref{fig:dataset_construction_pipeline} reserves the final visual contract for this construction process.
+
+\begin{figure*}[!t]
+\centering
+\fbox{\parbox[c][1.55in][c]{0.96\textwidth}{\centering\footnotesize
+\texttt{TODO-FIG-FINAL} -- E1 / double-column / 5--6 stages\\[4pt]
+Scientific question: How were continuous simulation data converted into leakage-controlled 22D and 88D historical inputs?\\
+Data identifiers: 51 templates; two realizations/template; 102 runs; 588102 samples; 71/15/16 run split; 128 steps; 22D$\rightarrow$88D.}}
+\caption{Planned dataset-construction pipeline. The final figure will distinguish route templates from continuous realizations, show the run-level split before windowing, and trace training-only normalization into the 22D and ModernTCN-delta 88D inputs.}
+\label{fig:dataset_construction_pipeline}
+\end{figure*}
+
+\subsection{Comparison Methods and Grade-Source Controls}
+
+The estimator comparison used four methods: ModernTCN-delta, ModernTCN-22D, GRU-22D, and TCN-22D. The architecture-controlled comparison held the 22D input fixed for ModernTCN-22D, GRU-22D, and TCN-22D, whereas the representation ablation paired ModernTCN-delta with ModernTCN-22D. The controller-source comparison used zero-grade LPV-MPC, the simple causal-IMU baseline, MTCN-LPV-MPC, Fusion-LPV-MPC, and the truth-driven conditioned reference. The truth-driven conditioned reference is an analysis reference rather than a deployable estimator. Table~\ref{tab:comparison_protocol} specifies what changed and what remained fixed.
+
+\begin{table*}[!t]
+\centering
+\caption{Comparison protocol and controlled factors.}
+\label{tab:comparison_protocol}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{@{}p{0.18\textwidth}p{0.30\textwidth}p{0.20\textwidth}p{0.24\textwidth}@{}}
+\toprule
+Comparison & Methods or sources & Deliberately varied & Held fixed \\
+\midrule
+Architecture control & ModernTCN-22D, GRU-22D, TCN-22D & Temporal architecture & Dataset/hash, split, 22D input, 128 steps, ten seeds, metrics, paths, plant, controller \\
+Representation ablation & ModernTCN-delta vs. ModernTCN-22D & Multi-scale delta bank; 88D vs. 22D & ModernTCN-small family, ten paired seeds, dataset, metrics, paths, plant, controller \\
+Scheduling necessity & Zero-grade, simple causal-IMU baseline, truth-driven conditioned reference & Scheduled road-grade source & Six routes, plant, initialization, LPV database, weights, constraints \\
+Deployable source comparison & MTCN-LPV-MPC vs. Fusion-LPV-MPC & Bounded uncertainty-adaptive inertial correction & Six routes, ten model seeds, learned checkpoint per seed, plant and controller \\
+Five-source context & All five grade sources & Grade-source interface only & Effective plant and controller; deterministic and learned sources retain their actual statistical units \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Closed-Loop Routes, Seeds, and Statistical Units}
+
+The formal controller benchmark used six frozen routes: P1 factory logistics, P2 sharp-turn transition, P3 long uphill--downhill, P4 mild uphill/downhill with straight--turn coupling, P5 flat factory logistics, and P6 downhill recovery after a turn. The deterministic zero-grade, simple causal-IMU, and truth-driven sources contributed one case per route. Learned sources contributed ten model-seed cases per route. Consequently, deterministic contrasts were paired by route, whereas learned contrasts preserved the model-seed hierarchy before route aggregation. Figure~\ref{fig:closed_loop_route_set} fixes the six-route display contract.
+
+\begin{figure*}[!t]
+\centering
+\fbox{\parbox[c][1.70in][c]{0.96\textwidth}{\centering\footnotesize
+\texttt{TODO-FIG-FINAL} -- E2 / double-column / 2$\times$3 panels\\[4pt]
+Scientific question: Which grade and curvature regimes define the six-route closed-loop benchmark?\\
+Data identifiers: P1 factory logistics; P2 sharp transition; P3 long up/down; P4 mild coupling; P5 flat logistics; P6 downhill recovery.}}
+\caption{Planned six-route benchmark overview. Each panel will show the full planar route and aligned grade profile with common route identifiers P1--P6.}
+\label{fig:closed_loop_route_set}
+\end{figure*}
+
+The representative seed for all learned qualitative curves was fixed at 42 before final aggregation. It was selected as a central seed in the earlier six-route screening rather than as the best final case. Quantitative conclusions use all ten seeds and all six formal routes; qualitative figures cannot replace those summaries.
+
+\subsection{Metrics and Statistical Analysis}
+
+Offline primary metrics were grade mean absolute error (MAE) and either the registered $|\theta|\leq10^{\circ}$ P95 absolute error or the edge-region P95 absolute error, depending on the frozen contrast. Closed-loop primary raw metrics were lateral-error RMS, heading-error RMS, position-error RMS, the composite input-increment index $J_{\Delta u}$, and yaw-rate-command RMS. Lower values favor the target method. The composite input-increment index is a control-regularity summary, not a physical energy measure.
+
+Paired effects are reported as comparator minus target so that positive values favor the target. Offline intervals resampled paired model seeds. Learned closed-loop intervals resampled model seeds first and then retained all six matched routes within each resampled seed; deterministic comparisons resampled routes. All reported bootstrap intervals used 10000 iterations and seed 20260715. Table~\ref{tab:evaluation_protocol} records the unit and interpretation of each evidence family.
+
+\begin{table*}[!t]
+\centering
+\caption{Evaluation metrics, statistical units, and interpretation rules.}
+\label{tab:evaluation_protocol}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{@{}p{0.19\textwidth}p{0.25\textwidth}p{0.16\textwidth}p{0.16\textwidth}p{0.16\textwidth}@{}}
+\toprule
+Evidence family & Reported quantity & Unit & Statistical unit & Decision rule \\
+\midrule
+Offline grade estimation & MAE; registered P95 absolute error & deg & Ten paired model seeds & Positive comparator-minus-target effect favors target \\
+Deterministic closed loop & $e_y$ RMS; $e_\psi$ RMS; $J_{\Delta u}$ & m; rad; -- & Six paired routes & Route bootstrap; CI relative to zero effect \\
+Learned closed loop & Same raw metrics plus scheduled-grade MAE & m; rad; --; deg & Ten seeds, six routes/seed & Hierarchical seed-first bootstrap \\
+Fusion development & Grade-error and control-index ratios & ratio & 90 paired cases across nine routes and ten seeds & Aggregate CI plus pre-registered consistency checks \\
+Failure audit & Gate pass, fail, or not adjudicable & status & Registered contrast/case & Missing inputs or zero denominators are never coerced to pass \\
+Runtime & p50, p95, p99, maximum, $>10$-ms rate & ms & 10000 timed calls after 500 warm-ups & Compare methods only within the same backend and scope \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+\subsection{Reproducibility, Protocol Lock, and Reporting Boundaries}
+
+The data file, contract, model checkpoints, plant revision, six route files, LPV database, controller cache, metrics, thresholds, and seed set were identified by frozen paths and hashes. Completeness audits found 40/40 offline estimator rows, 240/240 estimator closed-loop rows, 18/18 scheduling-necessity cases, and 138/138 five-source controller cases. A source cross-check covered 38 confidence intervals with no discrepancy.
+
+The A5 statistical audit nevertheless remained \texttt{PARTIAL}. Seven registered contrasts contained safety-gate fields that were missing or had zero-denominator comparators, so those gates were marked not adjudicable. This status is reported separately from the estimable performance effects. No physical-vehicle or hardware-in-the-loop test, template-disjoint dataset split, formal stability proof, or new robustness experiment is implied by the protocol.
+
+\section{Results and Discussion}
+\label{sec:results_discussion}
+
+\subsection{RQ1: Does Accurate Grade Scheduling Affect the Frozen LPV-MPC?}
+
+The truth-driven conditioned reference reduced all three primary route-level outcomes relative to zero-grade scheduling. Across six routes, the mean reductions were 1.4680~m for lateral-error RMS, 0.33065~rad for heading-error RMS, and 695.59 for the composite input-increment index; all corresponding 95\% intervals were above zero (Table~\ref{tab:slope_necessity_effects}). The simple causal-IMU baseline reduced lateral-error RMS by 0.06906~m, but its heading and increment-index intervals crossed zero. Thus, the controller can benefit strongly from accurate grade scheduling, while merely supplying a causal inertial proxy does not reproduce the truth-driven reference.
+
+\begin{table*}[!t]
+\centering
+\caption{Six-route paired effects relative to zero-grade LPV-MPC. Effects are zero-grade minus target, so positive values favor the target.}
+\label{tab:slope_necessity_effects}
+\footnotesize
+\begin{tabular}{@{}llrrrl@{}}
+\toprule
+Target source & Metric & Mean effect & 95\% CI & Routes & Performance interpretation \\
+\midrule
+Truth-driven conditioned reference & $e_y$ RMS (m) & 1.46798 & [0.11715, 3.74682] & 6 & Supported metric effect \\
+Truth-driven conditioned reference & $e_\psi$ RMS (rad) & 0.33065 & [0.05065, 0.80004] & 6 & Supported metric effect \\
+Truth-driven conditioned reference & $J_{\Delta u}$ & 695.587 & [116.408, 1339.454] & 6 & Supported metric effect \\
+Simple causal-IMU baseline & $e_y$ RMS (m) & 0.06906 & [0.00663, 0.17810] & 6 & Supported metric effect \\
+Simple causal-IMU baseline & $e_\psi$ RMS (rad) & $-0.05612$ & [$-0.19831$, 0.02502] & 6 & Inconclusive metric effect \\
+Simple causal-IMU baseline & $J_{\Delta u}$ & $-7.225$ & [$-475.104$, 439.468] & 6 & Inconclusive metric effect \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Figure~\ref{fig:slope_necessity_effects} will expose route heterogeneity rather than replacing it with aggregate bars. This distinction is important because vehicle acceleration and pitch dynamics can contaminate direct inertial grade estimates, consistent with the coupling discussed for road-slope estimation in \citep{Liu2023RoadSlopeAAIMM}.
+
+\begin{figure*}[!t]
+\centering
+\fbox{\parbox[c][1.65in][c]{0.96\textwidth}{\centering\footnotesize
+\texttt{TODO-FIG-FINAL} -- R1 / double-column / forest-plot panels\\[4pt]
+Scientific question: Are truth-driven and simple causal-IMU grade sources consistently better than zero grade across routes and metrics?\\
+Data identifiers: A3; two contrasts $\times$ three metrics $\times$ six routes; route bootstrap summaries.}}
+\caption{Planned route-resolved effects of grade scheduling. The final forest plot will retain all route effects for lateral error, heading error, and the composite input-increment index.}
+\label{fig:slope_necessity_effects}
+\end{figure*}
+
+\subsection{RQ2: Does the Multi-Scale Delta Bank Improve Offline Grade Estimation?}
+
+ModernTCN-delta achieved the lowest ten-seed mean grade MAE (0.59888$^{\circ}$) and registered $|\theta|\leq10^{\circ}$ P95 absolute error (1.67777$^{\circ}$) among the four estimators. Its paired MAE advantage was 0.05412$^{\circ}$ over ModernTCN-22D, 0.28694$^{\circ}$ over GRU-22D, and 0.31648$^{\circ}$ over TCN-22D, with every 95\% interval above zero. The representation-specific edge P95 improvement over ModernTCN-22D was 0.42608$^{\circ}$. Table~\ref{tab:estimator_and_delta_results} separates method means from paired effects so that architecture and representation claims are not conflated.
+
+\begin{table*}[!t]
+\centering
+\caption{Offline estimator results and selective closed-loop transfer of the delta-bank representation. Positive paired effects favor ModernTCN-delta.}
+\label{tab:estimator_and_delta_results}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{@{}p{0.18\textwidth}p{0.20\textwidth}p{0.16\textwidth}p{0.24\textwidth}p{0.12\textwidth}@{}}
+\toprule
+Evidence & Method or contrast & Metric / mean & Effect and 95\% CI & Paired support \\
+\midrule
+Offline mean ($n=10$) & ModernTCN-delta & MAE 0.59888$^{\circ}$; P95 1.67777$^{\circ}$ & -- & -- \\
+Offline mean ($n=10$) & ModernTCN-22D & MAE 0.65300$^{\circ}$; P95 1.80626$^{\circ}$ & -- & -- \\
+Offline mean ($n=10$) & GRU-22D & MAE 0.88583$^{\circ}$; P95 2.25950$^{\circ}$ & -- & -- \\
+Offline mean ($n=10$) & TCN-22D & MAE 0.91537$^{\circ}$; P95 2.63580$^{\circ}$ & -- & -- \\
+\midrule
+Representation & Delta vs. ModernTCN-22D & MAE / edge P95 & 0.05412 [0.00608, 0.10180] / 0.42608 [0.18517, 0.70987] deg & 8/10; 9/10 seeds \\
+Estimator & Delta vs. GRU-22D & MAE / P95 & 0.28694 [0.18468, 0.37271] / 0.58172 [0.38462, 0.80045] deg & 9/10; 10/10 seeds \\
+Estimator & Delta vs. TCN-22D & MAE / P95 & 0.31648 [0.24668, 0.38012] / 0.95802 [0.69170, 1.25456] deg & 10/10; 10/10 seeds \\
+\midrule
+Closed-loop transfer & Delta vs. ModernTCN-22D & $e_y$ RMS (m) & 0.03887 [$-0.00654$, 0.15744] & Inconclusive \\
+Closed-loop transfer & Delta vs. ModernTCN-22D & $e_\psi$ RMS (rad) & 0.00858 [$-0.00256$, 0.02655] & Inconclusive \\
+Closed-loop transfer & Delta vs. ModernTCN-22D & $J_{\Delta u}$ & 15.912 [1.638, 55.899] & Supported metric effect \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Figure~\ref{fig:offline_estimator_distribution} will show all ten seed values. The evidence supports the tested ModernTCN-delta configuration under the frozen same-domain protocol; it is not a universal ranking of temporal architectures.
+
+\begin{figure*}[!t]
+\centering
+\fbox{\parbox[c][1.65in][c]{0.96\textwidth}{\centering\footnotesize
+\texttt{TODO-FIG-FINAL} -- R2 / double-column / two panels\\[4pt]
+Scientific question: How do estimator accuracy and tail error vary across the ten paired seeds?\\
+Data identifiers: A1 offline; four methods; seeds 1, 7, 11, 21, 42, 73, 101, 202, 340, 520; MAE and registered P95 error.}}
+\caption{Planned ten-seed offline estimator distributions. Paired seeds will be connected or aligned, and individual values will remain visible behind the summary statistics.}
+\label{fig:offline_estimator_distribution}
+\end{figure*}
+
+\subsection{RQ3: Does Offline Improvement Transfer Selectively to Closed-Loop Control?}
+
+The ModernTCN-delta advantage over ModernTCN-22D transferred selectively. Its mean lateral- and heading-error effects were favorable, but both confidence intervals included zero, whereas the reduction in $J_{\Delta u}$ was 15.912 with a 95\% interval of [1.638, 55.899] (Table~\ref{tab:estimator_and_delta_results}). Relative to GRU-22D and TCN-22D, the registered estimator closed-loop effects were supported on the three primary metrics, but full pre-registered qualification was not established because the associated safety-gate audit did not pass.
+
+The 24 of 60 ModernTCN-delta closed-loop rows marked as gate failures were repetitions of four seed-level offline failures across six paths, not 24 independent unstable simulations. This distinction prevents a model-qualification gate from being misreported as a closed-loop instability count. More generally, the result shows why offline slope error cannot be used as a surrogate for every controller outcome: the scheduler, constrained optimizer, route geometry, and command regularization transform perception errors nonlinearly.
+
+\subsection{RQ4: Is the Causal Inertial Observer a Qualified Complementary Source?}
+
+The qualified causal inertial observer was evaluated over 90 cases. It obtained a mean MAE of 0.19985$^{\circ}$, mean P95 absolute error of 0.49109$^{\circ}$, mean bias of $-0.01079^{\circ}$, mean invalid fraction of 1.75\%, and mean safe-beneficial fraction of 44.20\%. All frozen observer qualification checks passed. This observer is distinct from the simple causal-IMU baseline used in RQ1: the latter is a deliberately simple scheduling source, whereas the former is the qualified branch supplied to the adaptive fusion interface.
+
+Figure~\ref{fig:imu_observer_trace} fixes the P3 long-up/down, seed-42 case and the full 4401-sample record. The final trace must show invalid intervals and transient disagreement rather than only a favorable segment.
+
+\begin{figure}[!t]
+\centering
+\fbox{\parbox[c][1.75in][c]{0.93\columnwidth}{\centering\footnotesize
+\texttt{TODO-FIG-FINAL} -- R3 / single-column / aligned trace panels\\[4pt]
+Scientific question: Where does the qualified causal inertial observer complement or disagree with the learned estimate?\\
+Data identifiers: Node40 IMU\_ONLY; P3 long up/down; seed 42; complete 4401 samples.}}
+\caption{Planned qualified causal inertial-observer trace for P3 at seed 42. The final figure will retain the full case, validity state, reference grade, observer output, and absolute error.}
+\label{fig:imu_observer_trace}
+\end{figure}
+
+The observer evidence supports availability of complementary causal information, not direct replacement of ModernTCN-delta. Similar separation of model-based and measurement-driven information has been used to manage grade-estimation uncertainty \citep{Gao2024RoadSlopeHDV}; here, the relevant conclusion is narrower and follows from the frozen observer qualification only.
+
+\subsection{RQ4 Continued: Does Uncertainty-Adaptive Fusion Convert Complementarity into Benefit?}
+
+The nine-pair pilot reduced the mean scheduled-grade error ratio to 0.83615, but its mean control ratio was 0.97205 with a 95\% upper bound of 1.04678; therefore, the pilot did not qualify the complete control claim. A fixed-correction ablation further showed a mean control ratio of 1.01737 and a worst P3 seed-42 ratio of 1.46648, demonstrating the route--seed sensitivity of a constant correction strength.
+
+In the 90-pair Node42 development set, adaptive fusion produced a mean scheduled-grade error ratio of 0.83597 (upper bound 0.85603) and a mean control-index ratio of 0.95406 (upper bound 0.97864). Correction was active at 33.08\% of samples. Among active samples, 70.52\% improved absolute grade error by more than 0.1$^{\circ}$, 29.07\% remained within the $\pm0.1^{\circ}$ neutral band, and 0.41\% degraded by more than 0.1$^{\circ}$. Exact fallback was verified when the inertial input was invalid, and no recorded safety failure occurred. Table~\ref{tab:observer_fusion_evidence} retains both the average benefits and the failed strict case-consistency checks.
+
+\begin{table*}[!t]
+\centering
+\caption{Qualified observer and adaptive-fusion evidence. Ratios below one favor the adaptive fused source.}
+\label{tab:observer_fusion_evidence}
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\begin{tabular}{@{}p{0.19\textwidth}p{0.14\textwidth}p{0.36\textwidth}p{0.22\textwidth}@{}}
+\toprule
+Stage & Cases/pairs & Frozen result & Interpretation \\
+\midrule
+Observer development & 90 cases & MAE 0.19985$^{\circ}$; P95 0.49109$^{\circ}$; bias $-0.01079^{\circ}$; invalid 1.75\%; safe-beneficial 44.20\% & Passed observer qualification \\
+Adaptive pilot & 9 pairs & Grade ratio 0.83615 (upper 0.86673); $J$ ratio 0.97205 (upper 1.04678) & Grade effect supported; complete pilot failed \\
+Fixed-correction ablation & 9 pairs & Mean $J$ ratio 1.01737; worst P3/seed-42 $J$ ratio 1.46648 & Constant strength is route--seed sensitive \\
+Adaptive development & 90 pairs & Grade ratio 0.83597 (upper 0.85603); $J$ ratio 0.95406 (upper 0.97864); active 33.08\% & Aggregate effects favorable \\
+Active-sample audit & Active samples & Improved/neutral/degraded: 70.52/29.07/0.41\%; neutral band $\pm0.1^{\circ}$ & Selective, not uniform, correction \\
+Consistency and fallback & 90 pairs & 1.02-count and all-pairs-1.05 checks failed; fallback exact; no recorded safety failure & Development status remains failed under strict protocol \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Figure~\ref{fig:fusion_case_distribution} will display all 90 pair ratios, including values above one. Figure~\ref{fig:fusion_qualitative_trace} fixes a complete P1 seed-42 trace to relate uncertainty activation to the actual scheduling signal used by LPV-MPC.
+
+\begin{figure*}[!t]
+\centering
+\fbox{\parbox[c][1.70in][c]{0.96\textwidth}{\centering\footnotesize
+\texttt{TODO-FIG-FINAL} -- R4 / double-column / 9$\times$10 matrix plus interval panel\\[4pt]
+Scientific question: Is the adaptive-fusion benefit uniform across development routes and model seeds?\\
+Data identifiers: Node42 adaptive vs. G0; nine routes; ten seeds; all 90 paired grade and control ratios.}}
+\caption{Planned case-level adaptive-fusion distribution. The final figure will retain every route--seed pair and show the aggregate confidence intervals together with the 1.00, 1.02, and 1.05 reference thresholds.}
+\label{fig:fusion_case_distribution}
+\end{figure*}
+
+\begin{figure*}[!t]
+\centering
+\fbox{\parbox[c][1.85in][c]{0.96\textwidth}{\centering\footnotesize
+\texttt{TODO-FIG-FINAL} -- R5 / double-column / full-route aligned panels\\[4pt]
+Scientific question: How does uncertainty activation alter the grade signal actually scheduled by LPV-MPC?\\
+Data identifiers: P1 factory logistics; seed 42; full trace; truth, ModernTCN-delta, observer, fused and conditioned grades, correction weight, errors.}}
+\caption{Planned qualitative adaptive-fusion trace for P1 at seed 42. The full route and locally degraded intervals will be retained to connect uncertainty activation with the conditioned scheduling signal.}
+\label{fig:fusion_qualitative_trace}
+\end{figure*}
+
+These results support an average benefit with exact fallback, not a guarantee that every activation or case improves. The use of a bounded correction channel preserves the learned source as the primary estimate and is consistent with the broader principle of combining physical and learned information without converting the learning block into the control law \citep{Zheng2024HybridPhysicsLearningUSV}.
+
+\subsection{RQ5: How Do the Five Grade Sources Compare in Closed Loop?}
+
+The raw five-source means provide context but do not share one common sampling hierarchy. Zero-grade, simple causal-IMU, and truth-driven sources contain six route cases each; MTCN-LPV-MPC and Fusion-LPV-MPC contain 60 route--seed cases each. The truth-driven conditioned reference remained the lowest-error analysis reference. Among the two learned deployable sources, Fusion-LPV-MPC had lower raw means on all five reported quantities (Table~\ref{tab:five_source_closed_loop}).
+
+The matched Fusion-minus-MTCN analysis is the appropriate inferential comparison. Fusion reduced scheduled-grade MAE by 0.06762$^{\circ}$ and heading-error RMS by 0.00212~rad, with intervals above zero. Lateral-error RMS and $J_{\Delta u}$ had favorable means but intervals crossing zero. The improved/degraded/tied counts were 27/17/16, 32/12/16, and 24/20/16 for lateral error, heading error, and $J_{\Delta u}$, respectively; ties are exact zero-effect pairs under the frozen audit. Recorded solver failures, constraint-violation cases, and timeouts were zero, but those counts do not resolve A5's not-adjudicable registered safety ratios.
+
+\begin{table*}[!t]
+\centering
+\caption{Five-source closed-loop context and paired Fusion-LPV-MPC effects. Positive effects favor Fusion in the paired panel.}
+\label{tab:five_source_closed_loop}
+\scriptsize
+\setlength{\tabcolsep}{2.7pt}
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Grade source & Cases & $e_y$ RMS (m) & $e_\psi$ RMS (rad) & Position RMS (m) & $J_{\Delta u}$ & $\omega_{cmd}$ RMS (rad/s) \\
+\midrule
+Zero-grade LPV-MPC & 6 & 1.48046 & 0.34204 & 9.88861 & 696.014 & 0.38514 \\
+Simple causal-IMU baseline & 6 & 1.41140 & 0.39816 & 6.74856 & 703.239 & 0.36175 \\
+MTCN-LPV-MPC & 60 & 0.02635 & 0.02216 & 0.50588 & 0.93053 & 0.05868 \\
+Fusion-LPV-MPC & 60 & 0.02363 & 0.02004 & 0.47684 & 0.77885 & 0.05617 \\
+Truth-driven conditioned reference & 6 & 0.01248 & 0.01139 & 0.25546 & 0.42684 & 0.05156 \\
+\midrule
+Fusion vs. MTCN paired metric & Pairs & \multicolumn{2}{l}{Mean effect [95\% CI]} & \multicolumn{2}{l}{Improved/degraded/tied} & Status \\
+Scheduled-grade MAE (deg) & 60 & \multicolumn{2}{l}{0.06762 [0.04630, 0.08914]} & \multicolumn{2}{l}{42/2/16} & Supported \\
+$e_y$ RMS (m) & 60 & \multicolumn{2}{l}{0.00272 [$-0.00110$, 0.00716]} & \multicolumn{2}{l}{27/17/16} & Inconclusive \\
+$e_\psi$ RMS (rad) & 60 & \multicolumn{2}{l}{0.00212 [0.00026, 0.00433]} & \multicolumn{2}{l}{32/12/16} & Supported \\
+$J_{\Delta u}$ & 60 & \multicolumn{2}{l}{0.15168 [$-0.00007$, 0.41936]} & \multicolumn{2}{l}{24/20/16} & Inconclusive \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Figure~\ref{fig:five_controller_qualitative} reserves the pre-specified P1, P3, and P4 cases at seed 42 for learned sources. It is intended to show control behavior, not to establish ranking from three selected curves.
+
+\begin{figure*}[!t]
+\centering
+\fbox{\parbox[c][2.00in][c]{0.96\textwidth}{\centering\footnotesize
+\texttt{TODO-FIG-FINAL} -- R6 / double-column / 3 routes $\times$ 5 sources\\[4pt]
+Scientific question: How do grade-source errors propagate into representative closed-loop trajectories and commands?\\
+Data identifiers: P1, P3, P4; seed 42 for learned sources; deterministic sources once per route; full traces and common axes.}}
+\caption{Planned qualitative comparison across five grade sources. The final figure will show the full P1, P3, and P4 traces, identify the truth-driven source as non-deployable, and preserve deterministic and learned cases at their actual units.}
+\label{fig:five_controller_qualitative}
+\end{figure*}
+
+\subsection{How Do Route and Model Seed Modify the Fusion Effect?}
+
+Route-stratified means explain why the aggregate effects differ by metric. Fusion improved the three displayed route means on P1 and P2. On P3, heading error improved slightly while lateral error and $J_{\Delta u}$ increased. P6 combined better lateral and heading means with a slightly larger increment index. P4 changed little, and P5 showed a large mean reduction in the increment index. All route means are retained in Table~\ref{tab:fusion_route_stratification}; P3 and P6 are not suppressed.
+
+\begin{table*}[!t]
+\centering
+\caption{Route-stratified ModernTCN and Fusion means over ten model seeds.}
+\label{tab:fusion_route_stratification}
+\scriptsize
+\setlength{\tabcolsep}{3.0pt}
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Route & Condition & \multicolumn{2}{c}{$e_y$ RMS (m)} & \multicolumn{2}{c}{$e_\psi$ RMS (rad)} & \multicolumn{2}{c}{$J_{\Delta u}$} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}\cmidrule(lr){7-8}
+& & MTCN & Fusion & MTCN & Fusion & MTCN & Fusion \\
+\midrule
+P1 & Factory logistics & 0.03661 & 0.02996 & 0.03465 & 0.03152 & 1.53648 & 1.11408 \\
+P2 & Sharp transition & 0.04242 & 0.03863 & 0.03139 & 0.02901 & 0.98443 & 0.80436 \\
+P3 & Long up/down & 0.03787 & 0.03855 & 0.02568 & 0.02476 & 1.80902 & 1.85951 \\
+P4 & Mild coupling & 0.00396 & 0.00393 & 0.00811 & 0.00811 & 0.30670 & 0.30443 \\
+P5 & Flat logistics & 0.01753 & 0.01363 & 0.01411 & 0.01193 & 0.43758 & 0.06563 \\
+P6 & Downhill recovery & 0.01972 & 0.01711 & 0.01902 & 0.01491 & 0.50897 & 0.52510 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The paired worst cases were metric dependent rather than concentrated in one route--seed pair. This pattern supports hierarchical reporting and cautions against selecting a single representative trajectory after viewing the final ranking. It also explains why a positive grand mean can coexist with failed strict all-case consistency criteria.
+
+\subsection{Is Core Inference Fast, and What Does the Full MATLAB Cycle Cost?}
+
+Under the common ONNX Runtime CPU backend, batch size one, one thread, 500 warm-ups, and 10000 timed calls, ModernTCN-delta had a p95 core inference time of 0.4038~ms with no call above 10~ms. GRU-22D was the fastest core predictor, and TCN-22D produced one call above 10~ms. These within-backend results support core inference feasibility, not a claim that ModernTCN-delta has minimum latency.
+
+The MATLAB-native scopes lead to a different conclusion. ModernTCN-delta core inference had a p95 of 12.1382~ms, its end-to-end estimator update had a p95 of 13.3069~ms, the effective controller solve had a p95 of 23.1211~ms, and the measured slope-estimation-plus-MPC cycle had a p95 of 52.2069~ms. Table~\ref{tab:runtime_scope} therefore separates backends and interfaces. The fusion wrapper was not eligible at the A2 runtime freeze and is not retroactively assigned a timing value.
+
+\begin{table*}[!t]
+\centering
+\caption{Runtime and model-size evidence by backend and measured interface. Timing rows must not be ranked across backends or scopes.}
+\label{tab:runtime_scope}
+\scriptsize
+\setlength{\tabcolsep}{2.8pt}
+\begin{tabular}{@{}p{0.19\textwidth}p{0.23\textwidth}rrrrrl@{}}
+\toprule
+Backend / scope & Method or interface & Params (k) & Model (kB) & p50 (ms) & p95 (ms) & p99 (ms) & $>10$ ms \\
+\midrule
+ONNX Runtime CPU core & GRU-22D & 99.276 & 400.682 & 0.3071 & 0.3377 & 0.4124 & 0/10000 \\
+ONNX Runtime CPU core & ModernTCN-22D & 118.538 & 472.135 & 0.3582 & 0.3881 & 0.4942 & 0/10000 \\
+ONNX Runtime CPU core & ModernTCN-delta & 145.202 & 578.793 & 0.3744 & 0.4038 & 0.4818 & 0/10000 \\
+ONNX Runtime CPU core & TCN-22D & 156.396 & 627.487 & 1.0452 & 1.1341 & 1.3597 & 1/10000 \\
+\midrule
+MATLAB native core & ModernTCN-delta & 145.202 & 578.793 & 10.1598 & 12.1382 & 13.0987 & 6030/10000 \\
+MATLAB estimator update & ModernTCN-delta end-to-end & 145.202 & 578.793 & 10.4710 & 13.3069 & 14.7777 & 9711/10000 \\
+MATLAB controller & Effective MPC solve & -- & -- & 21.3490 & 23.1211 & 27.4193 & 10000/10000 \\
+MATLAB full cycle & Slope estimation plus MPC & 145.202 & 578.793 & 47.7629 & 52.2069 & 60.2736 & 10000/10000 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+Accordingly, only the same-backend neural inference core demonstrated margin relative to the 10-ms sampling period. The present MATLAB chain did not demonstrate complete 100-Hz execution; code generation, data-transfer optimization, memory reuse, solver optimization, and integrated real-time tests remain necessary.
+
+\subsection{Integrated Interpretation, Failure Evidence, and Scope}
+
+The evidence closes the five research questions with different strengths. Accurate truth-driven scheduling produced large route-level effects, and ModernTCN-delta improved the registered offline metrics. The additional representation benefit transferred clearly to the composite input-increment index but not conclusively to both tracking-error metrics. The qualified causal inertial observer supplied complementary information, and adaptive fusion improved aggregate grade and control-index ratios, yet its strict case-consistency criteria failed. In the formal five-source comparison, Fusion-LPV-MPC improved scheduled-grade MAE and heading-error RMS relative to MTCN-LPV-MPC, while lateral-error and increment-index intervals crossed zero.
+
+The negative and conditional evidence is part of the result. A constant correction could substantially degrade one route--seed case; P3 and P6 contained adverse route-level outcomes; four seed-level offline gates generated 24 repeated failed rows; and seven registered safety contrasts were not adjudicable under the frozen A5 rules. Zero recorded solver failures and exact fusion fallback are useful observations, but they are not substitutes for those unavailable safety decisions.
+
+The study is limited to same-domain simulation with a run-disjoint but non-template-disjoint dataset split. It includes neither physical-vehicle nor hardware-in-the-loop validation, and it does not establish formal closed-loop stability or safety guarantees. The timing evidence further confines the real-time claim to the tested inference core. Within those boundaries, the results support a perception-to-scheduling interface in which learned temporal estimation remains primary, inertial information is applied selectively, and the constrained LPV-MPC continues to generate the commands.
+
+\section{Conclusion}
+\label{sec:conclusion}
+
+This study developed and evaluated a slope-aware perception-to-control chain for a diagonal dual-drive-and-steer AGV. The chain combines a 22D causal proprioceptive input, a multi-scale delta bank, ModernTCN-delta grade estimation, a qualified causal inertial observer, bounded uncertainty-adaptive correction, grade conditioning, and the frozen LPV-MPC. The learning modules provide an interpretable scheduling variable rather than replacing the vehicle model, optimizer, or control law.
+
+The strongest evidence concerns the value of accurate grade scheduling and offline estimation. Relative to zero-grade LPV-MPC, the truth-driven conditioned reference reduced lateral-error RMS, heading-error RMS, and the composite input-increment index across the six-route contrast. ModernTCN-delta obtained the lowest ten-seed mean MAE and registered P95 error among the four tested estimators, and its paired offline advantages over ModernTCN-22D, GRU-22D, and TCN-22D were supported. The delta-bank advantage over ModernTCN-22D transferred clearly to the composite input-increment index, whereas its lateral- and heading-error intervals crossed zero.
+
+The fusion evidence is conditional. The qualified causal inertial observer passed its frozen development criteria, and the 90-pair adaptive development set showed favorable aggregate grade-error and control-index ratios with exact invalid-input fallback. However, strict case-consistency criteria were not met. In the formal 60-pair Fusion-LPV-MPC comparison, scheduled-grade MAE and heading-error RMS improved relative to MTCN-LPV-MPC, while lateral-error RMS and the composite input-increment index remained inconclusive. These results support selective average benefit rather than uniform superiority across routes, seeds, activations, or control metrics.
+
+The conclusions apply to the frozen same-domain simulation protocol. The split was run-disjoint but not template-disjoint, no physical-vehicle or hardware-in-the-loop experiment was performed, and no formal stability or safety guarantee was established. Same-backend ONNX core inference showed substantial margin relative to 10~ms, but the measured MATLAB slope-estimation-plus-MPC cycle had a p95 of 52.2069~ms and did not demonstrate complete 100-Hz deployment. Future implementation work must therefore address the integrated runtime path and validate the method under independently collected physical data before broader deployment claims are made.
+
+\FloatBarrier

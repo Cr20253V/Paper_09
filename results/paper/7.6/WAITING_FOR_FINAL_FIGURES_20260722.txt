@@ -1,0 +1,7 @@
+WAITING_FOR_FINAL_FIGURES
+
+Candidate TeX: results/paper/Latex/paper_v4_final_candidate.tex
+Candidate PDF: results/paper/Latex/paper_v4_final_candidate.pdf
+Figure handoff: results/paper/7.6/最终图片生成交接清单_20260722.md
+
+Do not replace TODO-FIG-FINAL placeholders until all eight figure contracts pass source-data, manifest, automatic, and visual QA.

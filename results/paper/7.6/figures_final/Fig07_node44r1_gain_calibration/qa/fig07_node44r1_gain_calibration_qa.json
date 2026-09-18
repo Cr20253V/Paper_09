@@ -1,0 +1,54 @@
+{
+  "minimum_font_pt": 6.5,
+  "text_overflow_count": 0,
+  "text_overflow": [],
+  "cross_axes_text_overlap_count": 0,
+  "cross_axes_text_overlaps": [],
+  "svg_text_elements": 78,
+  "svg_text_editable": true,
+  "status": "PASS",
+  "final_size_mm": [
+    183.0,
+    100.0
+  ],
+  "png_pixels_300dpi": [
+    2161,
+    1181
+  ],
+  "tiff_pixels_600dpi": [
+    4322,
+    2362
+  ],
+  "pdf_type3_font_count": 0,
+  "pdf_embedded_truetype_font_count": 2,
+  "pdf_tounicode_map_count": 2,
+  "tiff_compression": "tiff_lzw",
+  "colorblind_pair_distance": {
+    "protanopia": 0.7379336227207124,
+    "deuteranopia": 0.8101562280217215
+  },
+  "continuous_palette": {
+    "panel": "a",
+    "name": "paper_blue_error_scale",
+    "colors": [
+      "#F2F5F7",
+      "#B9CCDA",
+      "#4C78A8",
+      "#0F4C81"
+    ],
+    "semantics": "A shared light-to-dark error-magnitude scale aligned with the manuscript blue family."
+  },
+  "redundant_encodings": "Kraw/Keff use distinct color, marker shape, and fill; qualification uses color and marker shape.",
+  "grayscale_preview": "results/paper/7.6/figures_final/Fig07_node44r1_gain_calibration/qa/fig07_node44r1_gain_calibration_grayscale.png",
+  "deuteranopia_preview": "results/paper/7.6/figures_final/Fig07_node44r1_gain_calibration/qa/fig07_node44r1_gain_calibration_deuteranopia.png",
+  "numeric_reconstruction": {
+    "K_raw_spread": 0.42697859054264736,
+    "K_eff_spread": 0.21871671281271127,
+    "K_eff_below_cap_fraction": 0.3536841599993018,
+    "selected_Kmax": 0.5,
+    "qualified_candidates": [
+      0.4,
+      0.5
+    ]
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "protocol_id": "A5_paper_final_statistical_audit_phase1_v1",
+  "status": "PHASE1_COMPLETE",
+  "decision": "ANALYSIS_PLAN_FROZEN",
+  "phase2_status": "WAITING_FOR_A1_A4",
+  "a0_registered_artifacts_checked": 22,
+  "a0_registered_artifacts_matched": 22,
+  "required_documents_checked": 3,
+  "model_counts": {
+    "gru_22d": 10,
+    "modern_tcn_22d": 10,
+    "modern_tcn_delta_bank_124": 10,
+    "tcn_22d": 3
+  },
+  "missing_tcn_seeds": [
+    1,
+    7,
+    11,
+    42,
+    202,
+    340,
+    520
+  ],
+  "legacy_closed_loop_grids": {
+    "node30_delta_bank_124": "60/60",
+    "node32_modern_tcn_22d": "60/60"
+  },
+  "json_schemas_checked": 6,
+  "unit_tests_passed": 8,
+  "statistical_self_check_passed": true,
+  "phase2_statistics_executed": false
+}

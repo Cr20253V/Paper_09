@@ -1,0 +1,39 @@
+{
+  "minimum_font_pt": 6.2,
+  "text_overflow_count": 0,
+  "text_overflow": [],
+  "svg_text_elements": 66,
+  "svg_text_editable": true,
+  "status": "PASS",
+  "final_size_mm": [
+    183.0,
+    88.0
+  ],
+  "png_pixels_300dpi": [
+    2161,
+    1039
+  ],
+  "tiff_pixels_600dpi": [
+    4322,
+    2078
+  ],
+  "pdf_type3_font_count": 0,
+  "pdf_embedded_truetype_font_count": 5,
+  "pdf_tounicode_map_count": 5,
+  "tiff_compression": "tiff_lzw",
+  "raw_effective_color_distance": {
+    "protanopia": 0.5779147040320795,
+    "deuteranopia": 0.6668388415384865
+  },
+  "redundant_encodings": "Kraw/Keff use color, marker shape, and fill; candidate states use marker shape, fill, outline, and direct labels.",
+  "statistics": {
+    "interval_definition": "validation-sample P05-P50-P95 quantiles; not confidence intervals",
+    "valid_nonfallback_samples": 458327,
+    "candidate_cases": 150,
+    "selected_Kmax": 0.5,
+    "Kmax_cap_fraction": 0.6449434574005023,
+    "K_eff_below_cap_fraction": 0.3536841599993018
+  },
+  "grayscale_preview": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/qa/fig07_node44r1_gain_calibration_grayscale.png",
+  "deuteranopia_preview": "results/paper/7.6/figures_final_1/Fig07_node44r1_gain_calibration/qa/fig07_node44r1_gain_calibration_deuteranopia.png"
+}

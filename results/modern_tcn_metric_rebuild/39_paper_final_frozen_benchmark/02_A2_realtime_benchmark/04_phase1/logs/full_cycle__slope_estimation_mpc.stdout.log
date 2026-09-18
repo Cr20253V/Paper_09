@@ -1,0 +1,6 @@
+-->Assuming output disturbance added to measured output #1 is integrated white noise.
+-->Assuming output disturbance added to measured output #2 is integrated white noise.
+-->Assuming output disturbance added to measured output #3 is integrated white noise.
+-->Assuming output disturbance added to measured output #4 is integrated white noise.
+-->"Model.Noise" is empty. Assuming white noise on each measured output.
+A2 case full_cycle__slope_estimation_mpc (formal): p95=52.206850 ms, max=68.191700 ms

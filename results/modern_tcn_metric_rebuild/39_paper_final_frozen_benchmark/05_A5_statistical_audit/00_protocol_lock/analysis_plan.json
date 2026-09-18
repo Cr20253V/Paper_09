@@ -1,0 +1,132 @@
+{
+  "analysis_plan_id": "A5_paper_final_statistical_audit_phase1_v1",
+  "status": "FROZEN_BEFORE_A1_A4_RESULTS",
+  "frozen_at": "2026-07-15",
+  "source_protocol_id": "A0_paper_final_unified_protocol_v1",
+  "source_protocol_file": "results/paper/7.6/A0_论文最终统一实验配置_20260715.json",
+  "source_protocol_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+  "paper_primary_method": "modern_tcn_delta_bank_124",
+  "method_selection_is_out_of_scope": true,
+  "phase_current": 1,
+  "phase2_execution_allowed_now": false,
+  "statistical_units": {
+    "offline": "paired_model_seed",
+    "closed_loop": "path_by_model_seed_hierarchical",
+    "deterministic_controllers": "one_observation_per_path; paired reference only; no replicated independent weight",
+    "forbidden_independent_units": [
+      "adjacent_time_points",
+      "sliding_windows",
+      "duplicated_deterministic_reference_rows"
+    ]
+  },
+  "metrics": {
+    "offline_cross_algorithm_primary": [
+      "theta_mae_deg",
+      "theta_abs_le_10_p95_abs_err_deg"
+    ],
+    "representation_ablation_primary": [
+      "theta_mae_deg",
+      "theta_edge_p95_abs_err"
+    ],
+    "closed_loop_primary": [
+      "ey_rmse",
+      "epsi_rmse",
+      "j_du"
+    ],
+    "closed_loop_secondary": [
+      "xy_rmse",
+      "omega_cmd_rms",
+      "ey_peak",
+      "epsi_peak",
+      "ev_rmse",
+      "constraint_violation_rate",
+      "force_saturation_rate",
+      "omega_saturation_rate",
+      "solver_fail_count",
+      "timeout_count",
+      "J_control_path"
+    ],
+    "runtime_descriptive": [
+      "p50_ms",
+      "p95_ms",
+      "p99_ms",
+      "max_ms",
+      "over_10ms_rate"
+    ]
+  },
+  "bootstrap": {
+    "method": "paired_percentile_bootstrap",
+    "iterations": 10000,
+    "random_seed": 20260715,
+    "confidence_level": 0.95,
+    "percentiles": [
+      2.5,
+      97.5
+    ],
+    "offline": "resample paired model seeds",
+    "closed_loop": "resample model seeds, then paths within each sampled seed; preserve paired methods",
+    "a3_deterministic": "resample paired paths only",
+    "runtime": "no inferential bootstrap from repeated invocations"
+  },
+  "effect_convention": {
+    "lower_is_better_absolute": "comparator - target",
+    "positive_favors": "target",
+    "relative_percent": "100 * (comparator - target) / comparator",
+    "zero_comparator": "relative effect and ratio are NA; absolute effect remains",
+    "tie_rule": "zero effect is not counted as improvement"
+  },
+  "claim_rules": {
+    "closed_loop_overall": "all three primary paired-effect CI lower bounds > 0 AND no applicable safety gate failure",
+    "offline_overall": "both preregistered primary paired-effect CI lower bounds > 0",
+    "secondary_metrics_cannot_rescue_primary_failure": true,
+    "p_values": "not used",
+    "allowed_states": [
+      "SUPPORTED_ALL_PRIMARY",
+      "INCONCLUSIVE",
+      "NOT_SUPPORTED",
+      "INCOMPLETE_GRID"
+    ]
+  },
+  "missing_data": {
+    "expected_grid_built_before_reading_results": true,
+    "join": "outer",
+    "imputation": "forbidden",
+    "confirmatory_ci_on_incomplete_grid": "forbidden",
+    "retain": [
+      "missing",
+      "duplicate",
+      "unexpected",
+      "nonfinite",
+      "protocol_mismatch"
+    ]
+  },
+  "phase2_status_rules": {
+    "COMPLETE": "all required grids and protocol checks pass",
+    "PARTIAL": "at least one primary contrast is complete but another required task/case is missing or inconsistent",
+    "BLOCKED": "no complete primary contrast, or any global A0/dataset/path/plant/MPC/gate hash mismatch"
+  },
+  "failure_rates": {
+    "observed_hard_fail_rate": "hard FAIL / executed evaluable cases",
+    "protocol_nonpass_rate": "(FAIL + INVALID + MISSING) / full expected grid"
+  },
+  "frozen_seeds": [
+    1,
+    7,
+    11,
+    21,
+    42,
+    73,
+    101,
+    202,
+    340,
+    520
+  ],
+  "frozen_paths": [
+    "p01_factory_logistics_showcase",
+    "p02_sharp_turn_transition",
+    "p03_long_updown",
+    "p04_soft_updown_straight_turn",
+    "p05_factory_flat_logistics",
+    "p06_downhill_after_turn"
+  ]
+}

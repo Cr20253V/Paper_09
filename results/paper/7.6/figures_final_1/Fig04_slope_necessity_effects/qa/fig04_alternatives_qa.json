@@ -1,0 +1,289 @@
+{
+  "figure_id": "Fig04_slope_necessity_effects_alternatives",
+  "generated_utc": "2026-07-29T08:14:11.521172+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "nature-figure",
+    "scientific-visualization",
+    "matplotlib"
+  ],
+  "source": {
+    "original_file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/source_data/fig04_slope_necessity_effects_source_data.csv",
+    "copied_file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/source_data/fig04_slope_necessity_effects_source_data.csv",
+    "sha256": "fba2ff08aafb55e16ab5e20a743327b8e7d35316c9a9843e713ef7b467b2f5f7",
+    "route_effect_rows": 36,
+    "bootstrap_summary_rows": 6,
+    "candidate_e_file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/source_data/fig04_candidate_e_source_data.csv",
+    "candidate_e_sha256": "e36d78e3c185fcc9cdf943ebbbd8ce7e7354780e3911e5fdd3afe90c1a66161a",
+    "candidate_e_route_effect_rows": 54,
+    "candidate_e_bootstrap_summary_rows": 9,
+    "candidate_e_accuracy_summary_rows": 3,
+    "candidate_e_frozen_inputs": [
+      {
+        "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/paired_effects.csv",
+        "sha256": "d775f5bbf254451d805f543dd714b25cc86cdd916ab30035954749a1b0357513"
+      },
+      {
+        "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/bootstrap_ci_results.csv",
+        "sha256": "b33725731c4e9876b2cf86d8de0a42b2aacec1e703a26616eb33e446a9abf9de"
+      },
+      {
+        "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a3_case_table.csv",
+        "sha256": "6a8cf7c9d53399653e1d9eb77145e5aafd0637a6e349c9c8bee2b5b0d8189190"
+      }
+    ]
+  },
+  "effect_definition": "zero-grade comparator minus target; positive favors target",
+  "candidates": {
+    "a": "absolute route-effect heatmaps with independently scaled metric color ranges and route-bootstrap summary CIs",
+    "b": "paired absolute-value dumbbells on explicitly labeled logarithmic axes",
+    "e": "route-paired absolute values plus all three paired mean effects and 95% route-bootstrap CIs"
+  },
+  "selection": {
+    "candidate": "b",
+    "reason": "route-resolved absolute values preserve operating scale and within-route pairing",
+    "manuscript_outputs": [
+      {
+        "format": "pdf",
+        "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.pdf",
+        "bytes": 55195,
+        "sha256": "fbb8f2b914884423af19f05a40e504e3e63b66083e03491323e73f20beb6fd4b"
+      },
+      {
+        "format": "svg",
+        "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.svg",
+        "bytes": 67252,
+        "sha256": "52358e6dc84ee5f490a2fc06935336995305ef2bf879afa5b06e9160ccc3d248"
+      },
+      {
+        "format": "png",
+        "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.png",
+        "bytes": 121326,
+        "sha256": "11c98f77f5f8aa5c756d603dec7305e024d8a2be475ca20be9db700e3d90505b"
+      },
+      {
+        "format": "tiff",
+        "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.tiff",
+        "bytes": 743340,
+        "sha256": "d030caa68ac93153c48e8228149a24fd9e40d2317a158050a2b12af56f16cad5"
+      }
+    ]
+  },
+  "retained_evidence": {
+    "routes": [
+      "P1",
+      "P2",
+      "P3",
+      "P4",
+      "P5",
+      "P6"
+    ],
+    "contrasts": [
+      "A3_ORACLE_VS_ZS",
+      "A3_IMU_VS_ZS"
+    ],
+    "metrics": [
+      "ey_rmse",
+      "epsi_rmse",
+      "j_du"
+    ],
+    "adverse_and_zero_route_effects": true,
+    "truth_summary_95pct_ci": true,
+    "imu_summary_95pct_ci": true,
+    "truth_vs_imu_summary_95pct_ci": true,
+    "scheduled_grade_mae_context": true
+  },
+  "outputs": [
+    {
+      "candidate": "fig04_candidate_a_effect_heatmap_ci",
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_a_effect_heatmap_ci.pdf",
+      "bytes": 63440,
+      "sha256": "321d7245878aeeb3a0bfc1abc42de28c5f0a00adf149a790a34141b0477bdc44"
+    },
+    {
+      "candidate": "fig04_candidate_a_effect_heatmap_ci",
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_a_effect_heatmap_ci.svg",
+      "bytes": 50106,
+      "sha256": "4805ef438cfb5785eb76895d1bd8e55342e748857bca7a4a11faf0897d34dfd4"
+    },
+    {
+      "candidate": "fig04_candidate_a_effect_heatmap_ci",
+      "format": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_a_effect_heatmap_ci.png",
+      "bytes": 158659,
+      "sha256": "c51dc0bca2e4b3d1979f611f416b4db8b34b7b2375d689191c824708614e6755"
+    },
+    {
+      "candidate": "fig04_candidate_a_effect_heatmap_ci",
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_a_effect_heatmap_ci.tiff",
+      "bytes": 1041170,
+      "sha256": "732549513ba2c41c310ada35cf9d279cd217fa5a129be53eb17ab275c5822cd1"
+    },
+    {
+      "candidate": "fig04_candidate_b_paired_dumbbell",
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.pdf",
+      "bytes": 55195,
+      "sha256": "fbb8f2b914884423af19f05a40e504e3e63b66083e03491323e73f20beb6fd4b"
+    },
+    {
+      "candidate": "fig04_candidate_b_paired_dumbbell",
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.svg",
+      "bytes": 67252,
+      "sha256": "52358e6dc84ee5f490a2fc06935336995305ef2bf879afa5b06e9160ccc3d248"
+    },
+    {
+      "candidate": "fig04_candidate_b_paired_dumbbell",
+      "format": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.png",
+      "bytes": 121326,
+      "sha256": "11c98f77f5f8aa5c756d603dec7305e024d8a2be475ca20be9db700e3d90505b"
+    },
+    {
+      "candidate": "fig04_candidate_b_paired_dumbbell",
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.tiff",
+      "bytes": 743340,
+      "sha256": "d030caa68ac93153c48e8228149a24fd9e40d2317a158050a2b12af56f16cad5"
+    },
+    {
+      "candidate": "fig04_candidate_e_paired_values_ci",
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_e_paired_values_ci.pdf",
+      "bytes": 60141,
+      "sha256": "ffc730bf4fa5a4b39523aa4b5e636010128fa69fc1bbbc7ba13d414fbfc9dd32"
+    },
+    {
+      "candidate": "fig04_candidate_e_paired_values_ci",
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_e_paired_values_ci.svg",
+      "bytes": 88672,
+      "sha256": "4f543bba681956cca58350b83af225905d4d7e3d7fb8b3ad5f529475d7fc12e0"
+    },
+    {
+      "candidate": "fig04_candidate_e_paired_values_ci",
+      "format": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_e_paired_values_ci.png",
+      "bytes": 185076,
+      "sha256": "d3c454a09434f0ee92a79df76928d51720c750ba2d7fd1b1feb80d2f9f25fd98"
+    },
+    {
+      "candidate": "fig04_candidate_e_paired_values_ci",
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_candidate_e_paired_values_ci.tiff",
+      "bytes": 1161260,
+      "sha256": "519a1e231bb6d462d8eb6eb05228f9e9e0448a7f8de5e19747ba97896c319939"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "raster_checks": {
+      "fig04_candidate_a_effect_heatmap_ci": {
+        "artist_checks": {
+          "status": "legacy raster QA only"
+        },
+        "png": {
+          "pixels": [
+            2161,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            103.971
+          ],
+          "nonwhite_fraction": 0.15206
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            103.971
+          ],
+          "nonwhite_fraction": 0.1504
+        },
+        "grayscale_preview": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/qa/fig04_candidate_a_effect_heatmap_ci_grayscale.png"
+      },
+      "fig04_candidate_b_paired_dumbbell": {
+        "artist_checks": {
+          "visible_text_count": 36,
+          "minimum_visible_font_pt": 6.2,
+          "material_text_overflow_count": 0
+        },
+        "png": {
+          "pixels": [
+            2161,
+            1074
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            90.932
+          ],
+          "nonwhite_fraction": 0.05081
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2149
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            90.974
+          ],
+          "nonwhite_fraction": 0.04708
+        },
+        "grayscale_preview": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/qa/fig04_candidate_b_paired_dumbbell_grayscale.png"
+      },
+      "fig04_candidate_e_paired_values_ci": {
+        "artist_checks": {
+          "visible_text_count": 60,
+          "minimum_visible_font_pt": 6.15,
+          "material_text_overflow_count": 0
+        },
+        "png": {
+          "pixels": [
+            2161,
+            1476
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            124.968
+          ],
+          "nonwhite_fraction": 0.14429
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2952
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            124.968
+          ],
+          "nonwhite_fraction": 0.13998
+        },
+        "grayscale_preview": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/qa/fig04_candidate_e_paired_values_ci_grayscale.png"
+      }
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "checks": [
+      "selected candidate B color PNG inspected at full export resolution",
+      "selected candidate B grayscale preview retains marker-shape and fill-state distinctions",
+      "no material label clipping, tick overlap, or panel overlap observed"
+    ]
+  }
+}

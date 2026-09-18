@@ -1,0 +1,86 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "mode": "formal",
+  "method_id": "gru_22d",
+  "seed": 42,
+  "path_id": "p06_downhill_after_turn",
+  "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\factory_targeted_eval\\path_factory_target_downhill_straight_after_turn_v1.mat",
+  "path_sha256": "c929727187cf8ae08030636e47d2b0a465d2cddaa68f0b8b8b0b8a5ad630ece8",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\34_gru_10seed_comparator\\01_train_gru_10seed\\models\\GRU_model_gru10_full_gru_v5_plantfix_passive17_plus_all5_seed42.mat",
+  "meta_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\34_gru_10seed_comparator\\01_train_gru_10seed\\models\\GRU_meta_gru10_full_gru_v5_plantfix_passive17_plus_all5_seed42.mat",
+  "matched_modern_22d_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\32_four_algorithm_10seed_closed_loop\\02_modern_fixed_full_closed_loop\\path_factory_target_downhill_straight_after_turn_v1\\modern_fixed_seed42_out.mat",
+  "candidate_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\04_closed_loop\\raw\\gru_22d\\seed42\\path_factory_target_downhill_straight_after_turn_v1\\gru_22d_seed42_out.mat",
+  "summary_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\04_closed_loop\\raw\\gru_22d\\seed42\\path_factory_target_downhill_straight_after_turn_v1\\a1_gru_22d_seed42_summary.csv",
+  "plant_revision": "agv_physics_v2_plantfix",
+  "mpc": {
+    "sample_time_s": 0.01,
+    "prediction_horizon_steps": 150,
+    "prediction_horizon_s": 1.5,
+    "control_horizon_steps": 30,
+    "control_horizon_s": 0.3,
+    "Q": [
+      100,
+      100,
+      15,
+      3
+    ],
+    "R": [
+      3E-5,
+      3E-5
+    ],
+    "dR": [
+      0.001,
+      0.001
+    ],
+    "input_min": [
+      -600,
+      -1.2
+    ],
+    "input_max": [
+      600,
+      1.2
+    ],
+    "input_delta_min": [
+      -400,
+      -0.9
+    ],
+    "input_delta_max": [
+      400,
+      0.9
+    ],
+    "output_min": [
+      -1,
+      -0.5,
+      -0.5,
+      -0.3
+    ],
+    "output_max": [
+      1,
+      0.5,
+      0.5,
+      0.3
+    ],
+    "soft_constraint_weight_position": 3000,
+    "soft_constraint_weight_yaw": 3000,
+    "lpv_database_file": "results/paper/agv_model_parameter_correction_workflow/04_lpv_database/lin_agv_db_agv_physics_v2_plantfix.mat",
+    "lpv_database_sha256": "20e79eceb634115346fb062ebe3d7a64aaa777ad149b9a49d473caf65ef46176",
+    "maps_file": "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/maps_best_agv_physics_v2_plantfix_stage1.mat",
+    "maps_sha256": "f7b158ae305d35bd86305d1a98a7154872e00235948f0fc346cf20ffa825d947",
+    "controller_cache_file": "data/models/ctrl.mat",
+    "controller_cache_sha256": "29db93a5eca884d1113873203a602bb57e31e1b1351e7cbe2690d98028a723ef",
+    "effective_entrypoint": "src/core/preloadfcn_v2.m",
+    "rationale": [
+      "在0.01 s采样下，Np=150对应1.5 s预测范围，用于保留路线和坡度变化的前视能力",
+      "Nc=30对应0.3 s控制范围，相比历史Nc=50减少优化自由度和在线求解负担",
+      "P0 oracle-MPC候选在七条同条件路线比较中将最差e_y RMSE由0.071500 m降至0.062131 m，平均e_y RMSE由0.039330 m降至0.037755 m，最差峰值由0.168291 m降至0.152033 m，且无求解失败、约束违规或饱和",
+      "该设置是当前统一运行配置和稳健折中，不表述为全局最优时域"
+    ],
+    "rationale_sources": [
+      "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/p0_controller_entrypoint_sync_report_20260602.md",
+      "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/frozen_vs_p0_oracle_comparison_summary_20260602.md",
+      "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/stage1_mpc_candidate_report.md"
+    ]
+  },
+  "status": "COMPLETE",
+  "timestamp": "20260716T224853"
+}

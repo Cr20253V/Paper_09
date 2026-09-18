@@ -1,0 +1,10 @@
+function out=node53_v7_debug_buffer(action,varargin)
+persistent rows
+names={'step','fx','fy','fz','gx','gy','gz','theta_tcn','theta_fuzzyakf','accel_weight','accel_norm','fuzzy_innovation','fuzzy_nis','min_covariance_eigenvalue','gyro_energy','gyro_vibration_feature','P_tcn_base','P_tcn','P_fuzzyakf_total','cross_error_total','S','NIS','innovation','K_raw','K_eff','Kmax','NIS_weight','quality_weight','correction_prev','correction','target_correction','theta_fused','theta_tcn_abs','fallback','fallback_reason_code','innovation_gate_flag','innovation_min_gate','slope_gate','nis_downweight_flag','nis_reject_flag','Kmax_cap_flag','rate_limit_flag','observer_valid','tcn_ready','regime_index','quality_score','quality_bin','p_help','v7_gate','label_main','label_turn','conf_main'};
+switch lower(char(action))
+    case 'reset'; rows=zeros(0,numel(names)); out=[];
+    case 'append'; r=double(varargin{1}(:)).'; if numel(r)~=numel(names); error('node53:V7DebugSchema','Expected %d fields.',numel(names)); end; rows(end+1,:)=r; out=[];
+    case 'get'; out=array2table(rows,'VariableNames',names);
+    otherwise; error('node53:V7DebugAction','Unknown action.');
+end
+end

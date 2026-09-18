@@ -1,0 +1,128 @@
+{
+  "figure_id": "Fig05_representative_four_estimator_trace",
+  "generated_utc": "2026-08-02T14:35:29.853224+00:00",
+  "backend": "Python/matplotlib with Python h5py MAT v7.3 extraction",
+  "scope": "Figure generation only; no TeX or Table 8 files were modified.",
+  "figure_contract": {
+    "core_conclusion": "In the complete representative P2 seed-73 run, ModernTCN-delta has the lowest case-level MAE and P95 absolute grade-estimation error among the four estimators.",
+    "archetype": "two-panel representative quantitative trace",
+    "final_size_mm": [
+      183.0,
+      100.0
+    ],
+    "panel_map": {
+      "a": "reference grade and four estimator trajectories over the complete route",
+      "b": "four absolute-error trajectories with a compact MAE/P95 summary"
+    }
+  },
+  "metric_definitions": {
+    "mae_benchmark_deg": "mean absolute error over t >= 0.5 s, matching the frozen closed-loop benchmark convention",
+    "p95_abs_error_full_trace_deg": "MATLAB-compatible prctile(abs(error),95) over the complete 0-52 s trace"
+  },
+  "inputs": [
+    {
+      "method_id": "modern_tcn_delta_bank_124",
+      "file": "results/modern_tcn_metric_rebuild/30_rhofmd_lag_rescreen/04_full_closed_loop/db124/s73/path_closed_loop_sharp_turn_transition_theta10_v1/delta_bank_124_seed73_out.mat",
+      "bytes": 3586432,
+      "sha256": "0164bbfe1981834d91423aa18066113991a3eb8a789c1fe54af46ef85b81b44a"
+    },
+    {
+      "method_id": "modern_tcn_22d",
+      "file": "results/modern_tcn_metric_rebuild/32_four_algorithm_10seed_closed_loop/02_modern_fixed_full_closed_loop/path_closed_loop_sharp_turn_transition_theta10_v1/modern_fixed_seed73_out.mat",
+      "bytes": 3585672,
+      "sha256": "586ca79102c2266b015b040ae1c87f5aa8786027e3f0b6642182c5ec2a78b74b"
+    },
+    {
+      "method_id": "gru_22d",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/04_closed_loop/raw/gru_22d/seed73/path_closed_loop_sharp_turn_transition_theta10_v1/gru_22d_seed73_out.mat",
+      "bytes": 2114640,
+      "sha256": "d329caabfbfc1c5764008543d15a9f437a21b68c8495a567674a63a6595ea2f8"
+    },
+    {
+      "method_id": "tcn_22d",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/04_closed_loop/raw/tcn_22d/seed73/path_closed_loop_sharp_turn_transition_theta10_v1/tcn_22d_seed73_out.mat",
+      "bytes": 3585104,
+      "sha256": "4cf9aae981940f5025804d86e6e22f73876ca09542d7b31853017a7ab3c74310"
+    }
+  ],
+  "source_data": {
+    "timeseries_file": "results/paper/7.6/figures/Fig05_representative_four_estimator_trace/source_data/fig05_p2_seed73_timeseries.csv",
+    "timeseries_sha256": "f90ad56bc633360130d2312148fe5fc43d0b7ecd84e3b7e1fc4b9c47c4ac037f",
+    "metrics_file": "results/paper/7.6/figures/Fig05_representative_four_estimator_trace/source_data/fig05_p2_seed73_metrics.csv",
+    "metrics_sha256": "8010b152b194ffdfd1fe79f43ebc3cb312c42c17872c9acdaebb260aca1c1a96",
+    "samples": 5201
+  },
+  "outputs": [
+    {
+      "format": "pdf",
+      "file": "results/paper/7.6/figures/Fig05_representative_four_estimator_trace/output/fig05_representative_four_estimator_trace.pdf",
+      "bytes": 127809,
+      "sha256": "04663e4dde58cd92a61bb1bae441786ef56216297be771b2716d4a219b036df7"
+    },
+    {
+      "format": "svg",
+      "file": "results/paper/7.6/figures/Fig05_representative_four_estimator_trace/output/fig05_representative_four_estimator_trace.svg",
+      "bytes": 242761,
+      "sha256": "bf36eed6d2ca5797b2cceebcc114481fa3fadc1e380bcb864c3d70e0a80bfb4f"
+    },
+    {
+      "format": "png",
+      "file": "results/paper/7.6/figures/Fig05_representative_four_estimator_trace/output/fig05_representative_four_estimator_trace.png",
+      "bytes": 728953,
+      "sha256": "39ce34d695130a762c2abb61862036536ef8417f1afc9f2c87b58787beb81db0"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "numeric_checks": [
+      {
+        "method_id": "modern_tcn_delta_bank_124",
+        "mae_matches": true,
+        "p95_matches": true
+      },
+      {
+        "method_id": "modern_tcn_22d",
+        "mae_matches": true,
+        "p95_matches": true
+      },
+      {
+        "method_id": "gru_22d",
+        "mae_matches": true,
+        "p95_matches": true
+      },
+      {
+        "method_id": "tcn_22d",
+        "mae_matches": true,
+        "p95_matches": true
+      }
+    ],
+    "artist_checks": {
+      "primary_panel_count": 2,
+      "axes_count_including_metrics_box": 3,
+      "minimum_visible_font_pt": 6.0,
+      "material_text_overflow_count": 0,
+      "material_text_overflow": [],
+      "status": "PASS"
+    },
+    "export_checks": {
+      "requested_size_mm": [
+        183.0,
+        100.0
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        4322,
+        2362
+      ],
+      "expected_png_pixels": [
+        4323,
+        2362
+      ],
+      "png_size_matches": true,
+      "png_nonwhite_fraction": 0.07293,
+      "svg_editable_text_elements": 47,
+      "grayscale_preview": "fig05_representative_four_estimator_trace_grayscale.png",
+      "status": "PASS"
+    }
+  }
+}

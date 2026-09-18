@@ -1,0 +1,20 @@
+{
+  "task_id": "A3",
+  "node10_closed_loop_threshold_profile": {
+    "file": "results/modern_tcn_metric_rebuild/10_threshold_recalibration/hard_constraint_thresholds_v2_closed_loop_proposed.json",
+    "sha256": "3f5eb295c5bd45ccdfc1330012d185e063a179ebdf01bc578a773c853e0b2caa"
+  },
+  "applicable": [
+    "unstable",
+    "constraint_penalty_ratio",
+    "constraint_violation_abs_increase",
+    "omega_cmd_rms_ratio",
+    "j_du_ratio"
+  ],
+  "not_applicable": {
+    "classification_accuracy": "A3 changes only controller slope source",
+    "recall": "no learned classifier is evaluated",
+    "offline_boundary_gate": "closed-loop controller-source experiment"
+  },
+  "zero_baseline_ratio_policy": "UNEVALUABLE_ZERO_BASELINE; never coerced to PASS"
+}

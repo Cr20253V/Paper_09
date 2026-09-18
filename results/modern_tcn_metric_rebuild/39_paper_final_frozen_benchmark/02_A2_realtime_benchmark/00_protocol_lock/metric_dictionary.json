@@ -1,0 +1,10 @@
+﻿{
+    "peak_private_bytes":  "maximum summed OS private bytes observed across that process tree",
+    "max_ms":  "maximum",
+    "p95_ms":  "95th percentile",
+    "p50_ms":  "50th percentile of all untrimmed per-call samples",
+    "over_10ms_rate":  "count(latency_ms \u003e 10.0) / formal_count",
+    "timer_overhead":  "reported separately and never subtracted",
+    "peak_working_set_bytes":  "maximum summed OS working set observed across the isolated MATLAB launcher and descendant process tree",
+    "p99_ms":  "99th percentile"
+}

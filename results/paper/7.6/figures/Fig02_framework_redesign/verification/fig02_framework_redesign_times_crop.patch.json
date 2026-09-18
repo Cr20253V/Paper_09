@@ -1,0 +1,28 @@
+{
+  "artifact": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\figures\\Fig02_framework_redesign\\output\\fig02_framework_redesign_times.pdf",
+  "operation": "page-box-only crop",
+  "page": 1,
+  "before_pt": {
+    "width": 520.0,
+    "height": 317.0
+  },
+  "after_pt": {
+    "width": 504.0,
+    "height": 317.0
+  },
+  "edges_pt": {
+    "left": 0.0,
+    "bottom": 0.0,
+    "right": -16.0,
+    "top": 0.0
+  },
+  "boxes_updated": [
+    "MediaBox",
+    "CropBox",
+    "TrimBox",
+    "BleedBox",
+    "ArtBox"
+  ],
+  "content_stream_changed": false,
+  "content_stream_sha256": "97A698782C369419D6E22CB4A875528CA27BC2D4F56FDBC6E4025104BBB8366F"
+}

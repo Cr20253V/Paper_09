@@ -1,0 +1,15 @@
+diff --git "a/E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\Latex\\paper_v4_final_candidate.tex" "b/E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\Latex\\paper_v4_final_candidate_fig02_redesign.tex"
+index 6a1faa8..d06a93c 100644
+--- "a/E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\Latex\\paper_v4_final_candidate.tex"
++++ "b/E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\Latex\\paper_v4_final_candidate_fig02_redesign.tex"
+@@ -376,8 +376,8 @@ components in turn to support the tracking objective in
+ 
+ \begin{figure*}[!t]
+ \centering
+-\includegraphics[width=\textwidth]{../7.6/figures_final/Fig01_overall_framework/output/fig01_overall_framework.pdf}
+-\caption{Overall slope-aware perception-and-control framework. Arrows trace the online signal flow from the onboard measurements through the temporal-perception, uncertainty-adaptive fusion, and grade-scheduled LPV-MPC stages to the AGV plant; band headers indicate the sections specifying each stage. The dashed box marks the offline stage, whose dataset, trained weights, and fusion calibration are deployed before online operation.}
++\includegraphics[width=\textwidth]{../7.6/figures/Fig02_framework_redesign/output/fig02_framework_redesign.pdf}
++\caption{Overall slope-aware perception-and-control framework. The online loop separates the history-based primary branch from the bias-compensated six-axis Qualified observer branch. ModernTCN-delta supplies the primary grade and confidence; the Qualified observer contributes only an innovation-qualified, bounded correction with exact fallback to the ModernTCN estimate. The conditioned grade $\theta_k^{\mathrm{sch}}$ synchronously updates the LPV scheduling vector, measured-disturbance channel, grade feedforward, weights, and constraints before the constrained MPC command is applied to the nonlinear AGV plant. Dashed gray arrows denote offline deployment of normalization statistics and network weights, fusion error moments, and the 4125-model LPV database.}
+ \label{fig:overall_framework}
+ \end{figure*}
+ 

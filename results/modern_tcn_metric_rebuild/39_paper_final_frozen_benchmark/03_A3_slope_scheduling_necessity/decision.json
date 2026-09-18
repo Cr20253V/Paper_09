@@ -1,0 +1,69 @@
+{
+  "task_id": "A3",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "status": "COMPLETE",
+  "primary_claim": "Current-object slope scheduling necessity using Oracle upper bound versus zero scheduling",
+  "primary_decision": "SUPPORTED_ALL_PRIMARY",
+  "secondary_imu_practicality_decision": "INCONCLUSIVE",
+  "oracle_vs_imu_upper_bound_gap_decision": "SUPPORTED_ALL_PRIMARY",
+  "effect_definition": "comparator_minus_target; positive favors target",
+  "primary_metrics": [
+    "ey_rmse",
+    "epsi_rmse",
+    "j_du"
+  ],
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 20260715,
+  "grid_complete": true,
+  "safety_gate_failed": {
+    "A3_ORACLE_VS_ZS": false,
+    "A3_IMU_VS_ZS": false,
+    "A3_ORACLE_VS_IMU": false
+  },
+  "confidence_intervals": {
+    "A3_ORACLE_VS_ZS": {
+      "ey_rmse": {
+        "low": 0.11715140655630914,
+        "high": 3.746816090827332
+      },
+      "epsi_rmse": {
+        "low": 0.050652912886204604,
+        "high": 0.8000447207231401
+      },
+      "j_du": {
+        "low": 116.40830243921,
+        "high": 1339.4542529553248
+      }
+    },
+    "A3_IMU_VS_ZS": {
+      "ey_rmse": {
+        "low": 0.006631593343729518,
+        "high": 0.17809962037748137
+      },
+      "epsi_rmse": {
+        "low": -0.19831304920997175,
+        "high": 0.025024147652474505
+      },
+      "j_du": {
+        "low": -475.1041237874371,
+        "high": 439.4677513776466
+      }
+    },
+    "A3_ORACLE_VS_IMU": {
+      "ey_rmse": {
+        "low": 0.11051981321257963,
+        "high": 3.6627150846731396
+      },
+      "epsi_rmse": {
+        "low": 0.04781334864425282,
+        "high": 0.9913602408269747
+      },
+      "j_du": {
+        "low": 109.43018846401729,
+        "high": 1668.024223858696
+      }
+    }
+  },
+  "result_policy": "No path, seed, threshold, IMU parameter, MPC setting, or repeat count changed after observing results.",
+  "important_observation": "The causal IMU controller degrades severely on some complex paths; the unfiltered real result is retained."
+}

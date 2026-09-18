@@ -1,0 +1,13 @@
+{
+  "status": "FAIL",
+  "formal": false,
+  "launcher_pid": 24748,
+  "discovered_actual_python_pid": 12140,
+  "receipt_child_pid": 12140,
+  "pid_match": true,
+  "sample_count": 0,
+  "sample_pid_set": [],
+  "peak_working_set_bytes": null,
+  "peak_private_bytes": null,
+  "stderr_empty": true
+}

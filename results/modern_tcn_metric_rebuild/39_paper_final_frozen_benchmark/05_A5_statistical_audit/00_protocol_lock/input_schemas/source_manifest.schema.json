@@ -1,0 +1,63 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "A5 source task manifest",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "enum": [
+        "A1",
+        "A2",
+        "A3",
+        "A4"
+      ]
+    },
+    "protocol_id": {
+      "type": "string",
+      "const": "A0_paper_final_unified_protocol_v1"
+    },
+    "a0_file": {
+      "type": "string"
+    },
+    "a0_sha256": {
+      "type": "string",
+      "const": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911"
+    },
+    "status": {
+      "type": "string"
+    },
+    "tables": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "role",
+          "path",
+          "sha256"
+        ],
+        "properties": {
+          "role": {
+            "type": "string"
+          },
+          "path": {
+            "type": "string"
+          },
+          "sha256": {
+            "type": "string",
+            "pattern": "^[0-9a-fA-F]{64}$"
+          }
+        }
+      }
+    }
+  },
+  "required": [
+    "task_id",
+    "protocol_id",
+    "a0_file",
+    "a0_sha256",
+    "status",
+    "tables"
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "identifier": "SL_SERVICES:utils:STD_EXCEPTION",
+  "message": "STD 异常 'class mwboost::exception_detail::clone_impl<class fl::filesystem::SystemError>': 捕获到 'fl:filesystem:SystemError'。"
+}

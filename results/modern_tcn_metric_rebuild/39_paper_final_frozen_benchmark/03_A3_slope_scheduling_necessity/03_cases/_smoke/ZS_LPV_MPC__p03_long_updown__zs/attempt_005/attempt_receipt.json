@@ -1,0 +1,11 @@
+{
+  "task_id": "A3",
+  "case_id": "ZS_LPV_MPC__p03_long_updown__zs",
+  "attempt": 5,
+  "status": "COMPLETE",
+  "elapsed_wall_s": 41.3199745,
+  "output_mat": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\ZS_LPV_MPC__p03_long_updown__zs\\attempt_005\\case_out.mat",
+  "trace_csv": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\ZS_LPV_MPC__p03_long_updown__zs\\attempt_005\\trace.csv",
+  "case_metrics": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\03_cases\\_smoke\\ZS_LPV_MPC__p03_long_updown__zs\\attempt_005\\case_metrics.json",
+  "completed_at": "2026-07-15T14:58:16Z"
+}

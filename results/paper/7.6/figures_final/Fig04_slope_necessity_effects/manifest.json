@@ -1,0 +1,161 @@
+{
+  "figure_id": "Fig04_slope_necessity_effects",
+  "generated_utc": "2026-07-22T16:20:09.640328+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "nature_skill_used": false,
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/paired_effects.csv",
+      "bytes": 10285,
+      "sha256": "d775f5bbf254451d805f543dd714b25cc86cdd916ab30035954749a1b0357513"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/bootstrap_ci_results.csv",
+      "bytes": 1514,
+      "sha256": "b33725731c4e9876b2cf86d8de0a42b2aacec1e703a26616eb33e446a9abf9de"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/source_data/fig04_slope_necessity_effects_source_data.csv",
+    "rows": 42,
+    "columns": [
+      "record_type",
+      "contrast_id",
+      "priority",
+      "target",
+      "comparator",
+      "path_id",
+      "metric",
+      "target_value",
+      "comparator_value",
+      "effect_comparator_minus_target",
+      "relative_effect_pct",
+      "target_to_comparator_ratio",
+      "positive_favors_target",
+      "route_id",
+      "estimate",
+      "bootstrap_mean",
+      "ci95_low",
+      "ci95_high",
+      "iterations",
+      "random_seed",
+      "n_paths"
+    ],
+    "sha256": "fba2ff08aafb55e16ab5e20a743327b8e7d35316c9a9843e713ef7b467b2f5f7"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.pdf",
+      "bytes": 52628,
+      "sha256": "689c43bccdb59abdf6de7d63937af26c726bc882d486875f72c2f0daaff90335"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.svg",
+      "bytes": 52991,
+      "sha256": "f09de2d26dfa64531f41d133b1b10fe63e70b0c717de33dcdc9513924693bd33"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.png",
+      "bytes": 95788,
+      "sha256": "3f8eec752bda4372e6b984279688bd72839d6cce0e4979630e6b0892104d05ff"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.tiff",
+      "bytes": 555048,
+      "sha256": "879a54e38ddabba690bf63970c11ad56ab4d20f4c4ea0c2872db72521ef51e3e"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "route_effect_rows": 36,
+      "bootstrap_summary_rows": 6,
+      "contrasts": [
+        "A3_ORACLE_VS_ZS",
+        "A3_IMU_VS_ZS"
+      ],
+      "metrics": [
+        "ey_rmse",
+        "epsi_rmse",
+        "j_du"
+      ],
+      "routes_per_contrast_metric": 6,
+      "effect_definition": "zero-grade comparator minus target; positive favors target",
+      "bootstrap_iterations": 10000,
+      "bootstrap_seed": 20260715,
+      "all_adverse_and_zero_points_retained": true,
+      "marker_semantics": {
+        "route_effect": "small circle",
+        "summary": "large black-edged diamond with 95% bootstrap CI"
+      }
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 3,
+      "expected_primary_panels": 3,
+      "minimum_visible_font_pt": 6.5,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        183.0,
+        59.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            696
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            58.928
+          ],
+          "nonwhite_fraction": 0.0605
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            1393
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            58.97
+          ],
+          "nonwhite_fraction": 0.0571
+        }
+      },
+      "svg_editable_text_elements": 69,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/qa/fig04_slope_necessity_effects_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "Route effects use small circles and all overall estimates use black-edged diamonds with 95% bootstrap CIs; fixed label offsets, panel-(a) P3/P4 refinements, and leader lines separate all route labels without removing evidence."
+  }
+}

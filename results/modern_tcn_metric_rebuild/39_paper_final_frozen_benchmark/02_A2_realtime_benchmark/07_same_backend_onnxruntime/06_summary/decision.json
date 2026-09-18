@@ -1,0 +1,29 @@
+{
+  "status": "FORMAL_RUN_COMPLETE_WITH_HISTORICAL_MEMORY_MONITOR_CORRECTION",
+  "finalized_at": "2026-07-17T16:57:00+08:00",
+  "latest_completed_run": "20260717_164306",
+  "equivalence_gate": "PASS",
+  "formal_case_count": 4,
+  "formal_raw_timing_rows": 40000,
+  "latency_validation": "PASS",
+  "formal_artifact_manifest_validation": "PASS",
+  "protected_artifacts_unchanged": true,
+  "failed_attempts_excluded": ["20260717_161250", "20260717_162640"],
+  "performance_claim_allowed": true,
+  "all_methods_meet_p95_10ms": true,
+  "all_methods_meet_p99_10ms": true,
+  "zero_overrun_methods": ["gru_22d", "modern_tcn_22d", "modern_tcn_delta_bank_124"],
+  "nonzero_overrun_methods": {
+    "tcn_22d": {"over_10ms_count": 1, "over_10ms_rate": 0.0001, "max_ms": 13.1071}
+  },
+  "memory_decision": {
+    "historical_external_peak_fields_valid": false,
+    "reason": "PowerShell sampled the venv launcher PID rather than the actual Python PID.",
+    "authoritative_historical_source": "memory_before_session/memory_before_timing/memory_after_timing from the actual Python process Windows API",
+    "authoritative_table": "06_summary/memory_audit.csv",
+    "latency_result_impact": false,
+    "latency_rerun_required": false,
+    "future_runner_fix": "PASS_REAL_CHILD_PID_SMOKE"
+  },
+  "interpretation_guard": "Use 22D rows for architecture-only latency claims. Delta-bank is representation plus architecture and excludes online delta construction. Frozen TCN/GRU CBT semantics must be disclosed."
+}

@@ -1,0 +1,166 @@
+{
+  "figure_id": "fig_closed_loop_route_set",
+  "generated_utc": "2026-07-22T03:25:15.136569+00:00",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "archetype": "quantitative grid",
+    "core_conclusion": "The six routes were fixed before outcome comparison and cover distinct geometry, grade, and reference-speed conditions.",
+    "final_size_mm_requested": [
+      183.0,
+      105.0
+    ],
+    "panel_grid": [
+      3,
+      6
+    ]
+  },
+  "validation": {
+    "status": "PASS",
+    "route_count": 6,
+    "total_samples": 62588,
+    "time_strictly_increasing": true,
+    "all_plot_fields_finite": true,
+    "p5_flat_grade_check": true,
+    "qualitative_routes": [
+      "P1",
+      "P3",
+      "P4"
+    ],
+    "plot_decimation_max_points_per_route": 2400,
+    "decimation_preserves_first_and_last_samples": true,
+    "output_canvas_geometry": {
+      "requested_size_mm": [
+        183.0,
+        105.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            1240
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            104.987
+          ]
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2480
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            104.987
+          ]
+        }
+      },
+      "status": "PASS"
+    }
+  },
+  "source_data": "results/paper/7.6/figures_final/source_data/fig_closed_loop_route_set.csv",
+  "routes": [
+    {
+      "path_id": "P1",
+      "role": "Factory logistics",
+      "qualitative_route": true,
+      "source_file": "data/paths/path_factory_logistics_showcase_theta10_v10.mat",
+      "source_sha256": "4291e3ad60a5e3dbb79ae60f115c53bc6db71447309c758b97bf539f56e58670",
+      "samples": 24583,
+      "duration_s": 245.82,
+      "grade_min_deg": 0.0,
+      "grade_max_deg": 5.5,
+      "speed_min_mps": 0.86,
+      "speed_max_mps": 0.86
+    },
+    {
+      "path_id": "P2",
+      "role": "Sharp transition",
+      "qualitative_route": false,
+      "source_file": "data/paths/path_closed_loop_sharp_turn_transition_theta10_v1.mat",
+      "source_sha256": "c5c5f33077067f1c98bd319d199cc4f4096aa6fa309f8d692c5662882e5d1f68",
+      "samples": 5201,
+      "duration_s": 52.0,
+      "grade_min_deg": -5.2,
+      "grade_max_deg": 5.5,
+      "speed_min_mps": 0.82,
+      "speed_max_mps": 0.88
+    },
+    {
+      "path_id": "P3",
+      "role": "Long up/down",
+      "qualitative_route": true,
+      "source_file": "data/paths/path_closed_loop_long_updown_theta10_v1.mat",
+      "source_sha256": "ab82393620a90964d3973f42bec9bcdb8ac0733db5db08670d152fded5ca2e08",
+      "samples": 4401,
+      "duration_s": 44.0,
+      "grade_min_deg": -5.800000000000001,
+      "grade_max_deg": 6.6,
+      "speed_min_mps": 0.84,
+      "speed_max_mps": 0.92
+    },
+    {
+      "path_id": "P4",
+      "role": "Staggered slope/turn",
+      "qualitative_route": true,
+      "source_file": "data/paths/modern_tcn_showcase/candidates/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1.mat",
+      "source_sha256": "0ceee80c3e6883f803df538a0e3519d2ac14966ab70af5c17e9514dd50fa895d",
+      "samples": 5601,
+      "duration_s": 56.0,
+      "grade_min_deg": -3.5,
+      "grade_max_deg": 4.0,
+      "speed_min_mps": 0.86,
+      "speed_max_mps": 0.9
+    },
+    {
+      "path_id": "P5",
+      "role": "Flat logistics",
+      "qualitative_route": false,
+      "source_file": "data/paths/modern_tcn_showcase/candidates/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1.mat",
+      "source_sha256": "8817d10f891dfc8956d676081c946c68714043e541c31ba54c4656fd09d8687e",
+      "samples": 19001,
+      "duration_s": 190.0,
+      "grade_min_deg": 0.0,
+      "grade_max_deg": 0.0,
+      "speed_min_mps": 0.84,
+      "speed_max_mps": 0.88
+    },
+    {
+      "path_id": "P6",
+      "role": "Downhill recovery",
+      "qualitative_route": false,
+      "source_file": "data/paths/factory_targeted_eval/path_factory_target_downhill_straight_after_turn_v1.mat",
+      "source_sha256": "c929727187cf8ae08030636e47d2b0a465d2cddaa68f0b8b8b0b8a5ad630ece8",
+      "samples": 3801,
+      "duration_s": 38.0,
+      "grade_min_deg": -7.499999999999999,
+      "grade_max_deg": 0.0,
+      "speed_min_mps": 0.93,
+      "speed_max_mps": 0.93
+    }
+  ],
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final/output/fig_closed_loop_route_set.svg",
+      "bytes": 80646,
+      "sha256": "c8d00908d8b1978ea8be11da0a732db785616ee85cf0b832410ff3c599d64e8e"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/output/fig_closed_loop_route_set.pdf",
+      "bytes": 52192,
+      "sha256": "84b3765097bbc63804f2933f3a79a1778e79c2b80ed72c664354a16fa56d63d0"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/output/fig_closed_loop_route_set.tiff",
+      "bytes": 666266,
+      "sha256": "c060e48b1970a2c90af370992dfe731cd10d270414badff041bd066bac58d98c"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/output/fig_closed_loop_route_set.png",
+      "bytes": 119548,
+      "sha256": "6d73ec92cf116f54bade50011ed8c4900fc076b3786496eac037186e71eacc8e"
+    }
+  ]
+}

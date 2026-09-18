@@ -1,0 +1,100 @@
+{
+  "task_id": "A5",
+  "phase": 2,
+  "status": "PARTIAL",
+  "generated_at": "2026-07-20T02:29:50+08:00",
+  "analysis_plan_sha256": "f6f5d85197268cd202748ae50805ad9b6cefe75c451ba5652e82c47f80baf4a9",
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 20260715,
+  "grids": [
+    {
+      "grid_id": "A1_OFFLINE",
+      "expected_count": 40,
+      "observed_count": 40,
+      "unique_count": 40,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "duplicate_count": 0,
+      "status": "PASS"
+    },
+    {
+      "grid_id": "A1_CLOSED_LOOP",
+      "expected_count": 240,
+      "observed_count": 240,
+      "unique_count": 240,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "duplicate_count": 0,
+      "status": "PASS"
+    },
+    {
+      "grid_id": "A3_CLOSED_LOOP",
+      "expected_count": 18,
+      "observed_count": 18,
+      "unique_count": 18,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "duplicate_count": 0,
+      "status": "PASS"
+    },
+    {
+      "grid_id": "A4_CLOSED_LOOP",
+      "expected_count": 138,
+      "observed_count": 138,
+      "unique_count": 138,
+      "missing_count": 0,
+      "unexpected_count": 0,
+      "duplicate_count": 0,
+      "status": "PASS"
+    }
+  ],
+  "normalized_rows": {
+    "offline_long": 520,
+    "closed_loop_long": 5544
+  },
+  "protocol_blocker_counts": {
+    "BLOCKING_CONTRAST": 7
+  },
+  "contrast_decisions": {
+    "A1_OFFLINE_DB124_VS_M22": "SUPPORTED_ALL_PRIMARY",
+    "A1_OFFLINE_DB124_VS_GRU": "SUPPORTED_ALL_PRIMARY",
+    "A1_OFFLINE_DB124_VS_TCN": "SUPPORTED_ALL_PRIMARY",
+    "A1_ARCH_M22_VS_GRU": "SUPPORTED_ALL_PRIMARY",
+    "A1_ARCH_M22_VS_TCN": "SUPPORTED_ALL_PRIMARY",
+    "A1_CL_DB124_VS_M22": "NOT_SUPPORTED_SAFETY_GATE",
+    "A1_CL_DB124_VS_GRU": "NOT_SUPPORTED_SAFETY_GATE",
+    "A1_CL_DB124_VS_TCN": "NOT_SUPPORTED_SAFETY_GATE",
+    "A3_ORACLE_VS_ZS": "INCONCLUSIVE_SAFETY_GATE_UNEVALUABLE",
+    "A3_IMU_VS_ZS": "INCONCLUSIVE_SAFETY_GATE_UNEVALUABLE",
+    "A4_MTCN_VS_ZS": "NOT_SUPPORTED_SAFETY_GATE",
+    "A4_FUSION_VS_MTCN": "INCONCLUSIVE_SAFETY_GATE_UNEVALUABLE",
+    "A4_IMU_VS_ZS": "INCONCLUSIVE_SAFETY_GATE_UNEVALUABLE",
+    "A4_ORACLE_VS_ZS": "INCONCLUSIVE_SAFETY_GATE_UNEVALUABLE"
+  },
+  "supported_all_registered_metric_sets": [
+    "A1_ARCH_M22_VS_GRU",
+    "A1_ARCH_M22_VS_TCN",
+    "A1_OFFLINE_DB124_VS_GRU",
+    "A1_OFFLINE_DB124_VS_M22",
+    "A1_OFFLINE_DB124_VS_TCN"
+  ],
+  "supported_preregistered_primary_contrasts": [
+    "A1_OFFLINE_DB124_VS_GRU",
+    "A1_OFFLINE_DB124_VS_M22",
+    "A1_OFFLINE_DB124_VS_TCN"
+  ],
+  "inconclusive": [
+    "A3_IMU_VS_ZS",
+    "A3_ORACLE_VS_ZS",
+    "A4_FUSION_VS_MTCN",
+    "A4_IMU_VS_ZS",
+    "A4_ORACLE_VS_ZS"
+  ],
+  "source_ci_crosscheck": {
+    "checked": 38,
+    "failed": 0,
+    "max_abs_delta": 2.7755575615628914e-17
+  },
+  "a2_policy": "MATLAB native and same-backend ONNX Runtime results are reported separately; repeated invocations are descriptive only; Fusion remains NOT_ELIGIBLE at its runtime freeze.",
+  "important_gate_finding": "A1 lacks explicit unstable and constraint-penalty inputs; A3/A4 constraint-penalty ratios have zero comparators. Frozen A5 rules retain these as UNEVALUABLE and do not coerce them to PASS."
+}

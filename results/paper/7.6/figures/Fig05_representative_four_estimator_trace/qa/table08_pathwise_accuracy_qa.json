@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "input_rows": 240,
+  "output_case_rows": 240,
+  "methods": 4,
+  "paths": 6,
+  "seeds": 10,
+  "maximum_mae_recompute_difference_deg": 1.5987211554602254e-14,
+  "p95_definition": "MATLAB-compatible prctile(abs(error),95) over each complete closed-loop trace",
+  "all_paths_definition": "six-route mean within each seed, followed by mean and sample SD over ten seeds",
+  "outputs": [
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\figures\\Fig05_representative_four_estimator_trace\\source_data\\table08_closed_loop_case_metrics.csv",
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\figures\\Fig05_representative_four_estimator_trace\\source_data\\table08_pathwise_mae.csv",
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\figures\\Fig05_representative_four_estimator_trace\\source_data\\table08_pathwise_p95.csv",
+    "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\figures\\Fig05_representative_four_estimator_trace\\source_data\\table08_pathwise_accuracy.tex"
+  ]
+}

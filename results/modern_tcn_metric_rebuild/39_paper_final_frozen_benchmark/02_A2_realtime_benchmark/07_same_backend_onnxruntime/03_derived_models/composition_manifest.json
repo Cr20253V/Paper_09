@@ -1,0 +1,36 @@
+[
+  {
+    "method_id": "tcn_22d",
+    "feature_output_shape": [
+      1,
+      128,
+      96
+    ],
+    "feature_channel_axis": 2,
+    "feature_time_axis": 1,
+    "feature_onnx": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\03_derived_models\\tcn_22d_seed42_feature.onnx",
+    "feature_sha256": "1526aa63f62bd05c23364e38cdec29ae3d7f71bb22839b45b500c0b04db73d4c",
+    "heads_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\03_derived_models\\tcn_22d_seed42_heads.mat",
+    "heads_sha256": "1834d70ceb914d15b019d96c730ccf6d93ddc1e38042ca44b81cf263bc6b00cb",
+    "full_onnx": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\03_derived_models\\tcn_22d_seed42_full.onnx",
+    "full_sha256": "89537bea08273cb6638c25e06e92beeb9c7ebbb48db7ae76dd7e6fe09ec14512",
+    "parent_authority_sha256": "ec896bd7480a99759e586bb8ec759772b4a457d182689aa41fdbb93ec24150c4"
+  },
+  {
+    "method_id": "gru_22d",
+    "feature_output_shape": [
+      1,
+      128,
+      96
+    ],
+    "feature_channel_axis": 2,
+    "feature_time_axis": 1,
+    "feature_onnx": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\03_derived_models\\gru_22d_seed42_feature.onnx",
+    "feature_sha256": "b2521744baab30ad557eda4a6958820d64ce7e7d3386778991901b1a260c7822",
+    "heads_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\03_derived_models\\gru_22d_seed42_heads.mat",
+    "heads_sha256": "117bfcfdf5ad3b29ae717dd5e3c39ad6bb182cc230e3c2d1e9c838dc797b3d79",
+    "full_onnx": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\03_derived_models\\gru_22d_seed42_full.onnx",
+    "full_sha256": "449346956e5a0aeaa906dabe1df5d3472b3a690a0de2a1526e3125e347c3b8a4",
+    "parent_authority_sha256": "e1da71edde44e33d37c904a2d2f49e07ba02a7ef570ec61f7c90e91cc35268e3"
+  }
+]

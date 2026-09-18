@@ -1,0 +1,7 @@
+numpy
+h5py
+scipy
+torch
+onnx
+onnxruntime
+onnxscript

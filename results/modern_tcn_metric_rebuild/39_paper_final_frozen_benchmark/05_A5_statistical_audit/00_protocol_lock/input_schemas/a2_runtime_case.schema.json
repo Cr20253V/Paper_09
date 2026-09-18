@@ -1,0 +1,189 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "A2 runtime benchmark cell",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "const": "A2"
+    },
+    "protocol_id": {
+      "type": "string",
+      "const": "A0_paper_final_unified_protocol_v1"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_status": {
+      "type": "string",
+      "enum": [
+        "COMPLETE",
+        "FAILED",
+        "TIMEOUT",
+        "INVALID",
+        "MISSING",
+        "NOT_APPLICABLE",
+        "NOT_ELIGIBLE"
+      ]
+    },
+    "method_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "controller_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "sensor_noise_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "process_disturbance_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "path_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "model_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "path_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "path_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "plant_revision": {
+      "type": "string",
+      "const": "agv_physics_v2_plantfix"
+    },
+    "effective_config_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "source_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_file_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "component_id": {
+      "type": "string"
+    },
+    "benchmark_scope": {
+      "type": "string",
+      "enum": [
+        "core_inference",
+        "end_to_end_update",
+        "mpc_solve",
+        "full_cycle"
+      ]
+    },
+    "batch_size": {
+      "type": "integer",
+      "const": 1
+    },
+    "warmup_count": {
+      "type": "integer",
+      "minimum": 500
+    },
+    "formal_count": {
+      "type": "integer",
+      "minimum": 10000
+    },
+    "environment_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "p50_ms": {
+      "type": "number"
+    },
+    "p95_ms": {
+      "type": "number"
+    },
+    "p99_ms": {
+      "type": "number"
+    },
+    "max_ms": {
+      "type": "number"
+    },
+    "over_10ms_rate": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1
+    }
+  },
+  "required": [
+    "task_id",
+    "protocol_id",
+    "case_id",
+    "case_status",
+    "plant_revision",
+    "effective_config_sha256",
+    "source_file",
+    "source_file_sha256",
+    "component_id",
+    "benchmark_scope",
+    "batch_size",
+    "warmup_count",
+    "formal_count",
+    "environment_sha256",
+    "p50_ms",
+    "p95_ms",
+    "p99_ms",
+    "max_ms",
+    "over_10ms_rate"
+  ]
+}

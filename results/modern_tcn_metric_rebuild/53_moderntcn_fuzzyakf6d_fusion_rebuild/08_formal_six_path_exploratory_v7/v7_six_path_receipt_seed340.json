@@ -1,0 +1,14 @@
+{
+  "status": "COMPLETE_NODE53_V7_EXPLORATORY_SIX_PATH_RECEIPT",
+  "protocol_id": "node53_v7_exploratory_six_path_seed340_v1",
+  "model_seed": 340,
+  "case_count": 6,
+  "ran_count": 6,
+  "reused_count": 0,
+  "failed_count": 0,
+  "safety_pass_count": 6,
+  "safety_failure_count": 0,
+  "metrics_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\08_formal_six_path_exploratory_v7\\v7_six_path_metrics_seed340.json",
+  "safety_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\08_formal_six_path_exploratory_v7\\v7_six_path_safety_summary_seed340.json",
+  "formal_claim_allowed": false
+}

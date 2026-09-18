@@ -1,0 +1,19 @@
+{
+  "task_id": "A5",
+  "phase": 2,
+  "status": "PARTIAL",
+  "issued_at": "2026-07-20T02:29:50+08:00",
+  "write_boundary_respected": true,
+  "output_root": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\05_A5_statistical_audit",
+  "analysis_plan_sha256": "f6f5d85197268cd202748ae50805ad9b6cefe75c451ba5652e82c47f80baf4a9",
+  "source_case_counts": {
+    "A1_offline": 40,
+    "A1_closed_loop": 240,
+    "A3": 18,
+    "A4": 138
+  },
+  "report": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\05_A5_statistical_audit\\04_phase2\\A5_experiment_report.md",
+  "verification": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\05_A5_statistical_audit\\04_phase2\\verification_report.json",
+  "verification_sha256": "a58a61fe7add09c1501ed184b268157c0feb8e3ef44b016686fc13c7cb88afc8",
+  "verification_status": "PASS"
+}

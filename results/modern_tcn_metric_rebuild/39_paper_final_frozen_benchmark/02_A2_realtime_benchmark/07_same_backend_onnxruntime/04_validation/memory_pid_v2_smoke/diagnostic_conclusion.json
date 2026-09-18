@@ -1,0 +1,11 @@
+{
+  "status": "NONFORMAL_SMOKE_FAILED_AND_RETAINED",
+  "formal": false,
+  "latency_result_impact": false,
+  "discovered_actual_python_pid": 12140,
+  "receipt_child_pid": 12140,
+  "pid_discovery_pass": true,
+  "memory_sample_count": 0,
+  "cause": "PowerShell rejected the initially empty strongly typed List parameter before the first sample could be appended.",
+  "resolution": "Add-A2ProcessMemorySample now explicitly permits an empty collection; validation is repeated in a new timestamp-independent smoke directory."
+}

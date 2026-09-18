@@ -1,0 +1,8 @@
+﻿phase,task,family,expected_cases,available_now,action,notes
+1,A5,protocol_hash_audit,22,22,execute_now,A0 registered artifacts only; required documents tracked separately
+1,A5,model_registry,40,33,execute_now,record seven missing TCN seeds; do not train
+2,A1,offline,40,0,wait_for_normalized_A1,underlying reusable 33/40
+2,A1,closed_loop,240,0,wait_for_normalized_A1,underlying reusable delta and M22 grids total 120/240
+2,A2,runtime_cells,12,0,wait_for_A2,Fusion-related cells conditional on pre-run eligibility
+2,A3,clean_deterministic,18,0,wait_for_A3,noise extension only if separately frozen before execution
+2,A4,five_controller,138,0,wait_for_A4,78-case four-controller fallback if Fusion pre-run ineligible

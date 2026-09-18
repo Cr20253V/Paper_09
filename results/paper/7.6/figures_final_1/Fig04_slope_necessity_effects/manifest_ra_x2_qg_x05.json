@@ -1,0 +1,125 @@
+{
+  "figure_id": "fig04_slope_necessity_effects_ra_x2_qg_x05",
+  "generated_utc": "2026-07-30T02:47:07.567947+00:00",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "archetype": "quantitative grid",
+    "core_conclusion": "Accurate grade scheduling improves the route-resolved LPV-MPC closed loop relative to zero-grade scheduling, while the qualified-observer response remains route dependent.",
+    "panel_map": {
+      "a": "lateral-error RMS",
+      "b": "heading-error RMS",
+      "c": "composite input-increment index"
+    },
+    "final_size_mm": [
+      183,
+      91
+    ]
+  },
+  "data_policy": {
+    "unchanged_controls": "zero-grade and truth-driven values retained from the frozen Fig. 4 control source",
+    "replaced_series": "Qualified observer points use the RKF R_a x2, Q_g x0.5 six-route results",
+    "control_source": {
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/source_data/fig04_slope_necessity_effects_source_data.csv",
+      "sha256": "fba2ff08aafb55e16ab5e20a743327b8e7d35316c9a9843e713ef7b467b2f5f7"
+    },
+    "rkf_source": {
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/15_rkf_ra_covariance_sensitivity/ra_x2_qg_x05/04_rkf_closed_loop/rkf_ra_x2_qg_x05_six_path_metrics.csv",
+      "sha256": "9d1e760bc23290d5c159654eff61e209e148ff4f83882e2d1f1d179caaff1e6a",
+      "copied_file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/source_data/fig04_ra_x2_qg_x05_rkf_input.csv",
+      "routes_complete": 6
+    },
+    "combined_source": {
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/source_data/fig04_slope_necessity_effects_ra_x2_qg_x05_source_data.csv",
+      "sha256": "a1e0e48371d82369fae6bd5d67f0fb144bd6a3b7110364f29b0435091c2ea2dc",
+      "route_effect_rows": 36,
+      "bootstrap_summary_rows": 6
+    }
+  },
+  "rkf_vs_zero_route_bootstrap": {
+    "iterations": 10000,
+    "seed": 20260715,
+    "effect_definition": "zero-grade minus RKF; positive favors RKF",
+    "summaries": [
+      {
+        "metric": "ey_rmse",
+        "estimate": 1.4599496978357012,
+        "ci95_low": 0.1191682370184715,
+        "ci95_high": 3.728483800640926,
+        "n_paths": 6
+      },
+      {
+        "metric": "epsi_rmse",
+        "estimate": 0.3185705567460496,
+        "ci95_low": 0.044603984309521026,
+        "ci95_high": 0.791608456015689,
+        "n_paths": 6
+      },
+      {
+        "metric": "j_du",
+        "estimate": 695.4974749936005,
+        "ci95_low": 116.27653344932666,
+        "ci95_high": 1339.4115469983487,
+        "n_paths": 6
+      }
+    ]
+  },
+  "outputs": [
+    {
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects_ra_x2_qg_x05.pdf",
+      "bytes": 55426,
+      "sha256": "b9cca9973fe77a1334caf0964dc6749878d23ac25313c456c23521f0bcfcbe77"
+    },
+    {
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects_ra_x2_qg_x05.svg",
+      "bytes": 67275,
+      "sha256": "dddf334c6b8d098c0fb939497ebbe430f792d417f905a1d90b9642bb6568d8fa"
+    },
+    {
+      "format": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects_ra_x2_qg_x05.png",
+      "bytes": 129907,
+      "sha256": "396c5a87c2bffcc8acdd29cd7a1c222cf0e1115532e533c3b5a1509e9bd4efa4"
+    },
+    {
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects_ra_x2_qg_x05.tiff",
+      "bytes": 785068,
+      "sha256": "3c48b37beb47c3b8813d4c5eea813e4add8ba1d012ec1485a4771c0d66308c09"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "artist_checks": {
+      "visible_text_count": 36,
+      "minimum_visible_font_pt": 6.2,
+      "material_text_overflow_count": 0
+    },
+    "png": {
+      "pixels": [
+        2161,
+        1074
+      ],
+      "dpi": 300,
+      "physical_size_mm": [
+        182.965,
+        90.932
+      ],
+      "nonwhite_fraction": 0.05521
+    },
+    "tiff": {
+      "pixels": [
+        4322,
+        2149
+      ],
+      "dpi": 600,
+      "physical_size_mm": [
+        182.965,
+        90.974
+      ],
+      "nonwhite_fraction": 0.05105
+    },
+    "grayscale_preview": "results/paper/7.6/figures_final_1/Fig04_slope_necessity_effects/qa/fig04_slope_necessity_effects_ra_x2_qg_x05_grayscale.png"
+  }
+}

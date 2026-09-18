@@ -1,0 +1,115 @@
+
+[A3] START case=ZS_LPV_MPC__p04_soft_updown_straight_turn attempt=1 2026-07-15 23:06:34
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+╔════════════════════════════════════════════════════════════╗
+║     LPVMPC_AGV 模型初始化 (PreLoadFcn, V3.4, 2026-01-22)   ║
+╚════════════════════════════════════════════════════════════╝
+
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+[步骤 0/5] 加载基础参数...
+  ✓ parameters() 加载成功 (Ts=0.010s, m=200.0kg, L=2.00m)
+
+[步骤 1/5] 加载 LPV 数据库...
+  ✓ 文件加载成功: E:\Matlab\Simulink\S-Function_16\results\paper\agv_model_parameter_correction_workflow\04_lpv_database\lin_agv_db_agv_physics_v2_plantfix.mat
+  → 使用 db 结构体格式
+  ✓ 网格: 11×15×25 (总 4125 点), nx=4, nu=2, nd=1, Ts=0.010s
+
+[步骤 2/5] 创建 MPCPlantBus...
+  ✓ MPCPlantBus 创建成功 (nu_md=3 = 2 MV + 1 MD)
+
+[步骤 3/5] 加载优化权重 / ctrl...
+  ⚠ 未找到 phase2_best.mat 或 phase1_best.mat，将使用默认权重
+  → 使用运行时候选 override: A3_A0_frozen_Np150_Nc30_plantfix
+  → 创建新控制器 (Np=150, Nc=30)...
+    使用运行时候选权重
+========== MPC控制器设计 ==========
+采样周期: 0.010 s
+预测时域: Np = 150 步 (1.50 s)
+控制时域: Nc = 30 步 (0.30 s)
+状态维度: nx = 4
+输入维度: nu = 2
+输出维度: ny = 4
+===================================
+
+========== 基准工作点 ==========
+v0 = 0.14 m/s
+ω0 = 0.000 rad/s（有符号）
+θ0 = 0.00°
+================================
+
+========== 输入分组 ==========
+MV (操纵变量): [1:2] = [F_cmd, omega_cmd]
+MD (测量扰动): [3] = [theta]
+==============================
+
+-->"Weights.ManipulatedVariables" is empty. Assuming default 0.00000.
+-->"Weights.ManipulatedVariablesRate" is empty. Assuming default 0.10000.
+-->"Weights.OutputVariables" is empty. Assuming default 1.00000.
+   for output(s) y1 y2 and zero weight for output(s) y3 y4 
+========== 权重设置 ==========
+输出权重 Q = [100.00, 100.00, 15.00, 3.00]
+输入权重 R = [3.000e-05, 3.000e-05]
+速率权重 dR = [1.000e-03, 1.000e-03]
+==============================
+
+========== 约束设置 ==========
+输入约束:
+  F_cmd ∈ [-600.0, 600.0] N
+  omega_cmd ∈ [-1.20, 1.20] rad/s
+输入速率约束:
+  ΔF ∈ [-400.0, 400.0] N/step
+  Δω ∈ [-0.90, 0.90] (rad/s)/step
+输出软约束:
+  e_y ∈ [-1.00, 1.00] m (软约束权重: 3.0e+03)
+  e_psi ∈ [-0.50, 0.50] rad (软约束权重: 3.0e+03)
+  e_v, e_omega：不约束（避免求解不可行）
+==============================
+
+========== 调度映射 ==========
+rho 范围:
+  v ∈ [0.02, 1.20] m/s
+  ω ∈ [-1.200, 1.200] rad/s（有符号）
+  θ ∈ [-12.00, 12.00]°
+权重插值: 启用 (Q, R, dR 可变; alpha/beta形状, factor=false)
+  注意：需Simulink中显式使用（如外部权重端口）或脚本中覆盖
+约束插值: 支持 scale_* 与范围插值（随 |ω| 调整）
+==============================
+
+========== MPC控制器创建完成 ==========
+控制器类型: 单一自适应MPC
+在线更新: 支持（通过 mpc_update_from_rho.m）
+误差参考: [0; 0; 0; 0]（误差趋零控制）
+ref输入契约: Simulink中ref端口必须接[0;0;0;0]
+测量扰动: theta（坡度角前馈）
+扰动补偿: 通过MD通道提前预测坡度影响
+==========================================
+
+  ✓ 控制器创建成功 (P=1.50s, M=0.30s)
+  → 已将 38 个优化参数注入 ctrl.maps
+  → 运行时 override 激活，跳过 ctrl.mat 回写
+
+[步骤 4/5] 加载 GRU 模型...
+[警告: 计算 block_diagram 'a3' 的 'PreLoadFcn' 回调时出错。
+回调字符串为 'preloadfcn_v2'] 
+[> 位置：load_system>i_load_system (第 44 行)
+位置: load_system (第 20 行)
+位置: run_closed_loop_model_once (第 105 行)
+位置: run_a3_experiment (第 55 行)
+位置: run_a3_full_entry (第 7 行)
+位置: run (第 112 行)] 
+[警告: [PreLoadFcn] ❌ 未找到 GRU_model.mat] 
+[> 位置：load_system>i_load_system (第 44 行)
+位置: load_system (第 20 行)
+位置: run_closed_loop_model_once (第 105 行)
+位置: run_a3_experiment (第 55 行)
+位置: run_a3_full_entry (第 7 行)
+位置: run (第 112 行)] 
+[closed-loop] sim a3, path=E:\Matlab\Simulink\S-Function_16\data\paths\modern_tcn_showcase\candidates\path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1.mat, StopTime=56
+-->Assuming output disturbance added to measured output #1 is integrated white noise.
+-->Assuming output disturbance added to measured output #2 is integrated white noise.
+-->Assuming output disturbance added to measured output #3 is integrated white noise.
+-->Assuming output disturbance added to measured output #4 is integrated white noise.
+-->"Model.Noise" is empty. Assuming white noise on each measured output.
+[closed-loop] saved: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\03_A3_slope_scheduling_necessity\03_cases\ZS_LPV_MPC\p04_soft_updown_straight_turn\attempt_001\case_out.mat
+[A3] END case=ZS_LPV_MPC__p04_soft_updown_straight_turn status=COMPLETE wall=52.2s

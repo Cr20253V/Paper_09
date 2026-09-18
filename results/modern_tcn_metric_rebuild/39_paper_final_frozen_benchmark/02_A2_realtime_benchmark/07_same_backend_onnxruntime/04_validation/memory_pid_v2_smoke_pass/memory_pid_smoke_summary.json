@@ -1,0 +1,18 @@
+{
+  "status": "PASS",
+  "formal": false,
+  "launcher_pid": 3940,
+  "discovered_actual_python_pid": 10920,
+  "receipt_child_pid": 10920,
+  "pid_match": true,
+  "sample_count": 69,
+  "sample_pid_set": [
+    10920
+  ],
+  "process_role_set": [
+    "benchmark_python"
+  ],
+  "peak_working_set_bytes": 121458688.0,
+  "peak_private_bytes": 894099456.0,
+  "stderr_empty": true
+}

@@ -1,0 +1,51 @@
+{
+  "gate_plan_id": "A5_failure_gate_plan_v1",
+  "profiles": {
+    "model_qualification_full_v2": {
+      "file": "results/modern_tcn_metric_rebuild/10_threshold_recalibration/hard_constraint_thresholds_v2_full_proposed.json",
+      "sha256": "9399406321b0edd3edfac1c95b45a356a61abb32c67c33f3581e430c626d6257",
+      "thresholds": {
+        "closed_loop_unstable_must_be_false": true,
+        "constraint_penalty_max_ratio": 1.0,
+        "viol_rate_max_abs_increase": 0.001,
+        "acc_main_min_drop": 0.03,
+        "stall_recall_min_drop": 0.1,
+        "slope_recall_min_drop": 0.03,
+        "theta_edge_p95_max_ratio": 1.05,
+        "flat_peak_theta_error_max_ratio": 1.15,
+        "omega_cmd_rms_max_ratio": 5.0,
+        "delta_u_proxy_max_ratio": 45.0
+      }
+    },
+    "closed_loop_v2": {
+      "file": "results/modern_tcn_metric_rebuild/10_threshold_recalibration/hard_constraint_thresholds_v2_closed_loop_proposed.json",
+      "sha256": "3f5eb295c5bd45ccdfc1330012d185e063a179ebdf01bc578a773c853e0b2caa",
+      "thresholds": {
+        "closed_loop_unstable_must_be_false": true,
+        "constraint_penalty_max_ratio": 1.0,
+        "viol_rate_max_abs_increase": 0.001,
+        "acc_main_min_drop": 0.03,
+        "stall_recall_min_drop": 0.05,
+        "slope_recall_min_drop": 0.01,
+        "theta_edge_p95_max_ratio": 1.05,
+        "flat_peak_theta_error_max_ratio": 1.05,
+        "omega_cmd_rms_max_ratio": 5.0,
+        "delta_u_proxy_max_ratio": 45.0
+      }
+    }
+  },
+  "reference_mapping": {
+    "A1": "modern_tcn_22d with same model_seed and path",
+    "A3": "ZS_LPV_MPC on same path and realization",
+    "A4_controller_source": "ZS_LPV_MPC on same path and realization",
+    "A4_fusion_increment": "MTCN_LPV_MPC with same model_seed, path, and realization"
+  },
+  "applicability": "N/A is allowed only when declared before execution in the source task protocol; otherwise missing gate input is UNEVALUABLE and blocks that contrast",
+  "global_eligibility": [
+    "required grid complete",
+    "all required outputs finite",
+    "closed_loop_unstable is false",
+    "applicable Node10 checks evaluated"
+  ],
+  "zero_baseline_ratio": "UNEVALUABLE, never coerced to pass"
+}

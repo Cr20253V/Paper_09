@@ -1,0 +1,28 @@
+{
+  "status": "HISTORICAL_MEMORY_MONITOR_CORRECTED_WITHOUT_LATENCY_RERUN",
+  "source_run": "20260717_164306",
+  "formal_run_modified": false,
+  "latency_results_modified": false,
+  "historical_external_monitor_valid": false,
+  "historical_external_monitor_reason": "The venv launcher PID differs from child_receipt.child_pid for all four cases.",
+  "authoritative_memory_source": "PROCESS_MEMORY_COUNTERS_EX queried inside the actual benchmark Python process",
+  "authoritative_fields": [
+    "memory_before_session",
+    "memory_before_timing",
+    "memory_after_timing",
+    "session_load_working_set_delta_bytes"
+  ],
+  "scope_warning": "Process-lifetime peak includes Python, full preloaded test inputs, feature materialization and ONNX Runtime session. It is not per-frame or model-only deployment memory. The delta-bank peak is especially inflated by preloading all 3602 88D windows.",
+  "source_integrity": [
+    {"method_id":"gru_22d","case_sha256":"623d4aafc94a36a5b61f63626553de4d6fd8dc89ff99e2464ee65189ab2b1dd0","raw_memory_sha256":"26c435af8619f67a1329048df3bb6cd8107c7f949548eb68005eab9a53cd9551","actual_python_pid":24128,"historical_launcher_pid":18780},
+    {"method_id":"modern_tcn_22d","case_sha256":"ea61f2ac8933a4d6c0e2cc395b2f0a8f4fa2e978af39722a15d517bd94d3ef06","raw_memory_sha256":"34ed1c917a33b0f78d94cd6476f4c434e57b4fbc808a42fe0d475bc549c08f22","actual_python_pid":23320,"historical_launcher_pid":3264},
+    {"method_id":"modern_tcn_delta_bank_124","case_sha256":"9b352ba3449f7dc11e0b9c41d73b4d2424e32b861029f604550a27540dfeccf4","raw_memory_sha256":"b3ed7e7479bc1ca5548e9c5104eeada459c1130fb16ba531e782e381a3917aa2","actual_python_pid":26492,"historical_launcher_pid":25520},
+    {"method_id":"tcn_22d","case_sha256":"a2253101396166dc9851bc5a8efafdf42b0326a6b582e1d63d2563b239587867","raw_memory_sha256":"ca93d08f006045eae1d99759c4c78607f2576dfb177d30486d07eabe44d701a6","actual_python_pid":26368,"historical_launcher_pid":23276}
+  ],
+  "future_runner": {
+    "status": "FIXED",
+    "mechanism": "Discover benchmark_ort.py in the launcher descendant tree, sample only that PID, and require equality with child_receipt.child_pid.",
+    "smoke_result": "04_validation/memory_pid_v2_smoke_pass/memory_pid_smoke_summary.json",
+    "smoke_status": "PASS"
+  }
+}

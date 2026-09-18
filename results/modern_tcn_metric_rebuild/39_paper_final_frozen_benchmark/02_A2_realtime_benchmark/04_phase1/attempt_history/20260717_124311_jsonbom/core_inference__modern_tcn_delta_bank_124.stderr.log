@@ -1,0 +1,8 @@
+{错误使用 jsondecode
+第 1 行、第 1 列存在 JSON 语法错误(字符 1): 需要值，但找到的是 '?'。
+
+出错 run_a2_benchmark (第 24 行)
+snapshot = jsondecode(fileread(fullfile(target,'00_protocol_lock','protocol_snapshot.json')));
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+} 
+ERROR: MATLAB error Exit Status: 0x00000001

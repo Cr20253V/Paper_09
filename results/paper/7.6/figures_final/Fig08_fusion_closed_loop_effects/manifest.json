@@ -1,0 +1,158 @@
+{
+  "figure_id": "Fig08_fusion_closed_loop_effects",
+  "generated_utc": "2026-08-03T03:43:31.391236+00:00",
+  "backend": "Python/matplotlib",
+  "scope": "Figure generation only; no manuscript or table files were modified.",
+  "figure_contract": {
+    "core_conclusion": "Across 60 matched route-seed pairs, fusion reduces lateral- and heading-error RMS with paired intervals above zero, while the input-increment point estimate is positive but its interval crosses zero.",
+    "archetype": "three-panel paired-effect quantitative grid",
+    "final_size_mm": [
+      183.0,
+      90.0
+    ],
+    "panel_map": {
+      "a": "lateral-error RMS paired effects",
+      "b": "heading-error RMS paired effects",
+      "c": "input-increment paired effects with one explicitly labelled off-scale point"
+    },
+    "evidence_hierarchy": {
+      "hero": "overall paired means and 95% bootstrap intervals",
+      "support": "six route means and all 60 route-seed effects",
+      "robustness": "exact ties retained at x=0 and route heterogeneity shown directly"
+    },
+    "reviewer_risk": "A single large positive J_Delta_u effect can compress the central distribution; an explicitly valued off-scale marker retains it without hiding the interval crossing zero."
+  },
+  "inputs": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/53_moderntcn_fuzzyakf6d_fusion_rebuild/08_formal_six_path_exploratory_v7/reports/v7_formal_paired_comparison.csv",
+      "bytes": 12289,
+      "sha256": "f80a7aea900c656ced93148b77e9d539bf8dcee955b5dd64e9331ee8598c5774"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/53_moderntcn_fuzzyakf6d_fusion_rebuild/08_formal_six_path_exploratory_v7/reports/v7_paired_path_summary.csv",
+      "bytes": 1961,
+      "sha256": "a9402cae85e4670129a4d1640037bafb10b4548385cf31feb0600385df50886b"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/53_moderntcn_fuzzyakf6d_fusion_rebuild/08_formal_six_path_exploratory_v7/reports/v7_paired_bootstrap_statistics.csv",
+      "bytes": 719,
+      "sha256": "ad54e89a7bf5224e495c4abb87b6fe805509a1c7a2a98cedab596178b1a82cf8"
+    }
+  ],
+  "source_data": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_closed_loop_effects/source_data/fig07_effects_long.csv",
+      "rows": 180,
+      "sha256": "b0ef68795a53be2002f74a66caae313b2e451f734925ad13a0a549ef45d7b8e3"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_closed_loop_effects/source_data/fig07_route_summary.csv",
+      "rows": 18,
+      "sha256": "b20f4bd0a7dce9fcec1a8913be9ab5dec38d984dfa019efc5637f50ff4d2af06"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_closed_loop_effects/source_data/fig07_overall_bootstrap.csv",
+      "rows": 3,
+      "sha256": "56815233824831dc277dab526928bd46a9a9de3f5224734d799d106de377684b"
+    }
+  ],
+  "outputs": [
+    {
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_closed_loop_effects/output/fig08_fusion_closed_loop_effects.pdf",
+      "bytes": 57966,
+      "sha256": "93fbbe5468bde3611d1f19511b48fe49b015a46f6a64432f625b70516a9b6858"
+    },
+    {
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_closed_loop_effects/output/fig08_fusion_closed_loop_effects.svg",
+      "bytes": 75731,
+      "sha256": "d124f4a7a21c8083b8e06164d7cb0e9c742069522b7fff460a3c2d83c0e32401"
+    },
+    {
+      "format": "png",
+      "file": "results/paper/7.6/figures_final/Fig08_fusion_closed_loop_effects/output/fig08_fusion_closed_loop_effects.png",
+      "bytes": 286649,
+      "sha256": "c8fa62bbb0abb9c8f83081307368254a29659e2f99e15ebcdd939e4d7809e667"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "numeric_checks": {
+      "case_rows": 60,
+      "route_count": 6,
+      "seed_count": 10,
+      "metric_checks": [
+        {
+          "metric": "ey_rmse",
+          "effect_equals_moderntcn_minus_fusion": true,
+          "route_means_match": true,
+          "overall_and_interval_match": true,
+          "wins_ties_losses": [
+            36,
+            16,
+            8
+          ]
+        },
+        {
+          "metric": "epsi_rmse",
+          "effect_equals_moderntcn_minus_fusion": true,
+          "route_means_match": true,
+          "overall_and_interval_match": true,
+          "wins_ties_losses": [
+            29,
+            16,
+            15
+          ]
+        },
+        {
+          "metric": "j_du",
+          "effect_equals_moderntcn_minus_fusion": true,
+          "route_means_match": true,
+          "overall_and_interval_match": true,
+          "wins_ties_losses": [
+            24,
+            16,
+            20
+          ]
+        }
+      ],
+      "status": "PASS"
+    },
+    "artist_checks": {
+      "primary_panel_count": 3,
+      "axes_count": 3,
+      "minimum_visible_font_pt": 6.0,
+      "material_text_overflow_count": 0,
+      "material_text_overflow": [],
+      "status": "PASS"
+    },
+    "export_checks": {
+      "requested_size_mm": [
+        183.0,
+        90.0
+      ],
+      "png_dpi": 600,
+      "png_pixels": [
+        4322,
+        2125
+      ],
+      "expected_png_pixels": [
+        4323,
+        2126
+      ],
+      "png_size_matches": true,
+      "png_nonwhite_fraction": 0.19941,
+      "svg_editable_text_elements": 35,
+      "pdf_page_count": 1,
+      "pdf_size_mm": [
+        183.0,
+        90.0
+      ],
+      "pdf_size_matches": true,
+      "pdf_extractable_text_characters": 432,
+      "grayscale_preview": "fig08_fusion_closed_loop_effects_grayscale.png",
+      "status": "PASS"
+    }
+  }
+}

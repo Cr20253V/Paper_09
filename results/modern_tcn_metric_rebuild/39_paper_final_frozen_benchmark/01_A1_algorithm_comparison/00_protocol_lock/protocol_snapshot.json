@@ -1,0 +1,82 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "created_at": "2026-07-16T21:01:56+08:00",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "a0_status": "FROZEN_FOR_EXECUTION",
+  "paper_primary_method": "modern_tcn_delta_bank_124",
+  "protocol_sources": [
+    {
+      "artifact_id": "A0_JSON",
+      "role": "input",
+      "path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\A0_论文最终统一实验配置_20260715.json",
+      "exists": true,
+      "expected_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+      "actual_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+      "sha256_match": true,
+      "size_bytes": 18068
+    },
+    {
+      "artifact_id": "A0_EXPLANATION",
+      "role": "input",
+      "path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\A0_论文最终统一实验配置说明_20260715.md",
+      "exists": true,
+      "expected_sha256": "",
+      "actual_sha256": "44155532ef770dbb5c4817006caa80213cb2ede7390ee8dbcc75085425058173",
+      "sha256_match": true,
+      "size_bytes": 7112
+    },
+    {
+      "artifact_id": "PAPER_EXPERIMENT_OUTLINE",
+      "role": "input",
+      "path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\后续三章实验审计与写作大纲_20260715.md",
+      "exists": true,
+      "expected_sha256": "",
+      "actual_sha256": "a8a0c7a736afcb54812cd419a3a31f716eac2820a1c5fed68c85b9636191b8bc",
+      "sha256_match": true,
+      "size_bytes": 79143
+    },
+    {
+      "artifact_id": "A5_ANALYSIS_PLAN",
+      "role": "input",
+      "path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\05_A5_statistical_audit\\00_protocol_lock\\analysis_plan.json",
+      "exists": true,
+      "expected_sha256": "",
+      "actual_sha256": "f6f5d85197268cd202748ae50805ad9b6cefe75c451ba5652e82c47f80baf4a9",
+      "sha256_match": true,
+      "size_bytes": 4069
+    }
+  ],
+  "global_protocol_check": "PASS",
+  "global_mismatches": [],
+  "dataset_contract": {
+    "file": "data/tcn/ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat",
+    "sha256": "ab5dde32ef3627aa7032a3b4f7632c87cb471287a638f2b14a25a179a660196f",
+    "contract_file": "data/tcn/ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5_contract.json",
+    "contract_sha256": "6bb404df7b3fd7b3abb32ef664e0d558e4dc81505e1b2ce7db3decd0116a2457",
+    "dataset_version": "diag2steer_Ts0p01_seq128_input22_h0_current_confidence",
+    "plant_revision": "agv_physics_v2_plantfix",
+    "parameter_version": "V4.1",
+    "sample_time_s": 0.01,
+    "sequence_length_steps": 128,
+    "history_duration_s": 1.28,
+    "raw_input_dim": 22,
+    "feature_contract": "passive17_plus_all5",
+    "label_time_policy": "current_window_end",
+    "split_policy": "run_level_no_window_leakage",
+    "scaler_policy": "fit_train_only_apply_val_test_online",
+    "filter_policy": "causal_online_replayable_filters_only",
+    "train_windows": 16529,
+    "validation_windows": 3695,
+    "test_windows": 3602,
+    "train_runs": 71,
+    "validation_runs": 15,
+    "test_runs": 16
+  },
+  "frozen_counts": {
+    "methods": 4,
+    "seeds": 10,
+    "paths": 6,
+    "offline_cases": 40,
+    "closed_loop_cases": 240
+  }
+}

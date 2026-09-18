@@ -1,0 +1,23 @@
+record_type,source,regime,regime_label,excitation_bin,error_scale_deg,Kmax,sample_count,K_raw_p05,K_raw_p50,K_raw_p95,K_eff_p05,K_eff_p50,K_eff_p95,cap_fraction,mae_ratio,K_eff_spread,active_fraction,improve_fraction,degrade_fraction,qualified,selected
+error_scale,ModernTCN-delta,flat_steady,Flat steady,Not conditioned,1.6618091108670987,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,flat_steady,Flat steady,Low,4.3634533110287075,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,flat_steady,Flat steady,Medium,3.5627447094927054,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,flat_steady,Flat steady,High,3.5627447094927054,,,,,,,,,,,,,,,,
+error_scale,ModernTCN-delta,slope_steady,Slope steady,Not conditioned,0.7868392935525433,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,slope_steady,Slope steady,Low,1.0358351476206327,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,slope_steady,Slope steady,Medium,0.8457558564370131,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,slope_steady,Slope steady,High,0.8457558564370131,,,,,,,,,,,,,,,,
+error_scale,ModernTCN-delta,flat_transition,Flat transition,Not conditioned,2.690530584292002,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,flat_transition,Flat transition,Low,4.223220437374889,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,flat_transition,Flat transition,Medium,3.448245047620692,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,flat_transition,Flat transition,High,3.448245047620692,,,,,,,,,,,,,,,,
+error_scale,ModernTCN-delta,slope_transition,Slope transition,Not conditioned,1.0156393331756453,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,slope_transition,Slope transition,Low,0.9949816472018435,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,slope_transition,Slope transition,Medium,0.8123991130261423,,,,,,,,,,,,,,,,
+error_scale,Qualified observer,slope_transition,Slope transition,High,0.8123991130261423,,,,,,,,,,,,,,,,
+gain_quantiles,,,,Low,,0.5,109610.0,0.1298305368613521,0.4206971626922873,0.5237993113886306,0.1298305368613521,0.4206971626922873,0.5,0.446054192135754,,,,,,,
+gain_quantiles,,,,Medium,,0.5,264235.0,0.4398803761459502,0.7077231531663997,0.7097441662901854,0.4398803761459502,0.5,0.5,0.6957102579143566,,,,,,,
+gain_quantiles,,,,High,,0.5,84482.0,0.439877369751554,0.7077233068440147,0.7079716403363104,0.439877369751554,0.5,0.5,0.7442058663383916,,,,,,,
+candidate,,,,,,0.3,,,,,,,,,0.92260360604839,0.0187167128127112,0.3475031355039382,0.6885421508983972,0.0324912874380303,False,False
+candidate,,,,,,0.4,,,,,,,,,0.9030171070498476,0.1187167128127112,0.3723373300556865,0.7317065940876877,0.039141448166213,True,False
+candidate,,,,,,0.5,,,,,,,,,0.8897014056073527,0.2187167128127112,0.3834455425676014,0.7587535096464579,0.0448031065441005,True,True

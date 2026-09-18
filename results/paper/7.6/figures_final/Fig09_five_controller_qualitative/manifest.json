@@ -1,0 +1,1391 @@
+{
+  "figure_id": "Fig09_five_controller_qualitative",
+  "generated_utc": "2026-07-23T12:13:17.189984+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "nature_skill_used": false,
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2723,
+      "sha256": "432aacce1e44db6ceefb0305f832e06870ba6b860275cc4464bb67c945accab3"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2731,
+      "sha256": "ac4c0796f6a74f0c8c8132d273751bd7f0263c612a22a8bf040620e846de43f5"
+    },
+    {
+      "role": "input_3",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2723,
+      "sha256": "0497b885b7d8919a80be1a27cff5d39f34602c829a06a3a89cecbee6d2cb8451"
+    },
+    {
+      "role": "input_4",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2713,
+      "sha256": "766a2ed5bfb218f1612799a0a554510b72bf8a4eaff2bba2acb5474096952cbf"
+    },
+    {
+      "role": "input_5",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2673,
+      "sha256": "6ad6acca03afc2c3d7f15fdb8bdf24e4b1d4049ac7b6c0f090343179eb3e7b68"
+    },
+    {
+      "role": "input_6",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2710,
+      "sha256": "59d5567d4c690a62958954915a6c1f07c2a2dbb655e6697c3ab9226f0add41b4"
+    },
+    {
+      "role": "input_7",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2715,
+      "sha256": "cf29ebb361be6a89cf1f7d72123a81579399971dd5697be4a5dd0397da97d90b"
+    },
+    {
+      "role": "input_8",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2708,
+      "sha256": "ac50ebef62e9823772fff8ee07b6dd703128c6841e0a193754c2a2d965d3e096"
+    },
+    {
+      "role": "input_9",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2722,
+      "sha256": "d7aa6604fa6ebe9d89c16369fc8ddf46cc00faba773dc584b42d500a6f1ebeee"
+    },
+    {
+      "role": "input_10",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2717,
+      "sha256": "c3de77fe3d239ebb1a2a27cc4be56016715f6b590251689d0817d48caeb6a98d"
+    },
+    {
+      "role": "input_11",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2774,
+      "sha256": "6d307211525c9aa759b729d4ab61ca9f014cb6c33c7f10d0adabbd081c9e1096"
+    },
+    {
+      "role": "input_12",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2794,
+      "sha256": "8fba1de18a0d9b34b301e8fd11378da68940d7942eddeafc05847b689815c068"
+    },
+    {
+      "role": "input_13",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2799,
+      "sha256": "099935b0db606cf2800440383761dd1faa15ba18d1aa1c4313389196ffcec660"
+    },
+    {
+      "role": "input_14",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2779,
+      "sha256": "1e1bda2dd535a195774464348cb75915796584551618883389147e59e098b82d"
+    },
+    {
+      "role": "input_15",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2784,
+      "sha256": "eeaedc7ab51f282fcf931ff329a814615e3afc3acd250369af2813181488894a"
+    },
+    {
+      "role": "input_16",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2781,
+      "sha256": "21753fdcffecc47c38e33298688e191a96c549238098b3871c947d5808b23dca"
+    },
+    {
+      "role": "input_17",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2767,
+      "sha256": "73bd6dab7a4afbf7c8be73a6e97f9f03ecfbf6cdf324325cffeb6c2f9f56da53"
+    },
+    {
+      "role": "input_18",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2757,
+      "sha256": "20209716172256621f50f491b85ebd2c71a59818a1149b8b21cbd9708f705694"
+    },
+    {
+      "role": "input_19",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2766,
+      "sha256": "c2c41d5ac70b78e851e9f643ef5cae68806895d169d247ba2e23157bf122aa06"
+    },
+    {
+      "role": "input_20",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_factory_logistics_showcase_theta10_v10/case_metrics.json",
+      "bytes": 2752,
+      "sha256": "1f467a332e2258855abc0a8d83ce40f348796ca7cdf53cf76d1fd2683019071a"
+    },
+    {
+      "role": "input_21",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2674,
+      "sha256": "46f9ebe3961d9f68027fc63c57f7b71f6c09c83d10125c6089ea26ea8eec88ee"
+    },
+    {
+      "role": "input_22",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2682,
+      "sha256": "0e72b8c21ccec107b5b82b6becf07613474f4013da8cd4e1f6d028ba0807c098"
+    },
+    {
+      "role": "input_23",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2675,
+      "sha256": "86900562f297dc665ad627fed5cf039d39f6fa60ef7d21a1067e591fd718e05b"
+    },
+    {
+      "role": "input_24",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2706,
+      "sha256": "1e785adb5f729d644580d27ea933a4b9ad31c1e40510e7703c2183049a006eb8"
+    },
+    {
+      "role": "input_25",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2684,
+      "sha256": "2ce149948b4a167973895dfae46f5237043730b7825d34479711da94d42b2908"
+    },
+    {
+      "role": "input_26",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2710,
+      "sha256": "107acad0d0e84dd2657268fb2023e955f45af24bbb860f40d9cb34d797684942"
+    },
+    {
+      "role": "input_27",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2666,
+      "sha256": "23f1d77d4017cea39d4df8b7d2b682104406563f3307af741be5a305bf51770f"
+    },
+    {
+      "role": "input_28",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2721,
+      "sha256": "7e3db6ff4059ac6fcca454c10bcc10c581539c6558e738a48ef571f7f9ec585b"
+    },
+    {
+      "role": "input_29",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2677,
+      "sha256": "b5e6dc43c86c3e567ba4d4e93f856b1899660649c1e3080675f5f991f9454fe8"
+    },
+    {
+      "role": "input_30",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2712,
+      "sha256": "654822db5c981c6080a53ea5db7d775d7f4e14d95b0f2a6acbf1b0332f0d38d1"
+    },
+    {
+      "role": "input_31",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2742,
+      "sha256": "edc794604bf4ea00e57e543d5d77cbf424076a65a8d9b6a1ce49c0bd68d615b1"
+    },
+    {
+      "role": "input_32",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2743,
+      "sha256": "530f9360ed5ccda42d12f149dacc908b5e421e58417b9f51fde805435100ffe9"
+    },
+    {
+      "role": "input_33",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2751,
+      "sha256": "035eb2595b219404404520c8b0b31fdb72e1a4a3225911d536fe5fdafbfff317"
+    },
+    {
+      "role": "input_34",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2745,
+      "sha256": "14be8d5e5e501954f8c2bd03f67fc09a428c88d97b5b3d774623d1b21fb315d8"
+    },
+    {
+      "role": "input_35",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2742,
+      "sha256": "3921134daa25ad117fc7c9db8bdb98cd548962675a4982dfb6c2dfe1b5acc2fc"
+    },
+    {
+      "role": "input_36",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2730,
+      "sha256": "4bb62ce922efee50458c866c6930a7d713dbf6e582cf4f8fa12b21533d328b7a"
+    },
+    {
+      "role": "input_37",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2742,
+      "sha256": "71b60493d2f5b301ee324ab4461c03dc9a1d3ee494d40ef0293df3626212f5c4"
+    },
+    {
+      "role": "input_38",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2776,
+      "sha256": "58fe0f22688dcc6e5246e0a081b4737d9549777dec07c121e7a2fa6aa9225700"
+    },
+    {
+      "role": "input_39",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2751,
+      "sha256": "11e944cc3166aadca4bd53c328b2efe6ee616f5bca6428e5a0c34e7ef1c772ee"
+    },
+    {
+      "role": "input_40",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2739,
+      "sha256": "b2e82384578e635f0f1bd684500a10b03cfd9b66cad8b2921db595cd7c93f276"
+    },
+    {
+      "role": "input_41",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2643,
+      "sha256": "496ab62041ebaee9c0fbbbf77623c97a0dcd9ad0b47a46e86e4753aa5736d27a"
+    },
+    {
+      "role": "input_42",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2636,
+      "sha256": "abfa05572dca00a34e457090dbe3f24d152f4ea6f2c07c9835e7e53fe774d7c6"
+    },
+    {
+      "role": "input_43",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2666,
+      "sha256": "cab7459b687f415840d390a8a5c20f5379be9f4de68a7cc9880001afa0291379"
+    },
+    {
+      "role": "input_44",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2647,
+      "sha256": "9005c42ffed06364eb1cbb8f782421cc1942e894b9202c5b5f1c296ec6ed0574"
+    },
+    {
+      "role": "input_45",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2637,
+      "sha256": "4665c9e01bcf7fd16b5e815c7720fdb26b5b671a607d554e8a20b2fbc89c516f"
+    },
+    {
+      "role": "input_46",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2647,
+      "sha256": "40c50bcf9e4033fedbd8ea104acb6c79068bcdaee47ffb41a0979116846452cb"
+    },
+    {
+      "role": "input_47",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2635,
+      "sha256": "d54d11496de55c13063676cddbc56168d971c388e86ca5f121d41610036d01a5"
+    },
+    {
+      "role": "input_48",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2643,
+      "sha256": "a7df2bf63989245264891b3e3fbd1e4a28ecb347a7ed88d0d4dd95d7de72e1f9"
+    },
+    {
+      "role": "input_49",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2637,
+      "sha256": "105dbbb1b7300344bf7cb1e76fb3f4f828565694f8f0ef7378f85b834b170c08"
+    },
+    {
+      "role": "input_50",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2665,
+      "sha256": "a7a172539a23cc6e5ee1f03c45c843be1f0c577b36982498d54a3a37902191da"
+    },
+    {
+      "role": "input_51",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2711,
+      "sha256": "ccd1096b5fa55490444ec4284fecbf4e58ed5a636090f21cd583f9c7c2eadd05"
+    },
+    {
+      "role": "input_52",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2714,
+      "sha256": "ca4d27d4add56753212f9ada24d8629d688c033be61669c3c0e9f2e943f1c50f"
+    },
+    {
+      "role": "input_53",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2709,
+      "sha256": "d85ebbe878197e901914606c73b49136a3fdb352384e73d83765b096e09ce8ba"
+    },
+    {
+      "role": "input_54",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2695,
+      "sha256": "b9144e4a860166bcabca1b0204d3b3ccbf5e5d0757a521ea887ac5e3996c0636"
+    },
+    {
+      "role": "input_55",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2714,
+      "sha256": "ae6d337ec1e525e8df9333d110997ab2421a2a2b2b7dec2b7bf14dff01cf8421"
+    },
+    {
+      "role": "input_56",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2692,
+      "sha256": "da36167349745bf9e279d31a4bc03656013a414e5c799978582a13127d977e77"
+    },
+    {
+      "role": "input_57",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2699,
+      "sha256": "25f6ee76e33c56f94f7a897eabb38db622c5a1e8374973ea6055a70dfa457445"
+    },
+    {
+      "role": "input_58",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2708,
+      "sha256": "360b8246de3465d954c4f37153cd6e6be85850777f1798e29be56fbefb288a17"
+    },
+    {
+      "role": "input_59",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2707,
+      "sha256": "8ae967371ea43ed8b10edfdf114fe73b1931da2c449401bb0e6f5d13582e7871"
+    },
+    {
+      "role": "input_60",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_closed_loop_long_updown_theta10_v1/case_metrics.json",
+      "bytes": 2752,
+      "sha256": "b9998da96fba9e5c050351ec830227d153fabeba84ba44ba6048c059ede0c3b1"
+    },
+    {
+      "role": "input_61",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2579,
+      "sha256": "c6695f5d76492d24f2986ee06fe23873bcf113158747bb916db7ff8ed6591173"
+    },
+    {
+      "role": "input_62",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2593,
+      "sha256": "61350df0a11c9fc76a37968c36bb69bbdc881944fd3d495dabab9082077cfdad"
+    },
+    {
+      "role": "input_63",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2580,
+      "sha256": "6ac371d73f05ca9d3535fadbe81b7995f7c7f5c65840992b621591c964261898"
+    },
+    {
+      "role": "input_64",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2578,
+      "sha256": "c12897945267cb0d688c2f799ed0e4fb722099fbb46eb0ba0db14f65a3ac7e9c"
+    },
+    {
+      "role": "input_65",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2589,
+      "sha256": "20807bdb56554c630c417b6bddcfd48f1779b556a638521e424cc8ff27bf2d24"
+    },
+    {
+      "role": "input_66",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2591,
+      "sha256": "a36591b83fc2494e99f3d51d481141aeaaf182d0416b05ef72f504dd26dae970"
+    },
+    {
+      "role": "input_67",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2696,
+      "sha256": "c8e7ef52403e51ecb50a8acfce3036eca863bb5dc40b41ae682ecdc387a5e520"
+    },
+    {
+      "role": "input_68",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2579,
+      "sha256": "344a4356d17aad0cda7c7e2d132768c33e41084bf9a86abc49a64865c908f1ee"
+    },
+    {
+      "role": "input_69",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2590,
+      "sha256": "996fb4d6107da2f4ee0dd826dff8e3301d904c9f4096621925bf27611a533736"
+    },
+    {
+      "role": "input_70",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2578,
+      "sha256": "daf135427d4040b73dbf47de78c0cecb7d9958cbdf14265460fc3d967df8c997"
+    },
+    {
+      "role": "input_71",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2590,
+      "sha256": "b6625fd84066bf1b78b30dbcd1805751eec4640c70339977f4fba8ad79f2b5ee"
+    },
+    {
+      "role": "input_72",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2604,
+      "sha256": "7f38c96c27c865e768c53117a0a73a6af85d5a463f8f54e9f7ac5f5d21657075"
+    },
+    {
+      "role": "input_73",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2593,
+      "sha256": "0866446644dc1b3303c53a332d0bdc01df474d637dc3cf7a0e13181aaeb72a17"
+    },
+    {
+      "role": "input_74",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2592,
+      "sha256": "c38cee3835da94e415d592463c04f8c906164cea436a13a6769db03aef3ddfa5"
+    },
+    {
+      "role": "input_75",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2603,
+      "sha256": "e88891840ddb89ec4a854b39a6beae694d50dc4284697a1d362411d0e0fd50ee"
+    },
+    {
+      "role": "input_76",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2592,
+      "sha256": "b335ec2dd717660b7733d311c6c5806cbab4636458dc1a907256556021b6fd91"
+    },
+    {
+      "role": "input_77",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2774,
+      "sha256": "d56d7fdf4f6b1c3636f210deb9e6fbc51da4a84ceb598d737e41ea6110c19907"
+    },
+    {
+      "role": "input_78",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2594,
+      "sha256": "77e8fe2a8cc35782df0bbd61d5696ef0b8c531908b1311b3a003f518d5e47930"
+    },
+    {
+      "role": "input_79",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2602,
+      "sha256": "f6dc1b5896eac4b91e39f0ad1f1ea47afcdac65a0cfac376440e2756d79e33bf"
+    },
+    {
+      "role": "input_80",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1/case_metrics.json",
+      "bytes": 2582,
+      "sha256": "e799fbeb0db4d46283d5965a6b187ae415d0d9f6bfa92a17bef8a5a32fdef602"
+    },
+    {
+      "role": "input_81",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2527,
+      "sha256": "1f6cd4977430970f9e054e5e08face9f3ae2b14ada66118c571c8f7edb10caec"
+    },
+    {
+      "role": "input_82",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2695,
+      "sha256": "9ae71941766b580e6005f760163aef94c9159c72c2f0b800def33f1bd55ceaa0"
+    },
+    {
+      "role": "input_83",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2523,
+      "sha256": "fd2b948cefe24a5eb5b1eb118edfbd4f8242132b11a4ad247cca25c6e3f2d38b"
+    },
+    {
+      "role": "input_84",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2528,
+      "sha256": "d3acdb3cbc85c83bf26d377c6cc606f7e9d1dfb38ff984d7f8e332a6d897d51a"
+    },
+    {
+      "role": "input_85",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2531,
+      "sha256": "feef06f51b6e042e6079e62752780bf94e5fef64e9c6a2232e7156d98875fec0"
+    },
+    {
+      "role": "input_86",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2713,
+      "sha256": "ee394f6b9ffdd94970626838873a8645d2f9335b942b86321011b9cbb280a1f1"
+    },
+    {
+      "role": "input_87",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2742,
+      "sha256": "3d6b2e2573e082dbec3d25040666779febba52350c3865eb19a131680f6c3c61"
+    },
+    {
+      "role": "input_88",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2518,
+      "sha256": "ecbdd3a9e084f1c5a957d96d499b44220cbf60b2ca0dd7e486407b283530ef1e"
+    },
+    {
+      "role": "input_89",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2529,
+      "sha256": "d93537e025bac1129b2a6aadcd736ee9e1cfba841e3c646c077dbd51e63bf2d8"
+    },
+    {
+      "role": "input_90",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2516,
+      "sha256": "c7bf13dfaba5ea2b8558b9b0dbc4c3910d1dc6c7e0625189d47ba079d168afb6"
+    },
+    {
+      "role": "input_91",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2569,
+      "sha256": "68bb5e4ac72e55199d44d8fc89271eb42239a25625179fecbacd8224876dc68b"
+    },
+    {
+      "role": "input_92",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2779,
+      "sha256": "87d40cc07b76e85a7dee08555f918f1b4440a87dbe961070b948018579e4a79e"
+    },
+    {
+      "role": "input_93",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2575,
+      "sha256": "b9e4bc50f918248212f6e7358ff7ccd2959ef8beafad6112d6da4857e3a0cd1d"
+    },
+    {
+      "role": "input_94",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2580,
+      "sha256": "2ad4e1776b62a23d1f85404c524d546637d5225e202fc008f749d89cb5127b3e"
+    },
+    {
+      "role": "input_95",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2575,
+      "sha256": "51e5aab56380cfaa1c845038de90e9fa70b9c295897cb1b7c23f872e63e8cb56"
+    },
+    {
+      "role": "input_96",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2767,
+      "sha256": "c3b621779b2e82b967e2f8ec1d7329c6c268b9417c74b53ad9acc9c5b9090e05"
+    },
+    {
+      "role": "input_97",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2812,
+      "sha256": "7122953d3db5868681bbf3119ca927e5058863b15306b6f309b1928f88977801"
+    },
+    {
+      "role": "input_98",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2579,
+      "sha256": "952b71df60040a10c64dcc58105aba9bf58585cfdfed6f42f7ba33b780911311"
+    },
+    {
+      "role": "input_99",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2581,
+      "sha256": "6c087da1f49b31da6785691c02c621c0c622d0b5b30b772cd2a26eb8dea21b6b"
+    },
+    {
+      "role": "input_100",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/case_metrics.json",
+      "bytes": 2566,
+      "sha256": "2112c604a29047f3b9dcc163af0c6c09e716b214e523a2ba7e353c01b8be42a0"
+    },
+    {
+      "role": "input_101",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2680,
+      "sha256": "ac45ac5d6f1b3a455d31a1733a79fe80690031c31c39848704e79a6e48219594"
+    },
+    {
+      "role": "input_102",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2682,
+      "sha256": "1f0d0d160493f680f3289c747c33ab9c57bc505e7ca1e90879d4f29c6175de15"
+    },
+    {
+      "role": "input_103",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2681,
+      "sha256": "fe01484e5ad2e67445106c3f14dae5a0d04000080de79d0b66df3a36192aa855"
+    },
+    {
+      "role": "input_104",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2689,
+      "sha256": "c6c130262097ed9b7403d5a1e8a4ddd12d654fabc02b146e7f2c34c350fadd1a"
+    },
+    {
+      "role": "input_105",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2691,
+      "sha256": "35b1a0d7558de811be10bcccbba7504900ae652eb1a736445e7b7ca033b05730"
+    },
+    {
+      "role": "input_106",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2692,
+      "sha256": "aa08a664e0b3f02ce020eb60effb5069f203ea81ec574daabd8a3026bb20e45f"
+    },
+    {
+      "role": "input_107",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2683,
+      "sha256": "5bf77d39c41dac9dcdebd2a50cb76a9601d84ddc9c3870603875461ba6ca8d56"
+    },
+    {
+      "role": "input_108",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2672,
+      "sha256": "786e3e27bb4c643a91f4d41115ae46c18ca82cc435834e53d9796e89e89b3f8b"
+    },
+    {
+      "role": "input_109",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2683,
+      "sha256": "a38b4f4115d7170536f61fbd06238ef8af1b7ba1e9b0d34fc6cd5d3c159064f1"
+    },
+    {
+      "role": "input_110",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2679,
+      "sha256": "7bde7b5de34fae7008c14079df909af8c9fec434ea43e84b2340a4583fdf2cfd"
+    },
+    {
+      "role": "input_111",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2739,
+      "sha256": "be3aa24aa8326b1f41e4f08d4c3c0d7dc5f77045e5a852f942700b2299dc7a10"
+    },
+    {
+      "role": "input_112",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2748,
+      "sha256": "1036cd771b47aefda670d2b2b62c51cd7a657af6cd0995d7d688d8214a52b161"
+    },
+    {
+      "role": "input_113",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2726,
+      "sha256": "557502d389bb66b8870c400a8ad66d29b9feff3055d8f5a522c3a3caf68b693c"
+    },
+    {
+      "role": "input_114",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2752,
+      "sha256": "e95343bdf9a29c2bd64546c0e9b749f201d96be431a6a4080b0bd08a5bcef230"
+    },
+    {
+      "role": "input_115",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2744,
+      "sha256": "3884a0204df9f4ec94d094300de4e416d1b652543ffedc37f8cbd39a2896091b"
+    },
+    {
+      "role": "input_116",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2740,
+      "sha256": "b27b0f6e8fe25691f8ce0860127c28f348ccab48be24bca2f768b93e79aa0110"
+    },
+    {
+      "role": "input_117",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2703,
+      "sha256": "c8cfc0bd16f653b2f832a4041830e8bb7568d8f94086e9bca85746316d36a65d"
+    },
+    {
+      "role": "input_118",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2744,
+      "sha256": "f0e954b7b53946ad05ff9f85295c65ec01e8e8d7276179b7eaae88171178cd69"
+    },
+    {
+      "role": "input_119",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2738,
+      "sha256": "a10a6d4a8c03f632c5b5ae5ccb60a6854cd119c12b5fd33fc2769797e972f402"
+    },
+    {
+      "role": "input_120",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_factory_target_downhill_straight_after_turn_v1/case_metrics.json",
+      "bytes": 2733,
+      "sha256": "0478d4b3ff98606b535b3b5eb4b32a92143565eb145e6d8c2504b42194b4cfc6"
+    },
+    {
+      "role": "input_121",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7454751,
+      "sha256": "53bc8c70cce6c2d403c4df3e59340c7b237300ff1bc65a8ef36dbeae3ec2c107"
+    },
+    {
+      "role": "input_122",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7465184,
+      "sha256": "d09e19a17faed6979446f9f6b82bf504c664ae2af0901de4097c51c206583741"
+    },
+    {
+      "role": "input_123",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7422306,
+      "sha256": "f25f09a883ba2ef136e25fc45da9084d71b373bb31d76724ec5aa14247fa695c"
+    },
+    {
+      "role": "input_124",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7467445,
+      "sha256": "187d10e319c21330dbf7b74fbb81ae67f3aca33c19fa93237bd51a700682aa90"
+    },
+    {
+      "role": "input_125",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7482101,
+      "sha256": "209cbe2456d285728b51cd30be105c3f29e346c32f6efc39b90988615f5f8ce2"
+    },
+    {
+      "role": "input_126",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7483564,
+      "sha256": "e9b277c58880756f0744f4b5dd5eacbcfbf547eadb1ef6dc593cad8cba58d209"
+    },
+    {
+      "role": "input_127",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7493128,
+      "sha256": "e919f965887508549630e1bf5a71c4fbe1b02c15c2f8e3100a6c551d79eb4eff"
+    },
+    {
+      "role": "input_128",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7486863,
+      "sha256": "d813d6bb7c6edd8d24fd5c3d85c65f643a4d804e673d97bbabc4e18814ed7d61"
+    },
+    {
+      "role": "input_129",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7464570,
+      "sha256": "3bd5dd75b22bdf48dcec97b97ff3ac60bb9f29080d4d884d034201ddb5524ac0"
+    },
+    {
+      "role": "input_130",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7401187,
+      "sha256": "411b335b909fd89c2a1676f49430474c96c1421fcd26fa746505018ec0edb4ce"
+    },
+    {
+      "role": "input_131",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7641739,
+      "sha256": "98bebc784a71f0cee8ba91ec3b3f86d7f1d8463730296ddaa60a0b4092e52898"
+    },
+    {
+      "role": "input_132",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7587038,
+      "sha256": "6819833407a1613795abda2f648e994d03442c4bac8d45d9a04dd6ce603039f1"
+    },
+    {
+      "role": "input_133",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7633684,
+      "sha256": "bed549e2b3e3866f2d7ae72ea0c37880e6711f7c8082e90e471845041d47360f"
+    },
+    {
+      "role": "input_134",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7644656,
+      "sha256": "64f5564fe6b628f67eb64cacc0ab1ada746a1bdc9311e6b08dfe0c69083a80c0"
+    },
+    {
+      "role": "input_135",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7642392,
+      "sha256": "6fad2ba1d8922b9eff52d871b7d8e13bfb8c2e54f7c4cfdd93f2bd675eed638e"
+    },
+    {
+      "role": "input_136",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7650027,
+      "sha256": "32bb97e64e6a4899348d6994a505a98e8c132eb03d8122903b9068c01c90c7d2"
+    },
+    {
+      "role": "input_137",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7633033,
+      "sha256": "0cff0e43419b551479ac70aa875c1768d3fb13d658b328eaadda71ced9b22bc9"
+    },
+    {
+      "role": "input_138",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7645504,
+      "sha256": "7dab6ed1152106232ad7e5fa13088ec832993538ee8e21b85daf6667d545ca84"
+    },
+    {
+      "role": "input_139",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7643240,
+      "sha256": "4ab7d3a097f8f85def06b29b628fcc0a1e38f4a1790517831ae58977e153ac4c"
+    },
+    {
+      "role": "input_140",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_factory_logistics_showcase_theta10_v10/trace.csv",
+      "bytes": 7605342,
+      "sha256": "d7e09b80ba3e82df461a854f44a546efcc48672ab59db5746c77abeabaaa3ecf"
+    },
+    {
+      "role": "input_141",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/trace.csv",
+      "bytes": 7727198,
+      "sha256": "661d6b1e1d13bb9353a02bff2b3fa1380eef22707429035bfe3f3b4cd8f2b520"
+    },
+    {
+      "role": "input_142",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_metrics.json",
+      "bytes": 2008,
+      "sha256": "4bd75cfb3ccfa0ab421fd8ad8d9c342447f533862013821318dc65ad3135a262"
+    },
+    {
+      "role": "input_143",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1694378,
+      "sha256": "3b9441d06d84925f98078245a68319b5228fe4396dd6e1ad90bf5a4660da7ade"
+    },
+    {
+      "role": "input_144",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1700789,
+      "sha256": "b5b9d681f01a605d387739b08a6922eead92ac02cfdc31232ffc8d657fb763f2"
+    },
+    {
+      "role": "input_145",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1703370,
+      "sha256": "6417dd7f9a575257482ad8c569a0175ab6f4080cdfd499a3a984c5e04406db48"
+    },
+    {
+      "role": "input_146",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1696047,
+      "sha256": "d24486255f5927499abfa21a00ae36f6963d751fe2ea1c849666d285d97cb398"
+    },
+    {
+      "role": "input_147",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1698569,
+      "sha256": "4577dd458fb27d86f3362b935a4d5abfa6864ffa5d17291c5a03ae0dfe062666"
+    },
+    {
+      "role": "input_148",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1697481,
+      "sha256": "40907f6017e0162d638b8f1ce5ad3dec5057e8edfbc50dfdf8c6aac4981e5d9b"
+    },
+    {
+      "role": "input_149",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1696874,
+      "sha256": "bb641e0a082463781e9ad0c5bdd35990e63f6f4cc976532b3be464e28972f19f"
+    },
+    {
+      "role": "input_150",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1690473,
+      "sha256": "d5c1baa288c28df292c123f8faf8c66a092d7c915dd2980fd0f354a6b98d7af2"
+    },
+    {
+      "role": "input_151",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1697278,
+      "sha256": "959947c8dfa4bb3cd539f243ab0092fbac5c6fb49603d27fc181c3e67795f9fd"
+    },
+    {
+      "role": "input_152",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1692758,
+      "sha256": "647469fbf038dea9d60b0e9ac31d4b2d05a008f2cdf1881f812e22c4b04f861b"
+    },
+    {
+      "role": "input_153",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1721503,
+      "sha256": "645d0f94ba638fc7c0675e11a4970d2c54777cef3219159562a19e1fcf67ef39"
+    },
+    {
+      "role": "input_154",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1723660,
+      "sha256": "5040edc5003ac26c78b5065597552f82776635058d4f445c2befe406781fee5d"
+    },
+    {
+      "role": "input_155",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1724207,
+      "sha256": "61fdc619d2700ffbb4d065c5f03a662fe2800998208703baf8e9572a2a121ee2"
+    },
+    {
+      "role": "input_156",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1720228,
+      "sha256": "1045e2b98e0b3d4b10ebf07f239ad21fe974a27c437d6745067cb0fc738f3cd5"
+    },
+    {
+      "role": "input_157",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1723160,
+      "sha256": "cad0d9e8f17e260158cccba9d79de70862a1422f7e80f8a570bde9f40266dd0a"
+    },
+    {
+      "role": "input_158",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1722430,
+      "sha256": "60a7cde46312e1471be35ea83c5b3b86d2304a351acacd2e75751ff24cc00612"
+    },
+    {
+      "role": "input_159",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1723509,
+      "sha256": "7230e898e2c9a5400d8410695fe4eb92a458f13dba9f4871a174c0a6b4525426"
+    },
+    {
+      "role": "input_160",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1717320,
+      "sha256": "31df66d2f1be76ce0953691203932f02d5211c4a10ae436049cc2eed069b2716"
+    },
+    {
+      "role": "input_161",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1721118,
+      "sha256": "176a8c500d8e669bd777e4c32eba0e7d58517aee40f0206e9986ff98b3e63862"
+    },
+    {
+      "role": "input_162",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1717799,
+      "sha256": "f8d854d5df52a649037a0eefe94d2b46b2f5dbf7ab390b35c58a270810e4f64e"
+    },
+    {
+      "role": "input_163",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/trace.csv",
+      "bytes": 1738156,
+      "sha256": "6bf60703b7788039bf8ae0b8dfdd6af6064c24e5e7af2c5fae59bbba4a2c0b15"
+    },
+    {
+      "role": "input_164",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_metrics.json",
+      "bytes": 1979,
+      "sha256": "53533e90bb1cddf400ad86fa1a0be171bd0ec16aa01788f2bf0f23d9527b90dd"
+    },
+    {
+      "role": "input_165",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s1/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5566697,
+      "sha256": "da277ada36e16c26d0dfc2890f065d3fb63004d41ac3f23848a751d173c02c0c"
+    },
+    {
+      "role": "input_166",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s7/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5896691,
+      "sha256": "99072bc324b20662b58910666ea9c08c51b45e8d5fa5bda43293ce32258aaf55"
+    },
+    {
+      "role": "input_167",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s11/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5569423,
+      "sha256": "1fcd1516ce627429047d65988865231385774089d04dde46d61adc2bc2d68c70"
+    },
+    {
+      "role": "input_168",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s21/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5561260,
+      "sha256": "8d3accb4e36a364db6a4ec11859905134e1f659fc94253353bfb1e384c1ae40a"
+    },
+    {
+      "role": "input_169",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s42/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5570231,
+      "sha256": "3d4bcb00afb66309ffacae5c065007818b8ab99aec84b0744795dc80c0180efd"
+    },
+    {
+      "role": "input_170",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s73/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5850463,
+      "sha256": "09c68ec739c3de8492245617969711935f24bd7115a9278e5e8cba1cc3ed1d97"
+    },
+    {
+      "role": "input_171",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s101/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5863782,
+      "sha256": "e0a7316810ecb40e6868e257006a23f66707210ea6ecc6ec50dc45075ee185da"
+    },
+    {
+      "role": "input_172",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s202/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5562516,
+      "sha256": "fe9101801109ac43e541822e83e970941ada109140fdeeff7481bc23dcd4304f"
+    },
+    {
+      "role": "input_173",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s340/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5565701,
+      "sha256": "d956b6ff0136bb2a44c0d0ccae7c6b1ad6b2aabb387fba01540772d67eaea5ba"
+    },
+    {
+      "role": "input_174",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/G0/s520/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5554305,
+      "sha256": "3d2708142a2df73f739da3cbcf4837e107696576371f40449004d2727c530914"
+    },
+    {
+      "role": "input_175",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s1/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5934433,
+      "sha256": "2d5900ad7b832689a2920723f79d9723f9f989b81f6a84b596c208aefaf39da9"
+    },
+    {
+      "role": "input_176",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s7/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 6252342,
+      "sha256": "7e164ad0ed62554f5cacdd073349c39de475b44b4639f88488a777722feaafaf"
+    },
+    {
+      "role": "input_177",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s11/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5937335,
+      "sha256": "54adb38a8f4137c8f3a1ba4def24754b9f49c5ccdfd0835cae85b0150812b30e"
+    },
+    {
+      "role": "input_178",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s21/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5928919,
+      "sha256": "3d5aea8e0f59ddca2339a46f46e0aaff7843cc852af050b9e0404bac95385861"
+    },
+    {
+      "role": "input_179",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s42/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5938050,
+      "sha256": "301d3d88817063d20f09078fc3280b5f459a9e54cef58383afec68a6f729dc26"
+    },
+    {
+      "role": "input_180",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s73/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 6207972,
+      "sha256": "e78a20bcf25e022e9e06fa906297fdcff14e11cad0a8feca8ee47abbf75e0987"
+    },
+    {
+      "role": "input_181",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s101/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 6195725,
+      "sha256": "f7729a69bccaf66c20491e5cf2299318dbb63c8ee7fed0826c6f341d1a1d09cf"
+    },
+    {
+      "role": "input_182",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s202/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5927948,
+      "sha256": "81c22fcc1cfc4c950d116a2c10b3e1c7064fc315b906398d2d9352bfdbad58f9"
+    },
+    {
+      "role": "input_183",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s340/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5930280,
+      "sha256": "923831d7a57510573ef6a0c77aa7bb6581c245ed6fb0bf3a4c23d4b36e346111"
+    },
+    {
+      "role": "input_184",
+      "file": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/03_cases/nominal/ADAPTIVE/s520/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1/trace.csv",
+      "bytes": 5918118,
+      "sha256": "b389226038df01f80c4392155be60937c3dc6d7123fc2755b3839c7655eb4462"
+    },
+    {
+      "role": "input_185",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/trace.csv",
+      "bytes": 5934967,
+      "sha256": "1daf45381403cc1a64702f82d832d79e10842d60c46a504c075c9490caa409ab"
+    },
+    {
+      "role": "input_186",
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_metrics.json",
+      "bytes": 1860,
+      "sha256": "31b29ead2992f25fdf2af507c5fb7419c1e848e62c0dab19042a1c127b27aad9"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig09_five_controller_qualitative/source_data/fig09_five_controller_qualitative_source_data.csv",
+    "rows": 48791,
+    "columns": [
+      "record_type",
+      "route_id",
+      "route_condition",
+      "t_s",
+      "truth_grade_deg",
+      "reference_scheduled_grade_deg",
+      "reference_e_y_m",
+      "reference_e_psi_rad",
+      "reference_j_du_normalized_cumulative",
+      "mtcn_theta_sched_deg_q25",
+      "mtcn_theta_sched_deg_median",
+      "mtcn_theta_sched_deg_q75",
+      "mtcn_e_y_m_q25",
+      "mtcn_e_y_m_median",
+      "mtcn_e_y_m_q75",
+      "mtcn_e_psi_rad_q25",
+      "mtcn_e_psi_rad_median",
+      "mtcn_e_psi_rad_q75",
+      "mtcn_j_du_normalized_cumulative_q25",
+      "mtcn_j_du_normalized_cumulative_median",
+      "mtcn_j_du_normalized_cumulative_q75",
+      "fusion_theta_sched_deg_q25",
+      "fusion_theta_sched_deg_median",
+      "fusion_theta_sched_deg_q75",
+      "fusion_e_y_m_q25",
+      "fusion_e_y_m_median",
+      "fusion_e_y_m_q75",
+      "fusion_e_psi_rad_q25",
+      "fusion_e_psi_rad_median",
+      "fusion_e_psi_rad_q75",
+      "fusion_j_du_normalized_cumulative_q25",
+      "fusion_j_du_normalized_cumulative_median",
+      "fusion_j_du_normalized_cumulative_q75",
+      "mtcn_mean_ey_rmse",
+      "fusion_mean_ey_rmse",
+      "fusion_mtcn_ratio_ey_rmse",
+      "mtcn_mean_epsi_rmse",
+      "fusion_mean_epsi_rmse",
+      "fusion_mtcn_ratio_epsi_rmse",
+      "mtcn_mean_j_du",
+      "fusion_mean_j_du",
+      "fusion_mtcn_ratio_j_du",
+      "all_three_improve_at_reported_precision"
+    ],
+    "sha256": "5962d3b7c92722b4c0e834e690b7cb186b7a64c0997bcefecc7cef1f0e572ce4"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig09_five_controller_qualitative/output/fig09_five_controller_qualitative.pdf",
+      "bytes": 5511236,
+      "sha256": "e9594e53d7dd228b963eb3ee9d02ed444930802c5e74860112b49e3564c44a4f"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final/Fig09_five_controller_qualitative/output/fig09_five_controller_qualitative.svg",
+      "bytes": 21180928,
+      "sha256": "d2b9e4a3c8cae6a162ea005aebb26a067f831d2a4e4711f37a8d08e0f2547ad8"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final/Fig09_five_controller_qualitative/output/fig09_five_controller_qualitative.png",
+      "bytes": 256487,
+      "sha256": "de5f0f11f2f80c82ddcb49f7f434fced063a3680577efb287dfae9fe40e9bad1"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig09_five_controller_qualitative/output/fig09_five_controller_qualitative.tiff",
+      "bytes": 1158960,
+      "sha256": "c85cdac58b2b3ab863fe499f3e2c1836ff80cdb9866d8b8c864eead57c828000"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "formal_selection_population": "six formal routes x ten model seeds = 60 paired cases",
+      "route_selection_rule": "Fusion mean is lower than the MTCN mean for e_y RMS, e_psi RMS, and J_delta_u at the five-decimal precision reported in the route-stratified table",
+      "selected_routes": [
+        "P1",
+        "P2",
+        "P5"
+      ],
+      "route_mean_audit": [
+        {
+          "record_type": "route_mean_audit",
+          "route_id": "P1",
+          "route_condition": "Factory logistics",
+          "mtcn_mean_ey_rmse": 0.03660541963108099,
+          "fusion_mean_ey_rmse": 0.029956383469408866,
+          "fusion_mtcn_ratio_ey_rmse": 0.8183592421919252,
+          "mtcn_mean_epsi_rmse": 0.034654956228130425,
+          "fusion_mean_epsi_rmse": 0.03151855652925724,
+          "fusion_mtcn_ratio_epsi_rmse": 0.9094963595329179,
+          "mtcn_mean_j_du": 1.5364842995715127,
+          "fusion_mean_j_du": 1.1140779252536412,
+          "fusion_mtcn_ratio_j_du": 0.7250825313114686,
+          "all_three_improve_at_reported_precision": true
+        },
+        {
+          "record_type": "route_mean_audit",
+          "route_id": "P2",
+          "route_condition": "Sharp-turn transition",
+          "mtcn_mean_ey_rmse": 0.04241563343859599,
+          "fusion_mean_ey_rmse": 0.03862559596335725,
+          "fusion_mtcn_ratio_ey_rmse": 0.910645269963362,
+          "mtcn_mean_epsi_rmse": 0.03139234217657907,
+          "fusion_mean_epsi_rmse": 0.029005573312703647,
+          "fusion_mtcn_ratio_epsi_rmse": 0.9239697104965898,
+          "mtcn_mean_j_du": 0.9844304242890637,
+          "fusion_mean_j_du": 0.804355041599424,
+          "fusion_mtcn_ratio_j_du": 0.817076577230243,
+          "all_three_improve_at_reported_precision": true
+        },
+        {
+          "record_type": "route_mean_audit",
+          "route_id": "P3",
+          "route_condition": "Long up/down slope",
+          "mtcn_mean_ey_rmse": 0.037870147517439175,
+          "fusion_mean_ey_rmse": 0.03854927207696929,
+          "fusion_mtcn_ratio_ey_rmse": 1.0179329789834428,
+          "mtcn_mean_epsi_rmse": 0.025675510100643978,
+          "fusion_mean_epsi_rmse": 0.024757439820946997,
+          "fusion_mtcn_ratio_epsi_rmse": 0.9642433479958805,
+          "mtcn_mean_j_du": 1.8090184640417217,
+          "fusion_mean_j_du": 1.8595065810113287,
+          "fusion_mtcn_ratio_j_du": 1.0279091219759062,
+          "all_three_improve_at_reported_precision": false
+        },
+        {
+          "record_type": "route_mean_audit",
+          "route_id": "P4",
+          "route_condition": "Mild slope-turn coupling",
+          "mtcn_mean_ey_rmse": 0.003955013058945628,
+          "fusion_mean_ey_rmse": 0.003934082256708701,
+          "fusion_mtcn_ratio_ey_rmse": 0.9947077792348663,
+          "mtcn_mean_epsi_rmse": 0.008113135260347123,
+          "fusion_mean_epsi_rmse": 0.008108618374839113,
+          "fusion_mtcn_ratio_epsi_rmse": 0.999443262639773,
+          "mtcn_mean_j_du": 0.3066988398780176,
+          "fusion_mean_j_du": 0.3044276346184898,
+          "fusion_mtcn_ratio_j_du": 0.9925946728053126,
+          "all_three_improve_at_reported_precision": false
+        },
+        {
+          "record_type": "route_mean_audit",
+          "route_id": "P5",
+          "route_condition": "Flat factory logistics",
+          "mtcn_mean_ey_rmse": 0.017531567322817965,
+          "fusion_mean_ey_rmse": 0.013625293702904159,
+          "fusion_mtcn_ratio_ey_rmse": 0.7771862864291859,
+          "mtcn_mean_epsi_rmse": 0.014109759066605016,
+          "fusion_mean_epsi_rmse": 0.01192866158323416,
+          "fusion_mtcn_ratio_epsi_rmse": 0.845419225581741,
+          "mtcn_mean_j_du": 0.437578019471138,
+          "fusion_mean_j_du": 0.06563240945306922,
+          "fusion_mtcn_ratio_j_du": 0.14999018810952464,
+          "all_three_improve_at_reported_precision": true
+        },
+        {
+          "record_type": "route_mean_audit",
+          "route_id": "P6",
+          "route_condition": "Downhill recovery",
+          "mtcn_mean_ey_rmse": 0.019715913367996198,
+          "fusion_mean_ey_rmse": 0.017107003047459268,
+          "fusion_mtcn_ratio_ey_rmse": 0.8676748942926562,
+          "mtcn_mean_epsi_rmse": 0.019022302652685424,
+          "fusion_mean_epsi_rmse": 0.01491196238508737,
+          "fusion_mtcn_ratio_epsi_rmse": 0.7839199416261108,
+          "mtcn_mean_j_du": 0.5089745348353538,
+          "fusion_mean_j_du": 0.5250956662804919,
+          "fusion_mtcn_ratio_j_du": 1.0316737485704526,
+          "all_three_improve_at_reported_precision": false
+        }
+      ],
+      "learned_case_count": 60,
+      "learned_seeds_per_route_method": 10,
+      "deterministic_reference_case_count": 3,
+      "trace_summary_rows": 48785,
+      "same_time_axis_and_truth_within_route": true,
+      "maximum_j_du_terminal_metric_error": 1.1368683772161603e-13,
+      "j_du_time_series_definition": "post-0.5-s cumulative sum of diff(F_cmd)^2 + diff(omega_cmd)^2 divided by the total number of evaluated increments; terminal value equals frozen j_du",
+      "j_du_axis": {
+        "scale": "shared symmetric-log",
+        "linear_threshold": 0.02,
+        "upper_limit": 1.1980429760732398,
+        "all_complete_traces_visible": true
+      },
+      "learned_summary": "pointwise across-seed median with 25th-75th percentile band",
+      "uncertainty_band_interpretation": "method-colored 25th-75th percentile across-seed dispersion, not a 95% confidence interval",
+      "truth_and_conditioned_reference_evaluated_once": true,
+      "zero_grade_and_causal_imu_removed": true,
+      "render_decimation": "none; complete frozen traces retained before pointwise aggregation",
+      "line_style_semantics": {
+        "Truth": "solid",
+        "MTCN-LPV-MPC": "solid",
+        "Fusion-LPV-MPC": "long dashed",
+        "Truth-driven conditioned reference": "dash-dot"
+      },
+      "caption_contract": "P1, P2, and P5 are the routes whose reported ten-seed means improve all three closed-loop measures. Learned curves are pointwise medians with method-colored 25th-75th percentile across-seed bands, not confidence intervals; deterministic references are evaluated once. J_delta_u(t) is the normalized cumulative control-input-increment process quantity, its terminal value equals the frozen J_delta_u metric, and its shared vertical axis uses a symmetric-log scale. Panels are descriptive and formal inference uses all 60 route-seed pairs."
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 12,
+      "expected_primary_panels": 12,
+      "minimum_visible_font_pt": 6.5,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        183.0,
+        119.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            1405
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            118.957
+          ],
+          "nonwhite_fraction": 0.0756
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2811
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            118.999
+          ],
+          "nonwhite_fraction": 0.07397
+        }
+      },
+      "svg_editable_text_elements": 57,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final/Fig09_five_controller_qualitative/qa/fig09_five_controller_qualitative_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "P2 and P5 use the formal route names. All selected learned traces are summarized by pointwise medians and method-colored IQRs, deterministic references are evaluated once, and the four rows match scheduled grade, lateral error, heading error, and normalized cumulative input increments. The shared symlog increment axis retains the complete P2 range while preserving P5 readability; labels, bands, and curves remain non-occluding in color and grayscale."
+  }
+}

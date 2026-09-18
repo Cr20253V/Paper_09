@@ -1,0 +1,163 @@
+{
+  "figure_id": "Fig05_candidate_A_offline_estimator_distribution",
+  "candidate": "A",
+  "generated_utc": "2026-07-28T13:18:43.489658+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "nature-figure",
+    "scientific-visualization",
+    "matplotlib"
+  ],
+  "figure_contract": {
+    "core_conclusion": "The multi-scale delta bank reduces mean and edge-region tail grade errors relative to the same ModernTCN architecture, while ModernTCN-delta retains the best absolute MAE and P95 performance among four estimators.",
+    "archetype": "quantitative comparison with a dominant paired-effect panel",
+    "final_size_mm": [
+      183.0,
+      82.0
+    ],
+    "panel_a": "paired seed effects with formal paired-bootstrap confidence intervals",
+    "panel_b": "absolute ten-seed means with descriptive Student-t intervals"
+  },
+  "frozen_inputs": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/03_offline/offline_case_metrics.csv",
+      "bytes": 89660,
+      "sha256": "12ac98b5920dc0228ea064e781b47b4acbc62942f2f0bdf6ffeafc6d893cd1e2"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/05_A5_statistical_audit/04_phase2/paired_effects.csv",
+      "bytes": 9281,
+      "sha256": "6e8fac046c930dc083b154405530ea025b4e315b5e2338b8ac9fd71b983b9ae4"
+    }
+  ],
+  "source_data": [
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/source_data/fig05_candidate_a_absolute_seed_metrics.csv",
+      "rows": 80,
+      "columns": [
+        "method_id",
+        "method_label",
+        "method_order",
+        "seed",
+        "metric_id",
+        "value_deg"
+      ],
+      "sha256": "c4f010fc7e04cb15335623b8bc974232f926d77bfc8d6759ee871e3e5e80bcf6"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/source_data/fig05_candidate_a_delta_bank_paired_effects.csv",
+      "rows": 20,
+      "columns": [
+        "contrast_id",
+        "target",
+        "comparator",
+        "seed",
+        "metric_id",
+        "effect_deg",
+        "positive_favors"
+      ],
+      "sha256": "e3a276de877433aec87391f127bb449687ad113b8227c510357d14f88f11a387"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/source_data/fig05_candidate_a_statistical_summary.csv",
+      "rows": 10,
+      "columns": [
+        "evidence_type",
+        "method_id",
+        "method_label",
+        "metric_id",
+        "estimate_deg",
+        "ci95_low_deg",
+        "ci95_high_deg",
+        "interval_type",
+        "improved_seed_count",
+        "total_seed_count",
+        "bootstrap_iterations",
+        "bootstrap_seed"
+      ],
+      "sha256": "9f8070a2b3ccf7d16ae775d46506ef3201e962b64927499256bd59322d00cbac"
+    }
+  ],
+  "outputs": [
+    {
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/output/fig05_candidate_a_offline_estimator_distribution.pdf",
+      "bytes": 59372,
+      "sha256": "c7bc0adfbaae5967c84d291974a16d7e13d9220699a79c694c45cb3e24f53f4f"
+    },
+    {
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/output/fig05_candidate_a_offline_estimator_distribution.svg",
+      "bytes": 37547,
+      "sha256": "7ab7d30115bcad7ed99effd67fa82e49da77ca41816186f890adf59cd3863ce5"
+    },
+    {
+      "format": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/output/fig05_candidate_a_offline_estimator_distribution.png",
+      "bytes": 125197,
+      "sha256": "0d40dfd526c97cb77d89de96c8bbc170c6848b3d5faab4280d9f1c3b1ca0f704"
+    },
+    {
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/output/fig05_candidate_a_offline_estimator_distribution.tiff",
+      "bytes": 630044,
+      "sha256": "4c4dedfae89bbb0cc1682c6a13712bb781758101f93786412c180de9e59de3c6"
+    }
+  ],
+  "statistics": {
+    "formal_effect_definition": "ModernTCN-22D minus ModernTCN-delta; positive favors delta",
+    "formal_interval": "paired seed percentile bootstrap, 10000 iterations, seed 20260715",
+    "absolute_interval": "two-sided 95% Student-t interval over ten model seeds",
+    "absolute_metric_scope": "test windows with absolute true grade <= 10 degrees",
+    "edge_metric_scope": "frozen edge-region definition used by the A1 audit"
+  },
+  "automatic_qa": {
+    "status": "PASS",
+    "artist_checks": {
+      "visible_text_count": 39,
+      "minimum_visible_font_pt": 6.0,
+      "material_text_overflow_count": 0,
+      "material_text_overflow": []
+    },
+    "raster_checks": {
+      "png": {
+        "pixels": [
+          2161,
+          968
+        ],
+        "dpi": 300,
+        "physical_size_mm": [
+          182.965,
+          81.957
+        ],
+        "nonwhite_fraction": 0.04309
+      },
+      "tiff": {
+        "pixels": [
+          4322,
+          1937
+        ],
+        "dpi": 600,
+        "physical_size_mm": [
+          182.965,
+          82.0
+        ],
+        "nonwhite_fraction": 0.04017
+      }
+    },
+    "svg_editable_text_elements": 40,
+    "grayscale_preview": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/qa/fig05_candidate_a_offline_estimator_distribution_grayscale.png",
+    "deuteranopia_preview": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/qa/fig05_candidate_a_offline_estimator_distribution_deuteranopia.png"
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_date": "2026-07-28",
+    "checks": [
+      "color PNG inspected at full export resolution",
+      "grayscale preview retains method hierarchy and marker-shape distinctions",
+      "deuteranopia simulation retains the proposed-method emphasis",
+      "edge-region P95 and absolute-range P95 are explicitly separated by panel",
+      "no material label clipping, overlap, or panel collision observed"
+    ]
+  }
+}

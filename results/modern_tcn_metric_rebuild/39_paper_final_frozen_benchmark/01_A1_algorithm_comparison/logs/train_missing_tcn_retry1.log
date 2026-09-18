@@ -1,0 +1,22 @@
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+[A1 TCN] frozen training started 20260715T225752
+[A1 TCN] dataset=E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+[A1 TCN] seeds=[1 7 11 42 202 340 520]
+[A1 TCN] training seed=1
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed1.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6439 | 验证 0.6513 | 主类准确率 0.695 | 转弯准确率 0.493 | 坡度MAE 1.855 deg

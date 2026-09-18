@@ -1,0 +1,19 @@
+{
+  "status": "CHILD_COMPLETE",
+  "case_id": "core_inference__modern_tcn_delta_bank_124",
+  "method_id": "modern_tcn_delta_bank_124",
+  "child_pid": 24692,
+  "completed_at": "2026-07-17T16:35:18.296910+08:00",
+  "formal": false,
+  "warmup_count": 5,
+  "formal_count": 20,
+  "raw_rows": 20,
+  "raw_timing_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\04_validation\\rcpt4_v2\\raw_timing\\core_inference__modern_tcn_delta_bank_124.csv",
+  "raw_timing_sha256": "c0019ce3a08faf4fb83776a03608ad00c8b33b1dc9cd3cbe562a414511fc75d4",
+  "case_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\04_validation\\rcpt4_v2\\cases\\core_inference__modern_tcn_delta_bank_124.json",
+  "case_sha256_before_monitor_augmentation": "c85d40d14bff86de9ed5c7bb5e89a573cc89709d35b9884a72cc95b9b65c07b0",
+  "model_sha256": "45e1fc805ca93c2572d85bf4d90744b7f486b0bddbd7503cd44e9c2b1ee4835e",
+  "authority_model_sha256": "d49238d2a90803a4abbc8ca65f822b3f65f4f77b62be3b9f10227b9e038895f7",
+  "environment_sha256": "",
+  "completion_protocol": "atomic_child_receipt_v1"
+}

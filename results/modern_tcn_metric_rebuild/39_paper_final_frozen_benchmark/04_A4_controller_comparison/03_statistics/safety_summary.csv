@@ -1,0 +1,6 @@
+﻿controller_id,n_cases,safety_failure_count,constraint_violation_case_count,timeout_total,solver_fail_total,force_saturation_case_count,omega_saturation_case_count
+ZS_LPV_MPC,6,0,0,0,0,2,3
+IMU_LPV_MPC,6,0,0,0,0,2,3
+Oracle_LPV_MPC,6,0,0,0,0,0,0
+MTCN_LPV_MPC,60,0,0,0,0,0,16
+Fusion_LPV_MPC,60,0,0,0,0,0,13

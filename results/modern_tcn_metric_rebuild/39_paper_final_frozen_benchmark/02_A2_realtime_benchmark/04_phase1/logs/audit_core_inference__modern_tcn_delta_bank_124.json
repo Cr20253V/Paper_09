@@ -1,0 +1,17 @@
+{
+  "case_id": "core_inference__modern_tcn_delta_bank_124",
+  "rows": 10000,
+  "finite": 10000,
+  "p50_type7": 10.1598,
+  "p95_type7": 12.13784,
+  "p99_type7": 13.097426,
+  "max": 18.2865,
+  "over_10ms_rate": 0.603,
+  "json_p50": 10.1598,
+  "json_p95": 12.138200000000001,
+  "json_p99": 13.098700000000001,
+  "json_max": 18.2865,
+  "json_over": 0.603,
+  "false_watch_rows": 0,
+  "watch_rows": 110
+}

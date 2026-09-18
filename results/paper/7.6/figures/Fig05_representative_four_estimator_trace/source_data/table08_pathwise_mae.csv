@@ -1,0 +1,29 @@
+path_order,path_id,path_label,method_id,method_label,n_seeds,mean_deg,sd_deg,all_paths_definition,is_row_best
+1,p01_factory_logistics_showcase,P1 Factory logistics,modern_tcn_delta_bank_124,ModernTCN-delta,10,0.458445267909,0.104263308514,path-specific values over ten seeds,True
+1,p01_factory_logistics_showcase,P1 Factory logistics,modern_tcn_22d,ModernTCN-22D,10,0.492186444373,0.1561078472,path-specific values over ten seeds,False
+1,p01_factory_logistics_showcase,P1 Factory logistics,gru_22d,GRU-22D,10,0.827325282558,0.408371399323,path-specific values over ten seeds,False
+1,p01_factory_logistics_showcase,P1 Factory logistics,tcn_22d,TCN-22D,10,2.38690532634,0.833352055779,path-specific values over ten seeds,False
+2,p02_sharp_turn_transition,P2 Sharp-turn transition,modern_tcn_delta_bank_124,ModernTCN-delta,10,0.593416407196,0.106513068448,path-specific values over ten seeds,True
+2,p02_sharp_turn_transition,P2 Sharp-turn transition,modern_tcn_22d,ModernTCN-22D,10,0.644921374035,0.0784502361071,path-specific values over ten seeds,False
+2,p02_sharp_turn_transition,P2 Sharp-turn transition,gru_22d,GRU-22D,10,0.698271824004,0.197206510876,path-specific values over ten seeds,False
+2,p02_sharp_turn_transition,P2 Sharp-turn transition,tcn_22d,TCN-22D,10,0.783002333877,0.27557075995,path-specific values over ten seeds,False
+3,p03_long_updown,P3 Long up/down slope,modern_tcn_delta_bank_124,ModernTCN-delta,10,0.791303604822,0.12137388489,path-specific values over ten seeds,False
+3,p03_long_updown,P3 Long up/down slope,modern_tcn_22d,ModernTCN-22D,10,0.879829951835,0.086757160707,path-specific values over ten seeds,False
+3,p03_long_updown,P3 Long up/down slope,gru_22d,GRU-22D,10,0.762711770966,0.150983111109,path-specific values over ten seeds,True
+3,p03_long_updown,P3 Long up/down slope,tcn_22d,TCN-22D,10,0.846428149383,0.232193218894,path-specific values over ten seeds,False
+4,p04_soft_updown_straight_turn,P4 Mild slope-turn coupling,modern_tcn_delta_bank_124,ModernTCN-delta,10,0.0364577501709,0.0624946778012,path-specific values over ten seeds,True
+4,p04_soft_updown_straight_turn,P4 Mild slope-turn coupling,modern_tcn_22d,ModernTCN-22D,10,0.0369212642795,0.0639604381119,path-specific values over ten seeds,False
+4,p04_soft_updown_straight_turn,P4 Mild slope-turn coupling,gru_22d,GRU-22D,10,1.39727915999,0.451283987622,path-specific values over ten seeds,False
+4,p04_soft_updown_straight_turn,P4 Mild slope-turn coupling,tcn_22d,TCN-22D,10,1.23654166972,0.614022053001,path-specific values over ten seeds,False
+5,p05_factory_flat_logistics,P5 Flat factory logistics,modern_tcn_delta_bank_124,ModernTCN-delta,10,0.0873734860849,0.222861572253,path-specific values over ten seeds,False
+5,p05_factory_flat_logistics,P5 Flat factory logistics,modern_tcn_22d,ModernTCN-22D,10,0.0461198778996,0.092138289781,path-specific values over ten seeds,True
+5,p05_factory_flat_logistics,P5 Flat factory logistics,gru_22d,GRU-22D,10,1.20622993761,0.750493024649,path-specific values over ten seeds,False
+5,p05_factory_flat_logistics,P5 Flat factory logistics,tcn_22d,TCN-22D,10,1.24887288508,0.592751152404,path-specific values over ten seeds,False
+6,p06_downhill_after_turn,P6 Downhill recovery,modern_tcn_delta_bank_124,ModernTCN-delta,10,0.570414512444,0.217603987413,path-specific values over ten seeds,True
+6,p06_downhill_after_turn,P6 Downhill recovery,modern_tcn_22d,ModernTCN-22D,10,0.601191225079,0.192949581918,path-specific values over ten seeds,False
+6,p06_downhill_after_turn,P6 Downhill recovery,gru_22d,GRU-22D,10,0.745952414835,0.226514478957,path-specific values over ten seeds,False
+6,p06_downhill_after_turn,P6 Downhill recovery,tcn_22d,TCN-22D,10,0.84623133587,0.517170938421,path-specific values over ten seeds,False
+7,all_paths,All paths,modern_tcn_delta_bank_124,ModernTCN-delta,10,0.422901838105,0.0799803490341,"six-route mean computed within each seed, then mean and SD over ten seeds",True
+7,all_paths,All paths,modern_tcn_22d,ModernTCN-22D,10,0.450195022917,0.0457995547149,"six-route mean computed within each seed, then mean and SD over ten seeds",False
+7,all_paths,All paths,gru_22d,GRU-22D,10,0.939628398327,0.266976530009,"six-route mean computed within each seed, then mean and SD over ten seeds",False
+7,all_paths,All paths,tcn_22d,TCN-22D,10,1.22466361671,0.434285086102,"six-route mean computed within each seed, then mean and SD over ten seeds",False

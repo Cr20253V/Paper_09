@@ -1,0 +1,60 @@
+{
+  "status": "PASS",
+  "candidate_scope": "RKF observer substitution with offline Node44R1 fusion replay; not inserted in manuscript",
+  "fixed_case": "P2 Sharp-turn transition, ModernTCN seed 42, RKF sensor seed 4631",
+  "rkf_configuration": {
+    "R_a_scale": 2.0,
+    "Q_g_scale": 0.5
+  },
+  "alignment": {
+    "runtime_updates": 5200,
+    "time_start_s": 0.01,
+    "time_end_s": 52.0,
+    "time_exact": true,
+    "truth_exact": true
+  },
+  "replay": {
+    "fallback_count": 1320,
+    "fallback_reasons": {
+      "ABS_INNOVATION_GATE": 1093,
+      "TCN_NOT_READY": 227
+    },
+    "rate_limit_count": 82,
+    "nis_downweight_count": 370,
+    "nis_reject_count": 0,
+    "maximum_NIS": 15.831493175239473,
+    "fallback_identity_max_abs_deg": 0.0,
+    "maximum_abs_correction_deg": 0.5
+  },
+  "artist_checks": {
+    "minimum_font_pt": 6.2,
+    "text_overflow_count": 0,
+    "text_overflow": [],
+    "cross_axes_text_overlap_count": 0,
+    "cross_axes_text_overlaps": [],
+    "svg_text_elements": 39
+  },
+  "output_checks": {
+    "final_size_mm": [
+      183.0,
+      112.0
+    ],
+    "png_pixels_300dpi": [
+      2161,
+      1322
+    ],
+    "tiff_pixels_600dpi": [
+      4322,
+      2645
+    ],
+    "tiff_compression": "tiff_lzw",
+    "colorblind_minimum_pair_distance": {
+      "protanopia": 0.37183994361528727,
+      "deuteranopia": 0.32667969114632556
+    },
+    "grayscale_preview": "results/paper/7.6/figures_final_1/Fig08_rkf_ra_x2_qg_x05_mechanism_trace/qa/fig08_rkf_ra_x2_qg_x05_mechanism_trace_grayscale.png",
+    "deuteranopia_preview": "results/paper/7.6/figures_final_1/Fig08_rkf_ra_x2_qg_x05_mechanism_trace/qa/fig08_rkf_ra_x2_qg_x05_mechanism_trace_deuteranopia.png"
+  },
+  "paper_tex_modified": false,
+  "existing_figure_modified": false
+}

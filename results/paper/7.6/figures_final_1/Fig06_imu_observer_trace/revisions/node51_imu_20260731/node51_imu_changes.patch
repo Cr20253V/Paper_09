@@ -1,0 +1,69 @@
+diff --git a/results/paper/7.6/figures_final_1/Fig06_imu_observer_trace/revisions/node51_imu_20260731/baseline/generate_fig06_imu_observer_trace.py b/results/paper/7.6/figures_final_1/Fig06_imu_observer_trace/scripts/generate_fig06_imu_observer_trace.py
+index 9f9af94..734442e 100644
+--- a/results/paper/7.6/figures_final_1/Fig06_imu_observer_trace/revisions/node51_imu_20260731/baseline/generate_fig06_imu_observer_trace.py
++++ b/results/paper/7.6/figures_final_1/Fig06_imu_observer_trace/scripts/generate_fig06_imu_observer_trace.py
+@@ -53,11 +53,12 @@ HEIGHT_MM = 104.0
+ METRIC_START_S = 0.5
+ DECISIVE_TOLERANCE_DEG = 0.10
+ 
+-RKF_SENSITIVITY_ROOT = ROOT / (
+-    "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/"
+-    "15_rkf_ra_covariance_sensitivity/ra_x2_qg_x05"
++RKF_ROOT = ROOT / (
++    "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild"
++)
++RKF_CASE = RKF_ROOT / (
++    "08_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition"
+ )
+-RKF_CASE = RKF_SENSITIVITY_ROOT / "04_rkf_closed_loop/cases/p02_sharp_turn_transition"
+ MTCN_CASE = ROOT / (
+     "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/"
+     "11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition"
+@@ -66,9 +67,9 @@ MTCN_CASE = ROOT / (
+ 
+ def load_source_data() -> tuple[pd.DataFrame, list[Path], dict[str, object]]:
+     rkf_trace_path = RKF_CASE / "trace.csv"
+-    rkf_debug_path = RKF_CASE / "rkf_runtime_debug.csv"
++    rkf_debug_path = RKF_CASE / "node51_runtime_debug.csv"
+     rkf_manifest_path = RKF_CASE / "case_manifest.json"
+-    rkf_protocol_path = RKF_SENSITIVITY_ROOT / "00_protocol_lock/protocol.json"
++    rkf_protocol_path = RKF_ROOT / "00_protocol_lock/protocol.json"
+     mtcn_trace_path = MTCN_CASE / "trace.csv"
+     mtcn_debug_path = MTCN_CASE / "node44r1_runtime_debug.csv"
+ 
+@@ -150,18 +151,12 @@ def load_source_data() -> tuple[pd.DataFrame, list[Path], dict[str, object]]:
+             "difference, where negative values favor the Qualified observer."
+         ),
+         "fixed_case": "P2 sharp-turn transition",
+-        "rkf_sensitivity_variant": "R_a x2 and Q_g x0.5",
+         "rkf_protocol_id": rkf_manifest["protocol_id"],
+-        "rkf_method_id": rkf_manifest["method_id"],
+-        "accel_measurement_covariance_scale": float(
+-            rkf_protocol["accel_measurement_covariance_scale"]
+-        ),
+-        "gyro_process_covariance_scale": float(
+-            rkf_protocol["gyro_process_covariance_scale"]
+-        ),
+-        "sensor_noise_configuration_changed": bool(
+-            rkf_protocol["sensor_noise_configuration_changed"]
++        "rkf_variant": rkf_protocol["rkf_variant"],
++        "stationary_initialization_s": float(
++            rkf_protocol["stationary_initialization_s"]
+         ),
++        "random_sensor_noise": bool(rkf_manifest["random_sensor_noise"]),
+         "three_legend_entries": [
+             "Truth",
+             "ModernTCN-delta",
+diff --git a/results/paper/7.6/figures_final_1/Fig06_imu_observer_trace/revisions/node51_imu_20260731/baseline/paper_v4_final_candidate.tex b/results/paper/Latex/paper_v4_final_candidate.tex
+index 706050b..9c80a78 100644
+--- a/results/paper/7.6/figures_final_1/Fig06_imu_observer_trace/revisions/node51_imu_20260731/baseline/paper_v4_final_candidate.tex
++++ b/results/paper/Latex/paper_v4_final_candidate.tex
+@@ -1185,7 +1185,7 @@ The final closed-loop MTCN-LPV-MPC benchmark achieved mean lateral-error RMS of
+ 
+ The qualified observer evaluated here is a causal RKF-IMU estimator that uses the six-axis accelerometer and gyroscope measurements exclusively. Across the six deterministic closed-loop routes used in RQ1, it achieved a mean scheduled-grade MAE of 1.18210$^{\circ}$. All 62582 logged observer updates were valid, and no constraint violation, solver failure, or timeout was recorded. The same observer is used as the standalone scheduling source in RQ1; fusion-specific calibration and inference are considered separately below.
+ 
+-Figure~\ref{fig:imu_observer_trace} shows the complete 5201-sample, 52-s P2 Sharp-turn transition record obtained by evaluating both estimator branches within the same closed-loop simulation. After excluding the initial 0.5~s, the raw grade-estimation MAE was 1.00461$^{\circ}$ for the qualified observer and 0.62075$^{\circ}$ for ModernTCN-delta. With a 0.1$^{\circ}$ tolerance for a decisive local difference, the qualified observer had lower absolute error on 34.07\% of the evaluated samples, ModernTCN-delta had lower error on 55.95\%, and the remaining 9.98\% were near ties.
++Figure~\ref{fig:imu_observer_trace} shows the complete 5201-sample, 52-s P2 Sharp-turn transition record obtained by evaluating both estimator branches within the same closed-loop simulation. After excluding the initial 0.5~s, the raw grade-estimation MAE was 0.22563$^{\circ}$ for the qualified observer and 0.62075$^{\circ}$ for ModernTCN-delta. With a 0.1$^{\circ}$ tolerance for a decisive local difference, the qualified observer had lower absolute error on 53.54\% of the evaluated samples, ModernTCN-delta had lower error on 25.28\%, and the remaining 21.18\% were near ties.
+ 
+ The qualified observer evaluated here is a causal RKF-IMU estimator that uses the six-axis accelerometer and gyroscope measurements exclusively. Across the six deterministic closed-loop routes used in RQ1, it achieved a mean scheduled-grade MAE of 1.18210$^{\circ}$. All 62582 logged observer updates were valid, and no constraint violation, solver failure, or timeout was recorded. The same observer is used as the standalone scheduling source in RQ1; fusion-specific calibration and inference are considered separately below.
+ 

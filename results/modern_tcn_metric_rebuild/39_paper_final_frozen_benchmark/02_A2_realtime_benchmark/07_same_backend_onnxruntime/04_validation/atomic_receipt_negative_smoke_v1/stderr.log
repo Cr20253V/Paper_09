@@ -1,0 +1,4 @@
+usage: benchmark_ort.py [-h] --method
+                        {modern_tcn_22d,gru_22d,tcn_22d,modern_tcn_delta_bank_124}
+                        --run-dir RUN_DIR [--formal]
+benchmark_ort.py: error: argument --method: invalid choice: 'deliberately_invalid' (choose from 'modern_tcn_22d', 'gru_22d', 'tcn_22d', 'modern_tcn_delta_bank_124')

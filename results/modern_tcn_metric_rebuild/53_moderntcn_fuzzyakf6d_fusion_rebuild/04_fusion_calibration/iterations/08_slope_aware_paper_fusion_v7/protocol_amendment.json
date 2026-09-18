@@ -1,0 +1,50 @@
+{
+  "protocol_id": "node53_v7_slope_aware_paper_fusion_v1",
+  "classification": "RETROSPECTIVE_EXPLORATORY_R2_06_FUSION_BENCHMARK",
+  "status": "LOCKED_BEFORE_V7_DEVELOPMENT_SELECTION",
+  "purpose": "Select a paper-reportable exploratory fusion configuration without the 44R1 qualification gates.",
+  "upstream_read_only": true,
+  "paper_write_allowed": false,
+  "r2_06_parameters_frozen": true,
+  "runtime_truth_read": false,
+  "development_scope": "71 train + 15 validation runs; three-fold run-grouped CV",
+  "this_stage_test_read": false,
+  "this_stage_six_path_read": false,
+  "six_path_results_previously_exposed": true,
+  "selection_objective": [
+    "minimize pooled Fusion/ModernTCN MAE ratio",
+    "require every grouped-CV fold MAE ratio <= 1.0",
+    "require truth-defined development slope-region MAE ratio < 1.0",
+    "limit truth-defined development near-flat MAE increase to <= 0.01 deg"
+  ],
+  "candidate_grid": {
+    "Kmax": [0.7, 0.9, 1.0],
+    "p_help_threshold": [0.6, 0.65],
+    "slope_entry_deg": [0.5, 0.8, 1.0],
+    "slope_exit_factor": 0.6,
+    "innovation_min_deg": [0.25, 0.5],
+    "innovation_max_deg": 2.0,
+    "quality_intercept": 1.0,
+    "quality_slope": 0.5,
+    "quality_floor": 0.5,
+    "correction_limit_deg": 0.5,
+    "correction_rate_limit_deg_s": 5.0
+  },
+  "runtime_slope_proxy": "abs(theta_tcn); stateful entry/exit hysteresis",
+  "gate": "observer valid AND TCN ready AND p_help threshold AND slope hysteresis AND innovation range AND NIS reject",
+  "fallback_identity": "theta_fused = theta_tcn and correction = 0 exactly",
+  "Kmax_rationale": "1.0 is the largest convex observer weight; values above 1 extrapolate beyond R2_06 and are excluded from the paper-oriented grid.",
+  "fixed_safety_contract": {
+    "Ts_s": 0.01,
+    "innovation_gate_deg": 2.0,
+    "nis_downweight": 9.0,
+    "nis_reject": 25.0,
+    "correction_limit_deg": 0.5,
+    "correction_rate_limit_deg_s": 5.0,
+    "guard_deadband_deg": 1.3,
+    "guard_clip_deg": [-10.0, 10.0],
+    "sensor_seed": 4631
+  },
+  "claim_boundary": "Six paths x one seed is descriptive. Paired inference requires six paths x ten fixed model seeds and hierarchical paired bootstrap.",
+  "paper_language": "retrospective exploratory benchmark; R2_06 is not described as a qualified observer"
+}

@@ -1,0 +1,21 @@
+{
+  "route": "P1 Factory logistics",
+  "model_seed": 42,
+  "sensor_seed": 4631,
+  "runtime_samples": 24582,
+  "trace_samples": 24583,
+  "sample_interval_s": 0.01,
+  "alignment_rule": "runtime row i maps to trace row i; t_s=(step-1)*0.01",
+  "active_fraction": 0.05975917337889513,
+  "exact_fallback_fraction": 0.9402408266211049,
+  "active_samples_with_reduced_grade_error_fraction": 0.9407760381211708,
+  "scheduled_grade_mae_deg_after_0p5s_warmup": 0.4074167650368806,
+  "nis_p95_matlab_hazen": 0.2915542629295733,
+  "active_k_eff_p05_matlab_hazen": 0.4728312995509439,
+  "active_k_eff_p95_matlab_hazen": 0.7004916388294967,
+  "fallback_identity_max_abs_rad": 0.0,
+  "window_start_s": 129.95,
+  "window_end_s": 144.94,
+  "window_samples": 1500,
+  "window_active_fraction": 0.5093333333333333
+}

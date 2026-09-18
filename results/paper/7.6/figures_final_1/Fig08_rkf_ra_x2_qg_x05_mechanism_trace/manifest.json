@@ -1,0 +1,73 @@
+{
+  "figure_id": "Fig08_rkf_ra_x2_qg_x05_mechanism_trace",
+  "status": "CANDIDATE_NOT_INSERTED_IN_TEX",
+  "generated_utc": "2026-07-30T10:51:50.480359+00:00",
+  "backend": "Python/matplotlib",
+  "method": "RKF observer substitution followed by offline replay of the frozen Node44R1 fusion contract",
+  "frozen_inputs": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/trace.csv",
+      "bytes": 1698854,
+      "sha256": "269a1168ca93a36c76a2ea3b9e8402a3b335650495d7f9dc6edca59b65bd5a8d"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/node44r1_runtime_debug.csv",
+      "bytes": 2887871,
+      "sha256": "be98e1ee045316926f9148dbdf6b54d81b754f3d512c6c6a82bf5b6cf7e42d6c"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/15_rkf_ra_covariance_sensitivity/ra_x2_qg_x05/04_rkf_closed_loop/cases/p02_sharp_turn_transition/trace.csv",
+      "bytes": 1720594,
+      "sha256": "661c6fee4883c3347123472c8b6026405c1ebde910e93ca1f7705437bc22277e"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/15_rkf_ra_covariance_sensitivity/ra_x2_qg_x05/04_rkf_closed_loop/cases/p02_sharp_turn_transition/rkf_runtime_debug.csv",
+      "bytes": 958263,
+      "sha256": "f35e149cab75ec6966741f5e45a225914fbdac1d5025fdfd45c77538bcd69cc8"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/15_rkf_ra_covariance_sensitivity/ra_x2_qg_x05/04_rkf_closed_loop/cases/p02_sharp_turn_transition/case_manifest.json",
+      "bytes": 3085,
+      "sha256": "69cdb1a4aa5e9cdc494bf98eb9bb7db25bf3912945846318ef401f8a303272a5"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/06_uncertainty_calibration_v3/selected_fusion_config.json",
+      "bytes": 5344,
+      "sha256": "bd708172f993b439625d02f517e0e5a96021cd5dc22bbdb8d3ecaee720f3b7f8"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final_1/Fig08_rkf_ra_x2_qg_x05_mechanism_trace/source_data/fig08_rkf_ra_x2_qg_x05_mechanism_trace_source_data.csv",
+    "rows": 5200,
+    "sha256": "36d3ce1d97965daf6dee8d2f93babeec794c1c13530b0342c6bdbf7f92dba371"
+  },
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig08_rkf_ra_x2_qg_x05_mechanism_trace/output/fig08_rkf_ra_x2_qg_x05_mechanism_trace.pdf",
+      "bytes": 117515,
+      "sha256": "2a24e95f7c809e41df6123240f2ffcbcbdccfbd048094dca8eb820d84c225db2"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig08_rkf_ra_x2_qg_x05_mechanism_trace/output/fig08_rkf_ra_x2_qg_x05_mechanism_trace.svg",
+      "bytes": 626622,
+      "sha256": "02a5ad43be1c6f41e7fa94b4103e7cc02106744e277a0c28c77cf2af551def73"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig08_rkf_ra_x2_qg_x05_mechanism_trace/output/fig08_rkf_ra_x2_qg_x05_mechanism_trace.png",
+      "bytes": 205282,
+      "sha256": "08cb5b8b999f928dd89e894332bfc391cdfd255a70ecb2f07a7405b9e2eda9eb"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig08_rkf_ra_x2_qg_x05_mechanism_trace/output/fig08_rkf_ra_x2_qg_x05_mechanism_trace.tiff",
+      "bytes": 1046410,
+      "sha256": "0456908e3e1a1f927434ccfd647d4b5d69d2757928071342a6cec59fc51d15ba"
+    }
+  ],
+  "qa": {
+    "file": "results/paper/7.6/figures_final_1/Fig08_rkf_ra_x2_qg_x05_mechanism_trace/qa/fig08_rkf_ra_x2_qg_x05_mechanism_trace_qa.json",
+    "status": "PASS",
+    "sha256": "f1c875f13ccd61442547249ebd5a121e1f78317342dbe30915cbaf1b58540537"
+  },
+  "paper_tex_modified": false,
+  "existing_figure_modified": false
+}

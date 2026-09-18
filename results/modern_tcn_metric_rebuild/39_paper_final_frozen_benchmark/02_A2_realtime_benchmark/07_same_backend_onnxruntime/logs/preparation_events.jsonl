@@ -1,0 +1,16 @@
+{"event":"frozen_inventory_verified","status":"PASS","dataset_sha256":"ab5dde32ef3627aa7032a3b4f7632c87cb471287a638f2b14a25a179a660196f"}
+{"event":"matlab_feature_export","status":"PASS","methods":["tcn_22d","gru_22d"],"opset":17,"authority_batch_size":128}
+{"event":"complete_onnx_composition","status":"PASS","outputs":["logits_main","logits_turn","theta_hat"]}
+{"event":"native_equivalence","status":"PASS","windows":3602,"methods":["tcn_22d","gru_22d"]}
+{"event":"modern_existing_consistency","status":"PASS","methods":["modern_tcn_22d","modern_tcn_delta_bank_124"]}
+{"event":"nonformal_smoke","status":"PASS","warmup":5,"repeats":20,"formal":false}
+{"event":"formal_timing","status":"NOT_STARTED","formal_run_count":0}
+{"event":"formal_attempt","status":"HARNESS_FALSE_FAILURE_ATTEMPT_RETAINED","run_id":"20260717_161250","completed_case_count":1,"eligible_for_summary":false}
+{"event":"runner_hotfix","status":"PASS","fixes":["WaitForExit_and_Refresh","guarded_integer_exit_code","per_case_output_gate","failure_receipt","utf8_bom_safe_validation","strict_four_case_validation"]}
+{"event":"formal_attempt","status":"HARNESS_FALSE_FAILURE_ATTEMPT_RETAINED","run_id":"20260717_162640","completed_case_count":1,"eligible_for_summary":false,"cause":"volatile_Process_ExitCode_unavailable"}
+{"event":"runner_hotfix_v2","status":"PASS","success_authority":"atomic_child_receipt_plus_artifact_validation","positive_smoke":"PASS","negative_smoke":"PASS","exit_code_success_gate_removed":true}
+{"event":"runner_hotfix_v2_four_case_controller_smoke","status":"PASS","methods":4,"process_exit_code_used_as_success_gate":false,"raw_sha_gate":"PASS","case_sha_gate":"PASS","stderr_gate":"PASS","short_atomic_temp_names":"PASS"}
+{"event":"formal_run","status":"FORMAL_RUN_COMPLETE","run_id":"20260717_164306","case_count":4,"raw_timing_rows":40000,"validation":"PASS"}
+{"event":"historical_memory_audit","status":"CORRECTED_WITHOUT_LATENCY_RERUN","run_id":"20260717_164306","historical_external_monitor":"INVALID_LAUNCHER_PID","authoritative_source":"actual_python_internal_windows_api"}
+{"event":"future_memory_monitor_fix","status":"PASS","mechanism":"descendant_process_discovery_and_child_receipt_pid_gate","smoke":"04_validation/memory_pid_v2_smoke_pass/memory_pid_smoke_summary.json"}
+{"event":"paper_writing_note","status":"COMPLETE","file":"06_summary/PAPER_WRITING_NOTES_CN.md","scope":"unified_onnxruntime_core_inference","interpretation_guard":"PASS"}

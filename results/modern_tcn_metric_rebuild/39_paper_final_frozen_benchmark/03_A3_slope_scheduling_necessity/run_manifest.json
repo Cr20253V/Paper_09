@@ -1,0 +1,162 @@
+{
+  "task_scope": "A3",
+  "manifest_kind": "execution_run_manifest",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "phase": "COMPLETE",
+  "effective_config": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/00_protocol_lock/effective_config.json",
+  "effective_config_sha256": "db640c68583899c5a057756323a76f8efe48cb923817c36cfa26431179ad8f09",
+  "planned_cases": 18,
+  "completed_cases": 18,
+  "failed_formal_cases": 0,
+  "smoke_complete": 4,
+  "noise_enabled": false,
+  "sensor_noise_seed": null,
+  "process_disturbance_seed": null,
+  "cases": [
+    {
+      "case_id": "ZS_LPV_MPC__p01_factory_logistics_showcase",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_out.mat",
+      "source_file_sha256": "badbab6e58bd7f7ae9cf4157b06c3faa49c4171d473127120ef31b0a022f3bcd",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p01_factory_logistics_showcase/attempt_001/trace.csv",
+      "trace_file_sha256": "2d535efd16d0208f236e692f2d701cec130b0292e984d39d2d64b5d2cf7db717"
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p02_sharp_turn_transition",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_out.mat",
+      "source_file_sha256": "16babc1105a5c549c1520a72da635695fd96c2ce0b87d853e5f69717325d4457",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p02_sharp_turn_transition/attempt_001/trace.csv",
+      "trace_file_sha256": "a0edbba92c0e77642f30aac5d1c3a6a691951d0bbed56423d4ac5f8b4261c2bc"
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p03_long_updown",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/case_out.mat",
+      "source_file_sha256": "7baf6944d8833dbfdf60a939caadcb565ec0d6f87928d52c3d3ee92fad7c4236",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "trace_file_sha256": "22a314cc1b9fc904402800d8edb5c0eaf3903bb4e3da1e0936dbbc7cbcc837ff"
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p04_soft_updown_straight_turn",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_out.mat",
+      "source_file_sha256": "acf885009a46df782467dc800da192e4e176777d8dfc800deda59f604221dc2e",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/trace.csv",
+      "trace_file_sha256": "17d965621db4edd444105064ebefdd5b67de016f7cf216ffdda6f8b09060bb78"
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p05_factory_flat_logistics",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_out.mat",
+      "source_file_sha256": "1953e9809dca9e1c1108cd449aa3d44749270b6ec7d1539895dcbd627f86e84e",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p05_factory_flat_logistics/attempt_001/trace.csv",
+      "trace_file_sha256": "8a48858d5d7ce12ede9e0065112ab8828ed2583e2bec4a317cd0f903f3ad5bf1"
+    },
+    {
+      "case_id": "ZS_LPV_MPC__p06_downhill_after_turn",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/case_out.mat",
+      "source_file_sha256": "28e748fff6a76214cb6f69cfd2f6e87b6def741011a364c555528b534b7ae569",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/ZS_LPV_MPC/p06_downhill_after_turn/attempt_001/trace.csv",
+      "trace_file_sha256": "a68fddd797469656bacdd41fbd77e5eccb2e3827b8db9abd303cf184336ff47f"
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p01_factory_logistics_showcase",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_out.mat",
+      "source_file_sha256": "a5cfbadeb8b1e7244fbd61b0c1fabcb111f2841400a6457837e911e45d50bed2",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p01_factory_logistics_showcase/attempt_001/trace.csv",
+      "trace_file_sha256": "2d9d91b336b4e5512c297df7ceb6b823804b2917dde419e3dac26f069d75c7dd"
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p02_sharp_turn_transition",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_out.mat",
+      "source_file_sha256": "b6a19cdb72964b88fbdcdd480959507ea2449053a4cdf7269368df4115f8f42e",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p02_sharp_turn_transition/attempt_001/trace.csv",
+      "trace_file_sha256": "9bac860144f5ab22a8509ac79e5398341edd8dd560ca477b2025800512f3c5bf"
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p03_long_updown",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/case_out.mat",
+      "source_file_sha256": "73ba5b300e901c65c1527c08ce9573c2eba09c6c387374258fb9406229ea7cb5",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "trace_file_sha256": "39398d7438295b46218201d6579373a12ba02dd58d98a803c9b1789b1d54969e"
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p04_soft_updown_straight_turn",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_out.mat",
+      "source_file_sha256": "0c8eb29e783b0f76282305f63039b926bbb6bec08c4b766a8cb7df3570822f76",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/trace.csv",
+      "trace_file_sha256": "c7c51964af9cb8d2a6880058cd38c81ec4e6a41bc31479df31a2c8a1e5857d09"
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p05_factory_flat_logistics",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_out.mat",
+      "source_file_sha256": "f3b0ac7bf1ff4f2ba6e47d52e4877872f27e666630ff53c4b5b1966dd5297d29",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p05_factory_flat_logistics/attempt_001/trace.csv",
+      "trace_file_sha256": "6263c96346754680519b526ea326d3b3a499fe08aafa362670d274b423dcdb5c"
+    },
+    {
+      "case_id": "IMU_LPV_MPC__p06_downhill_after_turn",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/case_out.mat",
+      "source_file_sha256": "3fdca2d39a71e063e46a53a140468cdfc7ebc6736c744dabb5287da246b908d0",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/IMU_LPV_MPC/p06_downhill_after_turn/attempt_001/trace.csv",
+      "trace_file_sha256": "aa9b3c9dea7f77e53f937969d66f798a2ae957b0bf81671aef1b297dd356391a"
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p01_factory_logistics_showcase",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/case_out.mat",
+      "source_file_sha256": "5f5543d85cdfb5ec17959cc7b53e48578896bd082028597f49e8b1bad813481f",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p01_factory_logistics_showcase/attempt_001/trace.csv",
+      "trace_file_sha256": "661d6b1e1d13bb9353a02bff2b3fa1380eef22707429035bfe3f3b4cd8f2b520"
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p02_sharp_turn_transition",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/case_out.mat",
+      "source_file_sha256": "f33562cc44f3e9d16277dcdaf963692b31df7a12adcfc2f4f3f94b1ce3d88643",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p02_sharp_turn_transition/attempt_001/trace.csv",
+      "trace_file_sha256": "6bf60703b7788039bf8ae0b8dfdd6af6064c24e5e7af2c5fae59bbba4a2c0b15"
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p03_long_updown",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/case_out.mat",
+      "source_file_sha256": "bed2e0e819747aafbb206da72240d220824010fe432d41d75f6a4ee3b520b4ff",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p03_long_updown/attempt_001/trace.csv",
+      "trace_file_sha256": "b07c0df2dc93fb5a3cb523f6dbd71c8eddd1cf482b372d9c6282bcbb575376e3"
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p04_soft_updown_straight_turn",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/case_out.mat",
+      "source_file_sha256": "a71ff93b243a98cd9c9497e0ba1348e01f4a5c313616e4c1c9fff189d47798b4",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p04_soft_updown_straight_turn/attempt_001/trace.csv",
+      "trace_file_sha256": "cdfbecc344741bd9bfe689182890c7ed9e1c8be35a3624284c1ec9c43a767823"
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p05_factory_flat_logistics",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/case_out.mat",
+      "source_file_sha256": "185026f55ab6f201883cf548dca071b2c451e1104bb3a7cb934b3434715fc621",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p05_factory_flat_logistics/attempt_001/trace.csv",
+      "trace_file_sha256": "1daf45381403cc1a64702f82d832d79e10842d60c46a504c075c9490caa409ab"
+    },
+    {
+      "case_id": "Oracle_LPV_MPC__p06_downhill_after_turn",
+      "status": "COMPLETE",
+      "source_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/case_out.mat",
+      "source_file_sha256": "9c37240546107004269dafbe6a070892f51255e774f0715c2f3ed0a93907baf2",
+      "trace_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/03_cases/Oracle_LPV_MPC/p06_downhill_after_turn/attempt_001/trace.csv",
+      "trace_file_sha256": "59ac2510fa3120763987b01abe86cff7873e5eca4001a31e7d615c223dc0f8ad"
+    }
+  ],
+  "completed_at": "2026-07-16T17:40:16.145956+00:00"
+}

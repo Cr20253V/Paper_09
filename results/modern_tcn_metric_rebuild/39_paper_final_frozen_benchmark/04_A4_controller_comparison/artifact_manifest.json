@@ -1,0 +1,178 @@
+{
+  "task_id": "A4",
+  "generated_at": "2026-07-20T01:59:23+08:00",
+  "artifact_count": 34,
+  "scope": "all A4 files except artifact_manifest.json and receipt.json to avoid recursive hashes",
+  "artifacts": [
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/00_protocol_lock/protocol_snapshot.json",
+      "sha256": "b5dcf7907d460904be25d3b9d667c4d38ae8aa314c4eff5bd19a68442e97678e",
+      "bytes": 8043
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/01_inventory/case_availability_matrix.csv",
+      "sha256": "0e2c8de277495edef4c3018e9e4014261e705ea46473f77266995e0b382f9c34",
+      "bytes": 61537
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/01_inventory/compatibility_audit.json",
+      "sha256": "49409a48694dece738e0fbad84c21aecf5c920f13f326b9db15adc08cad81084",
+      "bytes": 2374
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/01_inventory/input_artifact_registry.csv",
+      "sha256": "0f5b2cc34ba67581798dc8f40ce49a9144591839a5a50da8c60841d9978ddb55",
+      "bytes": 22309
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/02_case_table/five_controller_case_table.csv",
+      "sha256": "c097b8d0188333b572070f8ea88ebeb6a645d80b859ea554ec6632725445bdaf",
+      "bytes": 245848
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/02_case_table/five_controller_case_table.jsonl",
+      "sha256": "8238b4a2f8e8a46204d34c66f8b43c899ee8871237eb8012ff0bcd72822532a0",
+      "bytes": 392897
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/02_case_table/supplementary_node42_case_table.csv",
+      "sha256": "75f699aede10dfd5779c40dda78b768ead85cab76f829e75ac17440ba3ab4748",
+      "bytes": 113821
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/03_statistics/bootstrap_ci_results.csv",
+      "sha256": "1398362ce3455a654e0ab6e603f1b7fc35ac1119846e12a2647fc14da854e64e",
+      "bytes": 46565
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/03_statistics/controller_summary.csv",
+      "sha256": "1426cdd6d573e25950efc475dcf9906e7d1929f16a4723eef698da66c099e40a",
+      "bytes": 8357
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/03_statistics/extended_path_summary.csv",
+      "sha256": "0ba90e4a66e43b9559dbf54b6c4352b3b7fc5e04667b46a068255cda50078179",
+      "bytes": 1111
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/03_statistics/paired_case_details.csv",
+      "sha256": "3e48453f878bd7ba5ee2466f4ffd32fc990425bb96e71554d977f0b5245631b8",
+      "bytes": 887204
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/03_statistics/paired_effects.csv",
+      "sha256": "ac9d02697b51fa1dc7d84db22aa3df9fc78bf1312a05993ffa46cefbb773088d",
+      "bytes": 28344
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/03_statistics/path_summary.csv",
+      "sha256": "b77309838408ff0b8f99e751ac56548743bf312d7eee6f7c8b20ac3eb6eb61f8",
+      "bytes": 20578
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/03_statistics/safety_summary.csv",
+      "sha256": "f4e7192d84d3999edc6e4bb6e06426d48bbca74a0fec6f7d431f07de2ebaf356",
+      "bytes": 312
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/03_statistics/worst_case_audit.csv",
+      "sha256": "1aa797adaed55951dbf9e1c7bc5ac4c57c87ff2b7dd1fd7ac07597f38cb5b785",
+      "bytes": 11234
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_1_representative_paths.pdf",
+      "sha256": "cb67f221301264921d0e5c1bd2db84e996c6ba7dee136fb7cdfef3fc52f7bffd",
+      "bytes": 160480
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_1_representative_paths.png",
+      "sha256": "be052f4bd615600c91753edf6a36e1ff2646933dba3e7b4dbaa1468e204f61f7",
+      "bytes": 499126
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_1_representative_paths.svg",
+      "sha256": "8a263efc0a10957df0e47bb6b4a1f9ba548a9cbc8c644ed909196d1a7c2c9f1b",
+      "bytes": 413512
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_1_representative_paths.tiff",
+      "sha256": "5f86779715f2b09355f37c212a57e166d5d0d4cf9219cb104a2a9ea66c97ec4b",
+      "bytes": 76245914
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_2_fusion_vs_mtcn_paired_effects.pdf",
+      "sha256": "1e98455bdbde1054d338eaae4be574489b2bf824ad9e8da62106b1a38712c3ee",
+      "bytes": 47727
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_2_fusion_vs_mtcn_paired_effects.png",
+      "sha256": "19ff0e5330eb12a5043612bdbbc80074f8e57c9e95fbba1ab1f7841fa5bf94ab",
+      "bytes": 149817
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_2_fusion_vs_mtcn_paired_effects.svg",
+      "sha256": "329b23454a03b7979281dd3fe4dd5dff225f4110b0beecd3c50e4fb153f36a98",
+      "bytes": 63523
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_2_fusion_vs_mtcn_paired_effects.tiff",
+      "sha256": "fa5ee5b3e0ccc4b1a2063aa8f53056b322b36b9eca4b153c7ecf83117a8aced7",
+      "bytes": 59146370
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/FIGURE_CONTRACT.md",
+      "sha256": "20e41a5579a809f2d8cf5c15d37a21d3a1a0f892e9f11928292a4757cbf20d08",
+      "bytes": 979
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_data/figure_A4_1_source_data.csv",
+      "sha256": "0de52e438345df4ea0c409cc5bd048fb08d74619bf97d48ddc1816555d4bd2f6",
+      "bytes": 2767446
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_data/figure_A4_2_paired_effects.csv",
+      "sha256": "4d725099e718b9f5fde9719a62b1cabaf64f939c3b344ad19921739014241d99",
+      "bytes": 32493
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/05_verification/verification_report.json",
+      "sha256": "fd84a59dd608458d50242f12614bc15ee080fc9c254bab0aef8274851e33b405",
+      "bytes": 12857
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/A4_experiment_report.md",
+      "sha256": "f653cc832bb4f1149996dab94e34e242f1a44d8581dea39492a5c0a991c996f3",
+      "bytes": 6480
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/decision.json",
+      "sha256": "000f51d0369a5dc3bee1eb1c3bdf0a4fcf31a6b8a69fcd3465c808ee01e52f59",
+      "bytes": 1244
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/MANUAL_EXECUTION_HANDOFF.md",
+      "sha256": "b0725592e3e969f9dec7cde3b3eb6cd389d4138af8167b67281e00396c9cc813",
+      "bytes": 1198
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/run_manifest.json",
+      "sha256": "72c76d8cba97c386e57fd5806b968b88344e4be44904fe4234db4c76d62a1d9a",
+      "bytes": 717
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/task_status.json",
+      "sha256": "3063a2cb8907aef6ac77b015e16dcbfbcf14a1c37d034b550d09891379a940b0",
+      "bytes": 266
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/tools/run_a4.py",
+      "sha256": "c3017bf2aec3c213b5574376fbd8ac913ed585acacf9fb71359c3340176ea154",
+      "bytes": 68126
+    },
+    {
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/tools/test_a4.py",
+      "sha256": "d2052e3f6b72613f3610fb9677b89c82b46b4422a7463423d1d58d440147bd2a",
+      "bytes": 2296
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "status": "HARNESS_FALSE_FAILURE_ATTEMPT_RETAINED",
+  "formal_run_complete": false,
+  "eligible_for_summary": false,
+  "completed_case_count": 1,
+  "expected_case_count": 4,
+  "rerun_required": true
+}
+

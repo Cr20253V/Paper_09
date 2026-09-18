@@ -1,0 +1,81 @@
+{
+  "protocol_id": "node53_v7_exploratory_six_path_seed42_v1",
+  "classification": "RETROSPECTIVE_EXPLORATORY_R2_06_FUSION_BENCHMARK",
+  "status": "LOCKED_FOR_SINGLE_SEED_EXPLORATORY_SIX_PATH",
+  "exploratory_only": true,
+  "qualification_bypassed": true,
+  "formal_allowed": false,
+  "formal_claim_allowed": false,
+  "retrospective_frozen_benchmark": true,
+  "test_read_count": 1,
+  "test_read_limit": 1,
+  "paper_write_allowed": false,
+  "runtime_truth_read": false,
+  "Ts": 0.01,
+  "g": 9.81,
+  "imu_order": [
+    "fx",
+    "fy",
+    "fz",
+    "gx",
+    "gy",
+    "gz"
+  ],
+  "model_seed": 42,
+  "sensor_seed": 4631,
+  "case_count": 6,
+  "paths": [
+    {
+      "path_id": "p01_factory_logistics_showcase",
+      "path_name": "P1 Factory logistics",
+      "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\path_factory_logistics_showcase_theta10_v10.mat"
+    },
+    {
+      "path_id": "p02_sharp_turn_transition",
+      "path_name": "P2 Sharp-turn transition",
+      "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\path_closed_loop_sharp_turn_transition_theta10_v1.mat"
+    },
+    {
+      "path_id": "p03_long_updown",
+      "path_name": "P3 Long up/down",
+      "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\path_closed_loop_long_updown_theta10_v1.mat"
+    },
+    {
+      "path_id": "p04_soft_updown_straight_turn",
+      "path_name": "P4 Mild slope-turn coupling",
+      "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\modern_tcn_showcase\\candidates\\path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1.mat"
+    },
+    {
+      "path_id": "p05_factory_flat_logistics",
+      "path_name": "P5 Flat factory logistics",
+      "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\modern_tcn_showcase\\candidates\\path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1.mat"
+    },
+    {
+      "path_id": "p06_downhill_after_turn",
+      "path_name": "P6 Downhill recovery",
+      "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\factory_targeted_eval\\path_factory_target_downhill_straight_after_turn_v1.mat"
+    }
+  ],
+  "selected_candidate": "V7C25",
+  "Kmax": 1.0,
+  "p_help_threshold": 0.6,
+  "slope_entry_deg": 0.5,
+  "slope_exit_deg": 0.3,
+  "innovation_min_deg": 0.25,
+  "quality_intercept": 1.0,
+  "quality_slope": 0.5,
+  "quality_floor": 0.5,
+  "innovation_gate_deg": 2.0,
+  "nis_downweight": 9.0,
+  "nis_reject": 25.0,
+  "correction_limit_deg": 0.5,
+  "rate_limit_deg_s": 5.0,
+  "guard_deadband_deg": 1.3,
+  "guard_clip_deg": [
+    -10.0,
+    10.0
+  ],
+  "fallback_identity": "theta_fused == theta_tcn and correction == 0",
+  "output_root": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\53_moderntcn_fuzzyakf6d_fusion_rebuild\\08_formal_six_path_exploratory_v7",
+  "stale_case_policy": "preserve under attempts; never overwrite"
+}

@@ -1,0 +1,15 @@
+﻿{
+    "checked_at":  "2026-07-17T16:43:17.9366408+08:00",
+    "project_root":  "E:\\Matlab\\Simulink\\S-Function_16",
+    "allowed_root_pid":  18780,
+    "allowed_process_tree_pids":  [
+                                      18780,
+                                      6852,
+                                      24128
+                                  ],
+    "exclusive":  true,
+    "blocker_count":  0,
+    "blockers":  [
+
+                 ]
+}

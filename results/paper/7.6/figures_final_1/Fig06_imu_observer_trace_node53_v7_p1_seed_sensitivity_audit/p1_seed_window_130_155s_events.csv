@@ -1,0 +1,77 @@
+seed,event_type,start_s,end_s,peak_abs_rate_deg_s
+1,Zero ModernTCN estimate while true grade is nonzero,130.0,136.6,
+1,ModernTCN step transition,136.6,136.61,200.15689893011995
+1,ModernTCN step transition,136.7,136.71,200.2947246770268
+1,Zero ModernTCN estimate while true grade is nonzero,136.71,155.0,
+7,ModernTCN step transition,141.73,141.74,200.86458294166232
+7,Zero ModernTCN estimate while true grade is nonzero,141.74,142.67,
+7,ModernTCN step transition,142.67,142.68,200.96094508481985
+7,ModernTCN step transition,143.42,143.43,200.27934220932892
+7,Zero ModernTCN estimate while true grade is nonzero,143.43,144.9,
+7,ModernTCN step transition,144.9,144.92,200.0225745905671
+7,Zero ModernTCN estimate while true grade is nonzero,144.92,145.43,
+7,ModernTCN step transition,145.43,145.44,200.56197660640575
+7,ModernTCN step transition,145.6,145.61,200.5527810619504
+7,Zero ModernTCN estimate while true grade is nonzero,145.61,155.0,
+11,Zero ModernTCN estimate while true grade is nonzero,130.0,155.0,
+21,Zero ModernTCN estimate while true grade is nonzero,130.0,133.57,
+21,ModernTCN step transition,133.57,133.58,200.1229535506586
+21,ModernTCN step transition,134.09,134.1,200.63671913317717
+21,Zero ModernTCN estimate while true grade is nonzero,134.1,134.54,
+21,ModernTCN step transition,134.54,134.57,200.21154981463295
+21,Zero ModernTCN estimate while true grade is nonzero,134.56,134.56,
+21,ModernTCN step transition,141.74,141.75,200.71014273257063
+21,Zero ModernTCN estimate while true grade is nonzero,141.75,142.75,
+21,ModernTCN step transition,142.75,142.76,200.8460717664484
+21,ModernTCN step transition,145.72,145.73,200.65289670714478
+21,Zero ModernTCN estimate while true grade is nonzero,145.73,155.0,
+42,Zero ModernTCN estimate while true grade is nonzero,130.0,134.0,
+42,ModernTCN step transition,134.0,134.01,200.0115996681792
+42,ModernTCN step transition,134.33,134.34,200.2284523355695
+42,Zero ModernTCN estimate while true grade is nonzero,134.34,135.12,
+42,ModernTCN step transition,135.12,135.13,200.2368171518965
+42,ModernTCN step transition,138.11,138.12,200.19700130142604
+42,Zero ModernTCN estimate while true grade is nonzero,138.12,140.4,
+42,ModernTCN step transition,140.4,140.41,200.19050936925336
+42,ModernTCN step transition,143.94,143.95,200.28229172117008
+42,Zero ModernTCN estimate while true grade is nonzero,143.95,144.14,
+42,ModernTCN step transition,144.14,144.15,201.4754261717077
+42,ModernTCN step transition,144.95,144.96,200.35284908301432
+42,Zero ModernTCN estimate while true grade is nonzero,144.96,150.68,
+42,ModernTCN step transition,150.68,150.69,201.6636640123182
+42,ModernTCN step transition,151.72,151.73,200.85440039396232
+42,Zero ModernTCN estimate while true grade is nonzero,151.73,155.0,
+73,Zero ModernTCN estimate while true grade is nonzero,130.0,136.72,
+73,ModernTCN step transition,136.72,136.73,200.05746629645324
+73,ModernTCN step transition,138.21,138.22,200.49755097366818
+73,Zero ModernTCN estimate while true grade is nonzero,138.22,139.69,
+73,ModernTCN step transition,139.69,139.7,200.37274129304186
+73,ModernTCN step transition,139.76,139.77,200.04720653677415
+73,Zero ModernTCN estimate while true grade is nonzero,139.77,139.8,
+73,ModernTCN step transition,139.8,139.81,200.0637333720956
+73,ModernTCN step transition,141.58,141.59,200.94642987943428
+73,Zero ModernTCN estimate while true grade is nonzero,141.59,143.07,
+73,ModernTCN step transition,143.07,143.08,200.1040364716604
+73,ModernTCN step transition,144.45,144.46,200.25366639437726
+73,Zero ModernTCN estimate while true grade is nonzero,144.46,154.93,
+73,ModernTCN step transition,154.93,154.94,200.54524309071718
+101,ModernTCN step transition,130.21,130.22,200.27761220828125
+101,Zero ModernTCN estimate while true grade is nonzero,130.22,131.27,
+101,ModernTCN step transition,131.27,131.28,200.3821738234777
+101,ModernTCN step transition,131.87,131.88,200.4201373930686
+101,Zero ModernTCN estimate while true grade is nonzero,131.88,132.07,
+101,ModernTCN step transition,132.07,132.09,200.01962642168772
+101,Zero ModernTCN estimate while true grade is nonzero,132.09,132.57,
+101,ModernTCN step transition,132.57,132.58,201.51452604864036
+101,ModernTCN step transition,145.44,145.45,200.5691179236665
+101,Zero ModernTCN estimate while true grade is nonzero,145.45,149.34,
+101,ModernTCN step transition,149.34,149.35,200.0056807868746
+101,ModernTCN step transition,152.34,152.35,200.64410949840723
+101,Zero ModernTCN estimate while true grade is nonzero,152.35,155.0,
+202,ModernTCN step transition,145.62,145.63,200.20902536150587
+202,Zero ModernTCN estimate while true grade is nonzero,145.63,155.0,
+340,Zero ModernTCN estimate while true grade is nonzero,130.0,146.76,
+340,ModernTCN step transition,146.76,146.77,200.69216149405491
+340,ModernTCN step transition,148.92,148.93,200.1552204592895
+340,Zero ModernTCN estimate while true grade is nonzero,148.93,155.0,
+520,Zero ModernTCN estimate while true grade is nonzero,130.0,155.0,

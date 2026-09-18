@@ -1,0 +1,24 @@
+{
+  "required": [
+    "README.md",
+    "A1_experiment_report.md",
+    "00_protocol_lock/protocol_snapshot.json",
+    "00_protocol_lock/a1_config.json",
+    "input_artifact_registry.csv",
+    "model_registry.csv",
+    "missing_cases_before_run.csv",
+    "planned_run_matrix.csv",
+    "03_offline/offline_case_metrics.csv",
+    "04_closed_loop/closed_loop_case_metrics.csv",
+    "05_analysis/bootstrap_results.csv",
+    "05_analysis/worst_paths_and_cases.csv",
+    "run_manifest.json",
+    "artifact_manifest.json",
+    "decision.json",
+    "receipt.json",
+    "task_status.json"
+  ],
+  "raw_offline_case_count": 40,
+  "closed_loop_grid_count": 240,
+  "new_closed_loop_raw_count": 120
+}

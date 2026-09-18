@@ -1,0 +1,16 @@
+{
+  "task_id": "A3",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "case_id": "ZS_LPV_MPC__p02_sharp_turn_transition",
+  "phase": "full",
+  "controller_id": "ZS_LPV_MPC",
+  "theta_mode": 1,
+  "path_id": "p02_sharp_turn_transition",
+  "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\path_closed_loop_sharp_turn_transition_theta10_v1.mat",
+  "path_sha256": "c5c5f33077067f1c98bd319d199cc4f4096aa6fa309f8d692c5662882e5d1f68",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\00_protocol_lock\\a3.slx",
+  "plant_revision": "agv_physics_v2_plantfix",
+  "sensor_noise_seed": [],
+  "process_disturbance_seed": [],
+  "noise_enabled": false
+}

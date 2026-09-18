@@ -1,0 +1,25 @@
+{
+  "status": "PASS_NODE53_V7_EXPLORATORY_MODEL_STRUCTURE",
+  "protocol_id": "node53_v7_exploratory_six_path_seed42_v1",
+  "plant_count": 1,
+  "selector_ok": true,
+  "guard_ok": true,
+  "runtime_truth_read": false,
+  "runtime_truth_token_hits": [
+    false,
+    false,
+    false,
+    false,
+    false
+  ],
+  "sensor_port_dimension": 6,
+  "model_seed": 42,
+  "sensor_seed": 4631,
+  "Kmax": 1,
+  "p_help_threshold": 0.6,
+  "slope_entry_deg": 0.5,
+  "slope_exit_deg": 0.3,
+  "innovation_min_deg": 0.25,
+  "qualification_bypassed": true,
+  "formal_claim_allowed": false
+}

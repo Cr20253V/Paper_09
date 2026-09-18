@@ -1,0 +1,16 @@
+{
+  "task_id": "A3",
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "case_id": "ZS_LPV_MPC__p06_downhill_after_turn",
+  "phase": "full",
+  "controller_id": "ZS_LPV_MPC",
+  "theta_mode": 1,
+  "path_id": "p06_downhill_after_turn",
+  "path_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\paths\\factory_targeted_eval\\path_factory_target_downhill_straight_after_turn_v1.mat",
+  "path_sha256": "c929727187cf8ae08030636e47d2b0a465d2cddaa68f0b8b8b0b8a5ad630ece8",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\00_protocol_lock\\a3.slx",
+  "plant_revision": "agv_physics_v2_plantfix",
+  "sensor_noise_seed": [],
+  "process_disturbance_seed": [],
+  "noise_enabled": false
+}

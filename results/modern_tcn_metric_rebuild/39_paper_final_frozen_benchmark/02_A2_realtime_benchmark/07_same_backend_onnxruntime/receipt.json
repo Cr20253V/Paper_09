@@ -1,0 +1,12 @@
+﻿{
+    "status":  "FORMAL_RUN_COMPLETE",
+    "completed_at":  "2026-07-17T16:43:49.3605515+08:00",
+    "latest_completed_run":  "20260717_164306",
+    "run_directory":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\05_formal\\runs\\20260717_164306",
+    "note":  "Unified ONNX Runtime supplemental benchmark; original MATLAB A2 retained.",
+    "root_summary_finalized":  true,
+    "memory_audit":  "06_summary/memory_audit.json",
+    "historical_external_memory_fields_valid":  false,
+    "authoritative_memory_source":  "actual_python_process_internal_windows_api",
+    "latency_rerun_required":  false
+}

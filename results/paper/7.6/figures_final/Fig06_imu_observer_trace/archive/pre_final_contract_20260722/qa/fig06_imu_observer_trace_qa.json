@@ -1,0 +1,119 @@
+{
+  "figure_id": "fig06_imu_observer_trace",
+  "generated_utc": "2026-07-22T04:11:47.783257+00:00",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "archetype": "quantitative grid",
+    "core_conclusion": "The causal IMU branch provides complementary local grade information, but invalid and valid-yet-nonbeneficial intervals require uncertainty gating and exact fallback rather than unconditional fusion.",
+    "final_size_mm_requested": [
+      183.0,
+      100.0
+    ],
+    "panel_map": {
+      "a": "truth, ModernTCN, causal IMU, and observer uncertainty band",
+      "b": "binary IMU validity and effective gain",
+      "c": "absolute-error difference; negative favors IMU"
+    },
+    "uncertainty_definition": "observer uncertainty band = estimate +/- 1.96*sqrt(variance_imu); not asserted to be a coverage-calibrated confidence interval"
+  },
+  "validation": {
+    "status": "PASS",
+    "trace_samples": 4401,
+    "debug_updates": 4400,
+    "alignment_rule": "debug.step maps exactly to trace.sample_index; initial trace sample retained; no interpolation",
+    "time_start_s": 0.0,
+    "time_end_s": 44.0,
+    "sample_interval_s": 0.009999999999999787,
+    "all_update_plot_fields_finite": true,
+    "variance_nonnegative": true,
+    "interval_counts": {
+      "initial_samples_without_debug_update": 1,
+      "valid_samples": 4301,
+      "invalid_update_samples": 99,
+      "unavailable_or_invalid_samples": 100,
+      "valid_beneficial_samples": 3634,
+      "valid_nonbeneficial_samples": 667
+    },
+    "grade_range_deg": {
+      "truth": [
+        -5.799999999999994,
+        6.600000000000014
+      ],
+      "ModernTCN": [
+        -6.282409685704749,
+        6.209833564568144
+      ],
+      "causal_IMU": [
+        -6.265052371201721,
+        7.531395361728634
+      ]
+    },
+    "output_canvas_geometry": {
+      "requested_size_mm": [
+        183.0,
+        100.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            1181
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            99.991
+          ],
+          "nonwhite_pixel_fraction": 0.09429
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2362
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            99.991
+          ],
+          "nonwhite_pixel_fraction": 0.09124
+        }
+      },
+      "svg_editable_text_elements": 37,
+      "status": "PASS"
+    }
+  },
+  "source_data": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/source_data/fig06_imu_observer_trace_source_data.csv",
+  "raw_sources": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/IMU_ONLY/s42/path_closed_loop_long_updown_theta10_v1/trace.csv",
+      "sha256": "56bea74918f8f08f29a00d805370f6c87e90ed37fc4710a117c12ef55e501dd3"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/IMU_ONLY/s42/path_closed_loop_long_updown_theta10_v1/node40_runtime_debug.csv",
+      "sha256": "5142dddd905f35c27934743894e4bb8f1359ef0d2c5a1270757ede9edaf446d7"
+    }
+  ],
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/output/fig06_imu_observer_trace.svg",
+      "bytes": 580695,
+      "sha256": "370a734fa1baee5e5544fd836b5df5d981a6d5f9e5d258c0d3357e26cdacc112"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/output/fig06_imu_observer_trace.pdf",
+      "bytes": 220983,
+      "sha256": "04ce1256a4405203a077df03381d598ae9d102259b9a7067976b56ad79b44087"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/output/fig06_imu_observer_trace.tiff",
+      "bytes": 975350,
+      "sha256": "5ccd711a18f63c1a585cd28f7cd1fa94a9205ff294d99d54b8f8c768ff73c67c"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig06_imu_observer_trace/output/fig06_imu_observer_trace.png",
+      "bytes": 213174,
+      "sha256": "a7a9a2cc7c16ff6d5171dfda093197f475094066dd6265767f9ccd7601d2d136"
+    }
+  ]
+}

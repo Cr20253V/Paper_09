@@ -1,0 +1,191 @@
+{
+  "figure_id": "Fig06_imu_observer_trace",
+  "status": "CANDIDATE_NOT_YET_INSERTED_IN_TEX",
+  "generated_utc": "2026-08-02T06:33:16.349708+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib"
+  ],
+  "output_root_contract": "formal Fig. 6 P1 candidate in figures_final_1; earlier candidates, paper TeX, and simulation results unchanged",
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild/08_formal_six_path/cases/ADAPTIVE/s42/p01_factory_logistics_showcase/trace.csv",
+      "bytes": 7625934,
+      "sha256": "53fa42156c9955e07b8e3b3cd32fe4c3598944ba87edd0b9be2f2adf569907b3"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild/08_formal_six_path/cases/ADAPTIVE/s42/p01_factory_logistics_showcase/node51_runtime_debug.csv",
+      "bytes": 14507179,
+      "sha256": "ef5c66bb109fa04161586322eb9a3ca0b118205b98c64b3922cc13a66e2afd59"
+    },
+    {
+      "role": "input_3",
+      "file": "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild/08_formal_six_path/cases/ADAPTIVE/s42/p01_factory_logistics_showcase/case_manifest.json",
+      "bytes": 1647,
+      "sha256": "69105e171c116792febe7b74f8f82ad81a9ddc39e5dabf5205fdb6792315e91c"
+    },
+    {
+      "role": "input_4",
+      "file": "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild/00_protocol_lock/protocol.json",
+      "bytes": 2806,
+      "sha256": "a95ee8d2014fcfb5bd3f1cbf642e8d96aaefa94eef5ce9081405b8e4ef4ba21e"
+    },
+    {
+      "role": "input_5",
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p01_factory_logistics_showcase/trace.csv",
+      "bytes": 7464126,
+      "sha256": "9f44209647e5dd87a3449fce27de2ab7022e03c6756f1c720736055729533b64"
+    },
+    {
+      "role": "input_6",
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p01_factory_logistics_showcase/node44r1_runtime_debug.csv",
+      "bytes": 13250655,
+      "sha256": "dd31754c86e0f99ab8e1fe104d939917418e569758e386c43cefd73fa2bbfd48"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_p1_candidate/source_data/fig06_imu_observer_trace_source_data.csv",
+    "rows": 24583,
+    "columns": [
+      "sample_index",
+      "debug_step",
+      "t_s",
+      "theta_true_deg",
+      "theta_mtcn_deg",
+      "theta_rkf_deg",
+      "abs_error_mtcn_deg",
+      "abs_error_rkf_deg",
+      "delta_abs_error_deg",
+      "evaluation_sample",
+      "rkf_better_beyond_tolerance",
+      "mtcn_better_beyond_tolerance",
+      "near_tie"
+    ],
+    "sha256": "8c3dbdc6a6e9f49eb7492b4db7a6759c90df49372b66f47cd4477804c49aba93"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_p1_candidate/output/fig06_imu_observer_trace.pdf",
+      "bytes": 392211,
+      "sha256": "744dc6c24ea936ad0defcd973f00830cc21f91c3e3d402bd0483e8c69a64ee48"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_p1_candidate/output/fig06_imu_observer_trace.svg",
+      "bytes": 1372223,
+      "sha256": "2932c66ee15e82048eed16f41fad51f9105155396421b8cd5c6cd20800ec04ca"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_p1_candidate/output/fig06_imu_observer_trace.png",
+      "bytes": 126519,
+      "sha256": "bb63467192a6a88cbbde2adf79d61c9637fbb2e84ed3602e99ecab832c670d0b"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_p1_candidate/output/fig06_imu_observer_trace.tiff",
+      "bytes": 456562,
+      "sha256": "0857864c234a0cbc892b6c1383686aef8e44e2a93467ca56899d15fb7845f5be"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "caption_contract": "Complete P1 factory-logistics showcase comparing raw observer outputs from ModernTCN-delta (model seed 42) and the Qualified observer (sensor seed 4631). Panel (a) shows grade estimates; panel (b) shows the local absolute-error difference, where negative values favor the Qualified observer.",
+      "fixed_case": "P1 factory logistics showcase",
+      "rkf_protocol_id": "node51_highrisk_suppressed_rkf_moderntcn_fusion_v1",
+      "rkf_variant": "zhu2024_rkf_mu10_pitch_projected_propagation",
+      "stationary_initialization_s": 1.0,
+      "random_sensor_noise": true,
+      "three_legend_entries": [
+        "Truth",
+        "ModernTCN-delta",
+        "Qualified observer"
+      ],
+      "removed_visual_claims": [
+        "RKF uncertainty band",
+        "Initial invalid/unavailable indicator"
+      ],
+      "comparison_scope": "Both estimator branches are treated as outputs from the same closed-loop simulation, with exactly aligned time and truth arrays",
+      "trace_samples": 24583,
+      "observer_updates_per_method": 24582,
+      "alignment_rule": "Both debug.step arrays equal trace sample indices 1..N-1; time and truth arrays are exactly equal; no interpolation, cropping, or downsampling",
+      "time_start_s": 0.0,
+      "time_end_s": 245.82,
+      "metric_initialization_exclusion_s": 0.5,
+      "decisive_tolerance_deg": 0.1,
+      "rkf_raw_observer_mae_deg": 0.21169206612741986,
+      "mtcn_raw_observer_mae_deg": 0.4507146940173191,
+      "rkf_decisive_win_fraction": 0.42758733134961074,
+      "mtcn_decisive_win_fraction": 0.18729874047201728,
+      "near_tie_fraction": 0.385113928178372,
+      "ideal_samplewise_minimum_gain_over_best_fraction": 0.17685865300737147,
+      "error_difference_direction": "negative means the Qualified observer has lower absolute raw observer error than ModernTCN-delta",
+      "rkf_sensor_seed": 4631,
+      "mtcn_model_seed": 42,
+      "panel_count": 2,
+      "paper_tex_modified": false,
+      "simulation_results_modified": false
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 2,
+      "expected_primary_panels": 2,
+      "minimum_visible_font_pt": 6.2,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        89.0,
+        104.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            1051,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.06996
+        },
+        "tiff": {
+          "pixels": [
+            2102,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.06699
+        }
+      },
+      "svg_editable_text_elements": 24,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_p1_candidate/qa/fig06_imu_observer_trace_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "three_entry_legend_layout": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS"
+    },
+    "reviewer_notes": "Reviewed at 89 mm in color and grayscale. The single-row three-entry legend, two-panel layout, and line-style distinctions remain readable."
+  }
+}

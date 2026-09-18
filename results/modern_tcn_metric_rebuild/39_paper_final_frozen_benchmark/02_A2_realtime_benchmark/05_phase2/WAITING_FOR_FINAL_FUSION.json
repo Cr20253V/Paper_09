@@ -1,0 +1,19 @@
+{
+  "task_id": "A2",
+  "phase": 2,
+  "status": "NOT_ELIGIBLE",
+  "reason": "Node38 has not frozen a final Fusion model and wrapper",
+  "required_before_run": [
+    "final Fusion model path and SHA256",
+    "final Fusion wrapper path and SHA256",
+    "Node38 frozen receipt/decision",
+    "environment_sha256 identical to phase 1",
+    "exclusive-machine preflight"
+  ],
+  "pending_cases": [
+    "core_inference__fusion_wrapper",
+    "end_to_end_update__fusion_wrapper",
+    "full_cycle__perception_fusion_mpc"
+  ]
+}
+

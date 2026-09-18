@@ -1,0 +1,178 @@
+{
+  "figure_id": "Fig06_rkf_imu_p2_trace",
+  "status": "CANDIDATE_NOT_YET_INSERTED_IN_TEX",
+  "generated_utc": "2026-07-29T10:44:24.680266+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "output_root_contract": "figures_final_1 only; frozen paper figures and simulation results unchanged",
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/trace.csv",
+      "bytes": 1721564,
+      "sha256": "fb5318e46ac39f4e715641a0ab496b44c1a6d154fa859fdbacc5f4878c135335"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/case_metrics.json",
+      "bytes": 2942,
+      "sha256": "e3782b7780f95ab561ad8a541d610c26a10c84de16bd01a9e7dfa64ddd6da080"
+    },
+    {
+      "role": "input_3",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/case_manifest.json",
+      "bytes": 2503,
+      "sha256": "63880f0d285f74284a50707dfae8648af96a0389b0f462d827cdbd69c13f7041"
+    },
+    {
+      "role": "input_4",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1699880,
+      "sha256": "959554be105a547f46781f8ec29a07f4dca13e938bb9900dbdeedc306e953eb1"
+    },
+    {
+      "role": "input_5",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2468,
+      "sha256": "796bc39c3c402431ceec18cbf71ca5fa2d3d7951768cac587d4f3cf70916c712"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/source_data/fig06_rkf_imu_p2_trace_source_data.csv",
+    "rows": 5201,
+    "columns": [
+      "sample_index",
+      "t_s",
+      "theta_true_deg",
+      "theta_mtcn_deg",
+      "theta_rkf_deg",
+      "abs_error_mtcn_deg",
+      "abs_error_rkf_deg",
+      "delta_abs_error_deg",
+      "rkf_locally_better",
+      "evaluation_sample",
+      "rkf_better_beyond_tolerance",
+      "mtcn_better_beyond_tolerance",
+      "near_tie"
+    ],
+    "sha256": "bd370fc25162923e7002e385c1a2c07f415b2b2dfb575e256b3dd5f4d3d9214c"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/output/fig06_rkf_imu_p2_trace.pdf",
+      "bytes": 117143,
+      "sha256": "50ea207960a9baccb5602b8ab89d89d88a984b491ac591d0ed8e7ed3f8772a5b"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/output/fig06_rkf_imu_p2_trace.svg",
+      "bytes": 300143,
+      "sha256": "c82ea78e0ed55561d2705f088ff4ed3e5bacf2f8e05f82d82c93bd32e5785d8a"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/output/fig06_rkf_imu_p2_trace.png",
+      "bytes": 115277,
+      "sha256": "f921b00e69d9b3a1a890016ba4c227f5c685815feafb14ceb6379909812502bd"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/output/fig06_rkf_imu_p2_trace.tiff",
+      "bytes": 424046,
+      "sha256": "2c330b84ce546e38deb4fc0983bf77f32529cc1653f270bef93fd190ce50593e"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "caption_contract": "Complete P2 sharp-turn transition trace comparing frozen ModernTCN-delta seed 42 with the causal Zhu2024 RKF-IMU closed loop using deterministic sensor seed 4631. Panel (a) shows scheduled grade; panel (b) shows the signed local absolute-error difference, where negative values favor RKF-IMU.",
+      "layout_basis": "Original Fig06_imu_observer_trace style, with its middle gain panel removed and the former panel (c) renumbered as panel (b)",
+      "fixed_case": "P2 sharp-turn transition, ModernTCN seed 42, RKF sensor seed 4631",
+      "trace_samples": 5201,
+      "alignment_rule": "time and truth arrays exactly equal; no interpolation or cropping",
+      "time_start_s": 0.0,
+      "time_end_s": 52.0,
+      "metric_initialization_exclusion_s": 0.5,
+      "local_tie_tolerance_deg": 0.05,
+      "rkf_locally_better_fraction": 0.40166957872257814,
+      "mtcn_locally_better_fraction": 0.40244612696563775,
+      "near_tie_fraction": 0.1958842943117841,
+      "error_difference_direction": "negative means RKF-IMU has lower absolute scheduled-grade error than ModernTCN-delta",
+      "rkf_controller": "NODE46_RKF",
+      "rkf_method": "zhu2024_rkf_mu10",
+      "rkf_sensor_seed": 4631,
+      "rkf_theta_mae_deg": 0.8768256582181103,
+      "mtcn_theta_mae_deg": 0.7908716936375495,
+      "rkf_ey_rmse_m": 0.04321078766015988,
+      "mtcn_ey_rmse_m": 0.0445976814105701,
+      "rkf_epsi_rmse_rad": 0.044107378255381934,
+      "mtcn_epsi_rmse_rad": 0.03609191577804872,
+      "rkf_j_du": 0.4782272933384018,
+      "mtcn_j_du": 0.7865720631096735,
+      "panel_count": 2,
+      "paper_tex_modified": false,
+      "simulation_results_modified": false
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 2,
+      "expected_primary_panels": 2,
+      "minimum_visible_font_pt": 6.2,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        89.0,
+        104.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            1051,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.07003
+        },
+        "tiff": {
+          "pixels": [
+            2102,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.06775
+        }
+      },
+      "svg_editable_text_elements": 25,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/qa/fig06_rkf_imu_p2_trace_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "original_fig06_style_consistency": "PASS"
+    },
+    "reviewer_notes": "Reviewed at 89 mm in color and grayscale. The two-panel layout retains the original Fig06 styling with the RKF trace substituted and the gain panel removed."
+  }
+}

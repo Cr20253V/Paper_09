@@ -1,0 +1,5 @@
+﻿grid_id,expected_count,observed_count,unique_count,missing_count,unexpected_count,duplicate_count,status
+A1_OFFLINE,40,40,40,0,0,0,PASS
+A1_CLOSED_LOOP,240,240,240,0,0,0,PASS
+A3_CLOSED_LOOP,18,18,18,0,0,0,PASS
+A4_CLOSED_LOOP,138,138,138,0,0,0,PASS

@@ -1,0 +1,20 @@
+{
+  "task_id": "A4",
+  "issued_at": "2026-07-20T01:59:23+08:00",
+  "status": "COMPLETE",
+  "decision": "MIXED_FIVE_CONTROLLER_RESULT",
+  "write_boundary_respected": true,
+  "primary_case_count": 138,
+  "supplementary_case_count": 60,
+  "training_executed": false,
+  "simulation_executed": false,
+  "artifact_manifest": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/artifact_manifest.json",
+  "artifact_manifest_sha256": "5a1d64966125975236bb8fc036763e1e7a655a1e1de8d1c262058e59f6ca87cc",
+  "decision_file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/decision.json",
+  "decision_sha256": "000f51d0369a5dc3bee1eb1c3bdf0a4fcf31a6b8a69fcd3465c808ee01e52f59",
+  "report": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/A4_experiment_report.md",
+  "report_sha256": "f653cc832bb4f1149996dab94e34e242f1a44d8581dea39492a5c0a991c996f3",
+  "verification": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/05_verification/verification_report.json",
+  "verification_sha256": "fd84a59dd608458d50242f12614bc15ee080fc9c254bab0aef8274851e33b405",
+  "node42_historical_decision_preserved": "FAIL_NODE42_INNOVATION_DEVELOPMENT"
+}

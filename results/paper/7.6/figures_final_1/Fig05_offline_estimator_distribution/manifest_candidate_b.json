@@ -1,0 +1,164 @@
+{
+  "figure_id": "Fig05_candidate_B_offline_estimator_distribution",
+  "candidate": "B",
+  "generated_utc": "2026-07-29T07:41:34.615319+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "nature-figure",
+    "scientific-visualization",
+    "matplotlib"
+  ],
+  "figure_contract": {
+    "core_conclusion": "Relative to the same ModernTCN architecture using 22 raw inputs, the delta-bank representation reduces central-range grade MAE and edge-region P95 error across matched model seeds, with positive paired-bootstrap confidence intervals.",
+    "archetype": "two-panel Gardner-Altman paired estimation plot",
+    "final_size_mm": [
+      183.0,
+      76.0
+    ],
+    "panel_a": "integrated absolute and paired-effect view for Grade MAE",
+    "panel_b": "integrated absolute and paired-effect view for edge-region P95"
+  },
+  "frozen_inputs": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/03_offline/offline_case_metrics.csv",
+      "bytes": 89660,
+      "sha256": "12ac98b5920dc0228ea064e781b47b4acbc62942f2f0bdf6ffeafc6d893cd1e2"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/05_A5_statistical_audit/04_phase2/paired_effects.csv",
+      "bytes": 9281,
+      "sha256": "6e8fac046c930dc083b154405530ea025b4e315b5e2338b8ac9fd71b983b9ae4"
+    }
+  ],
+  "source_data": [
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/source_data/fig05_candidate_b_absolute_seed_metrics.csv",
+      "rows": 40,
+      "columns": [
+        "metric_id",
+        "method_id",
+        "method_label",
+        "seed",
+        "value_deg"
+      ],
+      "sha256": "378aa4110df04dbed93f0605888f28deac4dc2c17d310e5f6e46da1b81a12e30"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/source_data/fig05_candidate_b_paired_seed_effects.csv",
+      "rows": 20,
+      "columns": [
+        "contrast_id",
+        "metric_id",
+        "seed",
+        "modern_tcn_delta_deg",
+        "modern_tcn_22d_deg",
+        "effect_deg",
+        "effect_definition",
+        "positive_favors"
+      ],
+      "sha256": "1bb9eaea1688fc81f2ece3eb9ca330934cadbf8da02ae3cd657a10e5fca766ba"
+    },
+    {
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/source_data/fig05_candidate_b_statistical_summary.csv",
+      "rows": 6,
+      "columns": [
+        "evidence_type",
+        "metric_id",
+        "estimate_deg",
+        "ci95_low_deg",
+        "ci95_high_deg",
+        "method_id",
+        "method_label",
+        "interval_type",
+        "bootstrap_iterations",
+        "bootstrap_seed"
+      ],
+      "sha256": "e76cc64a1a5af2191a354e1cd7ac0c668c696eb08364b21da3cc75c3872acd0b"
+    }
+  ],
+  "outputs": [
+    {
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/output/fig05_candidate_b_offline_estimator_distribution.pdf",
+      "bytes": 64769,
+      "sha256": "e71c54ee28ee739ef13ad6d47ebcbb1a929043844e2653e2d7d532afae9b9b9b"
+    },
+    {
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/output/fig05_candidate_b_offline_estimator_distribution.svg",
+      "bytes": 44261,
+      "sha256": "cbde499fcd50321f728e1be75edb28b3afc4466b727f7e5676e5d45f43e4b02d"
+    },
+    {
+      "format": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/output/fig05_candidate_b_offline_estimator_distribution.png",
+      "bytes": 169606,
+      "sha256": "f801169b7a2d985027c337a1fc39fb0270d32b11c6bba4e8037444ccd28b461e"
+    },
+    {
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/output/fig05_candidate_b_offline_estimator_distribution.tiff",
+      "bytes": 782090,
+      "sha256": "f2a2373ad9ad20723e5181a3520d654f5d70a80bbe8740804e2fd50c47ef455c"
+    }
+  ],
+  "statistics": {
+    "formal_effect_definition": "ModernTCN-22D minus ModernTCN-delta; positive favors delta",
+    "formal_interval": "paired-seed percentile bootstrap, 10000 iterations, seed 20260715",
+    "absolute_values": "ten matched model-seed observations; diamonds mark arithmetic means",
+    "grade_mae_scope": "test windows with absolute true grade <= 10 degrees",
+    "edge_metric_scope": "frozen edge-region definition used by the A1 audit"
+  },
+  "automatic_qa": {
+    "status": "PASS",
+    "artist_checks": {
+      "visible_text_count": 35,
+      "minimum_visible_font_pt": 6.0,
+      "material_text_overflow_count": 0,
+      "material_text_overflow": [],
+      "material_text_overlap_count": 0,
+      "material_text_overlaps": []
+    },
+    "raster_checks": {
+      "png": {
+        "pixels": [
+          2161,
+          897
+        ],
+        "dpi": 300,
+        "physical_size_mm": [
+          182.965,
+          75.946
+        ],
+        "nonwhite_fraction": 0.06583
+      },
+      "tiff": {
+        "pixels": [
+          4322,
+          1795
+        ],
+        "dpi": 600,
+        "physical_size_mm": [
+          182.965,
+          75.988
+        ],
+        "nonwhite_fraction": 0.06155
+      }
+    },
+    "svg_editable_text_elements": 39,
+    "grayscale_preview": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/qa/fig05_candidate_b_offline_estimator_distribution_grayscale.png",
+    "deuteranopia_preview": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/qa/fig05_candidate_b_offline_estimator_distribution_deuteranopia.png"
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_date": "2026-07-29",
+    "checks": [
+      "color PNG inspected at full export resolution",
+      "all numeric summary text is isolated above the data region",
+      "paired lines, method endpoints, and formal intervals remain visually distinct",
+      "grayscale preview retains method identity through circle/square marker redundancy",
+      "deuteranopia simulation retains separation of the blue and vermillion method colors",
+      "no material label clipping, overlap, or panel collision observed"
+    ]
+  }
+}

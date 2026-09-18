@@ -1,0 +1,47 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "timestamp": "2026-07-17T00:27:04+08:00",
+  "status": "COMPLETE",
+  "output_root": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison",
+  "write_boundary_respected": true,
+  "protected_artifacts": [
+    {
+      "artifact_id": "A0_JSON",
+      "path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\A0_论文最终统一实验配置_20260715.json",
+      "baseline_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+      "current_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+      "unchanged": true
+    },
+    {
+      "artifact_id": "A0_EXPLANATION",
+      "path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\A0_论文最终统一实验配置说明_20260715.md",
+      "baseline_sha256": "44155532ef770dbb5c4817006caa80213cb2ede7390ee8dbcc75085425058173",
+      "current_sha256": "44155532ef770dbb5c4817006caa80213cb2ede7390ee8dbcc75085425058173",
+      "unchanged": true
+    },
+    {
+      "artifact_id": "PAPER_EXPERIMENT_OUTLINE",
+      "path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\7.6\\后续三章实验审计与写作大纲_20260715.md",
+      "baseline_sha256": "a8a0c7a736afcb54812cd419a3a31f716eac2820a1c5fed68c85b9636191b8bc",
+      "current_sha256": "a8a0c7a736afcb54812cd419a3a31f716eac2820a1c5fed68c85b9636191b8bc",
+      "unchanged": true
+    },
+    {
+      "artifact_id": "PAPER_V3_TEX",
+      "path": "E:\\Matlab\\Simulink\\S-Function_16\\results\\paper\\Latex\\paper_v3.tex",
+      "baseline_sha256": "b856735de9374ced14941812a38e0d19fb5de12bd45f1083d2e5ece2d42b494e",
+      "current_sha256": "b856735de9374ced14941812a38e0d19fb5de12bd45f1083d2e5ece2d42b494e",
+      "unchanged": true
+    }
+  ],
+  "protected_artifacts_unchanged": true,
+  "counts": {
+    "models": 40,
+    "offline_cases": 40,
+    "missing_offline_cases": 0,
+    "closed_loop_cases": 240,
+    "missing_closed_loop_cases": 0
+  },
+  "decision_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\decision.json",
+  "manual_runbook": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\MANUAL_RUNBOOK.md"
+}

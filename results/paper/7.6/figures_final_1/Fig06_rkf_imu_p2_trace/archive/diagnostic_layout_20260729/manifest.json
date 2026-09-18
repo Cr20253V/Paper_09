@@ -1,0 +1,199 @@
+{
+  "figure_id": "Fig06_rkf_imu_p2_trace",
+  "status": "CANDIDATE_NOT_YET_INSERTED_IN_TEX",
+  "generated_utc": "2026-07-29T10:29:59.737216+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "output_root_contract": "figures_final_1 only; no overwrite of frozen paper figures or simulation results",
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/trace.csv",
+      "bytes": 1721564,
+      "sha256": "fb5318e46ac39f4e715641a0ab496b44c1a6d154fa859fdbacc5f4878c135335"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/rkf_runtime_debug.csv",
+      "bytes": 958608,
+      "sha256": "80f517b2ce836863d558a3b3fb91e394212399488b0722b0287267cac6dc1bab"
+    },
+    {
+      "role": "input_3",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/case_metrics.json",
+      "bytes": 2942,
+      "sha256": "e3782b7780f95ab561ad8a541d610c26a10c84de16bd01a9e7dfa64ddd6da080"
+    },
+    {
+      "role": "input_4",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/case_manifest.json",
+      "bytes": 2503,
+      "sha256": "63880f0d285f74284a50707dfae8648af96a0389b0f462d827cdbd69c13f7041"
+    },
+    {
+      "role": "input_5",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1699880,
+      "sha256": "959554be105a547f46781f8ec29a07f4dca13e938bb9900dbdeedc306e953eb1"
+    },
+    {
+      "role": "input_6",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/case_metrics.json",
+      "bytes": 2468,
+      "sha256": "796bc39c3c402431ceec18cbf71ca5fa2d3d7951768cac587d4f3cf70916c712"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/source_data/fig06_rkf_imu_p2_trace_source_data.csv",
+    "rows": 5201,
+    "columns": [
+      "sample_index",
+      "debug_step",
+      "t_s",
+      "theta_true_deg",
+      "theta_mtcn_deg",
+      "theta_rkf_deg",
+      "rkf_innovation_norm_mps2",
+      "rkf_external_accel_variance_max_m2ps4",
+      "rkf_covariance_updated",
+      "rkf_anomaly_detected",
+      "rkf_observer_valid",
+      "abs_error_mtcn_deg",
+      "abs_error_rkf_deg",
+      "delta_abs_error_deg",
+      "evaluation_sample",
+      "rkf_locally_better",
+      "mtcn_locally_better",
+      "near_tie"
+    ],
+    "sha256": "212f1b5945d7d539b3a932d0999f50ff8bd6116d5eaa0bf4fdf36eaa5d1dcf10"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/output/fig06_rkf_imu_p2_trace.pdf",
+      "bytes": 144788,
+      "sha256": "a23d40d9b128b7bcc6c96c0924a9607ba2f998cf8f2b116850d260719f9cf8e5"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/output/fig06_rkf_imu_p2_trace.svg",
+      "bytes": 347739,
+      "sha256": "ed2a97ffbb9f33ec010ced4727b58c07b6e59fac6b228ea83bf444401e78d8f5"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/output/fig06_rkf_imu_p2_trace.png",
+      "bytes": 165524,
+      "sha256": "15f438ce57e5b00021b46c102e9246f34cfdd6831473c243786d56c0449648f7"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/output/fig06_rkf_imu_p2_trace.tiff",
+      "bytes": 552004,
+      "sha256": "05106009cbca998edd92862dcafde3d736bda8bceb87b258c0fc696a7697a25e"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "caption_contract": "Complete P2 sharp-turn transition trace comparing frozen ModernTCN-delta seed 42 with the causal Zhu2024 RKF-IMU closed loop using deterministic sensor seed 4631. The trace illustrates local estimator complementarity and does not replace the formal multi-route statistics or claim that the current Fusion controller uses RKF.",
+      "fixed_case": "P2 Sharp-turn transition",
+      "modern_tcn_controller": "NODE40_G0",
+      "modern_tcn_seed": 42,
+      "rkf_controller": "NODE46_RKF",
+      "rkf_method": "zhu2024_rkf_mu10",
+      "rkf_sensor_seed": 4631,
+      "trace_samples": 5201,
+      "rkf_debug_updates": 5200,
+      "alignment_rule": "Both trace time axes and truth arrays are exactly equal; RKF debug.step maps to trace index 1..5200; no interpolation or cropping",
+      "time_start_s": 0.0,
+      "time_end_s": 52.0,
+      "metric_initialization_exclusion_s": 0.5,
+      "evaluation_samples": 5151,
+      "local_tie_tolerance_deg": 0.05,
+      "rkf_locally_better_fraction": 0.40166957872257814,
+      "mtcn_locally_better_fraction": 0.40244612696563775,
+      "near_tie_fraction": 0.1958842943117841,
+      "delta_mean_deg": 0.08595396458056126,
+      "error_difference_direction": "negative means RKF-IMU has lower absolute scheduled-grade error than ModernTCN-delta",
+      "rkf_theta_mae_deg": 0.8768256582181103,
+      "mtcn_theta_mae_deg": 0.7908716936375495,
+      "rkf_ey_rmse_m": 0.04321078766015988,
+      "mtcn_ey_rmse_m": 0.0445976814105701,
+      "rkf_epsi_rmse_rad": 0.044107378255381934,
+      "mtcn_epsi_rmse_rad": 0.03609191577804872,
+      "rkf_j_du": 0.4782272933384018,
+      "mtcn_j_du": 0.7865720631096735,
+      "rkf_covariance_update_count": 9,
+      "rkf_covariance_update_interval_s": [
+        0.01,
+        0.09
+      ],
+      "rkf_observer_invalid_update_count": 0,
+      "middle_panel_semantics": "Innovation norm is in m/s^2; external-acceleration variance is in (m/s^2)^2 and is not an attitude confidence interval",
+      "paper_tex_modified": false,
+      "existing_results_modified": false
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 4,
+      "expected_primary_panels": 3,
+      "minimum_visible_font_pt": 6.0,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        89.0,
+        104.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            1051,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.10492
+        },
+        "tiff": {
+          "pixels": [
+            2102,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.09988
+        }
+      },
+      "svg_editable_text_elements": 41,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace/qa/fig06_rkf_imu_p2_trace_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "Reviewed at the 89 mm target width in color and grayscale; full P2 trace, RKF diagnostics, update markers, and signed local error difference are readable."
+  }
+}

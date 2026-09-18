@@ -1,0 +1,5 @@
+﻿method_id,worst_path_id,worst_path_mean_J_control,worst_seed,worst_seed_mean_J_control,worst_case_seed,worst_case_path_id,worst_case_J_control,gate_failure_count
+modern_tcn_delta_bank_124,p06_downhill_after_turn,1.2096132445927374,520,1.979685114632541,520,p01_factory_logistics_showcase,5.179687092943504,24
+modern_tcn_22d,p01_factory_logistics_showcase,1.0,1,1.0,1,p01_factory_logistics_showcase,1.0,0
+gru_22d,p05_factory_flat_logistics,4331.558628999347,21,3210.905471717879,21,p05_factory_flat_logistics,18586.973770034438,60
+tcn_22d,p01_factory_logistics_showcase,57.285036680131086,21,40.21027098861011,21,p01_factory_logistics_showcase,178.7539353962413,60

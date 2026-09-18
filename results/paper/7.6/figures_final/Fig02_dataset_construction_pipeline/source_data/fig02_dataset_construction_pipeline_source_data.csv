@@ -1,0 +1,12 @@
+stage,stage_id,display,count,split_role,dimension,source_field,source_sha256
+1,templates,51 route templates,51,all,-,dataset/run_table/scene unique,ab5dde32ef3627aa7032a3b4f7632c87cb471287a638f2b14a25a179a660196f
+2,runs,"2 realizations/template
+102 continuous runs",102,all,-,dataset/run_table/scene,ab5dde32ef3627aa7032a3b4f7632c87cb471287a638f2b14a25a179a660196f
+3,split,"Run-level split
+71 train | 15 val | 16 test",102,train/validation/test,71/15/16,dataset/split_info/runs_*,ab5dde32ef3627aa7032a3b4f7632c87cb471287a638f2b14a25a179a660196f
+4,features,"22-D causal dynamics
+features",22,all,22,"input_dim, feature_names",6bb404df7b3fd7b3abb32ef664e0d558e4dc81505e1b2ce7db3decd0116a2457
+5,delta,"Delta bank
+lags 1, 2, 4",3,all,22 x 4 = 88,representations.delta_bank_124,1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911
+6,window,"Causal model input
+128 x 88 window",128,all,128 x 88,"seq_len, augmented_input_dim",6bb404df7b3fd7b3abb32ef664e0d558e4dc81505e1b2ce7db3decd0116a2457

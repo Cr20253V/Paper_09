@@ -1,0 +1,390 @@
+{
+  "protocol_id": "A0_paper_final_unified_protocol_v1",
+  "title_zh": "论文最终统一实验配置",
+  "frozen_at": "2026-07-15",
+  "status": "FROZEN_FOR_EXECUTION",
+  "project_root": "E:/Matlab/Simulink/S-Function_16",
+  "scope": {
+    "purpose": "统一多算法坡度估计、表征消融和LPV-MPC闭环比较的数据、路径、种子、对象、控制器、指标与统计口径",
+    "paper_primary_method": "modern_tcn_delta_bank_124",
+    "primary_method_statement": "delta_bank_124作为论文主方法；现有10种子配对离线结果和Node30六路径均值结果用于支撑该主方法的选定，后续多算法表按本协议补齐并报告真实运行结果",
+    "node10_policy": "采用Node10最终v2阈值作为正式评价判据",
+    "node19_policy": "采用Node19正式确定的六路径与十个模型种子",
+    "paper_tex_mutation": false
+  },
+  "dataset": {
+    "file": "data/tcn/ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat",
+    "sha256": "ab5dde32ef3627aa7032a3b4f7632c87cb471287a638f2b14a25a179a660196f",
+    "contract_file": "data/tcn/ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5_contract.json",
+    "contract_sha256": "6bb404df7b3fd7b3abb32ef664e0d558e4dc81505e1b2ce7db3decd0116a2457",
+    "dataset_version": "diag2steer_Ts0p01_seq128_input22_h0_current_confidence",
+    "plant_revision": "agv_physics_v2_plantfix",
+    "parameter_version": "V4.1",
+    "sample_time_s": 0.01,
+    "sequence_length_steps": 128,
+    "history_duration_s": 1.28,
+    "raw_input_dim": 22,
+    "feature_contract": "passive17_plus_all5",
+    "label_time_policy": "current_window_end",
+    "split_policy": "run_level_no_window_leakage",
+    "scaler_policy": "fit_train_only_apply_val_test_online",
+    "filter_policy": "causal_online_replayable_filters_only",
+    "train_windows": 16529,
+    "validation_windows": 3695,
+    "test_windows": 3602,
+    "train_runs": 71,
+    "validation_runs": 15,
+    "test_runs": 16
+  },
+  "input_representations": {
+    "raw_22d": {
+      "input_dim": 22,
+      "description": "数据集中已经按训练集统计量归一化的22维动力学输入"
+    },
+    "delta_bank_124": {
+      "raw_input_dim": 22,
+      "augmented_input_dim": 88,
+      "formula": "[x_t, clip(x_t-x_{t-1}), clip(x_t-x_{t-2}), clip(x_t-x_{t-4})]",
+      "lag_steps": [1, 2, 4],
+      "lag_times_s": [0.01, 0.02, 0.04],
+      "padding": "edge",
+      "delta_clip_abs": 5.0,
+      "delta_source": "normalized_X"
+    }
+  },
+  "algorithm_comparison": {
+    "primary_end_to_end_comparison": [
+      {
+        "method_id": "modern_tcn_delta_bank_124",
+        "paper_role": "proposed_primary",
+        "architecture": "ModernTCN-small",
+        "input_representation": "delta_bank_124",
+        "input_dim": 88,
+        "training_recipe": {
+          "epochs_max": 120,
+          "batch_size": 256,
+          "learning_rate": 0.001,
+          "weight_decay": 0.0001,
+          "early_stop_patience": 25,
+          "min_epochs": 30,
+          "channels": 64,
+          "blocks": 5,
+          "kernel_size": 31,
+          "dropout": 0.15
+        },
+        "artifact_root": "results/modern_tcn_metric_rebuild/25_lag_representation_repair/02_train_candidates/delta_bank_124",
+        "current_training_seeds": [1, 7, 11, 21, 42, 73, 101, 202, 340, 520],
+        "current_offline_status": "10_seed_complete",
+        "current_six_path_closed_loop_status": "10_seed_complete_in_node30"
+      },
+      {
+        "method_id": "modern_tcn_22d",
+        "paper_role": "same_architecture_representation_baseline",
+        "architecture": "ModernTCN-small",
+        "input_representation": "raw_22d",
+        "input_dim": 22,
+        "artifact_index": "results/modern_tcn_metric_rebuild/19_fair_10seed_selection_and_final_test_path_extension/01_train_modern_tcn_small_10seed/training_summary.csv",
+        "current_training_seeds": [1, 7, 11, 21, 42, 73, 101, 202, 340, 520],
+        "current_offline_status": "10_seed_complete",
+        "current_six_path_closed_loop_status": "10_seed_complete_in_node32"
+      },
+      {
+        "method_id": "gru_22d",
+        "paper_role": "recurrent_baseline",
+        "architecture": "GRU",
+        "input_representation": "raw_22d",
+        "input_dim": 22,
+        "recipe": "inputstats_hidden96_l2",
+        "hidden_size": 96,
+        "num_layers": 2,
+        "dropout": 0.2,
+        "epochs_max": 140,
+        "batch_size": 128,
+        "artifact_index": "results/modern_tcn_metric_rebuild/34_gru_10seed_comparator/01_train_gru_10seed/gru_10seed_training_summary.csv",
+        "current_training_seeds": [1, 7, 11, 21, 42, 73, 101, 202, 340, 520],
+        "current_offline_status": "10_seed_complete",
+        "current_six_path_closed_loop_status": "preflight_complete_full_run_pending"
+      },
+      {
+        "method_id": "tcn_22d",
+        "paper_role": "conventional_temporal_convolution_baseline",
+        "architecture": "TCN",
+        "input_representation": "raw_22d",
+        "input_dim": 22,
+        "recipe": "tcn96_rawtheta_sym",
+        "num_filters": 96,
+        "num_blocks": 6,
+        "kernel_size": 3,
+        "artifact_index": "results/paper/agv_model_parameter_correction_workflow/08_models/stage1_full_gru_tcn_summary.csv",
+        "current_training_seeds": [21, 73, 101],
+        "required_additional_training_seeds": [1, 7, 11, 42, 202, 340, 520],
+        "current_offline_status": "3_of_10_seed_complete",
+        "current_six_path_closed_loop_status": "full_run_pending"
+      }
+    ],
+    "architecture_controlled_subcomparison": {
+      "methods": ["modern_tcn_22d", "gru_22d", "tcn_22d"],
+      "fixed_factors": [
+        "same dataset file and hash",
+        "same run-level split",
+        "same 22D normalized input",
+        "same 128-step history",
+        "same ten seeds",
+        "same offline metric implementation",
+        "same six closed-loop paths",
+        "same plant, LPV database and effective MPC configuration"
+      ],
+      "purpose": "区分网络结构差异，不把delta_bank表征增益计入架构比较"
+    },
+    "representation_ablation": {
+      "primary_pair": ["modern_tcn_22d", "modern_tcn_delta_bank_124"],
+      "paired_seeds": [1, 7, 11, 21, 42, 73, 101, 202, 340, 520],
+      "additional_node30_candidates": ["delta_lag1_44d", "lag_stack_124", "delta_bank_124"],
+      "purpose": "单独量化多尺度差分分支的贡献"
+    }
+  },
+  "seeds": {
+    "model_seeds": [1, 7, 11, 21, 42, 73, 101, 202, 340, 520],
+    "primary_aggregation_unit": "path_by_model_seed",
+    "representative_curve_seed": 42,
+    "representative_curve_seed_rule": "固定用于所有定性曲线；seed42在Node30已完成六路径筛选的delta_bank_124种子中mean_J_control居中（seed340=0.647591、seed42=0.696326、seed7=0.696807），不是按最小指标选择；主结论仍由全部10种子汇总，不能按指标更换展示种子",
+    "sensor_noise_seeds": "freeze_separately_if_used",
+    "process_disturbance_seeds": "freeze_separately_if_used"
+  },
+  "closed_loop_paths": [
+    {
+      "path_id": "p01_factory_logistics_showcase",
+      "file": "data/paths/path_factory_logistics_showcase_theta10_v10.mat",
+      "sha256": "4291e3ad60a5e3dbb79ae60f115c53bc6db71447309c758b97bf539f56e58670",
+      "role": "工厂物流混合路线",
+      "include_in_all_aggregate_tables": true,
+      "include_in_qualitative_figures": true
+    },
+    {
+      "path_id": "p02_sharp_turn_transition",
+      "file": "data/paths/path_closed_loop_sharp_turn_transition_theta10_v1.mat",
+      "sha256": "c5c5f33077067f1c98bd319d199cc4f4096aa6fa309f8d692c5662882e5d1f68",
+      "role": "急转弯与转弯过渡",
+      "include_in_all_aggregate_tables": true,
+      "include_in_qualitative_figures": false
+    },
+    {
+      "path_id": "p03_long_updown",
+      "file": "data/paths/path_closed_loop_long_updown_theta10_v1.mat",
+      "sha256": "ab82393620a90964d3973f42bec9bcdb8ac0733db5db08670d152fded5ca2e08",
+      "role": "长上坡与长下坡动态响应",
+      "include_in_all_aggregate_tables": true,
+      "include_in_qualitative_figures": true
+    },
+    {
+      "path_id": "p04_soft_updown_straight_turn",
+      "file": "data/paths/modern_tcn_showcase/candidates/path_modern_tcn_showcase_candidate_soft_updown_straight_turn_v1.mat",
+      "sha256": "0ceee80c3e6883f803df538a0e3519d2ac14966ab70af5c17e9514dd50fa895d",
+      "role": "缓上/下坡与直道—转弯耦合",
+      "include_in_all_aggregate_tables": true,
+      "include_in_qualitative_figures": true
+    },
+    {
+      "path_id": "p05_factory_flat_logistics",
+      "file": "data/paths/modern_tcn_showcase/candidates/path_modern_tcn_showcase_candidate_factory_flat_logistics_safe_190_v1.mat",
+      "sha256": "8817d10f891dfc8956d676081c946c68714043e541c31ba54c4656fd09d8687e",
+      "role": "平地工厂物流与转向基准",
+      "include_in_all_aggregate_tables": true,
+      "include_in_qualitative_figures": false
+    },
+    {
+      "path_id": "p06_downhill_after_turn",
+      "file": "data/paths/factory_targeted_eval/path_factory_target_downhill_straight_after_turn_v1.mat",
+      "sha256": "c929727187cf8ae08030636e47d2b0a465d2cddaa68f0b8b8b0b8a5ad630ece8",
+      "role": "转弯后下坡与恢复过程",
+      "include_in_all_aggregate_tables": true,
+      "include_in_qualitative_figures": false
+    }
+  ],
+  "path_selection_evidence": {
+    "source_protocol": "results/modern_tcn_metric_rebuild/19_fair_10seed_selection_and_final_test_path_extension/00_protocol_lock/protocol_lock.json",
+    "source_decision": "results/modern_tcn_metric_rebuild/19_fair_10seed_selection_and_final_test_path_extension/09_final_report/final_decision.json",
+    "node30_path_summary": "results/modern_tcn_metric_rebuild/30_rhofmd_lag_rescreen/05_decision/node30_full_closed_loop_path_summary.csv",
+    "observed_summary": "Node30中delta_bank_124在六条路径各自的10种子平均J_control上均低于delta_lag1_44d和lag_stack_124"
+  },
+  "plant": {
+    "revision_id": "agv_physics_v2_plantfix",
+    "revision_definition": "src/core/agv_plant_revision.m",
+    "revision_definition_sha256": "8181017e136db7f6037218c5a38590d70d1b191d6b9f1407781f9275d62b35fc",
+    "closed_loop_s_function_chain": [
+      {
+        "file": "src/core/agv_model_sfunc.m",
+        "sha256": "848e2988038b2f75cebaf8fed8cf174ec1a811109c62fad54100b72be1b72788"
+      },
+      {
+        "file": "src/core/output_eq_ref.m",
+        "sha256": "3af89d6df395042136c5b828aab8b78db53985b84c55384281b9897ce89017df"
+      },
+      {
+        "file": "src/core/state_eq_ref.m",
+        "sha256": "f4ddd25e2a2c005c33a84b3fb49b362196a3aa0be65b3c1d0b8d034826d5304f"
+      },
+      {
+        "file": "src/core/state_eq.m",
+        "sha256": "370753a9c54cb660b67e7ee4486f7f6571f54fca1e3a16bfc87ec47f4e1dc368"
+      },
+      {
+        "file": "src/core/parameters.m",
+        "sha256": "f67f2dc8f75ab3c2d1096d53b71b6b318af533093c4bfe84fd783a2555fd5999"
+      }
+    ],
+    "training_data_generation_chain": [
+      {
+        "file": "src/core/agv_model_sfunc_train_data.m",
+        "sha256": "31f9e2192554e80e414d41b254ee292228c850fd27559da736f0b8c0ad5e3b80"
+      },
+      {
+        "file": "src/core/output_eq_ref_train_data.m",
+        "sha256": "bbd9d8cee651e673e7c29680e3f763f8580a22946f81517db140634fe27a1e79"
+      },
+      {
+        "file": "src/core/state_eq_ref_train_data.m",
+        "sha256": "fcea93d72b0d3635f7bef992bf97a6f9568b2bb9f2bf5edeae5ae2bbda08c4ca"
+      }
+    ],
+    "interpretation": "agv_physics_v2_plantfix是当前修正对象的版本标识，不是另一个独立模型文件；闭环对象对应agv_model_sfunc对output_eq_ref和state_eq_ref的调用链，数据生成使用其train_data对应实现"
+  },
+  "lpv_mpc": {
+    "sample_time_s": 0.01,
+    "prediction_horizon_steps": 150,
+    "prediction_horizon_s": 1.5,
+    "control_horizon_steps": 30,
+    "control_horizon_s": 0.3,
+    "Q": [100, 100, 15, 3],
+    "R": [0.00003, 0.00003],
+    "dR": [0.001, 0.001],
+    "input_min": [-600, -1.2],
+    "input_max": [600, 1.2],
+    "input_delta_min": [-400, -0.9],
+    "input_delta_max": [400, 0.9],
+    "output_min": [-1.0, -0.5, -0.5, -0.3],
+    "output_max": [1.0, 0.5, 0.5, 0.3],
+    "soft_constraint_weight_position": 3000,
+    "soft_constraint_weight_yaw": 3000,
+    "lpv_database_file": "results/paper/agv_model_parameter_correction_workflow/04_lpv_database/lin_agv_db_agv_physics_v2_plantfix.mat",
+    "lpv_database_sha256": "20e79eceb634115346fb062ebe3d7a64aaa777ad149b9a49d473caf65ef46176",
+    "maps_file": "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/maps_best_agv_physics_v2_plantfix_stage1.mat",
+    "maps_sha256": "f7b158ae305d35bd86305d1a98a7154872e00235948f0fc346cf20ffa825d947",
+    "controller_cache_file": "data/models/ctrl.mat",
+    "controller_cache_sha256": "29db93a5eca884d1113873203a602bb57e31e1b1351e7cbe2690d98028a723ef",
+    "effective_entrypoint": "src/core/preloadfcn_v2.m",
+    "rationale": [
+      "在0.01 s采样下，Np=150对应1.5 s预测范围，用于保留路线和坡度变化的前视能力",
+      "Nc=30对应0.3 s控制范围，相比历史Nc=50减少优化自由度和在线求解负担",
+      "P0 oracle-MPC候选在七条同条件路线比较中将最差e_y RMSE由0.071500 m降至0.062131 m，平均e_y RMSE由0.039330 m降至0.037755 m，最差峰值由0.168291 m降至0.152033 m，且无求解失败、约束违规或饱和",
+      "该设置是当前统一运行配置和稳健折中，不表述为全局最优时域"
+    ],
+    "rationale_sources": [
+      "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/p0_controller_entrypoint_sync_report_20260602.md",
+      "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/frozen_vs_p0_oracle_comparison_summary_20260602.md",
+      "results/paper/agv_model_parameter_correction_workflow/06_mpc_retuning/stage1_mpc_candidate_report.md"
+    ]
+  },
+  "evaluation": {
+    "offline_cross_algorithm_primary_metrics": [
+      "theta_mae_deg",
+      "theta_abs_le_10_p95_abs_err_deg"
+    ],
+    "offline_cross_algorithm_secondary_metrics": [
+      "theta_abs_le_10_rmse_deg",
+      "theta_flat_bias_deg",
+      "acc_main",
+      "acc_turn",
+      "acc_turn_transition",
+      "flat_recall",
+      "stall_recall",
+      "slope_recall",
+      "uphill_recall",
+      "downhill_recall"
+    ],
+    "representation_ablation_primary_metrics": [
+      "theta_mae_deg",
+      "theta_edge_p95_abs_err"
+    ],
+    "closed_loop_primary_raw_metrics": [
+      "ey_rmse",
+      "xy_rmse",
+      "epsi_rmse",
+      "j_du",
+      "omega_cmd_rms"
+    ],
+    "closed_loop_secondary_metrics": [
+      "ey_peak",
+      "epsi_peak",
+      "ev_rmse",
+      "constraint_violation_rate",
+      "force_saturation_rate",
+      "omega_saturation_rate",
+      "solver_fail_count",
+      "timeout_count"
+    ],
+    "normalized_control_index": {
+      "name": "J_control_path",
+      "formula": "mean([ey_rmse_ratio, xy_rmse_ratio, epsi_rmse_ratio, j_du_ratio, omega_cmd_rms_ratio])",
+      "estimator_benchmark_reference": "modern_tcn_22d on the same path and effective controller",
+      "controller_source_benchmark_reference": "ZS_LPV_MPC on the same path and effective controller",
+      "report_raw_metrics_alongside": true
+    },
+    "node10_threshold_profiles": {
+      "model_qualification": {
+        "file": "results/modern_tcn_metric_rebuild/10_threshold_recalibration/hard_constraint_thresholds_v2_full_proposed.json",
+        "sha256": "9399406321b0edd3edfac1c95b45a356a61abb32c67c33f3581e430c626d6257"
+      },
+      "closed_loop": {
+        "file": "results/modern_tcn_metric_rebuild/10_threshold_recalibration/hard_constraint_thresholds_v2_closed_loop_proposed.json",
+        "sha256": "3f5eb295c5bd45ccdfc1330012d185e063a179ebdf01bc578a773c853e0b2caa"
+      }
+    },
+    "ranking_and_reporting": {
+      "eligibility": "required seeds and paths complete, finite outputs, no unstable run, Node10 applicable hard gates evaluated",
+      "aggregate_rule": "先按每个模型种子在六路径上聚合，再对10个种子报告均值、中位数、标准差和95% bootstrap置信区间",
+      "paired_effect_rule": "同种子、同路径作配对差值，并报告改善种子数和改善路径数",
+      "worst_case_rule": "主表同时报告最差路径、最差种子和失败数，不能只报告均值",
+      "qualitative_rule": "只展示A0预先固定的三条路径和seed42；图不替代六路径十种子统计",
+      "significance_rule": "仅在预先定义的配对统计和置信区间支持时使用统计显著表述"
+    }
+  },
+  "controller_source_comparison": {
+    "methods": [
+      "ZS_LPV_MPC",
+      "IMU_LPV_MPC",
+      "MTCN_LPV_MPC",
+      "Fusion_LPV_MPC",
+      "Oracle_LPV_MPC"
+    ],
+    "fixed_factors": "same plant, path, initialization, effective MPC configuration and disturbance realization; only slope source changes",
+    "fusion_result_policy": "创新点3未完成时保留Fusion位置并标注待填，不预写正面结果"
+  },
+  "current_primary_method_evidence": {
+    "paired_offline_22d_vs_delta_bank_124": {
+      "theta_mae_deg_mean_22d": 0.653003,
+      "theta_mae_deg_mean_delta_bank_124": 0.598884,
+      "improved_seeds": 8,
+      "total_seeds": 10,
+      "theta_edge_p95_mean_22d": 2.882564,
+      "theta_edge_p95_mean_delta_bank_124": 2.456487,
+      "edge_improved_seeds": 9
+    },
+    "node30_six_path_mean_J_control": {
+      "delta_bank_124": 0.7282661837,
+      "delta_lag1_44d": 0.7860372138,
+      "lag_stack_124": 0.8765887533,
+      "delta_bank_best_mean_on_each_of_six_paths": true
+    }
+  },
+  "required_outputs_for_final_algorithm_table": [
+    "10-seed offline summary for all four methods",
+    "10-seed by 6-path closed-loop case table for all four methods",
+    "method and checkpoint registry with dataset hash",
+    "per-path aggregate table",
+    "per-seed aggregate table",
+    "overall paired-effect table",
+    "runtime and parameter-count table",
+    "complete logs and effective-config manifest"
+  ]
+}

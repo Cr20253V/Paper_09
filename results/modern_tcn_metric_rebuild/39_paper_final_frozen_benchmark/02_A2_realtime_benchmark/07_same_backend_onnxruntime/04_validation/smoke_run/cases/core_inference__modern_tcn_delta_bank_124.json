@@ -1,0 +1,57 @@
+{
+  "case_id": "core_inference__modern_tcn_delta_bank_124",
+  "method_id": "modern_tcn_delta_bank_124",
+  "comparison_group": "representation_plus_architecture",
+  "case_status": "COMPLETE",
+  "formal": false,
+  "batch": 1,
+  "warmup_count": 5,
+  "formal_count": 20,
+  "input_shape": [
+    1,
+    128,
+    88
+  ],
+  "input_dtype": "float32",
+  "input_contiguous": "C",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\25_lag_representation_repair\\03_onnx_and_smoke\\delta_bank_124\\seed42\\modern_tcn_delta_bank_124_seed42.onnx",
+  "model_sha256": "45e1fc805ca93c2572d85bf4d90744b7f486b0bddbd7503cd44e9c2b1ee4835e",
+  "model_file_bytes": 578793,
+  "parameter_count": 145202,
+  "runtime": "onnxruntime",
+  "runtime_version": "1.23.2",
+  "provider": "CPUExecutionProvider",
+  "intra_op_num_threads": 1,
+  "inter_op_num_threads": 1,
+  "execution_mode": "ORT_SEQUENTIAL",
+  "graph_optimization_level": "ORT_ENABLE_ALL",
+  "timer": "time.perf_counter_ns",
+  "p50_ms": 0.4017,
+  "p95_ms": 0.45278500000000005,
+  "p99_ms": 0.5513569999999998,
+  "max_ms": 0.576,
+  "over_10ms_count": 0,
+  "over_10ms_rate": 0.0,
+  "memory_before_session": {
+    "working_set_bytes": 219262976,
+    "peak_working_set_bytes": 422055936,
+    "private_bytes": 975736832,
+    "peak_pagefile_bytes": 1179070464
+  },
+  "memory_before_timing": {
+    "working_set_bytes": 226308096,
+    "peak_working_set_bytes": 422055936,
+    "private_bytes": 978845696,
+    "peak_pagefile_bytes": 1179070464
+  },
+  "memory_after_timing": {
+    "working_set_bytes": 227000320,
+    "peak_working_set_bytes": 422055936,
+    "private_bytes": 978845696,
+    "peak_pagefile_bytes": 1179070464
+  },
+  "peak_working_set_delta_from_before_session_bytes": 0,
+  "raw_timing_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\04_validation\\smoke_run\\raw_timing\\core_inference__modern_tcn_delta_bank_124.csv",
+  "python": "3.10.9",
+  "python_executable": "E:\\Matlab\\Simulink\\S-Function_16\\.venv\\Scripts\\python.exe"
+}

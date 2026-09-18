@@ -1,0 +1,7 @@
+{
+  "status": "SMOKE_FAILED_AND_RETAINED",
+  "formal": false,
+  "eligible_for_summary": false,
+  "cause": "The first atomic temporary basename appended the full final basename and PID; this deliberately long smoke path crossed the Windows legacy path-length boundary.",
+  "resolution": "Atomic temporary basenames were shortened to PID-only names before repeating the four-case controller smoke in a new directory."
+}

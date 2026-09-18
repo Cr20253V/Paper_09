@@ -1,0 +1,6 @@
+case_id,comparison_group,method_id,input_shape,dtype,batch,warmup_count,formal_count,backend,threads,status
+core_inference__modern_tcn_22d,architecture_only,modern_tcn_22d,"[1,128,22]",float32,1,500,10000,onnxruntime_cpu,1,PLANNED
+core_inference__gru_22d,architecture_only,gru_22d,"[1,128,22]",float32,1,500,10000,onnxruntime_cpu,1,PLANNED
+core_inference__tcn_22d,architecture_only,tcn_22d,"[1,128,22]",float32,1,500,10000,onnxruntime_cpu,1,PLANNED
+core_inference__modern_tcn_delta_bank_124,representation_plus_architecture,modern_tcn_delta_bank_124,"[1,128,88]",float32,1,500,10000,onnxruntime_cpu,1,PLANNED
+

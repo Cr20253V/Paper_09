@@ -1,0 +1,7 @@
+evidence_type,metric_id,estimate_deg,ci95_low_deg,ci95_high_deg,method_id,method_label,interval_type,bootstrap_iterations,bootstrap_seed
+absolute_mean,grade_mae_abs_le_10_deg,0.598884171012998,,,modern_tcn_delta_bank_124,ModernTCN-delta,not displayed,,
+absolute_mean,grade_mae_abs_le_10_deg,0.653002856522528,,,modern_tcn_22d,ModernTCN-22D,not displayed,,
+formal_paired_effect,grade_mae_abs_le_10_deg,0.05411868550953,0.0060845895272842,0.101803353488745,modern_tcn_delta_bank_124_vs_modern_tcn_22d,ModernTCN-22D - ModernTCN-delta,paired-seed percentile bootstrap,10000,20260715
+absolute_mean,edge_p95_abs_error_deg,2.45648768636374,,,modern_tcn_delta_bank_124,ModernTCN-delta,not displayed,,
+absolute_mean,edge_p95_abs_error_deg,2.88256436581104,,,modern_tcn_22d,ModernTCN-22D,not displayed,,
+formal_paired_effect,edge_p95_abs_error_deg,0.426076679447302,0.185169891465037,0.709866810186854,modern_tcn_delta_bank_124_vs_modern_tcn_22d,ModernTCN-22D - ModernTCN-delta,paired-seed percentile bootstrap,10000,20260715

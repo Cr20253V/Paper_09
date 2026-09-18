@@ -1,0 +1,12 @@
+﻿{
+    "status":  "FORMAL_RUN_FAILED_ATTEMPT_RETAINED",
+    "failed_at":  "2026-07-17T16:26:48.6604984+08:00",
+    "run_id":  "20260717_162640",
+    "run_directory":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\05_formal\\runs\\20260717_162640",
+    "active_method":  "modern_tcn_22d",
+    "error":  "Child process exit code is unavailable after WaitForExit/Refresh (PID=23272).",
+    "completed_case_files":  [
+                                 "core_inference__modern_tcn_22d.json"
+                             ],
+    "note":  "This timestamped attempt is retained and is not eligible for formal summary unless all four cases and final validation complete."
+}

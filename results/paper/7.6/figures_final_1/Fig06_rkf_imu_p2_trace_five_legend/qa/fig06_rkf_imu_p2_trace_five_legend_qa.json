@@ -1,0 +1,201 @@
+{
+  "figure_id": "Fig06_rkf_imu_p2_trace_five_legend",
+  "status": "CANDIDATE_NOT_YET_INSERTED_IN_TEX",
+  "generated_utc": "2026-07-29T11:07:09.824967+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "RKF covariance replay"
+  ],
+  "output_root_contract": "new five-legend directory only; existing figure outputs unchanged",
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/trace.csv",
+      "bytes": 1721564,
+      "sha256": "fb5318e46ac39f4e715641a0ab496b44c1a6d154fa859fdbacc5f4878c135335"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/rkf_runtime_debug.csv",
+      "bytes": 958608,
+      "sha256": "80f517b2ce836863d558a3b3fb91e394212399488b0722b0287267cac6dc1bab"
+    },
+    {
+      "role": "input_3",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/12_rkf_six_path_benchmark/04_rkf_closed_loop/cases/p02_sharp_turn_transition/case_manifest.json",
+      "bytes": 2503,
+      "sha256": "63880f0d285f74284a50707dfae8648af96a0389b0f462d827cdbd69c13f7041"
+    },
+    {
+      "role": "input_4",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/trace.csv",
+      "bytes": 1699880,
+      "sha256": "959554be105a547f46781f8ec29a07f4dca13e938bb9900dbdeedc306e953eb1"
+    },
+    {
+      "role": "input_5",
+      "file": "results/modern_tcn_metric_rebuild/40_legal_imu_uncertainty_fusion/04_cases/nominal/G0/s42/path_closed_loop_sharp_turn_transition_theta10_v1/node40_runtime_debug.csv",
+      "bytes": 1223863,
+      "sha256": "2d49e125063391272f4727a696318a7db110b5d5a0f49557c82d8ad4cc42a8b5"
+    },
+    {
+      "role": "input_6",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/11_rkf_trial/tools/node45r3_rkf_estimator.m",
+      "bytes": 5746,
+      "sha256": "c190866dc11866baa630bf06c6f98fcbb891dd40b0235987e48cf93431f520d0"
+    },
+    {
+      "role": "input_7",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/11_rkf_trial/tools/node45r3_rkf_config.m",
+      "bytes": 1192,
+      "sha256": "3be172f1978ea53aa48c1bcb1051a541b2d614915e2b2ba2675e8e4dc55d8e0c"
+    },
+    {
+      "role": "input_8",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/11_rkf_trial/tools/node45r3_runtime_selector.m",
+      "bytes": 2018,
+      "sha256": "e4acf15401413f3c035677397aa6dc334ca5f7e976a09df405be5c27a9a18f9a"
+    },
+    {
+      "role": "input_9",
+      "file": "results/modern_tcn_metric_rebuild/45_imu_only_five_method_comparison/11_rkf_trial/tools/node45r3_trial_config.m",
+      "bytes": 1493,
+      "sha256": "cb713c7f8a068bb51177d433229012ffcb549a702a020916a1b6e592cd84068d"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace_five_legend/source_data/fig06_rkf_imu_p2_trace_five_legend_source_data.csv",
+    "rows": 5201,
+    "columns": [
+      "sample_index",
+      "debug_step",
+      "t_s",
+      "theta_true_deg",
+      "theta_mtcn_deg",
+      "theta_rkf_deg",
+      "rkf_theta_variance_rad2",
+      "rkf_observer_valid",
+      "observer_update_available",
+      "rkf_uncertainty_halfwidth_deg",
+      "delta_abs_error_deg",
+      "rkf_locally_better"
+    ],
+    "sha256": "8370da85c86020bd920573dc1cb5b00a8e09e5e0d9cc1e7b8604a91365163dbd"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace_five_legend/output/fig06_rkf_imu_p2_trace_five_legend.pdf",
+      "bytes": 224299,
+      "sha256": "b2d74660865726add980e091f78444e705dca5be7282d6324afa8f93e94d56c3"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace_five_legend/output/fig06_rkf_imu_p2_trace_five_legend.svg",
+      "bytes": 589865,
+      "sha256": "6396bb8f508f0c55372e5b764ed9d6c1661966041fe05cd1ae09250e974c05d5"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace_five_legend/output/fig06_rkf_imu_p2_trace_five_legend.png",
+      "bytes": 127040,
+      "sha256": "93d48e956097c43f9d40017f46466974a33e525df9aa25b05810ddf003f5d34d"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace_five_legend/output/fig06_rkf_imu_p2_trace_five_legend.tiff",
+      "bytes": 461408,
+      "sha256": "725bdc52f1a34c5e6800c83cd21f2361216cdd11a39ddedc5f61ce485976f45f"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "caption_contract": "Complete P2 observer-output trace for ModernTCN-delta seed 42 and Zhu2024 RKF-IMU sensor seed 4631. The shaded band is the replayed linearized RKF state uncertainty, estimate +/- 1.96 sqrt(var(theta)); it is not a calibrated coverage claim.",
+      "five_legend_entries": [
+        "Truth",
+        "ModernTCN-delta",
+        "Zhu2024 RKF-IMU",
+        "RKF linearized uncertainty +/-1.96 sqrt(var(theta))",
+        "Invalid / unavailable"
+      ],
+      "panel_count": 2,
+      "middle_panel_removed": true,
+      "fixed_case": "P2 sharp-turn transition, ModernTCN seed 42, RKF sensor seed 4631",
+      "trace_samples": 5201,
+      "debug_updates_per_observer": 5200,
+      "alignment_rule": "Both debug.step arrays equal trace sample indices 1..5200; time and truth arrays are exactly equal; no interpolation or cropping",
+      "rkf_covariance_replay_definition": "Exact deterministic replay of node45r3_rkf_estimator.m including 100 stationary initialization updates; var(theta)=J_theta P J_theta^T",
+      "rkf_replay_max_abs_theta_error_deg": 5.247915224414803e-14,
+      "rkf_uncertainty_halfwidth_min_deg": 0.05848993752339196,
+      "rkf_uncertainty_halfwidth_max_deg": 0.07559756407482254,
+      "uncertainty_calibrated_coverage_claim": false,
+      "invalid_or_unavailable_samples": 1,
+      "valid_observer_updates": 5200,
+      "error_difference_direction": "negative means RKF-IMU has lower absolute raw observer error than ModernTCN-delta",
+      "time_start_s": 0.0,
+      "time_end_s": 52.0,
+      "paper_tex_modified": false,
+      "existing_figure_outputs_modified": false,
+      "rkf_sensor_seed": 4631
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 2,
+      "expected_primary_panels": 2,
+      "minimum_visible_font_pt": 6.2,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        89.0,
+        104.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            1051,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.07512
+        },
+        "tiff": {
+          "pixels": [
+            2102,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.07216
+        }
+      },
+      "svg_editable_text_elements": 29,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final_1/Fig06_rkf_imu_p2_trace_five_legend/qa/fig06_rkf_imu_p2_trace_five_legend_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "five_entry_legend_layout": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS"
+    },
+    "reviewer_notes": "Reviewed at 89 mm in color and grayscale. The five-entry legend, two panels, replayed RKF uncertainty band, and initial unavailable interval are readable."
+  }
+}

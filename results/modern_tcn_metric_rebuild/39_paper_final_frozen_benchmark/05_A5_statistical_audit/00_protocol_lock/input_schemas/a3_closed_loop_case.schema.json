@@ -1,0 +1,185 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "A3 deterministic or preregistered-noise path result",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "const": "A3"
+    },
+    "protocol_id": {
+      "type": "string",
+      "const": "A0_paper_final_unified_protocol_v1"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_status": {
+      "type": "string",
+      "enum": [
+        "COMPLETE",
+        "FAILED",
+        "TIMEOUT",
+        "INVALID",
+        "MISSING",
+        "NOT_APPLICABLE",
+        "NOT_ELIGIBLE"
+      ]
+    },
+    "method_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "controller_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "sensor_noise_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "process_disturbance_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "path_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "model_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "path_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "path_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "plant_revision": {
+      "type": "string",
+      "const": "agv_physics_v2_plantfix"
+    },
+    "effective_config_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "source_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_file_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "ey_rmse": {
+      "type": "number"
+    },
+    "epsi_rmse": {
+      "type": "number"
+    },
+    "j_du": {
+      "type": "number"
+    },
+    "xy_rmse": {
+      "type": "number"
+    },
+    "omega_cmd_rms": {
+      "type": "number"
+    },
+    "ey_peak": {
+      "type": "number"
+    },
+    "epsi_peak": {
+      "type": "number"
+    },
+    "ev_rmse": {
+      "type": "number"
+    },
+    "constraint_violation_rate": {
+      "type": "number"
+    },
+    "force_saturation_rate": {
+      "type": "number"
+    },
+    "omega_saturation_rate": {
+      "type": "number"
+    },
+    "solver_fail_count": {
+      "type": "number"
+    },
+    "timeout_count": {
+      "type": "number"
+    },
+    "constraint_penalty": {
+      "type": "number"
+    },
+    "theta_sched_mae_deg": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "task_id",
+    "protocol_id",
+    "case_id",
+    "case_status",
+    "plant_revision",
+    "effective_config_sha256",
+    "source_file",
+    "source_file_sha256",
+    "controller_id",
+    "path_id",
+    "path_file",
+    "path_sha256",
+    "ey_rmse",
+    "epsi_rmse",
+    "j_du"
+  ]
+}

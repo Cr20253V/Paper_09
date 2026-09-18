@@ -1,0 +1,428 @@
+[A1 TCN] frozen training started 20260715T225752
+[A1 TCN] dataset=E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+[A1 TCN] seeds=[1 7 11 42 202 340 520]
+[A1 TCN] training seed=1
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed1.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6439 | 验证 0.6513 | 主类准确率 0.695 | 转弯准确率 0.493 | 坡度MAE 1.855 deg
+[A1 TCN] frozen training started 20260715T230511
+[A1 TCN] dataset=E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+[A1 TCN] seeds=[1 7 11 42 202 340 520]
+[A1 TCN] training seed=1
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed1.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6439 | 验证 0.6513 | 主类准确率 0.695 | 转弯准确率 0.493 | 坡度MAE 1.855 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5279 | 验证 0.5845 | 主类准确率 0.713 | 转弯准确率 0.523 | 坡度MAE 1.535 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5023 | 验证 0.5627 | 主类准确率 0.729 | 转弯准确率 0.563 | 坡度MAE 1.883 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4891 | 验证 0.5549 | 主类准确率 0.758 | 转弯准确率 0.565 | 坡度MAE 1.757 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4806 | 验证 0.5761 | 主类准确率 0.728 | 转弯准确率 0.552 | 坡度MAE 1.109 deg
+[A1 TCN] frozen training started 20260716T014341
+[A1 TCN] dataset=E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+[A1 TCN] seeds=[1 7 11 42 202 340 520]
+[A1 TCN] training seed=1
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed1.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6439 | 验证 0.6513 | 主类准确率 0.695 | 转弯准确率 0.493 | 坡度MAE 1.855 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5279 | 验证 0.5845 | 主类准确率 0.713 | 转弯准确率 0.523 | 坡度MAE 1.535 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5023 | 验证 0.5627 | 主类准确率 0.729 | 转弯准确率 0.563 | 坡度MAE 1.883 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4891 | 验证 0.5549 | 主类准确率 0.758 | 转弯准确率 0.565 | 坡度MAE 1.757 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4806 | 验证 0.5761 | 主类准确率 0.728 | 转弯准确率 0.552 | 坡度MAE 1.109 deg
+轮次 025/140 | lr=9.29e-04 | 训练 0.4747 | 验证 0.5902 | 主类准确率 0.715 | 转弯准确率 0.555 | 坡度MAE 1.079 deg
+[A1 TCN] frozen training started 20260716T040932
+[A1 TCN] dataset=E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+[A1 TCN] seeds=[1 7 11 42 202 340 520]
+[A1 TCN] training seed=1
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed1.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6439 | 验证 0.6513 | 主类准确率 0.695 | 转弯准确率 0.493 | 坡度MAE 1.855 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5279 | 验证 0.5845 | 主类准确率 0.713 | 转弯准确率 0.523 | 坡度MAE 1.535 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5023 | 验证 0.5627 | 主类准确率 0.729 | 转弯准确率 0.563 | 坡度MAE 1.883 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4891 | 验证 0.5549 | 主类准确率 0.758 | 转弯准确率 0.565 | 坡度MAE 1.757 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4806 | 验证 0.5761 | 主类准确率 0.728 | 转弯准确率 0.552 | 坡度MAE 1.109 deg
+轮次 025/140 | lr=9.29e-04 | 训练 0.4747 | 验证 0.5902 | 主类准确率 0.715 | 转弯准确率 0.555 | 坡度MAE 1.079 deg
+轮次 030/140 | lr=8.98e-04 | 训练 0.4696 | 验证 0.6017 | 主类准确率 0.711 | 转弯准确率 0.550 | 坡度MAE 1.060 deg
+轮次 035/140 | lr=8.61e-04 | 训练 0.4641 | 验证 0.5897 | 主类准确率 0.723 | 转弯准确率 0.566 | 坡度MAE 0.891 deg
+轮次 040/140 | lr=8.20e-04 | 训练 0.4624 | 验证 0.5876 | 主类准确率 0.730 | 转弯准确率 0.576 | 坡度MAE 0.871 deg
+轮次 045/140 | lr=7.75e-04 | 训练 0.4613 | 验证 0.6101 | 主类准确率 0.713 | 转弯准确率 0.567 | 坡度MAE 1.298 deg
+轮次 050/140 | lr=7.27e-04 | 训练 0.4571 | 验证 0.6139 | 主类准确率 0.713 | 转弯准确率 0.564 | 坡度MAE 0.859 deg
+轮次 055/140 | lr=6.76e-04 | 训练 0.4559 | 验证 0.6209 | 主类准确率 0.702 | 转弯准确率 0.554 | 坡度MAE 1.091 deg
+轮次 060/140 | lr=6.22e-04 | 训练 0.4546 | 验证 0.6035 | 主类准确率 0.729 | 转弯准确率 0.569 | 坡度MAE 0.896 deg
+轮次 065/140 | lr=5.67e-04 | 训练 0.7201 | 验证 1.0610 | 主类准确率 0.722 | 转弯准确率 0.588 | 坡度MAE 4.212 deg
+轮次 070/140 | lr=5.11e-04 | 训练 0.7137 | 验证 1.0539 | 主类准确率 0.722 | 转弯准确率 0.562 | 坡度MAE 4.212 deg
+轮次 075/140 | lr=4.55e-04 | 训练 0.7056 | 验证 1.0546 | 主类准确率 0.722 | 转弯准确率 0.577 | 坡度MAE 4.212 deg
+轮次 080/140 | lr=4.00e-04 | 训练 0.7057 | 验证 1.0500 | 主类准确率 0.722 | 转弯准确率 0.586 | 坡度MAE 4.212 deg
+轮次 085/140 | lr=3.45e-04 | 训练 0.7004 | 验证 1.0581 | 主类准确率 0.722 | 转弯准确率 0.565 | 坡度MAE 4.212 deg
+轮次 090/140 | lr=2.93e-04 | 训练 0.6993 | 验证 1.0605 | 主类准确率 0.722 | 转弯准确率 0.567 | 坡度MAE 4.212 deg
+轮次 095/140 | lr=2.44e-04 | 训练 0.6960 | 验证 1.0632 | 主类准确率 0.722 | 转弯准确率 0.579 | 坡度MAE 4.212 deg
+轮次 100/140 | lr=1.97e-04 | 训练 0.6956 | 验证 1.0558 | 主类准确率 0.722 | 转弯准确率 0.584 | 坡度MAE 4.212 deg
+轮次 105/140 | lr=1.54e-04 | 训练 0.6935 | 验证 1.0598 | 主类准确率 0.722 | 转弯准确率 0.592 | 坡度MAE 4.212 deg
+轮次 110/140 | lr=1.16e-04 | 训练 0.6944 | 验证 1.0614 | 主类准确率 0.722 | 转弯准确率 0.591 | 坡度MAE 4.212 deg
+轮次 115/140 | lr=8.27e-05 | 训练 0.6912 | 验证 1.0638 | 主类准确率 0.722 | 转弯准确率 0.586 | 坡度MAE 4.212 deg
+轮次 120/140 | lr=5.45e-05 | 训练 0.6930 | 验证 1.0654 | 主类准确率 0.722 | 转弯准确率 0.590 | 坡度MAE 4.212 deg
+轮次 125/140 | lr=3.19e-05 | 训练 0.6913 | 验证 1.0659 | 主类准确率 0.722 | 转弯准确率 0.598 | 坡度MAE 4.212 deg
+[TCN] 第 129 轮早停，最佳轮次: 104
+
+[TCN] 训练完成。
+  最佳轮次: 104
+  测试主类/转弯准确率: 0.732 / 0.562
+  测试坡度 MAE: 0.868 deg
+  模型已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed1.mat
+  元信息已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_meta_a1_tcn_v5_plantfix_passive17_plus_all5_seed1.mat
+[A1 TCN] training seed=7
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed7.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6465 | 验证 0.6788 | 主类准确率 0.641 | 转弯准确率 0.540 | 坡度MAE 2.156 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5309 | 验证 0.5589 | 主类准确率 0.732 | 转弯准确率 0.537 | 坡度MAE 1.437 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5043 | 验证 0.5609 | 主类准确率 0.735 | 转弯准确率 0.538 | 坡度MAE 0.909 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4894 | 验证 0.5668 | 主类准确率 0.743 | 转弯准确率 0.534 | 坡度MAE 0.985 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4833 | 验证 0.5875 | 主类准确率 0.712 | 转弯准确率 0.551 | 坡度MAE 1.113 deg
+轮次 025/140 | lr=9.29e-04 | 训练 0.4776 | 验证 0.5887 | 主类准确率 0.718 | 转弯准确率 0.559 | 坡度MAE 1.435 deg
+轮次 030/140 | lr=8.98e-04 | 训练 0.4693 | 验证 0.5825 | 主类准确率 0.738 | 转弯准确率 0.552 | 坡度MAE 1.019 deg
+轮次 035/140 | lr=8.61e-04 | 训练 0.4658 | 验证 0.5976 | 主类准确率 0.719 | 转弯准确率 0.592 | 坡度MAE 0.932 deg
+轮次 040/140 | lr=8.20e-04 | 训练 0.4625 | 验证 0.5941 | 主类准确率 0.727 | 转弯准确率 0.564 | 坡度MAE 0.980 deg
+轮次 045/140 | lr=7.75e-04 | 训练 0.4621 | 验证 0.6038 | 主类准确率 0.717 | 转弯准确率 0.602 | 坡度MAE 0.823 deg
+轮次 050/140 | lr=7.27e-04 | 训练 0.4579 | 验证 0.6135 | 主类准确率 0.709 | 转弯准确率 0.571 | 坡度MAE 0.831 deg
+轮次 055/140 | lr=6.76e-04 | 训练 0.4544 | 验证 0.6005 | 主类准确率 0.722 | 转弯准确率 0.589 | 坡度MAE 1.065 deg
+轮次 060/140 | lr=6.22e-04 | 训练 0.4527 | 验证 0.6089 | 主类准确率 0.719 | 转弯准确率 0.593 | 坡度MAE 0.896 deg
+轮次 065/140 | lr=5.67e-04 | 训练 0.7215 | 验证 1.0893 | 主类准确率 0.688 | 转弯准确率 0.564 | 坡度MAE 2.308 deg
+轮次 070/140 | lr=5.11e-04 | 训练 0.7117 | 验证 1.0880 | 主类准确率 0.688 | 转弯准确率 0.567 | 坡度MAE 2.308 deg
+轮次 075/140 | lr=4.55e-04 | 训练 0.7069 | 验证 1.0739 | 主类准确率 0.688 | 转弯准确率 0.587 | 坡度MAE 2.308 deg
+轮次 080/140 | lr=4.00e-04 | 训练 0.7038 | 验证 1.0772 | 主类准确率 0.688 | 转弯准确率 0.583 | 坡度MAE 2.308 deg
+轮次 085/140 | lr=3.45e-04 | 训练 0.7058 | 验证 1.0847 | 主类准确率 0.688 | 转弯准确率 0.590 | 坡度MAE 2.308 deg
+轮次 090/140 | lr=2.93e-04 | 训练 0.6998 | 验证 1.0858 | 主类准确率 0.688 | 转弯准确率 0.600 | 坡度MAE 2.308 deg
+轮次 095/140 | lr=2.44e-04 | 训练 0.6964 | 验证 1.0889 | 主类准确率 0.688 | 转弯准确率 0.592 | 坡度MAE 2.308 deg
+轮次 100/140 | lr=1.97e-04 | 训练 0.6968 | 验证 1.0912 | 主类准确率 0.688 | 转弯准确率 0.594 | 坡度MAE 2.308 deg
+轮次 105/140 | lr=1.54e-04 | 训练 0.6945 | 验证 1.0958 | 主类准确率 0.688 | 转弯准确率 0.602 | 坡度MAE 2.308 deg
+轮次 110/140 | lr=1.16e-04 | 训练 0.6948 | 验证 1.0897 | 主类准确率 0.688 | 转弯准确率 0.590 | 坡度MAE 2.308 deg
+轮次 115/140 | lr=8.27e-05 | 训练 0.6930 | 验证 1.0945 | 主类准确率 0.688 | 转弯准确率 0.596 | 坡度MAE 2.308 deg
+[TCN] 第 117 轮早停，最佳轮次: 92
+
+[TCN] 训练完成。
+  最佳轮次: 92
+  测试主类/转弯准确率: 0.722 / 0.542
+  测试坡度 MAE: 0.832 deg
+  模型已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed7.mat
+  元信息已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_meta_a1_tcn_v5_plantfix_passive17_plus_all5_seed7.mat
+[A1 TCN] training seed=11
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed11.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6450 | 验证 0.5915 | 主类准确率 0.800 | 转弯准确率 0.493 | 坡度MAE 2.875 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5293 | 验证 0.5730 | 主类准确率 0.725 | 转弯准确率 0.523 | 坡度MAE 1.439 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5049 | 验证 0.5802 | 主类准确率 0.715 | 转弯准确率 0.548 | 坡度MAE 1.273 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4904 | 验证 0.5571 | 主类准确率 0.746 | 转弯准确率 0.566 | 坡度MAE 1.686 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4803 | 验证 0.5833 | 主类准确率 0.722 | 转弯准确率 0.557 | 坡度MAE 0.943 deg
+轮次 025/140 | lr=9.29e-04 | 训练 0.4756 | 验证 0.5811 | 主类准确率 0.726 | 转弯准确率 0.583 | 坡度MAE 0.941 deg
+轮次 030/140 | lr=8.98e-04 | 训练 0.4697 | 验证 0.5936 | 主类准确率 0.719 | 转弯准确率 0.569 | 坡度MAE 1.173 deg
+轮次 035/140 | lr=8.61e-04 | 训练 0.4664 | 验证 0.6130 | 主类准确率 0.708 | 转弯准确率 0.563 | 坡度MAE 1.029 deg
+轮次 040/140 | lr=8.20e-04 | 训练 0.4622 | 验证 0.5798 | 主类准确率 0.741 | 转弯准确率 0.581 | 坡度MAE 0.934 deg
+轮次 045/140 | lr=7.75e-04 | 训练 0.4592 | 验证 0.5796 | 主类准确率 0.747 | 转弯准确率 0.575 | 坡度MAE 1.000 deg
+轮次 050/140 | lr=7.27e-04 | 训练 0.4565 | 验证 0.5941 | 主类准确率 0.734 | 转弯准确率 0.571 | 坡度MAE 1.071 deg
+轮次 055/140 | lr=6.76e-04 | 训练 0.4560 | 验证 0.5963 | 主类准确率 0.734 | 转弯准确率 0.573 | 坡度MAE 1.097 deg
+轮次 060/140 | lr=6.22e-04 | 训练 0.4581 | 验证 0.5962 | 主类准确率 0.740 | 转弯准确率 0.568 | 坡度MAE 0.973 deg
+轮次 065/140 | lr=5.67e-04 | 训练 0.7185 | 验证 1.0984 | 主类准确率 0.725 | 转弯准确率 0.584 | 坡度MAE 1.708 deg
+轮次 070/140 | lr=5.11e-04 | 训练 0.7057 | 验证 1.0939 | 主类准确率 0.725 | 转弯准确率 0.591 | 坡度MAE 1.708 deg
+轮次 075/140 | lr=4.55e-04 | 训练 0.7049 | 验证 1.0950 | 主类准确率 0.725 | 转弯准确率 0.575 | 坡度MAE 1.708 deg
+轮次 080/140 | lr=4.00e-04 | 训练 0.6991 | 验证 1.0919 | 主类准确率 0.725 | 转弯准确率 0.585 | 坡度MAE 1.708 deg
+轮次 085/140 | lr=3.45e-04 | 训练 0.6963 | 验证 1.0999 | 主类准确率 0.725 | 转弯准确率 0.594 | 坡度MAE 1.708 deg
+轮次 090/140 | lr=2.93e-04 | 训练 0.6962 | 验证 1.0973 | 主类准确率 0.725 | 转弯准确率 0.596 | 坡度MAE 1.708 deg
+轮次 095/140 | lr=2.44e-04 | 训练 0.6950 | 验证 1.1053 | 主类准确率 0.725 | 转弯准确率 0.602 | 坡度MAE 1.708 deg
+轮次 100/140 | lr=1.97e-04 | 训练 0.6928 | 验证 1.0995 | 主类准确率 0.725 | 转弯准确率 0.591 | 坡度MAE 1.708 deg
+轮次 105/140 | lr=1.54e-04 | 训练 0.6903 | 验证 1.1076 | 主类准确率 0.725 | 转弯准确率 0.606 | 坡度MAE 1.708 deg
+轮次 110/140 | lr=1.16e-04 | 训练 0.6900 | 验证 1.1068 | 主类准确率 0.725 | 转弯准确率 0.601 | 坡度MAE 1.708 deg
+[TCN] 第 112 轮早停，最佳轮次: 87
+
+[TCN] 训练完成。
+  最佳轮次: 87
+  测试主类/转弯准确率: 0.734 / 0.531
+  测试坡度 MAE: 0.891 deg
+  模型已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed11.mat
+  元信息已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_meta_a1_tcn_v5_plantfix_passive17_plus_all5_seed11.mat
+[A1 TCN] training seed=42
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed42.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6490 | 验证 0.5706 | 主类准确率 0.812 | 转弯准确率 0.468 | 坡度MAE 2.497 deg
+[A1 TCN] frozen training started 20260716T121257
+[A1 TCN] dataset=E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+[A1 TCN] seeds=[1 7 11 42 202 340 520]
+[A1 TCN] training seed=42
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed42.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6493 | 验证 0.5681 | 主类准确率 0.813 | 转弯准确率 0.468 | 坡度MAE 2.780 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5293 | 验证 0.5565 | 主类准确率 0.749 | 转弯准确率 0.530 | 坡度MAE 1.409 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5022 | 验证 0.5869 | 主类准确率 0.712 | 转弯准确率 0.553 | 坡度MAE 1.641 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4884 | 验证 0.5628 | 主类准确率 0.737 | 转弯准确率 0.558 | 坡度MAE 1.083 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4786 | 验证 0.5686 | 主类准确率 0.735 | 转弯准确率 0.566 | 坡度MAE 1.028 deg
+轮次 025/140 | lr=9.29e-04 | 训练 0.4741 | 验证 0.6176 | 主类准确率 0.696 | 转弯准确率 0.578 | 坡度MAE 1.034 deg
+轮次 030/140 | lr=8.98e-04 | 训练 0.4691 | 验证 0.6030 | 主类准确率 0.714 | 转弯准确率 0.580 | 坡度MAE 1.005 deg
+轮次 035/140 | lr=8.61e-04 | 训练 0.4687 | 验证 0.5865 | 主类准确率 0.737 | 转弯准确率 0.572 | 坡度MAE 1.100 deg
+轮次 040/140 | lr=8.20e-04 | 训练 0.4655 | 验证 0.5873 | 主类准确率 0.735 | 转弯准确率 0.566 | 坡度MAE 1.006 deg
+轮次 045/140 | lr=7.75e-04 | 训练 0.4601 | 验证 0.6038 | 主类准确率 0.723 | 转弯准确率 0.586 | 坡度MAE 0.831 deg
+轮次 050/140 | lr=7.27e-04 | 训练 0.4571 | 验证 0.6057 | 主类准确率 0.726 | 转弯准确率 0.583 | 坡度MAE 1.084 deg
+轮次 055/140 | lr=6.76e-04 | 训练 0.4556 | 验证 0.6022 | 主类准确率 0.731 | 转弯准确率 0.566 | 坡度MAE 0.968 deg
+轮次 060/140 | lr=6.22e-04 | 训练 0.4539 | 验证 0.6144 | 主类准确率 0.715 | 转弯准确率 0.599 | 坡度MAE 0.902 deg
+轮次 065/140 | lr=5.67e-04 | 训练 0.7318 | 验证 1.1280 | 主类准确率 0.678 | 转弯准确率 0.606 | 坡度MAE 4.033 deg
+轮次 070/140 | lr=5.11e-04 | 训练 0.7165 | 验证 1.1565 | 主类准确率 0.678 | 转弯准确率 0.598 | 坡度MAE 4.033 deg
+轮次 075/140 | lr=4.55e-04 | 训练 0.7117 | 验证 1.1493 | 主类准确率 0.678 | 转弯准确率 0.597 | 坡度MAE 4.033 deg
+轮次 080/140 | lr=4.00e-04 | 训练 0.7075 | 验证 1.1563 | 主类准确率 0.678 | 转弯准确率 0.605 | 坡度MAE 4.033 deg
+轮次 085/140 | lr=3.45e-04 | 训练 0.7086 | 验证 1.1518 | 主类准确率 0.678 | 转弯准确率 0.575 | 坡度MAE 4.033 deg
+轮次 090/140 | lr=2.93e-04 | 训练 0.7037 | 验证 1.1532 | 主类准确率 0.678 | 转弯准确率 0.578 | 坡度MAE 4.033 deg
+[TCN] 第 90 轮早停，最佳轮次: 65
+
+[TCN] 训练完成。
+  最佳轮次: 65
+  测试主类/转弯准确率: 0.753 / 0.531
+  测试坡度 MAE: 0.868 deg
+  模型已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed42.mat
+  元信息已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_meta_a1_tcn_v5_plantfix_passive17_plus_all5_seed42.mat
+[A1 TCN] training seed=202
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed202.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6434 | 验证 0.6078 | 主类准确率 0.769 | 转弯准确率 0.524 | 坡度MAE 4.885 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5296 | 验证 0.5723 | 主类准确率 0.742 | 转弯准确率 0.521 | 坡度MAE 2.169 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5022 | 验证 0.5801 | 主类准确率 0.719 | 转弯准确率 0.528 | 坡度MAE 1.845 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4883 | 验证 0.5922 | 主类准确率 0.700 | 转弯准确率 0.542 | 坡度MAE 1.112 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4807 | 验证 0.5616 | 主类准确率 0.740 | 转弯准确率 0.585 | 坡度MAE 1.212 deg
+轮次 025/140 | lr=9.29e-04 | 训练 0.4774 | 验证 0.5778 | 主类准确率 0.726 | 转弯准确率 0.559 | 坡度MAE 1.105 deg
+轮次 030/140 | lr=8.98e-04 | 训练 0.4693 | 验证 0.5957 | 主类准确率 0.710 | 转弯准确率 0.559 | 坡度MAE 1.166 deg
+轮次 035/140 | lr=8.61e-04 | 训练 0.4653 | 验证 0.5828 | 主类准确率 0.733 | 转弯准确率 0.594 | 坡度MAE 1.372 deg
+轮次 040/140 | lr=8.20e-04 | 训练 0.4624 | 验证 0.5836 | 主类准确率 0.733 | 转弯准确率 0.602 | 坡度MAE 0.990 deg
+轮次 045/140 | lr=7.75e-04 | 训练 0.4607 | 验证 0.5877 | 主类准确率 0.730 | 转弯准确率 0.596 | 坡度MAE 0.856 deg
+轮次 050/140 | lr=7.27e-04 | 训练 0.4576 | 验证 0.5890 | 主类准确率 0.738 | 转弯准确率 0.570 | 坡度MAE 0.982 deg
+轮次 055/140 | lr=6.76e-04 | 训练 0.4558 | 验证 0.5793 | 主类准确率 0.748 | 转弯准确率 0.583 | 坡度MAE 0.845 deg
+轮次 060/140 | lr=6.22e-04 | 训练 0.4530 | 验证 0.6075 | 主类准确率 0.720 | 转弯准确率 0.593 | 坡度MAE 0.912 deg
+轮次 065/140 | lr=5.67e-04 | 训练 0.7218 | 验证 1.0349 | 主类准确率 0.736 | 转弯准确率 0.534 | 坡度MAE 1.453 deg
+轮次 070/140 | lr=5.11e-04 | 训练 0.7081 | 验证 1.0207 | 主类准确率 0.736 | 转弯准确率 0.590 | 坡度MAE 1.453 deg
+轮次 075/140 | lr=4.55e-04 | 训练 0.7043 | 验证 1.0336 | 主类准确率 0.736 | 转弯准确率 0.594 | 坡度MAE 1.453 deg
+轮次 080/140 | lr=4.00e-04 | 训练 0.7000 | 验证 1.0227 | 主类准确率 0.736 | 转弯准确率 0.607 | 坡度MAE 1.453 deg
+轮次 085/140 | lr=3.45e-04 | 训练 0.7000 | 验证 1.0173 | 主类准确率 0.736 | 转弯准确率 0.597 | 坡度MAE 1.453 deg
+轮次 090/140 | lr=2.93e-04 | 训练 0.6972 | 验证 1.0210 | 主类准确率 0.736 | 转弯准确率 0.602 | 坡度MAE 1.453 deg
+[TCN] 第 93 轮早停，最佳轮次: 68
+
+[TCN] 训练完成。
+  最佳轮次: 68
+  测试主类/转弯准确率: 0.732 / 0.533
+  测试坡度 MAE: 0.954 deg
+  模型已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed202.mat
+  元信息已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_meta_a1_tcn_v5_plantfix_passive17_plus_all5_seed202.mat
+[A1 TCN] training seed=340
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed340.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6468 | 验证 0.5775 | 主类准确率 0.809 | 转弯准确率 0.515 | 坡度MAE 5.106 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5313 | 验证 0.5836 | 主类准确率 0.726 | 转弯准确率 0.542 | 坡度MAE 2.597 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5023 | 验证 0.5768 | 主类准确率 0.726 | 转弯准确率 0.539 | 坡度MAE 1.615 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4897 | 验证 0.5928 | 主类准确率 0.716 | 转弯准确率 0.549 | 坡度MAE 1.994 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4819 | 验证 0.6064 | 主类准确率 0.707 | 转弯准确率 0.560 | 坡度MAE 2.057 deg
+轮次 025/140 | lr=9.29e-04 | 训练 0.4753 | 验证 0.5842 | 主类准确率 0.731 | 转弯准确率 0.550 | 坡度MAE 2.101 deg
+轮次 030/140 | lr=8.98e-04 | 训练 0.4691 | 验证 0.5820 | 主类准确率 0.730 | 转弯准确率 0.535 | 坡度MAE 1.255 deg
+轮次 035/140 | lr=8.61e-04 | 训练 0.4656 | 验证 0.5914 | 主类准确率 0.734 | 转弯准确率 0.565 | 坡度MAE 1.739 deg
+轮次 040/140 | lr=8.20e-04 | 训练 0.4627 | 验证 0.5860 | 主类准确率 0.745 | 转弯准确率 0.578 | 坡度MAE 1.327 deg
+轮次 045/140 | lr=7.75e-04 | 训练 0.4593 | 验证 0.6170 | 主类准确率 0.717 | 转弯准确率 0.564 | 坡度MAE 1.049 deg
+轮次 050/140 | lr=7.27e-04 | 训练 0.4541 | 验证 0.5920 | 主类准确率 0.769 | 转弯准确率 0.573 | 坡度MAE 0.977 deg
+轮次 055/140 | lr=6.76e-04 | 训练 0.3046 | 验证 0.4567 | 主类准确率 0.860 | 转弯准确率 0.553 | 坡度MAE 1.139 deg
+轮次 060/140 | lr=6.22e-04 | 训练 0.2604 | 验证 0.4639 | 主类准确率 0.854 | 转弯准确率 0.570 | 坡度MAE 0.948 deg
+轮次 065/140 | lr=5.67e-04 | 训练 0.5021 | 验证 0.9741 | 主类准确率 0.861 | 转弯准确率 0.554 | 坡度MAE 3.054 deg
+轮次 070/140 | lr=5.11e-04 | 训练 0.4963 | 验证 0.9752 | 主类准确率 0.861 | 转弯准确率 0.550 | 坡度MAE 3.054 deg
+轮次 075/140 | lr=4.55e-04 | 训练 0.4896 | 验证 0.9712 | 主类准确率 0.861 | 转弯准确率 0.562 | 坡度MAE 3.054 deg
+轮次 080/140 | lr=4.00e-04 | 训练 0.4879 | 验证 0.9819 | 主类准确率 0.861 | 转弯准确率 0.557 | 坡度MAE 3.054 deg
+轮次 085/140 | lr=3.45e-04 | 训练 0.4865 | 验证 0.9904 | 主类准确率 0.861 | 转弯准确率 0.579 | 坡度MAE 3.054 deg
+轮次 090/140 | lr=2.93e-04 | 训练 0.4837 | 验证 0.9927 | 主类准确率 0.861 | 转弯准确率 0.564 | 坡度MAE 3.054 deg
+[TCN] 第 94 轮早停，最佳轮次: 69
+
+[TCN] 训练完成。
+  最佳轮次: 69
+  测试主类/转弯准确率: 0.876 / 0.528
+  测试坡度 MAE: 0.974 deg
+  模型已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed340.mat
+  元信息已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_meta_a1_tcn_v5_plantfix_passive17_plus_all5_seed340.mat
+[A1 TCN] training seed=520
+[init_project] Root: E:\Matlab\Simulink\S-Function_16
+
+========== TCN 多任务训练 ==========
+模式: physics_guided
+输入: E:\Matlab\Simulink\S-Function_16\data\tcn\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+模型: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed520.mat
+============================================
+
+[数据]
+  训练/验证/测试窗口数: 16529 / 3695 / 3602
+  输入: feat_dim=22, seq_len=128
+  执行环境: gpu
+[模型]
+  blocks=6, filters=96, kernel=3, dropout=0.15
+  head pooling: last_mean_max_inputstats
+  近似感受野: 127 steps (1.27 s)
+轮次 001/140 | lr=1.00e-03 | 训练 0.6571 | 验证 0.5613 | 主类准确率 0.811 | 转弯准确率 0.523 | 坡度MAE 1.945 deg
+轮次 005/140 | lr=9.98e-04 | 训练 0.5327 | 验证 0.6206 | 主类准确率 0.631 | 转弯准确率 0.516 | 坡度MAE 1.730 deg
+轮次 010/140 | lr=9.90e-04 | 训练 0.5040 | 验证 0.5514 | 主类准确率 0.750 | 转弯准确率 0.528 | 坡度MAE 1.287 deg
+轮次 015/140 | lr=9.76e-04 | 训练 0.4908 | 验证 0.5768 | 主类准确率 0.722 | 转弯准确率 0.549 | 坡度MAE 1.285 deg
+轮次 020/140 | lr=9.55e-04 | 训练 0.4815 | 验证 0.5612 | 主类准确率 0.744 | 转弯准确率 0.575 | 坡度MAE 1.864 deg
+轮次 025/140 | lr=9.29e-04 | 训练 0.4773 | 验证 0.6040 | 主类准确率 0.702 | 转弯准确率 0.570 | 坡度MAE 1.049 deg
+轮次 030/140 | lr=8.98e-04 | 训练 0.4697 | 验证 0.5693 | 主类准确率 0.744 | 转弯准确率 0.563 | 坡度MAE 0.952 deg
+轮次 035/140 | lr=8.61e-04 | 训练 0.4663 | 验证 0.5839 | 主类准确率 0.732 | 转弯准确率 0.558 | 坡度MAE 1.028 deg
+轮次 040/140 | lr=8.20e-04 | 训练 0.4640 | 验证 0.6207 | 主类准确率 0.701 | 转弯准确率 0.582 | 坡度MAE 1.387 deg
+轮次 045/140 | lr=7.75e-04 | 训练 0.4611 | 验证 0.6111 | 主类准确率 0.714 | 转弯准确率 0.549 | 坡度MAE 0.805 deg
+轮次 050/140 | lr=7.27e-04 | 训练 0.4563 | 验证 0.6003 | 主类准确率 0.731 | 转弯准确率 0.561 | 坡度MAE 1.086 deg
+轮次 055/140 | lr=6.76e-04 | 训练 0.4605 | 验证 0.6213 | 主类准确率 0.709 | 转弯准确率 0.568 | 坡度MAE 0.883 deg
+轮次 060/140 | lr=6.22e-04 | 训练 0.4531 | 验证 0.6248 | 主类准确率 0.700 | 转弯准确率 0.580 | 坡度MAE 0.936 deg
+轮次 065/140 | lr=5.67e-04 | 训练 0.7288 | 验证 1.0435 | 主类准确率 0.746 | 转弯准确率 0.580 | 坡度MAE 2.819 deg
+轮次 070/140 | lr=5.11e-04 | 训练 0.7170 | 验证 1.0398 | 主类准确率 0.746 | 转弯准确率 0.579 | 坡度MAE 2.819 deg
+轮次 075/140 | lr=4.55e-04 | 训练 0.7095 | 验证 1.0556 | 主类准确率 0.746 | 转弯准确率 0.584 | 坡度MAE 2.819 deg
+轮次 080/140 | lr=4.00e-04 | 训练 0.7094 | 验证 1.0372 | 主类准确率 0.746 | 转弯准确率 0.593 | 坡度MAE 2.819 deg
+轮次 085/140 | lr=3.45e-04 | 训练 0.7042 | 验证 1.0380 | 主类准确率 0.746 | 转弯准确率 0.599 | 坡度MAE 2.819 deg
+轮次 090/140 | lr=2.93e-04 | 训练 0.7036 | 验证 1.0578 | 主类准确率 0.746 | 转弯准确率 0.585 | 坡度MAE 2.819 deg
+轮次 095/140 | lr=2.44e-04 | 训练 0.7025 | 验证 1.0570 | 主类准确率 0.746 | 转弯准确率 0.599 | 坡度MAE 2.819 deg
+轮次 100/140 | lr=1.97e-04 | 训练 0.6988 | 验证 1.0504 | 主类准确率 0.746 | 转弯准确率 0.602 | 坡度MAE 2.819 deg
+轮次 105/140 | lr=1.54e-04 | 训练 0.7012 | 验证 1.0557 | 主类准确率 0.746 | 转弯准确率 0.606 | 坡度MAE 2.819 deg
+轮次 110/140 | lr=1.16e-04 | 训练 0.6973 | 验证 1.0556 | 主类准确率 0.746 | 转弯准确率 0.590 | 坡度MAE 2.819 deg
+轮次 115/140 | lr=8.27e-05 | 训练 0.6978 | 验证 1.0550 | 主类准确率 0.746 | 转弯准确率 0.609 | 坡度MAE 2.819 deg
+轮次 120/140 | lr=5.45e-05 | 训练 0.6941 | 验证 1.0533 | 主类准确率 0.746 | 转弯准确率 0.608 | 坡度MAE 2.819 deg
+轮次 125/140 | lr=3.19e-05 | 训练 0.6950 | 验证 1.0526 | 主类准确率 0.746 | 转弯准确率 0.604 | 坡度MAE 2.819 deg
+[TCN] 第 127 轮早停，最佳轮次: 102
+
+[TCN] 训练完成。
+  最佳轮次: 102
+  测试主类/转弯准确率: 0.742 / 0.536
+  测试坡度 MAE: 0.859 deg
+  模型已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_model_a1_tcn_v5_plantfix_passive17_plus_all5_seed520.mat
+  元信息已保存: E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\models\TCN_meta_a1_tcn_v5_plantfix_passive17_plus_all5_seed520.mat
+[A1 TCN] complete=1 summary=E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\01_A1_algorithm_comparison\02_models\tcn_training_summary.csv

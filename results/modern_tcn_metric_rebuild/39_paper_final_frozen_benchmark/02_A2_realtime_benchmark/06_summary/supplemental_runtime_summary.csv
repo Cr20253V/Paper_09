@@ -1,0 +1,3 @@
+﻿"case_id","component_id","environment_sha256","batch_size","warmup_count","formal_count","p50_ms","p95_ms","p99_ms","max_ms","over_10ms_rate","status"
+"preprocess__normalization_delta_bank_124","normalization_delta_bank_124","549abbfb4e54f7486f9a012976785ad3f5bc1db546d801033815ba570f9bd84f","1","500","10000","0.0427","0.0599","0.064650000000000013","0.2824","0","COMPLETE"
+"full_cycle__slope_estimation_mpc","slope_estimation_mpc","549abbfb4e54f7486f9a012976785ad3f5bc1db546d801033815ba570f9bd84f","1","500","10000","47.762899999999995","52.20685","60.27355","68.1917","1","COMPLETE"

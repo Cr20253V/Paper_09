@@ -1,0 +1,40 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "audit_date": "2026-07-16",
+  "status": "READY_FOR_MANUAL_CLOSED_LOOP",
+  "counts": {
+    "models_ready": 40,
+    "models_expected": 40,
+    "offline_cases_complete": 40,
+    "offline_cases_expected": 40,
+    "closed_loop_cases_referenced": 120,
+    "closed_loop_cases_new_complete": 0,
+    "closed_loop_cases_complete": 120,
+    "closed_loop_cases_expected": 240,
+    "formal_closed_loop_preflight_ready": 120
+  },
+  "checks": {
+    "model_registry_unique": true,
+    "model_and_meta_config_sha256_match": true,
+    "training_recipe_consistent_excluding_seed_and_output_paths": true,
+    "offline_case_grid_unique": true,
+    "offline_prediction_rows_each": 3602,
+    "offline_prediction_audits": 40,
+    "offline_metric_json": 40,
+    "bootstrap_iterations": 10000,
+    "bootstrap_seed": 20260715,
+    "bootstrap_ci": "95_percentile",
+    "bootstrap_resampling_unit": "paired_model_seed",
+    "reused_closed_loop_source_sha256_match": true,
+    "formal_closed_loop_preflight_pass": true,
+    "protected_artifacts_unchanged": true,
+    "node10_primary_gate_failure_observed_on_available_cases": true,
+    "node10_observed_failure_rows": 24,
+    "node10_observed_failure_seeds": [21, 73, 101, 340]
+  },
+  "dataset_sha256": "ab5dde32ef3627aa7032a3b4f7632c87cb471287a638f2b14a25a179a660196f",
+  "offline_decision": "SUPPORTED_ALL_PRIMARY",
+  "overall_decision": "INCOMPLETE_GRID",
+  "next_action": "Run formal GRU and TCN closed-loop commands in MANUAL_RUNBOOK.md, then run 01_tools/finalize_A1.py",
+  "results_used_for_recipe_or_threshold_changes": false
+}

@@ -1,0 +1,44 @@
+{
+  "minimum_font_pt": 6.5,
+  "text_overflow_count": 0,
+  "text_overflow": [],
+  "cross_axes_text_overlap_count": 0,
+  "cross_axes_text_overlaps": [],
+  "svg_text_elements": 38,
+  "svg_text_editable": true,
+  "status": "PASS",
+  "final_size_mm": [
+    183.0,
+    112.0
+  ],
+  "png_pixels_300dpi": [
+    2161,
+    1322
+  ],
+  "tiff_pixels_600dpi": [
+    4322,
+    2645
+  ],
+  "pdf_type3_font_count": 0,
+  "pdf_embedded_truetype_font_count": 2,
+  "pdf_tounicode_map_count": 2,
+  "tiff_compression": "tiff_lzw",
+  "colorblind_minimum_pair_distance": {
+    "protanopia": 0.37183994361528727,
+    "deuteranopia": 0.32667969114632556
+  },
+  "redundant_encodings": "All four grade traces use distinct line style and color; fallback uses neutral shading; rate-limit activity uses marker shape.",
+  "grayscale_preview": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/qa/fig08_node44r1_mechanism_trace_grayscale.png",
+  "deuteranopia_preview": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/qa/fig08_node44r1_mechanism_trace_deuteranopia.png",
+  "numeric_reconstruction": {
+    "fixed_case": "P2 Sharp-turn transition, model seed 42",
+    "runtime_updates": 5200,
+    "fallback_count": 371,
+    "rate_limit_count": 59,
+    "sign_change_count": 22,
+    "fallback_identity_max_abs_rad": 0.0,
+    "fallback_correction_max_abs_rad": 0.0,
+    "maximum_normal_correction_rate_deg_s": 5.000000000000205,
+    "maximum_NIS": 2.29451667433257
+  }
+}

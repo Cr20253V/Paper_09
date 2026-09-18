@@ -1,0 +1,53 @@
+{
+  "status": "FORMAL_RUN_COMPLETE",
+  "validated_at": "2026-07-17T16:43:42.043279+08:00",
+  "case_count": 4,
+  "raw_timing_rows": 40000,
+  "checks": [
+    {
+      "case_id": "core_inference__gru_22d",
+      "raw_rows": 10000,
+      "memory_rows": 17,
+      "pass": true,
+      "p50_ms": 0.3071,
+      "p95_ms": 0.3377,
+      "p99_ms": 0.4124,
+      "max_ms": 0.9854,
+      "over_10ms_rate": 0.0
+    },
+    {
+      "case_id": "core_inference__modern_tcn_22d",
+      "raw_rows": 10000,
+      "memory_rows": 20,
+      "pass": true,
+      "p50_ms": 0.3582,
+      "p95_ms": 0.3881,
+      "p99_ms": 0.49420800000000015,
+      "max_ms": 1.1671,
+      "over_10ms_rate": 0.0
+    },
+    {
+      "case_id": "core_inference__modern_tcn_delta_bank_124",
+      "raw_rows": 10000,
+      "memory_rows": 23,
+      "pass": true,
+      "p50_ms": 0.3744,
+      "p95_ms": 0.4038,
+      "p99_ms": 0.4818040000000001,
+      "max_ms": 1.0823,
+      "over_10ms_rate": 0.0
+    },
+    {
+      "case_id": "core_inference__tcn_22d",
+      "raw_rows": 10000,
+      "memory_rows": 44,
+      "pass": true,
+      "p50_ms": 1.0452,
+      "p95_ms": 1.1341050000000001,
+      "p99_ms": 1.3597150000000002,
+      "max_ms": 13.1071,
+      "over_10ms_rate": 0.0001
+    }
+  ],
+  "interpretation_note": "22D rows support architecture-only comparison; delta-bank is representation plus architecture."
+}

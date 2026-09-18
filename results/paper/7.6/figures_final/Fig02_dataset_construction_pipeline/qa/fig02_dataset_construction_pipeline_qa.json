@@ -1,0 +1,171 @@
+{
+  "figure_id": "Fig02_dataset_construction_pipeline",
+  "generated_utc": "2026-07-22T15:51:47.721715+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib",
+    "matlab data-reading principles"
+  ],
+  "nature_skill_used": false,
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/paper/7.6/A0_\u8bba\u6587\u6700\u7ec8\u7edf\u4e00\u5b9e\u9a8c\u914d\u7f6e_20260715.json",
+      "bytes": 18068,
+      "sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911"
+    },
+    {
+      "role": "input_2",
+      "file": "data/tcn/ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5_contract.json",
+      "bytes": 3047,
+      "sha256": "6bb404df7b3fd7b3abb32ef664e0d558e4dc81505e1b2ce7db3decd0116a2457"
+    },
+    {
+      "role": "input_3",
+      "file": "data/tcn/ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat",
+      "bytes": 446285336,
+      "sha256": "ab5dde32ef3627aa7032a3b4f7632c87cb471287a638f2b14a25a179a660196f"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig02_dataset_construction_pipeline/source_data/fig02_dataset_construction_pipeline_source_data.csv",
+    "rows": 6,
+    "columns": [
+      "stage",
+      "stage_id",
+      "display",
+      "count",
+      "split_role",
+      "dimension",
+      "source_field",
+      "source_sha256"
+    ],
+    "sha256": "1b9ba37aca1ae6791967a2201cca3516589ea964984f966ec49eb00884dfad0f"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig02_dataset_construction_pipeline/output/fig02_dataset_construction_pipeline.pdf",
+      "bytes": 30237,
+      "sha256": "c86ca6e200f1f9240659b825f7dd86c57c0c209b390ff9720cabae9c4736ba78"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final/Fig02_dataset_construction_pipeline/output/fig02_dataset_construction_pipeline.svg",
+      "bytes": 9245,
+      "sha256": "fdcd12ab7bca460598ca03bfb81428388da350a7779445e867f0271dc48c3859"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final/Fig02_dataset_construction_pipeline/output/fig02_dataset_construction_pipeline.png",
+      "bytes": 73490,
+      "sha256": "38059f09b2041b60dff8e32e1e55b824bd0af619e3306eb20ed94c18bbed789a"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig02_dataset_construction_pipeline/output/fig02_dataset_construction_pipeline.tiff",
+      "bytes": 516316,
+      "sha256": "63292a778a7570f5fce65d3ab9eb4e1d661d09b7618e095fc4f247d39b72f626"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "stage_count": 6,
+      "templates": 51,
+      "runs": 102,
+      "split_counts": {
+        "train": 71,
+        "validation": 15,
+        "test": 16
+      },
+      "raw_feature_dimension": 22,
+      "lag_steps": [
+        1,
+        2,
+        4
+      ],
+      "augmented_feature_dimension": 88,
+      "sequence_length": 128,
+      "replicates_per_template": [
+        2
+      ],
+      "window_tensor_shapes_feature_time_window": {
+        "train": [
+          22,
+          128,
+          16529
+        ],
+        "validation": [
+          22,
+          128,
+          3695
+        ],
+        "test": [
+          22,
+          128,
+          3602
+        ]
+      },
+      "normalization_policy": "fit_train_only_apply_val_test_online"
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 1,
+      "expected_primary_panels": 1,
+      "minimum_visible_font_pt": 6.2,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        183.0,
+        49.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            578
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            48.937
+          ],
+          "nonwhite_fraction": 0.28079
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            1157
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            48.98
+          ],
+          "nonwhite_fraction": 0.27717
+        }
+      },
+      "svg_editable_text_elements": 18,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final/Fig02_dataset_construction_pipeline/qa/fig02_dataset_construction_pipeline_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "reviewed_utc": "2026-07-23T12:20:22.984902+00:00",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS",
+      "caption_contract_consistency": "PASS"
+    },
+    "reviewer_notes": "Six-stage data contract is readable; the run-disjoint split caveat is visible."
+  }
+}

@@ -1,0 +1,43 @@
+record_type,contrast_id,contrast_label,target,comparator,metric,metric_label,original_unit,display_unit,path_id,path_label,target_value_original,comparator_value_original,effect_original,effect_display,mean_estimate_display,bootstrap_mean_display,ci95_low_display,ci95_high_display,n_paths,bootstrap_iterations,bootstrap_random_seed,positive_favors_target
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p01_factory_logistics_showcase,P1,0.004409223451,6.860239278,6.855830055,6.855830055,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p02_sharp_turn_transition,P2,0.02038041785,1.269682957,1.249302539,1.249302539,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p03_long_updown,P3,0.03607196285,0.7001758044,0.6641038416,0.6641038416,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p04_soft_updown_straight_turn,P4,0.00302682212,0.00316551333,0.0001386912098,0.0001386912098,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p05_factory_flat_logistics,P5,0.005953023488,0.005953023488,0,0,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p06_downhill_after_turn,P6,0.005038935301,0.04356615063,0.03852721533,0.03852721533,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p01_factory_logistics_showcase,P1,6.81534084,6.860239278,0.04489843818,0.04489843818,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p02_sharp_turn_transition,P2,0.9408892175,1.269682957,0.3287937396,0.3287937396,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p03_long_updown,P3,0.6587662002,0.7001758044,0.04140960428,0.04140960428,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p04_soft_updown_straight_turn,P4,0.00376821837,0.00316551333,-0.0006027050405,-0.0006027050405,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p05_factory_flat_logistics,P5,0.006245644965,0.005953023488,-0.0002926214773,-0.0002926214773,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,p06_downhill_after_turn,P6,0.04339554181,0.04356615063,0.0001706088224,0.0001706088224,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p01_factory_logistics_showcase,P1,0.006485479713,1.48529561,1.47881013,84.72957915,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p02_sharp_turn_transition,P2,0.01818615191,0.2197445429,0.201558391,11.54844513,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p03_long_updown,P3,0.02266038742,0.1845487843,0.1618883969,9.275521894,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p04_soft_updown_straight_turn,P4,0.007113923176,0.007505069658,0.000391146481,0.02241104253,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p05_factory_flat_logistics,P5,0.007613291491,0.007613291491,0,0,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p06_downhill_after_turn,P6,0.006296654221,0.1475434417,0.1412467875,8.092844792,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p01_factory_logistics_showcase,P1,1.887966449,1.48529561,-0.4026708395,-23.07133964,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p02_sharp_turn_transition,P2,0.171647723,0.2197445429,0.04809681986,2.755744786,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p03_long_updown,P3,0.172255395,0.1845487843,0.01229338931,0.7043593235,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p04_soft_updown_straight_turn,P4,0.007775880983,0.007505069658,-0.000270811325,-0.01551634597,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p05_factory_flat_logistics,P5,0.008168506595,0.007613291491,-0.0005552151041,-0.03181148219,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,p06_downhill_after_turn,P6,0.1411473927,0.1475434417,0.006396048998,0.3664666131,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p01_factory_logistics_showcase,P1,0.0294419177,1931.398986,1931.369544,1931.369544,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p02_sharp_turn_transition,P2,0.4338855503,1543.673321,1543.239435,1543.239435,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p03_long_updown,P3,1.151309474,700.5287607,699.3774512,699.3774512,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p04_soft_updown_straight_turn,P4,0.5905737249,0.2992764992,-0.2912972257,-0.2912972257,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p05_factory_flat_logistics,P5,0.0188101263,0.0188101263,0,0,,,,,,,,True
+route_effect,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p06_downhill_after_turn,P6,0.3369959431,0.1644748851,-0.172521058,-0.172521058,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p01_factory_logistics_showcase,P1,2895.57773,1931.398986,-964.1787448,-964.1787448,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p02_sharp_turn_transition,P2,664.7323073,1543.673321,878.9410137,878.9410137,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p03_long_updown,P3,658.6195056,700.5287607,41.90925508,41.90925508,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p04_soft_updown_straight_turn,P4,0.3244333858,0.2992764992,-0.02515688658,-0.02515688658,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p05_factory_flat_logistics,P5,0.01769178333,0.0188101263,0.001118342964,0.001118342964,,,,,,,,True
+route_effect,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,p06_downhill_after_turn,P6,0.1601627857,0.1644748851,0.004312099364,0.004312099364,,,,,,,,True
+bootstrap_summary,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,,,,,1.467983724,1.467983724,1.467983724,1.472920366,0.1171514066,3.746816091,6,10000,20260715,True
+bootstrap_summary,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,ey_rmse,Lateral error RMS,m,m,,,,,0.06906284406,0.06906284406,0.06906284406,0.06950564758,0.006631593344,0.1780996204,6,10000,20260715,True
+bootstrap_summary,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,,,,,0.330649142,18.94480033,18.94480033,18.98041851,2.902198128,45.83918592,6,10000,20260715,True
+bootstrap_summary,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,epsi_rmse,Heading error RMS,rad,deg,,,,,-0.05611843463,-3.215349457,-3.215349457,-3.227110831,-11.36250074,1.433778046,6,10000,20260715,True
+bootstrap_summary,A3_ORACLE_VS_ZS,Oracle vs ZS,Oracle_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,,,,,695.587102,695.587102,695.587102,698.0374945,116.4083024,1339.454253,6,10000,20260715,True
+bootstrap_summary,A3_IMU_VS_ZS,IMU vs ZS,IMU_LPV_MPC,ZS_LPV_MPC,j_du,Input-increment index,index,index,,,,,-7.224700424,-7.224700424,-7.224700424,-6.598579067,-475.1041238,439.4677514,6,10000,20260715,True

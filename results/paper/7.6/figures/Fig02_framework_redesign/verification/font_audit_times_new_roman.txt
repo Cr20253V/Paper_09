@@ -1,0 +1,29 @@
+Figure 2 Times New Roman font audit
+Generated: 2026-08-03 19:03:28
+
+Configuration:
+  normal text: Times New Roman
+  bold text: Times New Roman Bold
+  italic/math Latin: Times New Roman Italic
+  math fallback: STIX only for degree symbols
+
+Embedded PDF fonts:
+name                                 type              encoding         emb sub uni object ID
+------------------------------------ ----------------- ---------------- --- --- --- ---------
+FHXFSG+TimesNewRomanPSMT             CID TrueType      Identity-H       yes yes yes     15  0
+FHXFSG+TimesNewRomanPS-BoldMT        CID TrueType      Identity-H       yes yes yes     22  0
+FEUMDM+TimesNewRomanPS-ItalicMT      CID TrueType      Identity-H       yes yes yes     29  0
+CZRBLR+STIXGeneral-Regular           CID TrueType      Identity-H       yes yes yes     36  0
+
+Rendering:
+  renderer exit: 0
+  PDF SHA-256: F79FB2CC971EC8B8439EC9807847F542858CB8CB61896DBEC7D98FF5C6B48D19
+
+Manuscript compile:
+  pdflatex pass 1: exit 0
+  pdflatex pass 2: exit 0
+  candidate PDF: paper_v4_final_candidate_fig02_redesign_times.pdf (20 pages)
+
+Preservation:
+  active manuscript SHA-256: ECD04C7AE7602C38EB95C568E967AB354A54E3C5D185293A98026A2B2A8E45B3
+  active manuscript modified: no

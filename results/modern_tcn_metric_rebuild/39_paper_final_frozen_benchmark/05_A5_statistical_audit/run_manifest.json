@@ -1,0 +1,14 @@
+{
+  "task_id": "A5",
+  "protocol_id": "A5_paper_final_statistical_audit_phase1_v1",
+  "phase": 2,
+  "status": "PARTIAL",
+  "run_at": "2026-07-20T02:29:50+08:00",
+  "command": "python 02_tools/run_phase2.py",
+  "python": "3.10.9 (tags/v3.10.9:1dd9be6, Dec  6 2022, 20:01:21) [MSC v.1934 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "inputs_read_only": true,
+  "output_root": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\05_A5_statistical_audit",
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 20260715
+}

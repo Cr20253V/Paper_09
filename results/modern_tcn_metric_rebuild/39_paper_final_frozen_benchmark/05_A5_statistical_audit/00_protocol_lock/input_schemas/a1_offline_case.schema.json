@@ -1,0 +1,180 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "A1 offline seed-level result",
+  "type": "object",
+  "additionalProperties": true,
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "const": "A1"
+    },
+    "protocol_id": {
+      "type": "string",
+      "const": "A0_paper_final_unified_protocol_v1"
+    },
+    "case_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "case_status": {
+      "type": "string",
+      "enum": [
+        "COMPLETE",
+        "FAILED",
+        "TIMEOUT",
+        "INVALID",
+        "MISSING",
+        "NOT_APPLICABLE",
+        "NOT_ELIGIBLE"
+      ]
+    },
+    "method_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "controller_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "sensor_noise_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "process_disturbance_seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "path_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "dataset_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "model_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "model_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "path_file": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "path_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "plant_revision": {
+      "type": "string",
+      "const": "agv_physics_v2_plantfix"
+    },
+    "effective_config_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "source_file": {
+      "type": "string",
+      "minLength": 1
+    },
+    "source_file_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-fA-F]{64}$"
+    },
+    "theta_mae_deg": {
+      "type": "number"
+    },
+    "theta_abs_le_10_p95_abs_err_deg": {
+      "type": "number"
+    },
+    "theta_edge_p95_abs_err": {
+      "type": "number"
+    },
+    "theta_abs_le_10_rmse_deg": {
+      "type": "number"
+    },
+    "theta_flat_bias_deg": {
+      "type": "number"
+    },
+    "acc_main": {
+      "type": "number"
+    },
+    "acc_turn": {
+      "type": "number"
+    },
+    "acc_turn_transition": {
+      "type": "number"
+    },
+    "flat_recall": {
+      "type": "number"
+    },
+    "stall_recall": {
+      "type": "number"
+    },
+    "slope_recall": {
+      "type": "number"
+    },
+    "uphill_recall": {
+      "type": "number"
+    },
+    "downhill_recall": {
+      "type": "number"
+    }
+  },
+  "required": [
+    "task_id",
+    "protocol_id",
+    "case_id",
+    "case_status",
+    "plant_revision",
+    "effective_config_sha256",
+    "source_file",
+    "source_file_sha256",
+    "method_id",
+    "model_seed",
+    "dataset_file",
+    "dataset_sha256",
+    "model_file",
+    "model_sha256",
+    "theta_mae_deg",
+    "theta_abs_le_10_p95_abs_err_deg"
+  ]
+}

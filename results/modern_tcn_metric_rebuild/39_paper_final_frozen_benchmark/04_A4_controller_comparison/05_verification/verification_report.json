@@ -1,0 +1,369 @@
+{
+  "task_id": "A4",
+  "verified_at": "2026-07-20T01:59:23+08:00",
+  "status": "PASS_A4_VERIFICATION",
+  "checks": [
+    {
+      "check": "primary_row_count",
+      "passed": true,
+      "detail": 138
+    },
+    {
+      "check": "controller_counts",
+      "passed": true,
+      "detail": {
+        "Fusion_LPV_MPC": 60,
+        "IMU_LPV_MPC": 6,
+        "MTCN_LPV_MPC": 60,
+        "Oracle_LPV_MPC": 6,
+        "ZS_LPV_MPC": 6
+      }
+    },
+    {
+      "check": "fusion_mtcn_primary_pair_rows",
+      "passed": true,
+      "detail": 180
+    },
+    {
+      "check": "fusion_mtcn_unique_pairs_per_metric",
+      "passed": true,
+      "detail": {
+        "epsi_rmse": 60,
+        "ey_rmse": 60,
+        "j_du": 60
+      }
+    },
+    {
+      "check": "primary_metrics_finite",
+      "passed": true,
+      "detail": [
+        "ey_rmse",
+        "epsi_rmse",
+        "j_du"
+      ]
+    },
+    {
+      "check": "bootstrap_and_decision_reproducible",
+      "passed": true,
+      "detail": {
+        "recomputed_decision": "MIXED_FIVE_CONTROLLER_RESULT",
+        "recorded_decision": "MIXED_FIVE_CONTROLLER_RESULT",
+        "core_metrics": [
+          {
+            "contrast_id": "Fusion_vs_MTCN",
+            "metric": "ey_rmse",
+            "matches_recorded_ci": true,
+            "ci95_low": -0.00110330045491738,
+            "ci95_high": 0.0071579275228387,
+            "supported": false
+          },
+          {
+            "contrast_id": "Fusion_vs_MTCN",
+            "metric": "epsi_rmse",
+            "matches_recorded_ci": true,
+            "ci95_low": 0.0002608065212821622,
+            "ci95_high": 0.004334041764412874,
+            "supported": true
+          },
+          {
+            "contrast_id": "Fusion_vs_MTCN",
+            "metric": "j_du",
+            "matches_recorded_ci": true,
+            "ci95_low": -6.687853858240082e-05,
+            "ci95_high": 0.4193561518861219,
+            "supported": false
+          },
+          {
+            "contrast_id": "MTCN_vs_IMU",
+            "metric": "ey_rmse",
+            "matches_recorded_ci": true,
+            "ci95_low": 0.8176970871176865,
+            "ci95_high": 2.021725172954939,
+            "supported": true
+          },
+          {
+            "contrast_id": "MTCN_vs_IMU",
+            "metric": "epsi_rmse",
+            "matches_recorded_ci": true,
+            "ci95_low": 0.22110870045136782,
+            "ci95_high": 0.5508759286273112,
+            "supported": true
+          },
+          {
+            "contrast_id": "MTCN_vs_IMU",
+            "metric": "j_du",
+            "matches_recorded_ci": true,
+            "ci95_low": 460.9886861723066,
+            "ci95_high": 965.5521549389679,
+            "supported": true
+          },
+          {
+            "contrast_id": "MTCN_vs_ZS",
+            "metric": "ey_rmse",
+            "matches_recorded_ci": true,
+            "ci95_low": 0.881452611436438,
+            "ci95_high": 2.087774662116133,
+            "supported": true
+          },
+          {
+            "contrast_id": "MTCN_vs_ZS",
+            "metric": "epsi_rmse",
+            "matches_recorded_ci": true,
+            "ci95_low": 0.19956061697981844,
+            "ci95_high": 0.4533519904431254,
+            "supported": true
+          },
+          {
+            "contrast_id": "MTCN_vs_ZS",
+            "metric": "j_du",
+            "matches_recorded_ci": true,
+            "ci95_low": 503.1674380583709,
+            "ci95_high": 893.9050022791754,
+            "supported": true
+          },
+          {
+            "contrast_id": "Oracle_vs_ZS",
+            "metric": "ey_rmse",
+            "matches_recorded_ci": true,
+            "ci95_low": 0.11715140655630916,
+            "ci95_high": 3.746816090827332,
+            "supported": true
+          },
+          {
+            "contrast_id": "Oracle_vs_ZS",
+            "metric": "epsi_rmse",
+            "matches_recorded_ci": true,
+            "ci95_low": 0.05065291288620458,
+            "ci95_high": 0.8000447207231401,
+            "supported": true
+          },
+          {
+            "contrast_id": "Oracle_vs_ZS",
+            "metric": "j_du",
+            "matches_recorded_ci": true,
+            "ci95_low": 116.40830243921,
+            "ci95_high": 1339.4542529553248,
+            "supported": true
+          }
+        ]
+      }
+    },
+    {
+      "check": "supplementary_count",
+      "passed": true,
+      "detail": 60
+    },
+    {
+      "check": "supplementary_excluded_from_primary",
+      "passed": true,
+      "detail": true
+    },
+    {
+      "check": "figure_exports",
+      "passed": true,
+      "detail": [
+        {
+          "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_1_representative_paths.svg",
+          "exists": true,
+          "bytes": 413512
+        },
+        {
+          "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_1_representative_paths.pdf",
+          "exists": true,
+          "bytes": 160480
+        },
+        {
+          "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_1_representative_paths.png",
+          "exists": true,
+          "bytes": 499126
+        },
+        {
+          "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_1_representative_paths.tiff",
+          "exists": true,
+          "bytes": 76245914
+        },
+        {
+          "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_2_fusion_vs_mtcn_paired_effects.svg",
+          "exists": true,
+          "bytes": 63523
+        },
+        {
+          "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_2_fusion_vs_mtcn_paired_effects.pdf",
+          "exists": true,
+          "bytes": 47727
+        },
+        {
+          "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_2_fusion_vs_mtcn_paired_effects.png",
+          "exists": true,
+          "bytes": 149817
+        },
+        {
+          "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/04_A4_controller_comparison/04_figures/figure_A4_2_fusion_vs_mtcn_paired_effects.tiff",
+          "exists": true,
+          "bytes": 59146370
+        }
+      ]
+    },
+    {
+      "check": "editable_svg_text",
+      "passed": true,
+      "detail": "SVG contains text nodes"
+    },
+    {
+      "check": "protected_sources_unchanged",
+      "passed": true,
+      "detail": {
+        "before_count": 14,
+        "after_count": 14,
+        "differences": []
+      }
+    },
+    {
+      "check": "write_boundary",
+      "passed": true,
+      "detail": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\04_A4_controller_comparison"
+    }
+  ],
+  "protected_input_hashes_after": [
+    {
+      "role": "protected_source",
+      "path": "results/paper/7.6/A0_论文最终统一实验配置_20260715.json",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "1fdb75a7effbc2da5d2217df415004a5819eb577c6fdc275ad0f94520860c911",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 18068
+    },
+    {
+      "role": "protected_source",
+      "path": "results/paper/7.6/A0_论文最终统一实验配置说明_20260715.md",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "44155532ef770dbb5c4817006caa80213cb2ede7390ee8dbcc75085425058173",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 7112
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/receipt.json",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "93db10b3b7c0e0e213fa2df69256ced6139af9c4184335196f2fe836449a7459",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 2435
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/model_registry.csv",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "3709c37e28c86ae0e8b1b7024b8c0d22d9c2d38ab0c5d268ef0a5193de87b117",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 31043
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/A1_experiment_report.md",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "c00e0062fad2bad34e207e834aeaa9609e5ae78abe2d5ab3c0e63f81bd7653d3",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 7924
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/receipt.json",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "05e66101417e8e61640e6865c5c705045df2f70ceadbf1b7dc51b1f16bc768a1",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 1450
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a4_artifact_receipt.json",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "f1684870e546fc425e54ad3c7cde96247ef663e9ede669a17ee6573651eb78cf",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 17293
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/a3_case_table.csv",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "6a8cf7c9d53399653e1d9eb77145e5aafd0637a6e349c9c8bee2b5b0d8189190",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 36534
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/05_A5_statistical_audit/00_protocol_lock/analysis_plan.json",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "f6f5d85197268cd202748ae50805ad9b6cefe75c451ba5652e82c47f80baf4a9",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 4069
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/00_protocol_lock/node42_protocol.json",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "281961986c28ac1bad5c41abb3c4be00d12e702cb2f32dd994bbaf97b8ec636f",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 1909
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/04_summaries/innovation_development_summary.json",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "e4da86af6d048e9b9ec0ff21a8720e7d00c620342327ba993abb668f02d7f482",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 1033
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/04_summaries/innovation_development_pair_details.csv",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "1b837ccaeb33188713a1cf01069fe52216219b6190aff59ff64aa699d68559e0",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 19443
+    },
+    {
+      "role": "protected_source",
+      "path": "results/modern_tcn_metric_rebuild/42_fusion_guard_repair_and_innovation3/09_run_logs/innovation_development_cases.csv",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "bb4efca6f44b8f46cc30afc5ef268f6afa74780d9b04794db903127fd6f862c8",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 72206
+    },
+    {
+      "role": "protected_source",
+      "path": "results/paper/Latex/paper_v3.tex",
+      "exists": true,
+      "expected_sha256": null,
+      "actual_sha256": "b856735de9374ced14941812a38e0d19fb5de12bd45f1083d2e5ece2d42b494e",
+      "sha256_match": true,
+      "critical": true,
+      "bytes": 133245
+    }
+  ]
+}

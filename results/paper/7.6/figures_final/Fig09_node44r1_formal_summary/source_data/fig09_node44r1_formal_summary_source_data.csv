@@ -1,0 +1,22 @@
+record_type,metric,n_pairs,g0_mean,fusion_mean,effect_mtcn_minus_fusion,ci95_low,ci95_high,claim_status,path_id,route_label,improved_count,degraded_count
+aggregate_effect,ey_rmse,60,0.0263489490561459,0.0230076548539986,0.0033412942021473,-0.000114667020683,0.0079428265708476,INCONCLUSIVE,,,,
+aggregate_effect,epsi_rmse,60,0.0221613342474985,0.0204882350643832,0.0016730991831152,0.0002556336242477,0.003337628918711,SUPPORTED,,,,
+aggregate_effect,j_du,60,0.9305307636811346,0.800933339560352,0.1295974241207825,0.0216293541992289,0.345109574716767,SUPPORTED,,,,
+route_mean_effect,ey_rmse,10,0.0366054196310809,0.0292477427421211,0.0073576768889598,,,,p01_factory_logistics_showcase,P1 Factory logistics,5.0,5.0
+route_mean_effect,epsi_rmse,10,0.0346549562281304,0.0334839267197554,0.0011710295083749,,,,p01_factory_logistics_showcase,P1 Factory logistics,5.0,5.0
+route_mean_effect,j_du,10,1.536484299571513,1.0989852911046822,0.4374990084668304,,,,p01_factory_logistics_showcase,P1 Factory logistics,7.0,3.0
+route_mean_effect,ey_rmse,10,0.0424156334385959,0.0362828298098227,0.0061328036287731,,,,p02_sharp_turn_transition,P2 Sharp-turn transition,8.0,2.0
+route_mean_effect,epsi_rmse,10,0.031392342176579,0.0295583124409014,0.0018340297356775,,,,p02_sharp_turn_transition,P2 Sharp-turn transition,9.0,1.0
+route_mean_effect,j_du,10,0.9844304242890636,0.738910753663643,0.2455196706254206,,,,p02_sharp_turn_transition,P2 Sharp-turn transition,7.0,3.0
+route_mean_effect,ey_rmse,10,0.0378701475174391,0.0357116314903296,0.0021585160271095,,,,p03_long_updown,P3 Long up/down slope,4.0,6.0
+route_mean_effect,epsi_rmse,10,0.0256755101006439,0.0251093584445312,0.0005661516561126,,,,p03_long_updown,P3 Long up/down slope,7.0,3.0
+route_mean_effect,j_du,10,1.8090184640417215,1.7862638288636856,0.0227546351780361,,,,p03_long_updown,P3 Long up/down slope,6.0,4.0
+route_mean_effect,ey_rmse,10,0.0039550130589456,0.0039550130589456,0.0,,,,p04_soft_updown_straight_turn,P4 Mild slope-turn coupling,0.0,0.0
+route_mean_effect,epsi_rmse,10,0.0081131352603471,0.0081131352603471,0.0,,,,p04_soft_updown_straight_turn,P4 Mild slope-turn coupling,0.0,0.0
+route_mean_effect,j_du,10,0.3066988398780176,0.3066988398780176,0.0,,,,p04_soft_updown_straight_turn,P4 Mild slope-turn coupling,0.0,0.0
+route_mean_effect,ey_rmse,10,0.0175315673228179,0.0169449696777863,0.0005865976450315,,,,p05_factory_flat_logistics,P5 Flat factory logistics,2.0,0.0
+route_mean_effect,epsi_rmse,10,0.014109759066605,0.0138668765247886,0.0002428825418163,,,,p05_factory_flat_logistics,P5 Flat factory logistics,2.0,0.0
+route_mean_effect,j_du,10,0.437578019471138,0.349439435269695,0.088138584201443,,,,p05_factory_flat_logistics,P5 Flat factory logistics,2.0,0.0
+route_mean_effect,ey_rmse,10,0.0197159133679961,0.0159037423449861,0.00381217102301,,,,p06_downhill_after_turn,P6 Downhill recovery,9.0,1.0
+route_mean_effect,epsi_rmse,10,0.0190223026526854,0.0127978009959754,0.0062245016567099,,,,p06_downhill_after_turn,P6 Downhill recovery,10.0,0.0
+route_mean_effect,j_du,10,0.5089745348353538,0.5253018885823886,-0.0163273537470346,,,,p06_downhill_after_turn,P6 Downhill recovery,3.0,7.0

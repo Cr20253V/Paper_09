@@ -1,0 +1,17 @@
+{
+  "case_count": 60,
+  "complete_case_count": 60,
+  "safety_pass_count": 60,
+  "constraint_violation_rate_max": 0.0,
+  "timeout_count_sum": 0,
+  "solver_fail_count_sum": 0,
+  "safety_failure_count_sum": 0,
+  "nonfinite_diagnostic_count_sum": 0,
+  "observer_invalid_after_init_count_sum": 0,
+  "fallback_theta_identity_max_abs": 0.0,
+  "fallback_correction_max_abs": 0.0,
+  "normal_rate_limit_excess_max": 6.396792817664476e-18,
+  "normal_correction_limit_excess_max": 1.734723475976807e-18,
+  "psd_min_eigenvalue_min": 1.04414915101073e-09,
+  "runtime_truth_read_true_count": 0
+}

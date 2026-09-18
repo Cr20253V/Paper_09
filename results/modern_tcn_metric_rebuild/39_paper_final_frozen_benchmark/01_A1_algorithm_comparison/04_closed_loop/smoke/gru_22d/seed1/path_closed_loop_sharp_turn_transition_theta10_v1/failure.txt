@@ -1,0 +1,9 @@
+错误使用 run_closed_loop_model_once (第 153 行)
+STD 异常 'class mwboost::exception_detail::clone_impl<class fl::filesystem::SystemError>': 捕获到 'fl:filesystem:SystemError'。
+
+出错 run_A1_closed_loop_manual>local_run_method (第 84 行)
+                run_closed_loop_model_once(['LPVMPC_AGV_simulink_' upper(method)],path_file,candidate_out,sim_cfg);
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+出错 run_A1_closed_loop_manual (第 36 行)
+    rows = local_run_method(root, task_root, a0, one, seeds, paths, smoke, dry_run);
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^

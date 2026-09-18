@@ -1,0 +1,11 @@
+evidence_type,method_id,method_label,metric_id,estimate_deg,ci95_low_deg,ci95_high_deg,interval_type,improved_seed_count,total_seed_count,bootstrap_iterations,bootstrap_seed
+formal_paired_effect,modern_tcn_delta_bank_124_vs_modern_tcn_22d,ModernTCN-22D - ModernTCN-delta,grade_mae_abs_le_10_deg,0.05411868550953,0.0060845895272842,0.101803353488745,paired seed bootstrap,8,10,10000,20260715
+formal_paired_effect,modern_tcn_delta_bank_124_vs_modern_tcn_22d,ModernTCN-22D - ModernTCN-delta,edge_p95_abs_error_deg,0.426076679447302,0.185169891465037,0.709866810186854,paired seed bootstrap,9,10,10000,20260715
+descriptive_absolute_mean,modern_tcn_delta_bank_124,ModernTCN-delta,grade_mae_abs_le_10_deg,0.598884171012998,0.555240781576294,0.642527560449702,two-sided Student-t interval,,10,,
+descriptive_absolute_mean,modern_tcn_delta_bank_124,ModernTCN-delta,p95_abs_error_abs_le_10_deg,1.6777749854959,1.58861649279049,1.76693347820131,two-sided Student-t interval,,10,,
+descriptive_absolute_mean,modern_tcn_22d,ModernTCN-22D,grade_mae_abs_le_10_deg,0.653002856522528,0.606843002317532,0.699162710727525,two-sided Student-t interval,,10,,
+descriptive_absolute_mean,modern_tcn_22d,ModernTCN-22D,p95_abs_error_abs_le_10_deg,1.80626468225402,1.67548619516262,1.93704316934542,two-sided Student-t interval,,10,,
+descriptive_absolute_mean,gru_22d,GRU-22D,grade_mae_abs_le_10_deg,0.885828851812979,0.788104264463382,0.983553439162576,two-sided Student-t interval,,10,,
+descriptive_absolute_mean,gru_22d,GRU-22D,p95_abs_error_abs_le_10_deg,2.25949995528305,2.03713560317102,2.48186430739508,two-sided Student-t interval,,10,,
+descriptive_absolute_mean,tcn_22d,TCN-22D,grade_mae_abs_le_10_deg,0.915369129242224,0.855300008243684,0.975438250240764,two-sided Student-t interval,,10,,
+descriptive_absolute_mean,tcn_22d,TCN-22D,p95_abs_error_abs_le_10_deg,2.63579616353409,2.3096791533194,2.96191317374878,two-sided Student-t interval,,10,,

@@ -1,0 +1,17 @@
+{
+  "classification": "RETROSPECTIVE_EXPLORATORY_R2_06_FUSION_BENCHMARK",
+  "formal_claim_allowed": false,
+  "qualification_bypassed": true,
+  "paired_cases": 60,
+  "bootstrap_iterations": 10000,
+  "bootstrap_seed": 20260715,
+  "effect_definition": "ModernTCN-only minus Fusion; positive favors Fusion",
+  "primary_ci_support": {
+    "ey_rmse": true,
+    "epsi_rmse": true,
+    "j_du": false
+  },
+  "full_primary_support": false,
+  "safety_status": "PASS",
+  "integrity_status": "PASS"
+}

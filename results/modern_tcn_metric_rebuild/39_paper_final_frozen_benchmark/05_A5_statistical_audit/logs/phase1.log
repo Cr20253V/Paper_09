@@ -1,0 +1,13 @@
+[2026-07-15T13:57:14Z] START A5 phase-1 freeze
+project_root=E:\Matlab\Simulink\S-Function_16
+output_root=E:\Matlab\Simulink\S-Function_16\results\modern_tcn_metric_rebuild\39_paper_final_frozen_benchmark\05_A5_statistical_audit
+required_documents=3/3 hash_match
+a0_registered_artifacts=22/22 hash_match
+model_counts={"gru_22d": 10, "modern_tcn_22d": 10, "modern_tcn_delta_bank_124": 10, "tcn_22d": 3}
+missing_tcn_seeds=1,7,11,42,202,340,520
+json_schemas_checked=6 status=PASS
+unit_tests=8/8 PASS
+statistical_self_check=PASS
+phase2_statistics_executed=false
+analysis_plan_sha256=f6f5d85197268cd202748ae50805ad9b6cefe75c451ba5652e82c47f80baf4a9
+[2026-07-15T13:57:15Z] COMPLETE PHASE1_COMPLETE ANALYSIS_PLAN_FROZEN

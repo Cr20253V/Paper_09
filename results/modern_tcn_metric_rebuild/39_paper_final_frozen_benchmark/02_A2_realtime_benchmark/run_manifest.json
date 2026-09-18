@@ -1,0 +1,30 @@
+﻿{
+    "task_id":  "A2",
+    "protocol_id":  "A0_paper_final_unified_protocol_v1",
+    "created_at":  "2026-07-17T12:56:27.9692478+08:00",
+    "write_root":  "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark",
+    "phase1_cases":  [
+                         "core_inference__modern_tcn_delta_bank_124",
+                         "core_inference__modern_tcn_22d",
+                         "core_inference__gru_22d",
+                         "core_inference__tcn_22d",
+                         "end_to_end_update__modern_tcn_delta_bank_124",
+                         "end_to_end_update__modern_tcn_22d",
+                         "end_to_end_update__gru_22d",
+                         "end_to_end_update__tcn_22d",
+                         "mpc_solve__effective_controller",
+                         "preprocess__normalization_delta_bank_124",
+                         "full_cycle__slope_estimation_mpc"
+                     ],
+    "phase2_cases":  [
+                         "core_inference__fusion_wrapper",
+                         "end_to_end_update__fusion_wrapper",
+                         "full_cycle__perception_fusion_mpc"
+                     ],
+    "environment_sha256":  "549abbfb4e54f7486f9a012976785ad3f5bc1db546d801033815ba570f9bd84f",
+    "model_seed":  42,
+    "warmup_count":  500,
+    "formal_count":  10000,
+    "phase1_completed":  1,
+    "status":  "READY_FOR_FORMAL_RUN"
+}

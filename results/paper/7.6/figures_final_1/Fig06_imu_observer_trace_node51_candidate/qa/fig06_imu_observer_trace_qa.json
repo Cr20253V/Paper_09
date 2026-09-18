@@ -1,0 +1,191 @@
+{
+  "figure_id": "Fig06_imu_observer_trace",
+  "status": "CANDIDATE_NOT_YET_INSERTED_IN_TEX",
+  "generated_utc": "2026-07-31T08:41:58.617406+00:00",
+  "backend": "Python/matplotlib",
+  "skill_basis": [
+    "scientific-visualization",
+    "matplotlib"
+  ],
+  "output_root_contract": "formal Fig. 6 candidate in figures_final_1; earlier P2 candidates, paper TeX, and simulation results unchanged",
+  "frozen_inputs": [
+    {
+      "role": "input_1",
+      "file": "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild/08_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/trace.csv",
+      "bytes": 1716648,
+      "sha256": "13e7f7d2e15468188ff9e2456d8e2dfdf76dac5a6bb06634b77e9cd08ae77420"
+    },
+    {
+      "role": "input_2",
+      "file": "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild/08_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/node51_runtime_debug.csv",
+      "bytes": 3040423,
+      "sha256": "eaf8bc760bb7708093164972137688537cbca7c812e479ad19d553ac05c1eb95"
+    },
+    {
+      "role": "input_3",
+      "file": "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild/08_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/case_manifest.json",
+      "bytes": 1647,
+      "sha256": "167f86efe656d71ba85459e35c9b45103d73e4387b9038a247c33416cf095c21"
+    },
+    {
+      "role": "input_4",
+      "file": "results/modern_tcn_metric_rebuild/51_moderntcn_rkf_highrisk_suppression_rebuild/00_protocol_lock/protocol.json",
+      "bytes": 2806,
+      "sha256": "a95ee8d2014fcfb5bd3f1cbf642e8d96aaefa94eef5ce9081405b8e4ef4ba21e"
+    },
+    {
+      "role": "input_5",
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/trace.csv",
+      "bytes": 1698854,
+      "sha256": "269a1168ca93a36c76a2ea3b9e8402a3b335650495d7f9dc6edca59b65bd5a8d"
+    },
+    {
+      "role": "input_6",
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/node44r1_runtime_debug.csv",
+      "bytes": 2887871,
+      "sha256": "be98e1ee045316926f9148dbdf6b54d81b754f3d512c6c6a82bf5b6cf7e42d6c"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_candidate/source_data/fig06_imu_observer_trace_source_data.csv",
+    "rows": 5201,
+    "columns": [
+      "sample_index",
+      "debug_step",
+      "t_s",
+      "theta_true_deg",
+      "theta_mtcn_deg",
+      "theta_rkf_deg",
+      "abs_error_mtcn_deg",
+      "abs_error_rkf_deg",
+      "delta_abs_error_deg",
+      "evaluation_sample",
+      "rkf_better_beyond_tolerance",
+      "mtcn_better_beyond_tolerance",
+      "near_tie"
+    ],
+    "sha256": "05cc5798948fd8d50afd617045cad07063b9de3a3dd100a1367f4ed42976a5bc"
+  },
+  "outputs": [
+    {
+      "role": "pdf",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_candidate/output/fig06_imu_observer_trace.pdf",
+      "bytes": 121308,
+      "sha256": "c62e0bb0abb3bc2523042ffb33a69a78779daf00bff7f291ced670f3eebd0459"
+    },
+    {
+      "role": "svg",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_candidate/output/fig06_imu_observer_trace.svg",
+      "bytes": 308613,
+      "sha256": "d2f901c65fcbbe3196082210fa6b0601a4e7aded1a029bcc41b23277296bc60c"
+    },
+    {
+      "role": "png",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_candidate/output/fig06_imu_observer_trace.png",
+      "bytes": 107163,
+      "sha256": "55eb589b431980036df6589836c4f9a78ebaaf5a0cddc1d618781f3e7a723137"
+    },
+    {
+      "role": "tiff",
+      "file": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_candidate/output/fig06_imu_observer_trace.tiff",
+      "bytes": 408330,
+      "sha256": "b6b0f283df1e065f0475f6a9e69524eda6d837014281ca2c3f040542f5b96cc4"
+    }
+  ],
+  "automatic_qa": {
+    "status": "PASS",
+    "contract_checks": {
+      "caption_contract": "Complete P2 sharp-turn transition comparing raw observer outputs from ModernTCN-delta (model seed 42) and the Qualified observer (sensor seed 4631). Panel (a) shows grade estimates; panel (b) shows the local absolute-error difference, where negative values favor the Qualified observer.",
+      "fixed_case": "P2 sharp-turn transition",
+      "rkf_protocol_id": "node51_highrisk_suppressed_rkf_moderntcn_fusion_v1",
+      "rkf_variant": "zhu2024_rkf_mu10_pitch_projected_propagation",
+      "stationary_initialization_s": 1.0,
+      "random_sensor_noise": true,
+      "three_legend_entries": [
+        "Truth",
+        "ModernTCN-delta",
+        "Qualified observer"
+      ],
+      "removed_visual_claims": [
+        "RKF uncertainty band",
+        "Initial invalid/unavailable indicator"
+      ],
+      "comparison_scope": "Both estimator branches are treated as outputs from the same closed-loop simulation, with exactly aligned time and truth arrays",
+      "trace_samples": 5201,
+      "observer_updates_per_method": 5200,
+      "alignment_rule": "Both debug.step arrays equal trace sample indices 1..5200; time and truth arrays are exactly equal; no interpolation, cropping, or downsampling",
+      "time_start_s": 0.0,
+      "time_end_s": 52.0,
+      "metric_initialization_exclusion_s": 0.5,
+      "decisive_tolerance_deg": 0.1,
+      "rkf_raw_observer_mae_deg": 0.225628357505021,
+      "mtcn_raw_observer_mae_deg": 0.6207456336387451,
+      "rkf_decisive_win_fraction": 0.5354300135895943,
+      "mtcn_decisive_win_fraction": 0.25276645311589985,
+      "near_tie_fraction": 0.2118035332945059,
+      "ideal_samplewise_minimum_gain_over_best_fraction": 0.2234264939420335,
+      "error_difference_direction": "negative means the Qualified observer has lower absolute raw observer error than ModernTCN-delta",
+      "rkf_sensor_seed": 4631,
+      "mtcn_model_seed": 42,
+      "panel_count": 2,
+      "paper_tex_modified": false,
+      "simulation_results_modified": false
+    },
+    "artist_checks": {
+      "axes_count_including_colorbars": 2,
+      "expected_primary_panels": 2,
+      "minimum_visible_font_pt": 6.2,
+      "minor_text_overflow_count": 0,
+      "minor_text_overflow": [],
+      "material_text_overflow_count": 0,
+      "status": "PASS"
+    },
+    "output_checks": {
+      "requested_size_mm": [
+        89.0,
+        104.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            1051,
+            1228
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.06222
+        },
+        "tiff": {
+          "pixels": [
+            2102,
+            2456
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            88.985,
+            103.971
+          ],
+          "nonwhite_fraction": 0.0601
+        }
+      },
+      "svg_editable_text_elements": 25,
+      "status": "PASS",
+      "grayscale_preview": "results/paper/7.6/figures_final_1/Fig06_imu_observer_trace_node51_candidate/qa/fig06_imu_observer_trace_grayscale.png"
+    }
+  },
+  "visual_qa": {
+    "status": "PASS",
+    "review_at_final_size": true,
+    "checks": {
+      "font_readability": "PASS",
+      "three_entry_legend_layout": "PASS",
+      "legend_and_label_overlap": "PASS",
+      "color_and_grayscale_separability": "PASS",
+      "cropping_and_panel_lettering": "PASS"
+    },
+    "reviewer_notes": "Reviewed at 89 mm in color and grayscale. The single-row three-entry legend, two-panel layout, and line-style distinctions remain readable."
+  }
+}

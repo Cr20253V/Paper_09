@@ -1,0 +1,48 @@
+{
+  "task_id": "A4",
+  "protocol_id": "A4_five_controller_primary_v1",
+  "issued_at": "2026-07-20T01:57:07+08:00",
+  "decision": "MIXED_FIVE_CONTROLLER_RESULT",
+  "grid_complete": true,
+  "primary_case_count": 138,
+  "core_supported_count": 3,
+  "core_contrast_count": 4,
+  "core_contrast_support": {
+    "Fusion_vs_MTCN": {
+      "metrics": {
+        "ey_rmse": false,
+        "epsi_rmse": true,
+        "j_du": false
+      },
+      "supported": false
+    },
+    "MTCN_vs_IMU": {
+      "metrics": {
+        "ey_rmse": true,
+        "epsi_rmse": true,
+        "j_du": true
+      },
+      "supported": true
+    },
+    "MTCN_vs_ZS": {
+      "metrics": {
+        "ey_rmse": true,
+        "epsi_rmse": true,
+        "j_du": true
+      },
+      "supported": true
+    },
+    "Oracle_vs_ZS": {
+      "metrics": {
+        "ey_rmse": true,
+        "epsi_rmse": true,
+        "j_du": true
+      },
+      "supported": true
+    }
+  },
+  "global_safety_failure_count": 0,
+  "node42_historical_development_decision": "FAIL_NODE42_INNOVATION_DEVELOPMENT",
+  "historical_decision_rewritten": false,
+  "interpretation_rule": "A4 decision is independent and does not overwrite Node42 development qualification."
+}

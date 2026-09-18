@@ -1,0 +1,17 @@
+{
+  "status": "PASS_NODE53_V7_RUNTIME_UNIT_TESTS",
+  "export_probability_max_abs_error": 1.1102230246251565E-16,
+  "export_parity": true,
+  "fallback_identity": true,
+  "bounded_active_update": true,
+  "frozen_config": true,
+  "runtime_feature_field_mapping": true,
+  "Kmax": 1,
+  "p_help_threshold": 0.6,
+  "slope_entry_deg": 0.5,
+  "slope_exit_deg": 0.3,
+  "innovation_min_deg": 0.25,
+  "model_seed": 42,
+  "sensor_seed": 4631,
+  "runtime_truth_read": false
+}

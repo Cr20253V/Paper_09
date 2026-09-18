@@ -1,0 +1,18 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "method_id": "modern_tcn_22d",
+  "seed": 11,
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\18_fair_10seed_selection_and_final_test_recut_recipe\\01_train_modern_tcn_small_10seed\\modern_fixed_seed11\\modern_tcn_seed11.pt",
+  "model_sha256": "79ed2dee17d183fd22014f01ba84d11805fcc4458e508798aea7667729f81a16",
+  "dataset_file": "E:\\Matlab\\Simulink\\S-Function_16\\data\\tcn\\ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat",
+  "test_windows": 3602,
+  "seq_len": 128,
+  "raw_input_dim": 22,
+  "effective_input_dim": 22,
+  "input_augmentation": {},
+  "device": "cuda",
+  "elapsed_seconds": 0.1008455753326416,
+  "output_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\01_A1_algorithm_comparison\\03_offline\\raw\\modern_tcn_22d_seed11_predictions.csv",
+  "output_sha256": "54fa972c309549b15ca78f6c57b364b06bcefa1fd9d3cda0e4f9c3e37f521244",
+  "status": "COMPLETE"
+}

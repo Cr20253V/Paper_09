@@ -1,0 +1,57 @@
+{
+  "case_id": "core_inference__gru_22d",
+  "method_id": "gru_22d",
+  "comparison_group": "architecture_only",
+  "case_status": "COMPLETE",
+  "formal": false,
+  "batch": 1,
+  "warmup_count": 5,
+  "formal_count": 20,
+  "input_shape": [
+    1,
+    128,
+    22
+  ],
+  "input_dtype": "float32",
+  "input_contiguous": "C",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\03_derived_models\\gru_22d_seed42_full.onnx",
+  "model_sha256": "449346956e5a0aeaa906dabe1df5d3472b3a690a0de2a1526e3125e347c3b8a4",
+  "model_file_bytes": 400682,
+  "parameter_count": 99276,
+  "runtime": "onnxruntime",
+  "runtime_version": "1.23.2",
+  "provider": "CPUExecutionProvider",
+  "intra_op_num_threads": 1,
+  "inter_op_num_threads": 1,
+  "execution_mode": "ORT_SEQUENTIAL",
+  "graph_optimization_level": "ORT_ENABLE_ALL",
+  "timer": "time.perf_counter_ns",
+  "p50_ms": 0.3091,
+  "p95_ms": 0.43671500000000046,
+  "p99_ms": 0.9111829999999992,
+  "max_ms": 1.0298,
+  "over_10ms_count": 0,
+  "over_10ms_rate": 0.0,
+  "memory_before_session": {
+    "working_set_bytes": 97386496,
+    "peak_working_set_bytes": 137879552,
+    "private_bytes": 851795968,
+    "peak_pagefile_bytes": 892497920
+  },
+  "memory_before_timing": {
+    "working_set_bytes": 103878656,
+    "peak_working_set_bytes": 137879552,
+    "private_bytes": 855932928,
+    "peak_pagefile_bytes": 892497920
+  },
+  "memory_after_timing": {
+    "working_set_bytes": 105017344,
+    "peak_working_set_bytes": 137879552,
+    "private_bytes": 855932928,
+    "peak_pagefile_bytes": 892497920
+  },
+  "peak_working_set_delta_from_before_session_bytes": 0,
+  "raw_timing_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\04_validation\\smoke_run\\raw_timing\\core_inference__gru_22d.csv",
+  "python": "3.10.9",
+  "python_executable": "E:\\Matlab\\Simulink\\S-Function_16\\.venv\\Scripts\\python.exe"
+}

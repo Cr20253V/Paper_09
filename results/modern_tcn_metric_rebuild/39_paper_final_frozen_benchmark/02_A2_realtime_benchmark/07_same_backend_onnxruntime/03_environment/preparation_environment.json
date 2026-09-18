@@ -1,0 +1,16 @@
+{
+  "captured_at": "2026-07-17T15:43:42.968283+08:00",
+  "python_executable": "E:\\Matlab\\Simulink\\S-Function_16\\.venv\\Scripts\\python.exe",
+  "python": "3.10.9",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "numpy": "2.2.6",
+  "onnx": "1.21.0",
+  "onnxruntime": "1.23.2",
+  "torch": "2.11.0+cu126",
+  "scipy": "1.15.3",
+  "available_providers": [
+    "AzureExecutionProvider",
+    "CPUExecutionProvider"
+  ],
+  "required_provider": "CPUExecutionProvider"
+}

@@ -1,0 +1,18 @@
+# Reconstructed from tracked parts by scripts/restore_dataset.ps1
+data/tcn/ModernTCN_dataset_agv_dualsteer_theta10_uniform_conf_h0_v5_plantfix_passive17_plus_all5.mat
+
+# Local/generated caches
+**/__pycache__/
+*.pyc
+*.pyo
+*.asv
+*.slxc
+slprj/
+codegen/
+
+# LaTeX local rebuild products
+*.aux
+*.blg
+*.fdb_latexmk
+*.fls
+*.synctex.gz

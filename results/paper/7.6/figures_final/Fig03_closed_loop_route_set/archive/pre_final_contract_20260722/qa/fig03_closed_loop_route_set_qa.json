@@ -1,0 +1,131 @@
+{
+  "figure_id": "fig03_closed_loop_route_set",
+  "generated_utc": "2026-07-22T03:57:42.058686+00:00",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "archetype": "quantitative grid",
+    "core_conclusion": "Three representative frozen routes compactly cover factory-logistics geometry, sustained up/down slopes, and sharp-turn transitions.",
+    "final_size_mm_requested": [
+      183.0,
+      118.0
+    ],
+    "panel_grid": [
+      3,
+      3
+    ]
+  },
+  "validation": {
+    "status": "PASS",
+    "route_count": 3,
+    "total_samples": 34185,
+    "time_strictly_increasing": true,
+    "all_plot_fields_finite": true,
+    "selected_route_order": [
+      "P1",
+      "P3",
+      "P2"
+    ],
+    "selection_basis": "geometry, grade, and turning-condition coverage",
+    "qualitative_routes": [
+      "P1",
+      "P3"
+    ],
+    "plot_decimation_max_points_per_route": 2400,
+    "decimation_preserves_first_and_last_samples": true,
+    "output_canvas_geometry": {
+      "requested_size_mm": [
+        183.0,
+        118.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            1393
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            117.941
+          ]
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            2787
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            117.983
+          ]
+        }
+      },
+      "status": "PASS"
+    }
+  },
+  "source_data": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/source_data/fig03_closed_loop_route_set_source_data.csv",
+  "routes": [
+    {
+      "path_id": "P1",
+      "role": "Factory logistics showcase",
+      "qualitative_route": true,
+      "source_file": "data/paths/path_factory_logistics_showcase_theta10_v10.mat",
+      "source_sha256": "4291e3ad60a5e3dbb79ae60f115c53bc6db71447309c758b97bf539f56e58670",
+      "samples": 24583,
+      "duration_s": 245.82,
+      "grade_min_deg": 0.0,
+      "grade_max_deg": 5.5,
+      "speed_min_mps": 0.86,
+      "speed_max_mps": 0.86
+    },
+    {
+      "path_id": "P3",
+      "role": "Long up/down slope",
+      "qualitative_route": true,
+      "source_file": "data/paths/path_closed_loop_long_updown_theta10_v1.mat",
+      "source_sha256": "ab82393620a90964d3973f42bec9bcdb8ac0733db5db08670d152fded5ca2e08",
+      "samples": 4401,
+      "duration_s": 44.0,
+      "grade_min_deg": -5.800000000000001,
+      "grade_max_deg": 6.6,
+      "speed_min_mps": 0.84,
+      "speed_max_mps": 0.92
+    },
+    {
+      "path_id": "P2",
+      "role": "Sharp-turn transition",
+      "qualitative_route": false,
+      "source_file": "data/paths/path_closed_loop_sharp_turn_transition_theta10_v1.mat",
+      "source_sha256": "c5c5f33077067f1c98bd319d199cc4f4096aa6fa309f8d692c5662882e5d1f68",
+      "samples": 5201,
+      "duration_s": 52.0,
+      "grade_min_deg": -5.2,
+      "grade_max_deg": 5.5,
+      "speed_min_mps": 0.82,
+      "speed_max_mps": 0.88
+    }
+  ],
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/output/fig03_closed_loop_route_set.svg",
+      "bytes": 93238,
+      "sha256": "ab6b604c7a57731a57ecab99ae26135fe5cea1bba5f91c405ede1f1b5317e36f"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/output/fig03_closed_loop_route_set.pdf",
+      "bytes": 52396,
+      "sha256": "0fe0193fba5ad6388296b8cc6fe930205999b29ad13181ef83709f761f353cb1"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/output/fig03_closed_loop_route_set.tiff",
+      "bytes": 870690,
+      "sha256": "3231d14b8c3e19d33eac9a1c8e62418e19e291cd81da7a76b65a786271ed9356"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig03_closed_loop_route_set/output/fig03_closed_loop_route_set.png",
+      "bytes": 152930,
+      "sha256": "0722a57e2806aedf607e240975cb3b07f01fee9cb66ead40f92f836955683fbd"
+    }
+  ]
+}

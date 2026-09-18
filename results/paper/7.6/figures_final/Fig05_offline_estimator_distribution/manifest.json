@@ -1,0 +1,58 @@
+{
+  "figure_id": "Fig05_offline_estimator_distribution",
+  "promoted_candidate": "B",
+  "promoted_date": "2026-07-30",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "core_conclusion": "Relative to the same ModernTCN architecture using 22 raw inputs, the delta-bank representation reduces central-range grade MAE and edge-region P95 error across matched model seeds, with positive paired-bootstrap confidence intervals.",
+    "archetype": "two-panel Gardner-Altman paired estimation plot",
+    "final_size_mm": [183.0, 76.0],
+    "effect_definition": "ModernTCN-22D minus ModernTCN-delta; positive favors ModernTCN-delta",
+    "confidence_interval": "paired-seed percentile bootstrap, 10000 iterations, seed 20260715"
+  },
+  "metric_scope": {
+    "grade_mae": "test windows with absolute true grade <= 10 degrees",
+    "edge_p95": "larger of the P95 absolute errors over [-10, -8] degrees and [8, 10] degrees"
+  },
+  "source_manifest": "results/paper/7.6/figures_final_1/Fig05_offline_estimator_distribution/manifest_candidate_b.json",
+  "source_data": [
+    "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/source_data/fig05_candidate_b_absolute_seed_metrics.csv",
+    "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/source_data/fig05_candidate_b_paired_seed_effects.csv",
+    "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/source_data/fig05_candidate_b_statistical_summary.csv"
+  ],
+  "outputs": [
+    {
+      "format": "pdf",
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.pdf",
+      "bytes": 64769,
+      "sha256": "e71c54ee28ee739ef13ad6d47ebcbb1a929043844e2653e2d7d532afae9b9b9b"
+    },
+    {
+      "format": "svg",
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.svg",
+      "bytes": 44261,
+      "sha256": "cbde499fcd50321f728e1be75edb28b3afc4466b727f7e5676e5d45f43e4b02d"
+    },
+    {
+      "format": "png",
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.png",
+      "bytes": 169606,
+      "sha256": "f801169b7a2d985027c337a1fc39fb0270d32b11c6bba4e8037444ccd28b461e"
+    },
+    {
+      "format": "tiff",
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.tiff",
+      "bytes": 782090,
+      "sha256": "f2a2373ad9ad20723e5181a3520d654f5d70a80bbe8740804e2fd50c47ef455c"
+    }
+  ],
+  "qa": {
+    "automatic_status": "PASS",
+    "visual_status": "PASS",
+    "minimum_visible_font_pt": 6.0,
+    "material_text_overflow_count": 0,
+    "material_text_overlap_count": 0,
+    "svg_editable_text_elements": 39
+  },
+  "archive": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/archive/pre_candidate_b_20260730"
+}

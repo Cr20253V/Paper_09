@@ -1,0 +1,52 @@
+{
+  "figure_id": "Fig08_node44r1_mechanism_trace",
+  "generated_utc": "2026-07-26T03:55:39.411810+00:00",
+  "backend": "Python/matplotlib",
+  "nature_figure_contract": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/figure_contract.md",
+  "frozen_inputs": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/trace.csv",
+      "sha256": "269a1168ca93a36c76a2ea3b9e8402a3b335650495d7f9dc6edca59b65bd5a8d"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/node44r1_runtime_debug.csv",
+      "sha256": "be98e1ee045316926f9148dbdf6b54d81b754f3d512c6c6a82bf5b6cf7e42d6c"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/case_manifest.json",
+      "sha256": "f3295319bd185d9219855e4c1a004d7ad70128495049c6059970434ee78412a0"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/44R1_quality_adaptive_uncertainty_repair/11_formal_six_path/cases/ADAPTIVE/s42/p02_sharp_turn_transition/case_metrics.json",
+      "sha256": "2dc72019c015f9bf52f5dbc475fa471ca626fad614b28f471d5ce9bab5b584ca"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/source_data/fig08_node44r1_mechanism_trace_source_data.csv",
+    "sha256": "63ac242dabc0a64153230fb1d22441d7bd7f606d9df5163df12d7509bdf6f177",
+    "rows": 5200
+  },
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/output/fig08_node44r1_mechanism_trace.svg",
+      "sha256": "26f7a1441eebbc21e7bfe1bf45cd8b63c749b0695a69540ba05c41276917b7a1"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/output/fig08_node44r1_mechanism_trace.pdf",
+      "sha256": "e88929699a41c745fd8d17833e60ca8cd075501d69f006012dc7dc0f8aeef188"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/output/fig08_node44r1_mechanism_trace.tiff",
+      "sha256": "cfc681ec5fe8ea4efde554ec23ffa0ddb85a32fa8469e1e06aee1463ae616640"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/output/fig08_node44r1_mechanism_trace.png",
+      "sha256": "eb6e26ceb460577caabe9cdf86a5ea819eaad83037410d14d0b99f96afc0bae3"
+    }
+  ],
+  "qa": {
+    "file": "results/paper/7.6/figures_final/Fig08_node44r1_mechanism_trace/qa/fig08_node44r1_mechanism_trace_qa.json",
+    "sha256": "251072528b45049ff6f33c5ea07fb346f168701fb049ba1f6a6f3a451cb0a431",
+    "status": "PASS"
+  }
+}

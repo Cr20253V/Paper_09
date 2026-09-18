@@ -1,0 +1,235 @@
+{
+  "figure_id": "fig04_slope_necessity_effects",
+  "generated_utc": "2026-07-22T04:12:29.743384+00:00",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "archetype": "quantitative grid",
+    "core_conclusion": "Oracle grade scheduling has positive mean effects with 95% intervals above zero for all three frozen six-route metrics, whereas the causal IMU effect depends on the metric.",
+    "final_size_mm_requested": [
+      183.0,
+      72.0
+    ],
+    "panel_map": {
+      "a": "paired lateral-error RMS effects",
+      "b": "paired heading-error RMS effects",
+      "c": "paired input-increment effects"
+    },
+    "hero_evidence": "all six route-level effects per contrast and metric",
+    "summary_evidence": "frozen route-bootstrap mean and percentile 95% CI",
+    "reviewer_risks_addressed": [
+      "effect direction is explicit and fixed as comparator minus target",
+      "route, not time sample, is the statistical unit",
+      "all zero, adverse, and extreme route effects are retained",
+      "Oracle is a non-deployable analysis reference"
+    ]
+  },
+  "validation": {
+    "status": "PASS",
+    "route_effect_rows": 36,
+    "bootstrap_summary_rows": 6,
+    "source_data_rows": 42,
+    "contrasts": [
+      "A3_ORACLE_VS_ZS",
+      "A3_IMU_VS_ZS"
+    ],
+    "metrics": [
+      "ey_rmse",
+      "epsi_rmse",
+      "j_du"
+    ],
+    "routes_per_contrast_metric": 6,
+    "statistical_unit": "route",
+    "center_statistic": "arithmetic mean of paired route effects",
+    "interval": "frozen percentile 95% bootstrap confidence interval",
+    "bootstrap_iterations": 10000,
+    "bootstrap_random_seed": 20260715,
+    "effect_definition": "comparator minus target; positive favors target",
+    "heading_display_conversion": "rad multiplied by 180/pi to deg",
+    "output_checks": {
+      "status": "PASS",
+      "requested_size_mm": [
+        183.0,
+        72.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            850
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            71.967
+          ]
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            1700
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            71.967
+          ]
+        }
+      },
+      "svg_editable_text": {
+        "status": "PASS",
+        "text_element_count": 28
+      },
+      "pdf_page_size_mm": [
+        183.0,
+        72.0
+      ],
+      "pdf_fonts": {
+        "status": "PASS",
+        "font_count": 4,
+        "all_embedded": true,
+        "type3_fonts": false,
+        "font_rows": [
+          "ELUGPM+ArialMT                       CID TrueType      Identity-H       yes yes yes     21  0",
+          "ELUGPM+Arial-BoldMT                  CID TrueType      Identity-H       yes yes yes     28  0",
+          "GCWXDV+DejaVuSans-Oblique            CID TrueType      Identity-H       yes yes yes     35  0",
+          "BMQQDV+DejaVuSans                    CID TrueType      Identity-H       yes yes yes     42  0"
+        ]
+      },
+      "pdf_render": {
+        "status": "PASS",
+        "preview_file": "fig04_slope_necessity_effects_pdf_render.png",
+        "pixels": [
+          1441,
+          567
+        ],
+        "dpi": 200,
+        "non_white_fraction": 0.040185
+      }
+    }
+  },
+  "input_sources": [
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/paired_effects.csv",
+      "bytes": 10285,
+      "sha256": "d775f5bbf254451d805f543dd714b25cc86cdd916ab30035954749a1b0357513"
+    },
+    {
+      "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/03_A3_slope_scheduling_necessity/04_summary/bootstrap_ci_results.csv",
+      "bytes": 1514,
+      "sha256": "b33725731c4e9876b2cf86d8de0a42b2aacec1e703a26616eb33e446a9abf9de"
+    }
+  ],
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/source_data/fig04_slope_necessity_effects_source_data.csv",
+    "bytes": 8511,
+    "sha256": "270b56eb658989aedab088883a738fbdd364d52d4bbe2f1002adbd1190e5c213"
+  },
+  "pair_checks": [
+    {
+      "contrast_id": "A3_ORACLE_VS_ZS",
+      "metric": "ey_rmse",
+      "display_unit": "m",
+      "route_count": 6,
+      "route_effect_min_display": 0.0,
+      "route_effect_max_display": 6.855830054724181,
+      "mean_estimate_display": 1.4679837236765056,
+      "ci95_display": [
+        0.1171514065563091,
+        3.746816090827332
+      ],
+      "ci_excludes_zero": true
+    },
+    {
+      "contrast_id": "A3_ORACLE_VS_ZS",
+      "metric": "epsi_rmse",
+      "display_unit": "deg",
+      "route_count": 6,
+      "route_effect_min_display": 0.0,
+      "route_effect_max_display": 84.72957915021627,
+      "mean_estimate_display": 18.944800334358714,
+      "ci95_display": [
+        2.902198128423345,
+        45.83918591915856
+      ],
+      "ci_excludes_zero": true
+    },
+    {
+      "contrast_id": "A3_ORACLE_VS_ZS",
+      "metric": "j_du",
+      "display_unit": "index",
+      "route_count": 6,
+      "route_effect_min_display": -0.2912972256574896,
+      "route_effect_max_display": 1931.3695437062809,
+      "mean_estimate_display": 695.5871020059634,
+      "ci95_display": [
+        116.40830243921,
+        1339.4542529553248
+      ],
+      "ci_excludes_zero": true
+    },
+    {
+      "contrast_id": "A3_IMU_VS_ZS",
+      "metric": "ey_rmse",
+      "display_unit": "m",
+      "route_count": 6,
+      "route_effect_min_display": -0.0006027050405121,
+      "route_effect_max_display": 0.3287937395847242,
+      "mean_estimate_display": 0.0690628440576017,
+      "ci95_display": [
+        0.0066315933437295,
+        0.1780996203774813
+      ],
+      "ci_excludes_zero": true
+    },
+    {
+      "contrast_id": "A3_IMU_VS_ZS",
+      "metric": "epsi_rmse",
+      "display_unit": "deg",
+      "route_count": 6,
+      "route_effect_min_display": -23.07133963568327,
+      "route_effect_max_display": 2.7557447857288224,
+      "mean_estimate_display": -3.215349456913401,
+      "ci95_display": [
+        -11.362500742101583,
+        1.4337780463989958
+      ],
+      "ci_excludes_zero": false
+    },
+    {
+      "contrast_id": "A3_IMU_VS_ZS",
+      "metric": "j_du",
+      "display_unit": "index",
+      "route_count": 6,
+      "route_effect_min_display": -964.1787448310554,
+      "route_effect_max_display": 878.9410136512422,
+      "mean_estimate_display": -7.22470042357423,
+      "ci95_display": [
+        -475.1041237874371,
+        439.4677513776466
+      ],
+      "ci_excludes_zero": false
+    }
+  ],
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.svg",
+      "bytes": 40602,
+      "sha256": "d4cb354a41914475a07741178b2df0bbfcfc43d5f2059ecc320ff7eee8de9cb7"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.pdf",
+      "bytes": 56006,
+      "sha256": "245e653a37598f939c83ca7619b213bd49deca0420e6190e644554f5e437ae8f"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.tiff",
+      "bytes": 481278,
+      "sha256": "a5852e20f5109496b71d94ae78bb9325b2ab1eb190dca6e26aecdb46ace33e43"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig04_slope_necessity_effects/output/fig04_slope_necessity_effects.png",
+      "bytes": 72098,
+      "sha256": "573a4e2ad6ce34a908a93252d3f7e6d05688598015bf8031ea1a37a1040314ad"
+    }
+  ]
+}

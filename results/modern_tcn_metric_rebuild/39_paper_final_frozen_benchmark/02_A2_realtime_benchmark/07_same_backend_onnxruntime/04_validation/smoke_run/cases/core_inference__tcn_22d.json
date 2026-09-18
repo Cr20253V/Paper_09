@@ -1,0 +1,57 @@
+{
+  "case_id": "core_inference__tcn_22d",
+  "method_id": "tcn_22d",
+  "comparison_group": "architecture_only",
+  "case_status": "COMPLETE",
+  "formal": false,
+  "batch": 1,
+  "warmup_count": 5,
+  "formal_count": 20,
+  "input_shape": [
+    1,
+    128,
+    22
+  ],
+  "input_dtype": "float32",
+  "input_contiguous": "C",
+  "model_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\03_derived_models\\tcn_22d_seed42_full.onnx",
+  "model_sha256": "89537bea08273cb6638c25e06e92beeb9c7ebbb48db7ae76dd7e6fe09ec14512",
+  "model_file_bytes": 627487,
+  "parameter_count": 156396,
+  "runtime": "onnxruntime",
+  "runtime_version": "1.23.2",
+  "provider": "CPUExecutionProvider",
+  "intra_op_num_threads": 1,
+  "inter_op_num_threads": 1,
+  "execution_mode": "ORT_SEQUENTIAL",
+  "graph_optimization_level": "ORT_ENABLE_ALL",
+  "timer": "time.perf_counter_ns",
+  "p50_ms": 1.02835,
+  "p95_ms": 1.04434,
+  "p99_ms": 1.054068,
+  "max_ms": 1.0565,
+  "over_10ms_count": 0,
+  "over_10ms_rate": 0.0,
+  "memory_before_session": {
+    "working_set_bytes": 97411072,
+    "peak_working_set_bytes": 137904128,
+    "private_bytes": 852570112,
+    "peak_pagefile_bytes": 893259776
+  },
+  "memory_before_timing": {
+    "working_set_bytes": 104591360,
+    "peak_working_set_bytes": 137904128,
+    "private_bytes": 856702976,
+    "peak_pagefile_bytes": 893259776
+  },
+  "memory_after_timing": {
+    "working_set_bytes": 105312256,
+    "peak_working_set_bytes": 137904128,
+    "private_bytes": 856702976,
+    "peak_pagefile_bytes": 893259776
+  },
+  "peak_working_set_delta_from_before_session_bytes": 0,
+  "raw_timing_file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\02_A2_realtime_benchmark\\07_same_backend_onnxruntime\\04_validation\\smoke_run\\raw_timing\\core_inference__tcn_22d.csv",
+  "python": "3.10.9",
+  "python_executable": "E:\\Matlab\\Simulink\\S-Function_16\\.venv\\Scripts\\python.exe"
+}

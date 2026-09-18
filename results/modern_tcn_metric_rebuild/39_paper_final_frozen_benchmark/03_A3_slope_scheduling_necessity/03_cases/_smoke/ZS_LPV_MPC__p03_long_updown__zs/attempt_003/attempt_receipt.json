@@ -1,0 +1,32 @@
+{
+  "task_id": "A3",
+  "case_id": "ZS_LPV_MPC__p03_long_updown__zs",
+  "attempt": 3,
+  "status": "FAILED",
+  "elapsed_wall_s": 13.4384745,
+  "error_identifier": "MATLAB:MException:MultipleErrors",
+  "error_message": "多种原因导致错误。",
+  "stack": [
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\src\\Compare\\run_closed_loop_model_once.m",
+      "name": "run_closed_loop_model_once",
+      "line": 153
+    },
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\02_tools\\run_a3_experiment.m",
+      "name": "run_a3_experiment",
+      "line": 55
+    },
+    {
+      "file": "E:\\Matlab\\Simulink\\S-Function_16\\results\\modern_tcn_metric_rebuild\\39_paper_final_frozen_benchmark\\03_A3_slope_scheduling_necessity\\02_tools\\run_a3_smoke_entry.m",
+      "name": "run_a3_smoke_entry",
+      "line": 8
+    },
+    {
+      "file": "D:\\LenovoSoftstore\\install\\Matlab R2024b\\toolbox\\matlab\\lang\\run.m",
+      "name": "run",
+      "line": 112
+    }
+  ],
+  "completed_at": "2026-07-15T14:53:30Z"
+}

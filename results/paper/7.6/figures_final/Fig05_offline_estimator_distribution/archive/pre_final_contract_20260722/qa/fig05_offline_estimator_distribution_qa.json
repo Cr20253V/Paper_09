@@ -1,0 +1,219 @@
+{
+  "figure_id": "fig05_offline_estimator_distribution",
+  "generated_utc": "2026-07-22T04:10:14.648043+00:00",
+  "backend": "Python/matplotlib",
+  "figure_contract": {
+    "archetype": "quantitative grid",
+    "core_conclusion": "ModernTCN-delta has the lowest mean grade MAE and P95 absolute error on the frozen test set while matched-seed lines retain seed variability.",
+    "final_size_mm_requested": [
+      183.0,
+      70.0
+    ],
+    "panel_grid": [
+      1,
+      2
+    ],
+    "test_split_note": "run-disjoint, not fully path-template-disjoint"
+  },
+  "validation": {
+    "status": "PASS",
+    "row_count": 40,
+    "method_count": 4,
+    "seeds_per_method": {
+      "modern_tcn_delta_bank_124": 10,
+      "modern_tcn_22d": 10,
+      "gru_22d": 10,
+      "tcn_22d": 10
+    },
+    "seed_order": [
+      1,
+      7,
+      11,
+      21,
+      42,
+      73,
+      101,
+      202,
+      340,
+      520
+    ],
+    "duplicate_method_seed_rows": 0,
+    "all_metrics_finite": true,
+    "y_axes_start_at_zero": true,
+    "paired_lines": "identical seeds, ModernTCN-delta to ModernTCN-22D only",
+    "ci_definition": "two-sided 95% Student-t interval for the mean across 10 seeds",
+    "ci_degrees_of_freedom": 9,
+    "output_canvas_geometry": {
+      "requested_size_mm": [
+        183.0,
+        70.0
+      ],
+      "raster_exports": {
+        "png": {
+          "pixels": [
+            2161,
+            826
+          ],
+          "dpi": 300,
+          "physical_size_mm": [
+            182.965,
+            69.935
+          ]
+        },
+        "tiff": {
+          "pixels": [
+            4322,
+            1653
+          ],
+          "dpi": 600,
+          "physical_size_mm": [
+            182.965,
+            69.977
+          ]
+        }
+      },
+      "svg_editable_text": true,
+      "status": "PASS"
+    }
+  },
+  "frozen_input": {
+    "file": "results/modern_tcn_metric_rebuild/39_paper_final_frozen_benchmark/01_A1_algorithm_comparison/03_offline/offline_case_metrics.csv",
+    "bytes": 89660,
+    "sha256": "12ac98b5920dc0228ea064e781b47b4acbc62942f2f0bdf6ffeafc6d893cd1e2"
+  },
+  "source_data": {
+    "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/source_data/fig05_offline_estimator_distribution_source_data.csv",
+    "rows": 40,
+    "sha256": "37ac3849a8f24d10094f165c8a73c6c198f2820591c9bc6627f0c3e0e567397d"
+  },
+  "metric_summary": [
+    {
+      "method_id": "modern_tcn_delta_bank_124",
+      "method_label": "ModernTCN-delta",
+      "metric": "grade_mae_deg",
+      "n_seeds": 10,
+      "mean": 0.5988841710129981,
+      "ci95_lower": 0.5552407815762941,
+      "ci95_upper": 0.642527560449702,
+      "minimum": 0.518888639453515,
+      "maximum": 0.7087790896924933
+    },
+    {
+      "method_id": "modern_tcn_delta_bank_124",
+      "method_label": "ModernTCN-delta",
+      "metric": "p95_abs_error_deg",
+      "n_seeds": 10,
+      "mean": 1.6777749854958954,
+      "ci95_lower": 1.5886164927904853,
+      "ci95_upper": 1.7669334782013055,
+      "minimum": 1.4107342717659963,
+      "maximum": 1.8226574310807648
+    },
+    {
+      "method_id": "modern_tcn_22d",
+      "method_label": "ModernTCN-22D",
+      "metric": "grade_mae_deg",
+      "n_seeds": 10,
+      "mean": 0.6530028565225281,
+      "ci95_lower": 0.6068430023175315,
+      "ci95_upper": 0.6991627107275247,
+      "minimum": 0.5687614422182402,
+      "maximum": 0.767275450947987
+    },
+    {
+      "method_id": "modern_tcn_22d",
+      "method_label": "ModernTCN-22D",
+      "metric": "p95_abs_error_deg",
+      "n_seeds": 10,
+      "mean": 1.806264682254022,
+      "ci95_lower": 1.67548619516262,
+      "ci95_upper": 1.937043169345424,
+      "minimum": 1.5277837571810338,
+      "maximum": 2.123269104213541
+    },
+    {
+      "method_id": "gru_22d",
+      "method_label": "GRU-22D",
+      "metric": "grade_mae_deg",
+      "n_seeds": 10,
+      "mean": 0.885828851812979,
+      "ci95_lower": 0.7881042644633821,
+      "ci95_upper": 0.9835534391625759,
+      "minimum": 0.6370455844165206,
+      "maximum": 1.1104374966607364
+    },
+    {
+      "method_id": "gru_22d",
+      "method_label": "GRU-22D",
+      "metric": "p95_abs_error_deg",
+      "n_seeds": 10,
+      "mean": 2.259499955283051,
+      "ci95_lower": 2.037135603171022,
+      "ci95_upper": 2.4818643073950795,
+      "minimum": 1.8130641102263745,
+      "maximum": 2.90706604835575
+    },
+    {
+      "method_id": "tcn_22d",
+      "method_label": "TCN-22D",
+      "metric": "grade_mae_deg",
+      "n_seeds": 10,
+      "mean": 0.9153691292422238,
+      "ci95_lower": 0.8553000082436837,
+      "ci95_upper": 0.9754382502407639,
+      "minimum": 0.7714682205531258,
+      "maximum": 1.0538205993934318
+    },
+    {
+      "method_id": "tcn_22d",
+      "method_label": "TCN-22D",
+      "metric": "p95_abs_error_deg",
+      "n_seeds": 10,
+      "mean": 2.6357961635340903,
+      "ci95_lower": 2.309679153319399,
+      "ci95_upper": 2.9619131737487816,
+      "minimum": 2.1428855275717367,
+      "maximum": 3.658115890646154
+    }
+  ],
+  "paired_modern_tcn_summary": [
+    {
+      "metric": "grade_mae_deg",
+      "difference_definition": "ModernTCN-delta minus ModernTCN-22D",
+      "delta_lower_seed_count": 8,
+      "equal_seed_count": 0,
+      "delta_higher_seed_count": 2,
+      "mean_paired_difference": -0.054118685509530015
+    },
+    {
+      "metric": "p95_abs_error_deg",
+      "difference_definition": "ModernTCN-delta minus ModernTCN-22D",
+      "delta_lower_seed_count": 7,
+      "equal_seed_count": 0,
+      "delta_higher_seed_count": 3,
+      "mean_paired_difference": -0.12848969675812635
+    }
+  ],
+  "outputs": [
+    {
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.svg",
+      "bytes": 48742,
+      "sha256": "02299d77701f85bde027c8a0ac65867466340485a7fea0a4a6652e4db70a5470"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.pdf",
+      "bytes": 54445,
+      "sha256": "4a6735387d54e7bac8ba98dbdce1887e14c9b2d9f6eb0a828fe4a4006cec3a66"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.tiff",
+      "bytes": 616300,
+      "sha256": "90d6b1d19baca4c907ef43032189d6372987b3616687e375e4f072c50bdae58e"
+    },
+    {
+      "file": "results/paper/7.6/figures_final/Fig05_offline_estimator_distribution/output/fig05_offline_estimator_distribution.png",
+      "bytes": 121386,
+      "sha256": "2b31072f859ce35ace208ec8205badf68891cec60d566ae7aede8824679d5c0d"
+    }
+  ]
+}

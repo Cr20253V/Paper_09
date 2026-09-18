@@ -1,0 +1,12 @@
+"case_id","status","warmup_count","formal_count","p50_ms","p95_ms","p99_ms","max_ms","over_10ms_rate","parameter_count","runtime_import_learnable_count"
+"core_inference__gru_22d","SMOKE_ONLY_NOT_FORMAL","2","5","8.0558","25.9102","25.9102","25.9102","0.4","99276",
+"core_inference__modern_tcn_22d","SMOKE_ONLY_NOT_FORMAL","2","5","50.7131","177.76590000000002","177.76590000000002","177.76590000000002","1","118538","115393"
+"core_inference__modern_tcn_delta_bank_124","SMOKE_ONLY_NOT_FORMAL","2","5","63.5353","212.23680000000002","212.23680000000002","212.23680000000002","1","145202","142057"
+"core_inference__tcn_22d","SMOKE_ONLY_NOT_FORMAL","2","5","8.4024","43.7449","43.7449","43.7449","0.2","156396",
+"end_to_end_update__gru_22d","SMOKE_ONLY_NOT_FORMAL","2","5","4.9624999999999995","5.3732","5.3732","5.3732","0","99276","99276"
+"end_to_end_update__modern_tcn_22d","SMOKE_ONLY_NOT_FORMAL","2","5","20.0869","22.1878","22.1878","22.1878","1","118538","115393"
+"end_to_end_update__modern_tcn_delta_bank_124","SMOKE_ONLY_NOT_FORMAL","2","5","17.7166","17.7954","17.7954","17.7954","1","145202","142057"
+"end_to_end_update__tcn_22d","SMOKE_ONLY_NOT_FORMAL","2","5","2.7976","2.9567","2.9567","2.9567","0","156396","156396"
+"full_cycle__slope_estimation_mpc","SMOKE_ONLY_NOT_FORMAL","2","5","113.5853","233.6212","233.6212","233.6212","1","145202","142057"
+"mpc_solve__effective_controller","SMOKE_ONLY_NOT_FORMAL","2","5","72.9857","192.85569999999998","192.85569999999998","192.85569999999998","1","0","0"
+"preprocess__normalization_delta_bank_124","SMOKE_ONLY_NOT_FORMAL","2","5","0.2561","2.2624","2.2624","2.2624","0","0",

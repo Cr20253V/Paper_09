@@ -1,0 +1,22 @@
+===== JSON SCHEMA CHECK =====
+schemas_checked=6 status=PASS
+===== UNIT TESTS =====
+test_all_three_primary_metrics_required (test_a5_statistical_audit.A5StatisticsTests) ... ok
+test_deterministic_reference_has_one_unit_per_path (test_a5_statistical_audit.A5StatisticsTests) ... ok
+test_grid_audit_retains_missing_duplicate_unexpected_nonfinite (test_a5_statistical_audit.A5StatisticsTests) ... ok
+test_hierarchical_bootstrap_is_deterministic_and_complete (test_a5_statistical_audit.A5StatisticsTests) ... ok
+test_hierarchical_bootstrap_rejects_incomplete_paths (test_a5_statistical_audit.A5StatisticsTests) ... ok
+test_lower_is_better_direction_and_zero_denominator (test_a5_statistical_audit.A5StatisticsTests) ... ok
+test_seed_bootstrap_is_deterministic (test_a5_statistical_audit.A5StatisticsTests) ... ok
+test_write_boundary (test_a5_statistical_audit.A5StatisticsTests) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.143s
+
+OK
+===== STATISTICAL SELF-CHECK =====
+{
+  "paired_bootstrap_deterministic": true,
+  "hierarchical_bootstrap_deterministic": true,
+  "claim_rule": "SUPPORTED_ALL_PRIMARY"
+}

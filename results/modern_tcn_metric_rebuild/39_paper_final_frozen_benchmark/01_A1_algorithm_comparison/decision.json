@@ -1,0 +1,20 @@
+{
+  "task_id": "A1_algorithm_comparison",
+  "updated_at": "2026-07-17T00:27:04+08:00",
+  "provisional": false,
+  "decision": "NOT_SUPPORTED",
+  "reason": "one or more applicable Node10 gate checks failed for the primary method",
+  "offline_decision": "SUPPORTED_ALL_PRIMARY",
+  "grid": {
+    "offline_complete": 40,
+    "offline_expected": 40,
+    "offline_missing": 0,
+    "closed_loop_complete": 240,
+    "closed_loop_expected": 240,
+    "closed_loop_missing": 0
+  },
+  "node10_primary_method_gate_fail": true,
+  "node10_primary_method_gate_fail_observed_on_available_cases": true,
+  "protected_artifacts_unchanged": true,
+  "results_used_for_recipe_or_threshold_changes": false
+}

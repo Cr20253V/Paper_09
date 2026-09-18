@@ -1,0 +1,234 @@
+{
+  "dictionary_id": "A5_metric_dictionary_v1",
+  "missing_value": "NA",
+  "metrics": [
+    {
+      "name": "theta_mae_deg",
+      "unit": "deg",
+      "direction": "lower",
+      "role": "offline_cross_algorithm_primary;representation_primary",
+      "formula": "mean(abs(theta_hat-theta_true))",
+      "allowed_aliases": []
+    },
+    {
+      "name": "theta_abs_le_10_p95_abs_err_deg",
+      "unit": "deg",
+      "direction": "lower",
+      "role": "offline_cross_algorithm_primary",
+      "formula": "p95(abs(error)) for |theta_true|<=10 deg",
+      "allowed_aliases": [
+        "theta_abs_le_10_p95_abs_err_deg"
+      ]
+    },
+    {
+      "name": "theta_edge_p95_abs_err",
+      "unit": "deg",
+      "direction": "lower",
+      "role": "representation_primary",
+      "formula": "p95 absolute error on frozen slope-edge mask",
+      "allowed_aliases": []
+    },
+    {
+      "name": "theta_abs_le_10_rmse_deg",
+      "unit": "deg",
+      "direction": "lower",
+      "role": "offline_secondary",
+      "formula": "RMSE for |theta_true|<=10 deg",
+      "allowed_aliases": []
+    },
+    {
+      "name": "theta_flat_bias_deg",
+      "unit": "deg",
+      "direction": "absolute_closer_to_zero",
+      "role": "offline_secondary",
+      "formula": "mean signed error on frozen flat mask",
+      "allowed_aliases": []
+    },
+    {
+      "name": "acc_main",
+      "unit": "fraction",
+      "direction": "higher",
+      "role": "offline_secondary",
+      "formula": "main-state accuracy",
+      "allowed_aliases": []
+    },
+    {
+      "name": "acc_turn",
+      "unit": "fraction",
+      "direction": "higher",
+      "role": "offline_secondary",
+      "formula": "turn-state accuracy",
+      "allowed_aliases": []
+    },
+    {
+      "name": "acc_turn_transition",
+      "unit": "fraction",
+      "direction": "higher",
+      "role": "offline_secondary",
+      "formula": "turn-transition accuracy",
+      "allowed_aliases": []
+    },
+    {
+      "name": "flat_recall",
+      "unit": "fraction",
+      "direction": "higher",
+      "role": "offline_secondary",
+      "formula": "flat recall",
+      "allowed_aliases": []
+    },
+    {
+      "name": "stall_recall",
+      "unit": "fraction",
+      "direction": "higher",
+      "role": "offline_secondary",
+      "formula": "stall recall",
+      "allowed_aliases": []
+    },
+    {
+      "name": "slope_recall",
+      "unit": "fraction",
+      "direction": "higher",
+      "role": "offline_secondary",
+      "formula": "slope recall",
+      "allowed_aliases": []
+    },
+    {
+      "name": "uphill_recall",
+      "unit": "fraction",
+      "direction": "higher",
+      "role": "offline_secondary",
+      "formula": "uphill recall",
+      "allowed_aliases": []
+    },
+    {
+      "name": "downhill_recall",
+      "unit": "fraction",
+      "direction": "higher",
+      "role": "offline_secondary",
+      "formula": "downhill recall",
+      "allowed_aliases": []
+    },
+    {
+      "name": "ey_rmse",
+      "unit": "m",
+      "direction": "lower",
+      "role": "closed_loop_primary",
+      "formula": "RMSE of lateral tracking error",
+      "allowed_aliases": []
+    },
+    {
+      "name": "epsi_rmse",
+      "unit": "rad",
+      "direction": "lower",
+      "role": "closed_loop_primary",
+      "formula": "RMSE of heading tracking error",
+      "allowed_aliases": []
+    },
+    {
+      "name": "j_du",
+      "unit": "mixed_native_squared_increment",
+      "direction": "lower",
+      "role": "closed_loop_primary;gate",
+      "formula": "mean(diff(F_cmd)^2 + diff(omega_cmd)^2)",
+      "allowed_aliases": [
+        "delta_u_proxy"
+      ]
+    },
+    {
+      "name": "xy_rmse",
+      "unit": "m",
+      "direction": "lower",
+      "role": "closed_loop_secondary",
+      "formula": "planar position RMSE",
+      "allowed_aliases": []
+    },
+    {
+      "name": "omega_cmd_rms",
+      "unit": "rad_per_s",
+      "direction": "lower",
+      "role": "closed_loop_secondary;gate",
+      "formula": "RMS steering-rate command",
+      "allowed_aliases": []
+    },
+    {
+      "name": "ey_peak",
+      "unit": "m",
+      "direction": "lower",
+      "role": "closed_loop_secondary",
+      "formula": "max absolute lateral tracking error",
+      "allowed_aliases": []
+    },
+    {
+      "name": "epsi_peak",
+      "unit": "rad",
+      "direction": "lower",
+      "role": "closed_loop_secondary",
+      "formula": "max absolute heading tracking error",
+      "allowed_aliases": []
+    },
+    {
+      "name": "ev_rmse",
+      "unit": "m_per_s",
+      "direction": "lower",
+      "role": "closed_loop_secondary",
+      "formula": "speed-error RMSE",
+      "allowed_aliases": []
+    },
+    {
+      "name": "constraint_violation_rate",
+      "unit": "fraction",
+      "direction": "lower",
+      "role": "closed_loop_safety",
+      "formula": "violating samples / evaluated samples",
+      "allowed_aliases": [
+        "viol_rate"
+      ]
+    },
+    {
+      "name": "force_saturation_rate",
+      "unit": "fraction",
+      "direction": "lower",
+      "role": "closed_loop_safety",
+      "formula": "force saturation fraction",
+      "allowed_aliases": [
+        "F_sat595_pct/100"
+      ]
+    },
+    {
+      "name": "omega_saturation_rate",
+      "unit": "fraction",
+      "direction": "lower",
+      "role": "closed_loop_safety",
+      "formula": "steering-rate saturation fraction",
+      "allowed_aliases": [
+        "omega_sat060_pct/100"
+      ]
+    },
+    {
+      "name": "solver_fail_count",
+      "unit": "count",
+      "direction": "lower",
+      "role": "closed_loop_safety",
+      "formula": "solver failures per case",
+      "allowed_aliases": []
+    },
+    {
+      "name": "timeout_count",
+      "unit": "count",
+      "direction": "lower",
+      "role": "closed_loop_safety",
+      "formula": "timeouts per case",
+      "allowed_aliases": [
+        "timeout_rate*n_steps"
+      ]
+    },
+    {
+      "name": "J_control_path",
+      "unit": "ratio",
+      "direction": "lower",
+      "role": "descriptive_only",
+      "formula": "mean of ey,xy,epsi,j_du,omega ratios on same path",
+      "allowed_aliases": []
+    }
+  ]
+}

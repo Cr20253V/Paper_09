@@ -1,0 +1,23 @@
+Figure 2 v2 verification record
+Generated: 2026-08-03 17:38:06
+
+Rendering:
+  python build_fig02_framework_redesign.py -> exit 0
+  PNG: 91173117C423064BB67C112FBCB26D7CDE6A2B20EBAA8CDAAD846F861811B489
+  PDF: B1DF82500098B2660BA3C05839AA8B2C758ED8D4BA4979C2C407F0D8290F350E
+  SVG: 91A13201C737D0ED9A5FAC10D2A0152326441BC3B00F42190A853CEC3E1A0133
+  PNG raster: 4326 x 2520 RGBA
+
+Manuscript compile:
+  pdflatex pass 1 -> exit 0
+  pdflatex pass 2 -> exit 0
+  output: paper_v4_final_candidate_fig02_redesign.pdf (20 pages)
+  Figure 2 included from output/fig02_framework_redesign.pdf
+
+Rollback/reapply:
+  rollback_to_v1.ps1 -> v1 PDF hash matched archive
+  v2 renderer rerun -> v2 PDF hash differs from v1 archive
+
+Preservation:
+  active manuscript SHA-256: ECD04C7AE7602C38EB95C568E967AB354A54E3C5D185293A98026A2B2A8E45B3
+  active manuscript modified: no
