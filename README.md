@@ -37,6 +37,19 @@ Read `docs/PAPER_09_BACKUP_CONTEXT.md` before editing the manuscript or drafting
 the reviewer response. It records the authoritative version, evidence nodes,
 headline results, statistical units, and claims that must remain bounded.
 
+## Reviewer Decision And Revision Workspace
+
+The IEEE Access decision email dated 2026-09-15, the reviewer attachment,
+official resubmission templates, and the verified Chinese revision guide are
+stored under:
+
+`results/paper/Access-2026-39730_返稿修改_20260915/`
+
+The original materials are preserved without modification. Future response
+letters, revised manuscripts, and supplementary experiments should be added to
+the numbered subdirectories in that workspace. See its `README.md` and
+`REVISION_MATERIALS_SHA256.csv` before editing.
+
 ## Deliberate Omissions
 
 The backup excludes regenerable TIFF exports, Python bytecode, LaTeX temporary
